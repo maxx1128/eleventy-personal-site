@@ -1,0 +1,32 @@
+.theme-switcher__input {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+
+  // Active Theme
+  &:checked + .theme-switcher__label {
+    text-decoration: underline;
+    font-weight: type(font-weight, bold);
+
+    border-color: color(primary, base);
+  }
+
+  // Focus states
+  &:focus + .theme-switcher__label {
+    outline: 1px dashed color(action, light);
+    outline-offset: 2px;
+  }
+}
+
+.theme-switcher__label {
+  color: color(action, lighter);
+  border: 2px solid rgba(0, 0, 0, 0);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .theme-dark & {
+    color: color(action, darker);
+  }
+}

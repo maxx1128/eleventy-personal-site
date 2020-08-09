@@ -1,0 +1,87 @@
+.card-layout {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: breakpoint(xxxl);
+}
+
+.card--layout-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: spacing(2);
+  margin-bottom: spacing();
+}
+
+@include larger-than(md) {
+  .card-layout {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .card-wrapper {
+    padding-right: spacing(2);
+    padding-left: spacing(2);
+    flex: 1 1 50%
+  }
+
+  .card-layout--home {
+    .card-wrapper {
+      flex-basis: 100%;
+
+      .card__banner {
+        display: none;
+      }
+    }
+  }
+}
+
+@include larger-than(xl) {
+  .card-layout--home {
+    flex-wrap: nowrap;
+
+    .card-wrapper {
+      flex-basis: 33%;
+    }
+  }
+}
+
+@include larger-than(xxl) {
+  .card-wrapper {
+    max-width: breakpoint(lg);
+    margin-right: auto;
+    margin-left: auto;
+    flex-basis: 25%;
+  }
+
+  .card-wrapper--medium {
+    flex-basis: 33%;
+  }
+
+  .card-wrapper--large {
+    flex-basis: 40%;
+  }
+
+  .card-wrapper--xlarge {
+    flex-basis: 50%;
+  }
+
+  .card-layout--home {
+    .card-wrapper,
+    .card-wrapper--medium,
+    .card-wrapper--large,
+    .card-wrapper--xlarge {
+      flex-basis: 33%;
+    }
+
+    .card-wrapper .card__banner {
+      display: block;
+    }
+  }
+}

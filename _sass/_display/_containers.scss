@@ -1,0 +1,28 @@
+.block { display: block; }
+.inline-block { display: inline-block; }
+.inline { display: inline; }
+
+@each $layer, $shadow in map-get($containers-map, box-shadow) {
+
+  $hover-layer: $layer - 1;
+
+  .box-shadow-#{$layer},
+  .box-shadow-#{$layer}-hover {
+    box-shadow: $shadow;
+    transition: box-shadow 0.5s;
+  }
+
+  @if ($hover-layer > 0) {
+    .box-shadow-#{$hover-layer}-hover {
+      @include hovers() {
+        box-shadow: $shadow;
+        transition: box-shadow 0.5s;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@each $label, $radius in map-get($containers-map, border-radius) {
+  .border-radius-#{$label} { border-radius: $radius; }
+}

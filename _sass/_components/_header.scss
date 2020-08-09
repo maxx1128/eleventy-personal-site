@@ -1,0 +1,36 @@
+.header--with-image {
+  box-shadow: container(box-shadow, 2);
+  background-position: center;
+  background-size: cover;
+  background-image: url("/assets/images/global/header-default.jpg");
+  background-color: color(primary, lighter);
+
+  box-shadow: inset 0 0 0 1000px rgba(color(shadow, light), $g-box-shadow-inset-opacity);
+}
+
+.header--with-custom-image {
+  @include larger-than(md) {
+    padding-top: 40vh;
+    margin-bottom: 8%;
+
+    box-shadow: inset 0 0 0 1000px rgba(color(shadow, light), $g-box-shadow-inset-opacity-light);
+
+    .header__text {
+      padding-bottom: spacing(2);
+      margin-bottom: -10%;
+
+      box-shadow: inset 0 0 0 1000px rgba(color(shadow, light), $g-box-shadow-inset-opacity);
+    }
+  }
+}
+
+.theme-dark {
+  .header--with-image {
+    background-image: url("/assets/images/global/header-dark.jpg");
+  }
+}
+
+.header--exocortex,
+.theme-dark .header--exocortex {
+  background-image: url("/assets/images/global/header-exocortex.jpg");
+}

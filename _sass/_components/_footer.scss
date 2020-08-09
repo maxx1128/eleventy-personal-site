@@ -1,0 +1,9 @@
+.theme-dark {
+  .footer {
+    --color-primary-darker: #{color(primary, lighter)};
+
+    --color-action-lighter: #{color(action, dark)};
+
+    --color-mono-white: #{color(primary, darkest)};
+  }
+}

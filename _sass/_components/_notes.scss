@@ -1,0 +1,123 @@
+:root {
+  --note-text-color: #181820;
+  --note-background-color: #6AF6FF;
+}
+
+$note-colors: (
+  // Jolteon
+  0: (
+    dark: #5a2c1a,
+    light: #f5f593
+  ),
+  // Uxie
+  1: (
+     dark: #8d3a4f,
+     light: #ffde9c
+   ),
+   // Charizard
+   2: (
+     dark: #084152,
+     light: #eeb45a
+   ),
+   // Espeon
+   3: (
+     dark: #314173,
+     light: #eebdee
+   ),
+   // Umbreon
+   4: (
+     dark: #02020f,
+     light: #eed552
+   ),
+   // Zoroark
+   5: (
+     dark: #202031,
+     light: #e6d8d8
+   ),
+   // Leafeon
+   6: (
+     dark: #254e47,
+     light: #f3dca7
+   ),
+   // Chandelure
+   7: (
+     dark: #3d27aa,
+     light: #c8bef9
+   ),
+   // Mewtwo
+   8: (
+     dark: #521786,
+     light: #ded5e6
+   ),
+   // Blaziken
+   9: (
+     dark: #7e2525,
+     light: #f8c47b
+   ),
+   // Ivysaur
+   10: (
+     dark: #104a39,
+     light: #fabbb6
+   ),
+   // Gallade
+   11: (
+     dark: #314e4e,
+    light: #c9e7df
+   ),
+   // Flygon
+   12: (
+     dark: #7a2932,
+    light: #9bffa2
+   ),
+   // Zekrom
+   13: (
+     dark: #1d1d27,
+     light: #6af6ff
+   ),
+   // Porygon-Z
+   14: (
+     dark: #753354,
+     light: #a8dfff
+   )
+);
+
+// Default Note List stylings
+@each $index, $styles in $note-colors {
+  $dark: map-get($styles, dark);
+  $light: map-get($styles, light);
+
+
+  .note-coloring--#{$index} {
+    --note-text-color: #{$dark};
+    --note-background-color: #{$light};
+  }
+
+  .theme-dark {
+    .note-coloring--#{$index} {
+      --note-text-color: #{$light};
+      --note-background-color: #{$dark};
+    }
+  }
+}
+
+.note-styler {
+  color: var(--note-text-color);
+  background-color: var(--note-background-color);
+
+  a {
+    color: var(--note-text-color);
+  }
+
+  blockquote {
+    color: var(--note-background-color);
+    background-color: var(--note-text-color);
+
+    a {
+      color: var(--note-background-color);
+    }
+  }
+}
+
+.note-styler--page {
+  min-height: 85vh;
+}

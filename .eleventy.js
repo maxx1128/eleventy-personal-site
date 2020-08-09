@@ -13,8 +13,6 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.setDataDeepMerge(true);
 
-  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
-
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
@@ -62,8 +60,20 @@ module.exports = function(eleventyConfig) {
     return [...tagSet];
   });
 
+  eleventyConfig.addCollection("notes", function (collection) {
+    return collection.getFilteredByGlob("./notes/*.md").reverse();
+  });
+
+  eleventyConfig.addCollection("exocortex", function (collection) {
+    return collection.getFilteredByGlob("./exocortex/**/*.md").reverse();
+  });
+
+  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+  eleventyConfig.addLayoutAlias("notes", "layouts/post.njk");
+  eleventyConfig.addLayoutAlias("exocortex", "layouts/post.njk");
+
   eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("assets");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({

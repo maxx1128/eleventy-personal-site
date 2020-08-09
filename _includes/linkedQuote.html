@@ -1,0 +1,22 @@
+{% assign quote = include.quote %}
+{% assign article = include.article %}
+{% assign website = include.website %}
+{% assign url = include.url %}
+
+<blockquote class="linked-quote" cite="{{ url }}">
+  <p class="linked-quote__content">
+    {{ quote }}
+  </p>
+
+  <footer class="linked-quote__footer mt-4">
+    <p class="mb-0 text-small">
+      <a rel="noopener" target="_blank" href="{{ url }}">
+        {{ article }}
+      </a>
+    </p>
+
+    <p class="font-weight-bold text-small">
+      {{ website }}
+    </p>
+  </footer>
+</blockquote>

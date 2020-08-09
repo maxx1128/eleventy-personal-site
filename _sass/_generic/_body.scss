@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,300i,600');
+
+* { box-sizing: border-box; }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  font-weight: type(font-weight, base);
+  font-family: type(font-family);
+  color: color(mono, black);
+
+  background-color: color(mono, white);
+
+  @include larger-than(md) {
+    font-size: 110%;
+  }
+
+  @include larger-than(lg) {
+    font-size: 115%;
+  }
+}
+
+body {
+  transition-duration: 0s;
+}

@@ -1,0 +1,13 @@
+.pagination__dot-link {
+  width: 33px;
+  height: 33px;
+
+  line-height: 0;
+
+  border: 1px solid color(action, dark);
+}
+
+.pagination__end-link--disabled {
+  cursor: default;
+  opacity: 0.4;
+}

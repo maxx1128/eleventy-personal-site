@@ -1,0 +1,39 @@
+blockquote {
+  padding: spacing();
+  margin: spacing(8) 0;
+
+  font-style: italic;
+
+  border-left: spacing(2) solid color(primary, dark);
+
+  p {
+    margin: 0;
+  }
+
+  @include larger-than(md) {
+    padding: spacing() spacing(6);
+
+    p {
+      font-size: type(font-size, large);
+    }
+  }
+}
+
+.linked-quote__content {
+  padding: type(margin, p);
+  margin: type(margin, p);
+
+  border-bottom: 2px solid color(primary, dark);
+}
+
+.linked-quote__footer {
+  font-style: normal;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.twitter-tweet {
+  margin: 0 auto 1rem;
+}

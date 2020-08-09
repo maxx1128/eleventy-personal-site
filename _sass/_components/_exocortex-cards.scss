@@ -1,0 +1,16 @@
+.exocortex-cards__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin: calc(#{spacing(2)} * -1);
+}
+
+.exocortex-cards__item {
+  position: 250px;
+  flex: 1 1 auto;
+  margin: spacing(2);
+
+  border-right: 4px solid color(action, dark);
+  border-left: 4px solid color(action, dark);
+}

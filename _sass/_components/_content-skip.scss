@@ -1,0 +1,9 @@
+.skip-to-content {
+  position: fixed;
+  bottom: 100%;
+
+  &:focus {
+    top: 0;
+    bottom: inherit;
+  }
+}

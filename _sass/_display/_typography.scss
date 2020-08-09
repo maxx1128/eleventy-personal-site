@@ -1,0 +1,72 @@
+$header-els: 'h1', 'h2', 'h3', 'h4', 'h5', 'h6';
+
+body { font-family: type(font-family, base); }
+
+code,
+kbd { font-family: type(font-family, mono); }
+
+.underline,
+.underline-links a { text-decoration: underline; }
+
+.no-underline { text-decoration: none; }
+.underline-hover {
+  @include hovers() { text-decoration: none; }
+}
+
+.italic { font-style: italic; }
+.lower { text-transform: lowercase; }
+.upper { text-transform: uppercase; }
+.capitalize { text-transform: capitalize; }
+.capitalize-sentence::first-letter { text-transform: capitalize; }
+.text-transform-none { text-transform: none; }
+
+@each $header in $header-els {
+  #{$header} { font-family: type(font-family, header); }
+}
+
+@each $label, $font-family in map-get($typography-map, font-family) {
+  .font-family-#{$label} { font-family: $font-family; }
+}
+
+@each $label, $weight in map-get($typography-map, font-weight) {
+  .font-weight-#{$label} { font-weight: $weight; }
+}
+
+@each $label, $font-size in map-get($typography-map, font-size) {
+  #{$label},
+  .text-#{$label} { font-size: $font-size; }
+}
+
+@each $label, $line-height in map-get($typography-map, line-height) {
+  #{$label},
+  .line-height-#{$label} { line-height: strip-unit($line-height); }
+}
+
+.list-style-disc { list-style: disc; }
+
+.list-reset {
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+.list-inline,
+.list-inline-flex {
+  margin: 0;
+
+  list-style-type: none;
+
+  li {
+    display: inline;
+    margin: 0;
+  }
+}
+
+.list-inline-flex li { display: flex; }
+
+@each $bp-label, $bp in $breakpoint-map {
+  @include rsp-class($bp, $bp-label, 'text-center') { text-align: center; }
+  @include rsp-class($bp, $bp-label, 'text-right') { text-align: right; }
+  @include rsp-class($bp, $bp-label, 'text-left') { text-align: left; }
+}

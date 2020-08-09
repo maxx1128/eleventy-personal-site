@@ -2,13 +2,6 @@
   "name": "eleventy-base-blog",
   "version": "5.0.2",
   "description": "A starter repository for a blog web site using the Eleventy static site generator.",
-  "scripts": {
-    "build": "eleventy",
-    "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
-    "start": "eleventy --serve",
-    "debug": "DEBUG=* eleventy"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/11ty/eleventy-base-blog.git"
@@ -23,6 +16,10 @@
     "url": "https://github.com/11ty/eleventy-base-blog/issues"
   },
   "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+  "dependencies": {
+    "concurrently": "^5.0.2",
+    "npm-run-all": "^4.1.5"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-navigation": "^0.1.6",
@@ -30,6 +27,31 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
-    "markdown-it-anchor": "^5.2.5"
+    "markdown-it-anchor": "^5.2.5",
+    "autoprefixer": "^9.6.0",
+    "chokidar-cli": "^1.2.2",
+    "concurrently": "^5.0.2",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^6.0.22",
+    "postcss-loader": "^2.1.5",
+    "postcss-cli": "^6.1.2"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "write": "eleventy --serve",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy",
+    "dev": "run-p write sass:dev js:dev",
+    "prod": "npm run sass:prod && npm run js:build && npm run build",
+    "sass:dev": "npm run sass && npm-run-all sass-dev:*",
+    "sass:prod": "npm run sass && npm-run-all -p sass-prod:*",
+    "sass": "node-sass --output-style compressed _sass/ -o assets/css",
+    "sass-dev:watch": "chokidar '_sass/**/**/**/*.scss' -c 'npm run sass'",
+    "sass-prod:autoprefixer": "postcss assets/css/*.css --use autoprefixer --no-map -d assets/css",
+    "js:dev": "npm run js:build && npm run js:watch",
+    "js:watch": "chokidar '_javascript/*.js' -c \"npm run js:build\"",
+    "js:build": "cat _javascript/*.js > assets/javascript/main.js"
   }
 }

@@ -1,0 +1,97 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: strip-unit(type(line-height, tight));
+  margin: spacing(10) 0 spacing();
+  font-family: type(font-family, header);
+  font-weight: type(font-weight, header);
+
+  .post-content &:first-child {
+    margin-top: 0;
+  }
+}
+
+tiny {
+  font-size: type(font-size, tiny);
+}
+
+small {
+  font-size: type(font-size, small);
+}
+
+h6,
+p,
+ol,
+ul {
+  font-size: type(font-size, p);
+}
+
+h5 {
+  font-size: type(font-size, h5);
+}
+
+h4 {
+  font-size: type(font-size, h4);
+}
+
+h3 {
+  font-size: type(font-size, h3);
+}
+
+h2 {
+  font-size: type(font-size, h2);
+}
+
+h1 {
+  font-size: type(font-size, h1);
+}
+
+p,
+ol,
+ul,
+small,
+tiny {
+  margin-bottom: spacing(5);
+
+  line-height: strip-unit(type(line-height, normal));
+}
+
+ol,
+ul {
+  padding-left: spacing(6);
+
+  @include larger-than(md) {
+    padding-left: spacing(8);
+  }
+
+  ul,
+  ol {
+    margin-top: spacing();
+  }
+}
+
+strong {
+  font-weight: type(font-weight, bold);
+}
+
+li {
+  margin-bottom: spacing(2);
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  color: color(action, dark);
+}
+
+hr {
+  height: 3px;
+  margin: spacing(6) 0;
+
+  background-color: color(primary, darker);
+}
