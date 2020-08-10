@@ -73,7 +73,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("exocortex", "layouts/post.njk");
 
   eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("assets/**/*");
+  eleventyConfig.addPassthroughCopy("serviceworker.js");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
