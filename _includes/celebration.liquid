@@ -1,0 +1,29 @@
+{% assign type_class = type | replace: ' ', '-' | downcase | prepend: 'celebrations-layout__item--' %}
+
+<article class="celebration celebrations-layout__item {{ type_class }} pt-4 px-4 xl--pb-4 flex flex-column relative" style="background-image: url('/assets/images/celebrations/{{ image }}');">
+  <tiny class="block mb-2 italic">
+    {{ date | date: '%B %d, %Y' }}
+  </tiny>
+
+  {% if link %}
+    <a href="{{ link }}" target="_blank" rel="noopener">
+  {% endif %}
+
+  <h3 class="mt-0 text-h6">
+    {{ title }}
+  </h3>
+
+  {% if link %}
+    </a>
+  {% endif %}
+
+  <div class="celebrations__image flex-item" style="background-image: url('/assets/images/celebrations/{{ image }}');"></div>
+
+  <p class="my-2 text-small">
+    {{ description }}
+  </p>
+
+  <div class="celebration__type py-1 px-4 text-tiny text-center italic hidden-xl-down">
+    {{ type }}
+  </div>
+</article>

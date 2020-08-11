@@ -12,7 +12,7 @@
     </div>
 
     <div class="theme-switcher flex mb-4 sm--mb-0 text-tiny">
-      {% for theme in site.data.themes %}
+      {% for theme in themes %}
         <div class="theme-switcher__option flex flex-align-center {% unless forloop.last %}mr-2{% endunless %}">
           <input class="theme-switcher__input" type="radio" id="theme-{{ theme.name }}" name="theme-selector" value="{{ theme.name }}"\>
           <label class="theme-switcher__label inline-block px-3 py-1 capitalize border-radius-small bg-primary-darkest" for="theme-{{ theme.name }}">

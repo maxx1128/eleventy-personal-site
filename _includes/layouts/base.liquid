@@ -12,6 +12,9 @@
     <main>
       {{ content | safe }}
     </main>
+
+    {% include footer.liquid %}
+    {% include footerscripts.liquid %}
   </body>
 
   {% include serviceWorker.html %}
