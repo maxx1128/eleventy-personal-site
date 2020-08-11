@@ -53,7 +53,7 @@ date: "2018-11-05"
 external: true
 
 excerpt: "Seeing so many professional writers emerge on Dev.To has helped me see, and  accept, my casual blogger habits."
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 ```

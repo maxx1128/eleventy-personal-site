@@ -3,7 +3,7 @@ title      : "You Have no Right to an Uninformed Opinion"
 date       : 2017-02-13
 excerpt    : "Before you share an opinion on any topic, ask yourself the following questions"
 tags: ['mental health', 'philosophy']
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 Before you share an opinion on any topic, ask yourself the following questions.

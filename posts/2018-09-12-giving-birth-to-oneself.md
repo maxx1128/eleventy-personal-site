@@ -3,7 +3,7 @@ title: "How to Give Birth to Oneself"
 date:  2018-09-12
 excerpt: "Discovering ourselves means finding activities to fuel our productivity, empathy, and sense of empathy."
 tags: ['philosophy']
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 One favorite summary from my online notebook is the sleazy Trump University Playbook. It wasn't fun to write most of it. In some ways it even hurt.

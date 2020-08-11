@@ -5,7 +5,7 @@ excerpt: "Two months after redesigning my site, a big event makes me do it all o
 tags: ['design', 'career']
 image: may-1st-reboot.jpeg
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=3057364
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 While chatting with my front-end developers pals online, I explained the life cycle of a front-end dev's personal website:

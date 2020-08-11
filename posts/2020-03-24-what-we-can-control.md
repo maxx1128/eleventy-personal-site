@@ -5,7 +5,7 @@ excerpt: "With the number of confirmed coronovirus cases accelerating, I try to 
 image: 'control-amid-chaos.jpg'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=3022128'
 tags: ['mental health', 'coronavirus']
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 ## What I Can't Control

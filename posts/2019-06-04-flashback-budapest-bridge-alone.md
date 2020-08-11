@@ -4,7 +4,7 @@ date: "2019-06-04"
 excerpt: "A note I'd taken while abroad on my time in Hungary's capital, and learning to be happy alone as well as with others."
 image: 'budapest.jpg'
 tags: ['personal']
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 _I was digging through my online notebooks and found some journals from my time abroad. This one is from a trip to Budapest, Hungary's capital, really struck me. Like most people, loneliness has bothered me in some form or another, and this was about finding joy in life while alone. Sometimes it feels like I've forgotten this lesson, so I wanted to repost it here as a better reminder to myself._

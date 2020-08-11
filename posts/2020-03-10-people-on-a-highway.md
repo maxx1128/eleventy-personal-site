@@ -5,7 +5,7 @@ excerpt: "Watching cars pass on a highway captures one of the most important, if
 image: 'highway.jpg'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2928945'
 tags: ['philosophy']
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 You ever stand close enough to a highway to see each car going by? They go by so fast and we spare only a passing thought for each one. Each one is a person in a car, not worth any more thought.

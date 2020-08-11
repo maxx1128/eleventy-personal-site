@@ -5,7 +5,7 @@ excerpt: "I don't consider myself a tech ally, but have several ways I try to ac
 image: 'good-ally.jpg'
 tags: ['personal', 'tough stuff']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2502431'
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 I want to start this post by saying I don't consider myself a tech ally, and I'm not claiming to be in this post. I'd also prefer if no one said I was, even if they really believe it. [I agree with this post that allyship is something you do instead of become](https://dev.to/yechielk/im-yechiel-kalmenson-and-im-not-an-ally-3n7h), and claiming to be one would make me complacent.

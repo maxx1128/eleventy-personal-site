@@ -4,7 +4,7 @@ date: "2019-05-20"
 excerpt: "Refactoring code is a tricky business. This is a small example  of how fixing old CSS code creates even more problems to solve."
 image: 'css-refactor-backfires.png'
 tags: ['design', 'css']
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 A few weeks ago, [Dev.to's Jaqcue Schrag posted about refactoring the worst code she'd ever written](https://dev.to/jnschrag/refactoring-the-worst-code-i-ve-ever-written-42c7). I saw it as both an insight into solving old problems with new thinking, and a push to refactor old code of my own.

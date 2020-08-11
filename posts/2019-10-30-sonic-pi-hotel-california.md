@@ -5,7 +5,7 @@ excerpt: "Sonic Pi is an amazing music synth tool for turning code into melodies
 image: 'sonic-pi-hotel-california.jpg'
 tags: ['ruby']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=1904822'
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 I love writing all kinds of code - CSS, JavaScript, Ember, hacks to domestic and foreign restaurant databases, and Ruby. But one type of code I love and too often overlook is for [Sonic Pi](https://sonic-pi.net/). It's the open-source tool that turns Ruby-esque code into music. Yes, actual music, as you can see below.

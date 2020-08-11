@@ -1,0 +1,72 @@
+---
+layout: layouts/base.liquid
+---
+
+{% assign header_class = "" %}
+
+{% if image %}
+  {% assign header_class = header_class | append: " header--with-custom-image" %}
+  {% assign banner_image = "/assets/images/featured/" | append: image | prepend: site.url %}
+{% else %}
+  {% assign banner_image = false %}
+{% endif %}
+
+{% if date and postLabel != "Note" %}
+  {% assign has_date = true %}
+{% else %}
+  {% assign has_date = false %}
+{% endif %}
+
+{% if postLabel == "Exocortex" %}
+  {% assign isExocortex = true %}
+{% endif %}
+
+{% if postLabel == "Note" %}
+  {% assign header_class = header_class | append: " pt-2" %}
+{% else %}
+  {% assign header_class = header_class | append: " header--with-image py-3" %}
+{% endif %}
+
+{% if isExocortex %}
+  {% assign header_class = header_class | append: " header--exocortex" %}
+{% endif %}
+
+<header class="{{ header_class }} width-100" {% if banner_image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
+  <div class="header__text resp-max-width">
+    <div class="relative py-4">
+      {% if isExocortex %}
+        {% include exocortexBreadcrumb.html %}
+      {% else %}
+        {% if postLabel %}
+          <small class="block {% if postLabel == 'Note' %}mb-0{% else %}mb-2{% endif %} font-weight-bold">
+            {{ postLabel }}{% if has_date %} from {{ date | date: '%B %d, %Y' }}{% endif %}
+          </small>
+        {% endif %}
+      {% endif %}
+
+      <h1 class="my-0 text-h2">
+        {% if postLabel == "Note" %}
+          {{ date | date: '%B %d, %Y' }}
+        {% else %}
+          {{ title }}
+        {% endif %}
+      </h1>
+
+      {% if tagline %}
+        <p class="mb-0 mt-2 text-1xl">
+          {{ tagline }}
+        </p>
+      {% endif %}
+    </div>
+
+    {% if excerpt and excerpt != '' %}
+      <p class="py-0 mt-1 mb-2 text-small font-weight-light">
+        {{ excerpt }}
+      </p>
+    {% endif %}
+  </div>
+</header>
+
+<article id="content" class="post-content width-100 {% unless no-padding or postLabel == 'Note' %}py-4 sm--py-6 lg--mt-4{% endunless %} {% unless no-max-width %}resp-max-width{% endunless %}">
+  {{content}}
+</article>

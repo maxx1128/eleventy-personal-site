@@ -4,7 +4,7 @@ date: "2019-08-26"
 excerpt: "If you're a white man or otherwise privileged person reading someone's painful lived experiences, don't respond in these ways."
 tags: ['tough stuff']
 image: 'respond-painful-weather.jpg'
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 The React/JavaScript community had some heavy shocks this weekend. I'm not going to recap it all here, but I will note many white men (or otherwise privileged people) have given many bad responses. **They're responses I've given myself several times before being told they didn't help and/or made things worse.**

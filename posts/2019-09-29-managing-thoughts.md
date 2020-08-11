@@ -5,7 +5,7 @@ excerpt: "We live with our thoughts every day, so it's important to not let them
 image: 'managing-thoughts.jpeg'
 tags: ['mental health']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2554146'
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 We live with our thoughts all the time, and a surprising amount of time, they wind up being our worst enemy. Thoughts can be like horrible bullies when they get bad. They're hovering over us, know exactly what buttons to push, and on bad days they insult our mother. Now thoughts are for the obvious tasks of knowing and understanding things. But they can cause as much (if not more) to distract, mislead, or manipulate us down a bad path.

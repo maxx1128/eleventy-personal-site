@@ -1,0 +1,88 @@
+---
+layout: layouts/page.liquid
+title: Now
+---
+
+<p>
+  Work history and portfolios only tell someone so much. So here's some info about what I'm doing <strong>right now</strong>.
+</p>
+
+<h2>
+  Coding
+</h2>
+
+<p>
+  I'm working at SeeClickFix, a civic tech app that lets citizens report municipal issues to local governments. I help develop and manage the front-end of the web apps. This includes managing our design system, bringing us in line with federal accessibility standards, and building out UIs for pages and components.
+</p>
+
+<p>
+  My career goals now are to build my JavaScript, Ruby, and accessibility knowledge and skills. I've found I learn best by reading good books and building tools I or others can use, whether they're serious or silly. A lot of that learning is channeled into either my personal website or anything with manga.
+</p>
+
+<h2>
+  Writing
+</h2>
+
+<p>
+  I'm writing many blog posts at any given time, most of which focus on JavaScript, web accessibility, general programming, or general topics like mental health and life lessons. I don't have any long-term goals for my blogging. I do it because it helps me build on and retain knowledge, and it helps share this info with others.
+</p>
+
+<p>
+  Plus, when I do it right, it's just fun. When I do it wrong...that's another matter.
+</p>
+
+<h2>
+  Reading
+</h2>
+
+<p>
+  I'm working through lots of programming and career articles on my list. <a href="https://www.notion.so/maxantonucci/Waiting-Articles-4bb0d6d09ebb48829d46c032251a32f8" target="_blank" rel="noopener">Here are the articles I'm going to read and potentially take notes on.</a> For more in-depth knowledge, I try to find time to read through Heydon Pickering's Inclusive Design Patterns and Inclusive Components books, or technical books on Ruby and object-oriented programming.
+</p>
+
+<p>
+  I have a long list of "for fun" books I've purchased from the library, book sales, book stores, and my book dealers. They range from fantasy dystopias, John Grisham legal thrillers, creative nonfiction, and political satire. <a href="https://www.notion.so/d277a8faa5ea43ada746053a89023be8?v=583bf0cd8aed4e868055d334413e82b3" target="_blank" rel="noopener">If you're curious about my full list you can actually see it here.</a>
+</p>
+
+<h2>
+  Playing
+</h2>
+
+<h3>
+  During the Pandemic
+</h3>
+
+<p>
+  While we're staying at home and socially distancing, I've fallen back on video games when I don't feel like reading. When I don't feel like staring at a screen, I play some music or podcasts and do some cartoon drawing. I've drawn on and off for over a decade, and somehow also wind up coming back to it.
+</p>
+
+<h3>
+  Before the Pandemic
+</h3>
+
+<p>
+  In my spare time I often visit <a href="https://www.makehaven.org/" target="_blank">MakeHaven</a> to work on craft and art projects. Most involve laser and vinyl cutting, although I'm starting to include more art materials like acryllics. I enjoy it since hands-on work is a nice break from coding and writing, and is a fun way to express myself and my love of anime artwork. The MakeHaven community is also amazing and supportive to all its makers.
+</p>
+
+<ul class="flex mb-2 flex-column sm--flex-row sm--flex-wrap flex-align-center list-reset">
+  {% for item in site.data.makehavenItems %}
+    <li class="width-50 sm--width-33 p-2 mb-0">
+      <img src="/assets/images/now/makehaven/{{ item.filename }}" alt="{{ item.altText }}">
+    </li>
+  {% endfor %}
+</ul>
+
+<h2>
+  Living
+</h2>
+
+<p>
+  I'm residing in a cozy apartment in New Haven, CT. I'm enjoying the pizza and trying to visit all the bookstores, so I don't have plans to move anytime soon. I'm grateful and lucky to live alone and within walking distance of my job.
+</p>
+
+<h2>
+  Smuggling
+</h2>
+
+<p>
+  I'm not telling if you're not asking. I'll only say the bunny isn't late yet.
+</p>

@@ -5,7 +5,7 @@ excerpt: "Selfishness can be bad in many contexts, but embracing it in the right
 image: 'giving-too-much.png'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2353876'
 tags: ['mental health']
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 Self-care pops up in my conversations a lot, especially among web developers. I think it's out of necessity due to [what American culture does to burn out the youth](https://www.buzzfeednews.com/article/annehelenpetersen/millennials-burnout-generation-debt-work), but that's for another day.

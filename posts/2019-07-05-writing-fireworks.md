@@ -4,7 +4,7 @@ date: "2019-07-05"
 excerpt: "The Fourth of July reminded me that powerful writing and fireworks have some big things in common."
 tags: ['writing']
 image: 'writing-firework.jpg'
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 Yesterday was the Fourth of July, and I'd walked a few blocks to watch the night's fireworks. I was feeling frustrated about not finding as much inspiration for what I wrote. My writing was feeling more like a chore and less like a passion. I wanted writing something to feel as good as many people felt watching multicolored explosions in the night sky.

@@ -4,7 +4,7 @@ date: "2019-12-01"
 excerpt: "Climate change is complex and dangerous, but some of the key (and too often overlooked) drivers are our industrial cultures."
 image: 'culture-climate-change.jpg'
 tags: ['tough stuff', 'other']
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 I've been reading lots of climate change news lately, and I've noticed something. Reports talk about major carbon sources like fossil fuels and factory farming. But mainstream news sources rarely draw the seemingly obvious line from "these actions are damaging and unsustainable" to "we should stop them to save the environment."

@@ -5,7 +5,7 @@ excerpt: "Sheltering in place made me realize how much I miss many people in my 
 image: "missing-people-meghan.png"
 featured_image_link: "https://safebooru.org/index.php?page=post&s=view&id=2545555"
 tags: ["coronavirus", "tough stuff"]
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 While I've mostly adjusted well to sheltering in place, some parts have been tough. I miss socializing and crafting at MakeHaven. I miss visiting bookstores downtown. I miss sitting on other people's comfortable chairs, although I ordered some bean bags that may help.

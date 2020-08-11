@@ -5,7 +5,7 @@ excerpt: "Life is full of distractions that threaten our sense of identity, espe
 image: "defend-against-distractions.jpg"
 featured_image_link: "https://safebooru.org/index.php?page=post&s=view&id=3070218"
 tags: ["coronavirus", "mental health"]
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 The book "13 Things Mentally Strong People Don't Do" has lots of good advice, but trick #11 always stuck with me. The author argues many people, when they're alone, take it as a cue to break out the television or video games. They're trying to escape their worries and silence important thoughts, like our life goals or our stress's root causes. They're like mental goblins, running into our brains and knocking over our thoughts before they're built into something meaningful. All while leaving behind disgusting messes you don't want to look too closely at. But a mentally strong person accepts this silence, muses over these topics, and records these thoughts before they forget them. Our mind's constructs are safe from the goblins, along with our mind's carpets.

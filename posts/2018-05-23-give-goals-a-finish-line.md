@@ -3,7 +3,7 @@ title: "Give Your Goals a Finish Line"
 date:  2018-05-23
 excerpt: "Inspirational-sounding goals seem good, but have gotten me nowhere. Measurable goals force me to step up and try."
 tags: ['mental health']
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 For much of my life I've set goals I thought were good:

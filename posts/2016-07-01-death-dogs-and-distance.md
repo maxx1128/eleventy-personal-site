@@ -4,7 +4,7 @@ date:   2016-07-01
 excerpt: Being so close to death is terrifying, but being far away from it is even worse.
 image: death-dogs-distance.png
 tags: ['personal', 'tough stuff']
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 I've never been scared of death itself, only the times where it's on the horizon.

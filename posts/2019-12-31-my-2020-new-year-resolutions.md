@@ -5,7 +5,7 @@ excerpt: "In 2019 I focused on numbers for doing better in work and play. That f
 image: '2019-in-review.jpg'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2440928'
 tags: ['personal', 'tough stuff', 'career']
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 With 2019 coming to a close, there are a few major events I could recount.

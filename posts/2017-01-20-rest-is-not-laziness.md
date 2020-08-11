@@ -5,7 +5,7 @@ excerpt    : Don't feel lazy and undeserving for taking the time to rest. One ca
 tags       : ['mental health']
 image      : rest-not-laziness.jpeg
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=3021030'
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 **Rest is not laziness. Rest is long-term productivity.**

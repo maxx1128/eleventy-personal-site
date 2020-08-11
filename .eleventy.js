@@ -68,9 +68,9 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob("./exocortex/**/*.md").reverse();
   });
 
-  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
-  eleventyConfig.addLayoutAlias("notes", "layouts/post.njk");
-  eleventyConfig.addLayoutAlias("exocortex", "layouts/post.njk");
+  // eleventyConfig.addLayoutAlias("post", "layouts/post.liquid");
+  // eleventyConfig.addLayoutAlias("notes", "layouts/post.liquid");
+  // eleventyConfig.addLayoutAlias("exocortex", "layouts/post.liquid");
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("assets/**/*");

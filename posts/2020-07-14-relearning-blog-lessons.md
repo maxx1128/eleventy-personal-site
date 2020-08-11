@@ -5,7 +5,7 @@ excerpt: "Sometimes the only way to remember lessons in blog posts is to email t
 image: "relearning-blog-lessons.jpg"
 featured_image_link: "https://safebooru.org/index.php?page=post&s=view&id=2075257"
 tags: ["mental health", "writing"]
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 The main reason I blog is to remember and share my life lessons (and get my thoughts out so my head doesn't explode). It's not always easy, between finding time to do it, not tearing apart my laptop after the first draft, and cringing over grammar mistakes notice months after posting.

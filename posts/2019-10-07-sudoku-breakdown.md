@@ -5,7 +5,7 @@ excerpt: "A CodeWars challenge had me checking if Sudoku puzzles were solved cor
 image: 'sudoku-javascript.png'
 tags: ['javascript']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=1355200'
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 A favorite CodeWars challenge of mine is the ever-wonderful "check my sudoku" puzzle. It starts with a large array of arrays representing a completed Sudoku puzzle. You need to function that checks if it's correct or not. It's complex yet understandable and requires a good amount of creativity.

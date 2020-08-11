@@ -1,9 +1,9 @@
 {
   "title": "Maxwell Antonucci",
   "url": "https://www.maxwellantonucci.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "description": "Journalist turned full-time coder, part-time ponderer.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Journalist turned full-time coder, part-time ponderer.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://example.com/"

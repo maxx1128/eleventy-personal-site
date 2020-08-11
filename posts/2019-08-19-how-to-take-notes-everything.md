@@ -5,7 +5,7 @@ excerpt: "Find the approach to taking consistent notes on books and articles to 
 image: 'how-take-notes-everything.png'
 tags: ['writing', 'career']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2815426'
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 I've done lots of writing lately, but almost none of it has gone towards blog posts. Instead, it's gone towards my online notebook, now called the more badass-sounding [Exocortex](/exocortex.html). I've read of it being called a "knowledge notebook" or a "personal wiki," which mean the same but aren't as badass.

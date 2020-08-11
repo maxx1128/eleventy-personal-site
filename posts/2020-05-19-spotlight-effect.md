@@ -5,7 +5,7 @@ excerpt: "A man leaving a car in the middle of the road to greet someone reminde
 image: "spotlight-effect.jpg"
 featured_image_link: "https://safebooru.org/index.php?page=post&s=view&id=572479"
 tags: ["mental health"]
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 I once saw a man driving on a busy road stop at a red light, leave their car, and walk to the car behind them. The other driver opened the window and they exchanged a few greetings. The first driver walked back to his car just in time for the light to turn green. They both drove on as though nothing happened. It's even more impressive when you remember they did this during a global pandemic.

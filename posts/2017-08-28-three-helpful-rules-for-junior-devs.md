@@ -5,7 +5,7 @@ excerpt: "Part of being a junior dev is controlling the overwhelming pressure I 
 tags: ['career']
 image: helpful-rules-junior-devs.jpeg
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=2930844
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 Much as I love coding, being a junior developer has often felt horrible. For so much of it, the following questions (if not more) have been crowding my mind:

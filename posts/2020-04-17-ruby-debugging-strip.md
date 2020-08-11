@@ -5,7 +5,7 @@ excerpt: "A Ruby program I wrote hit a tough snag when trying to download info o
 image: "ruby-debug.png"
 featured_image_link: "https://safebooru.org/index.php?page=post&s=view&id=2856814"
 tags: ["ruby", "anime"]
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 After banging my head against the computer screen for hours, I finally solved a persistent bug by stripping.

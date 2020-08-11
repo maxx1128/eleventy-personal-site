@@ -3,7 +3,7 @@ title      : "Your Attention is a Currency"
 date       : 2017-12-21
 excerpt    : "Today our attention is in more demanded, and more easily wasted, than our money."
 tags: ['mental health']
-layout: layouts/post.njk
+layout: layouts/post.liquid
 ---
 
 Something I always marvel at with today's society is just how in-demand everyone's attention is. In many cases it's in more demanded, and more easily wasted, than our money.
