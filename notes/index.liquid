@@ -1,0 +1,28 @@
+---
+layout: layouts/page.liquid
+title: Notes
+pagination:
+  data: collections.notes
+  size: 15
+  alias: notes
+---
+
+<p>
+  Stuff I've written will go here.
+</p>
+
+<section>
+  {% for note in notes %}
+    <article>
+      <h2>
+        <a href="{{ note.url | url }}">
+          {{ note.data.date | date: '%B %d, %Y' }}
+        </a>
+      </h2>
+
+      {{ note.templateContent }}
+    </article>
+  {% endfor %}
+</section>
+
+{% include pagination.liquid %}

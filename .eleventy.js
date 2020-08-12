@@ -60,6 +60,10 @@ module.exports = function(eleventyConfig) {
     return [...tagSet];
   });
 
+  eleventyConfig.addCollection("posts", function (collection) {
+    return collection.getFilteredByGlob("./posts/*.md").reverse();
+  });
+
   eleventyConfig.addCollection("notes", function (collection) {
     return collection.getFilteredByGlob("./notes/*.md").reverse();
   });

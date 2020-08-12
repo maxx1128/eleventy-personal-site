@@ -1,12 +1,36 @@
 ---
 layout: layouts/page.liquid
 title: Writing
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
 ---
 
 <p>
   Stuff I've written will go here.
 </p>
 
-<p>
-  What's on the current homepage will go here instead? Recent articles from all categories, and then links to the larger archives?
-</p>
+<ol>
+  {% for post in posts %}
+    <li>
+      <a href="{{ post.url | url }}">
+        {{ post.data.title }}
+      </a>
+      <ul>
+        {% for tag in post.data.tags %}
+          {% if tag != "posts" %}
+            {% assign tagUrl = "/tags/" | append: tag  %}
+            <li>
+              <a href="{{ tagUrl | url }}" class="post-tag">
+                {{ tag }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ol>
+
+{% include pagination.liquid %}

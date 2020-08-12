@@ -1,0 +1,43 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+    - tagList
+  addAllPagesToCollections: true
+layout: layouts/page.liquid
+eleventyComputed:
+  title: Tagged "{{ tag }}"
+permalink: /tags/{{ tag }}/
+---
+
+<h1>Tagged “{{ tag }}”</h1>
+
+{% assign posts = collections[tag] | reverse %}
+
+{% for post in posts %}
+  <li>
+    <a href="{{ post.url | url }}">
+      {{ post.data.title }}
+    </a>
+    <ul>
+      {% for tag in post.data.tags %}
+        {% if tag != "posts" %}
+          {% assign tagUrl = "/tags/" | append: tag  %}
+          <li>
+            <a href="{{ tagUrl | url }}" class="post-tag">
+              {{ tag }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </li>
+{% endfor %}
+
+<p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>

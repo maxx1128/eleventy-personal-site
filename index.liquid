@@ -37,12 +37,14 @@ title: Homepage
   </p>
 </div>
 
-<section class="resp-max-width card-layout card-layout--home mb-4">
+<section class="resp-max-width mb-4">
   <ul>
     {% assign recent_posts = collections.posts | reverse %}
     {% for post in recent_posts limit: 3 %}
       <li>
-        {{ post.data.title }}
+        <a href="{{ post.url }}">
+          {{ post.data.title }}
+        </a>
       </li>
     {% endfor %}
   </ul>
@@ -62,12 +64,17 @@ title: Homepage
   </p>
 </div>
 
-<section id="notes">
+<section id="notes" class="resp-max-width mb-4">
   <ul>
     {% assign notes = collections.notes %}
     {% for note in notes limit: 3 %}
       <li>
-        {{ note.data.date | date: '%B %d, %Y' }}
+        <a href="{{ note.url }}">
+          {{ note.data.date | date: '%B %d, %Y' }}
+        </a>
+      </li>
+      <li>
+        {{ note.templateContent }}
       </li>
     {% endfor %}
   </ul>
