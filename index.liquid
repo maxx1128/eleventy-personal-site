@@ -39,7 +39,7 @@ title: Homepage
 
 <section class="resp-max-width mb-4">
   <ul>
-    {% assign recent_posts = collections.posts | reverse %}
+    {% assign recent_posts = collections.posts %}
     {% for post in recent_posts limit: 3 %}
       <li>
         <a href="{{ post.url }}">

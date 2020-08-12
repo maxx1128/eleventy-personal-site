@@ -1,0 +1,19 @@
+{% assign note_index = index | default: 1 %}
+
+<article class="note-styler note-coloring--{{ note_index }}">
+  <div class="resp-max-width py-4">
+    <h3 class="mt-0">
+      {% if url %}
+        <a href="{{ url }}">
+      {% endif %}
+
+        {{ date | date: '%B %d, %Y' }}
+
+      {% if url %}
+        </a>
+      {% endif %}
+    </h3>
+
+    {{ content }}
+  </div>
+</article>

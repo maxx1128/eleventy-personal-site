@@ -2,27 +2,32 @@
 layout: layouts/page.liquid
 title: Notes
 tagline: Personal quips and nonsensical snippets
+no-max-width: true
+contentType: "Page"
 pagination:
   data: collections.notes
   size: 15
   alias: notes
 ---
 
-<p>
-  Stuff I've written will go here.
-</p>
+<div class="resp-max-width">
+  <p>
+    Sometimes I want to write things that can't work as a blog post, I don't want to lose amid Twitter, or don't make any sense. For all these stream of conscious, I have my Notes section. They have lots of colors to match how across the board they get.
+  </p>
+
+  <p>
+    Keep scrolling to read my notes in order. <a class="hidden" id="random-note-link">Or surprise yourself with a random note.</a>
+  </p>
+</div>
 
 <section>
   {% for note in notes %}
-    <article>
-      <h2>
-        <a href="{{ note.url | url }}">
-          {{ note.data.date | date: '%B %d, %Y' }}
-        </a>
-      </h2>
-
-      {{ note.templateContent }}
-    </article>
+    {% include note.liquid,
+      date: note.data.date
+      content: note.templateContent
+      url: note.url
+      index: forloop.index
+    %}
   {% endfor %}
 </section>
 

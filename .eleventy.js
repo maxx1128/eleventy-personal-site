@@ -73,7 +73,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.liquid");
-  // eleventyConfig.addLayoutAlias("notes", "layouts/post.liquid");
+  eleventyConfig.addLayoutAlias("notes", "layouts/note.liquid");
   // eleventyConfig.addLayoutAlias("exocortex", "layouts/post.liquid");
 
   eleventyConfig.addPassthroughCopy("img");
