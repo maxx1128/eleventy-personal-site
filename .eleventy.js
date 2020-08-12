@@ -72,7 +72,7 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob("./exocortex/**/*.md").reverse();
   });
 
-  // eleventyConfig.addLayoutAlias("post", "layouts/post.liquid");
+  eleventyConfig.addLayoutAlias("post", "layouts/post.liquid");
   // eleventyConfig.addLayoutAlias("notes", "layouts/post.liquid");
   // eleventyConfig.addLayoutAlias("exocortex", "layouts/post.liquid");
 
