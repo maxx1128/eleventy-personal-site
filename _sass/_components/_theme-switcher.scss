@@ -19,14 +19,9 @@
 }
 
 .theme-switcher__label {
-  color: color(action, lighter);
   border: 2px solid rgba(0, 0, 0, 0);
 
   &:hover {
     cursor: pointer;
-  }
-
-  .theme-dark & {
-    color: color(action, darker);
   }
 }

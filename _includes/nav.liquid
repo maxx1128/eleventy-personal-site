@@ -1,8 +1,8 @@
-<nav class="nav__header width-100 flex flex-column mx-auto pb-1 text-mono-white bg-primary-darkest">
+<nav class="nav__header width-100 flex flex-column mx-auto pb-1 text-mono-black bg-primary-lightest">
   <div class="resp-max-width flex flex-column sm--flex-row flex-justify-between">
     <div class="py-2 flex flex-column flex-align-start">
       <h1 class="my-0 mr-4 text-h6">
-        <a class="text-mono-white" href="{% if page.url == '/' %}#content{% else %}/{% endif %}">
+        <a class="text-mono-black" href="{% if page.url == '/' %}#content{% else %}/{% endif %}">
           Max Antonucci
         </a>
       </h1>
@@ -15,7 +15,7 @@
       {% for theme in themes %}
         <div class="theme-switcher__option flex flex-align-center {% unless forloop.last %}mr-2{% endunless %}">
           <input class="theme-switcher__input" type="radio" id="theme-{{ theme.name }}" name="theme-selector" value="{{ theme.name }}"\>
-          <label class="theme-switcher__label inline-block px-3 py-1 capitalize border-radius-small bg-primary-darkest" for="theme-{{ theme.name }}">
+          <label class="theme-switcher__label inline-block px-3 py-1 capitalize text-action-darker border-radius-small bg-primary-lightest" for="theme-{{ theme.name }}">
             {{ theme.name }}
           </label>
         </div>
@@ -23,7 +23,7 @@
     </div>
   </div>
 
-  <div class="nav__main-menu-wrapper bg-primary-darker">
+  <div class="nav__main-menu-wrapper bg-primary-lighter">
     <ul id="navigation-menu" class="nav__main-menu resp-max-width mb-0 py-1 md--py-0 flex flex-justify-between list-reset">
       {% for menu_item in menu %}
 
@@ -54,7 +54,7 @@
           {% endif %}
 
           <li class="inline-block mb-0 text-center {% unless forloop.last %}mr-4{% endunless %}">
-            <a class="block p-2 text-mono-white text-small {% if forloop.first == true %}md--pl-0{% elsif forloop.last == true %}md--pr-0{% endif %} {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{% endif %}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
+            <a class="block p-2 text-mono-black text-small {% if forloop.first == true %}md--pl-0{% elsif forloop.last == true %}md--pr-0{% endif %} {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{% endif %}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
               {{ menu_item.name }}
             </a>
           </li>
