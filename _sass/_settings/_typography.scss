@@ -16,7 +16,7 @@ $g-modular-scale--ratio: 1.25; // Major third
 
 // Font families
 $g-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-$g-font-family-header: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$g-font-family-header: 'Gill Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 $g-font-family-mono: "Courier New", "Consolas", "Courier", monospace;
 
 :root {
@@ -36,7 +36,7 @@ $g-font-family-mono: "Courier New", "Consolas", "Courier", monospace;
   --font-size-tiny: #{decimal-round(modular-scale(-2), 2)};
   --font-size-xtiny: #{decimal-round(modular-scale(-3), 2)};
 
-  --font-weight-header: 800;
+  --font-weight-header: 700;
   --font-weight-bold: 700;
   --font-weight-base: 300;
   --font-weight-light: 200;
