@@ -64,20 +64,17 @@ title: Homepage
   </p>
 </div>
 
-<section id="notes" class="resp-max-width mb-4">
-  <ul>
-    {% assign notes = collections.notes %}
-    {% for note in notes limit: 3 %}
-      <li>
-        <a href="{{ note.url }}">
-          {{ note.data.date | date: '%B %d, %Y' }}
-        </a>
-      </li>
-      <li>
-        {{ note.templateContent }}
-      </li>
-    {% endfor %}
-  </ul>
+<section id="notes">
+  {% for note in collections.notes reversed %}
+    {% if forloop.index < 3 %}
+      {% include note.liquid,
+        date: note.data.date
+        content: note.templateContent
+        url: note.url
+        index: forloop.index
+      %}
+    {% endif %}
+  {% endfor %}
 </section>
 
 <div class="resp-max-width py-4">

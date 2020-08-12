@@ -6,6 +6,12 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
+const hideFutureItems = (item) => {
+  let now = new Date().getTime();
+  if(now < item.date.getTime()) return false;
+  return true;
+}
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -61,11 +67,15 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addCollection("posts", function (collection) {
-    return collection.getFilteredByGlob("./posts/*.md").reverse();
+    return collection.getFilteredByGlob("./posts/*.md")
+      .filter(hideFutureItems)
+      .reverse();
   });
 
   eleventyConfig.addCollection("notes", function (collection) {
-    return collection.getFilteredByGlob("./notes/*.md").reverse();
+    return collection.getFilteredByGlob("./notes/*.md")
+      .filter(hideFutureItems)
+      .reverse();
   });
 
   eleventyConfig.addCollection("exocortex", function (collection) {
