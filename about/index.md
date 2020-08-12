@@ -1,6 +1,7 @@
 ---
 layout: layouts/page.liquid
 title: About Me
+tagline: The story of my life, give or take a few years
 ---
 
 Who am I exactly? There's several ways to answer that.
