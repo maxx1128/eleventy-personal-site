@@ -5,7 +5,6 @@ excerpt: "With so much to keep learning as a junior dev, I've remembered not to 
 tags: ['career']
 image: take-notes-everything.jpeg
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=2271799
-layout: layouts/post.liquid
 ---
 
 A new favorite book of mine is ["You Are Not So Smart" by David McRaney](https://www.amazon.com/You-Are-Not-So-Smart/dp/1592407366). It lists dozens of common cognitive mistakes humans make constantly, ranging from how we disorganize social relationships, misinterpret the world around us, and invent fake motivations and memories.

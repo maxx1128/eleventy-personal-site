@@ -5,7 +5,6 @@ excerpt: "I've (mostly) left Twitter for over two weeks. The effects have ranged
 image: 'effects-twitter-leaving.jpg'
 tags: ['tough stuff', 'writing']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2664375'
-layout: layouts/post.liquid
 ---
 
 Nearly two weeks ago I chose to unplug from Twitter. Since then, aside from cross-posts, and content I see from my Feedbin, I've spent virtually no time directly on Twitter sites.

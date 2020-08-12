@@ -5,7 +5,6 @@ excerpt: "Being insecure about my career and skills likely won't change anytime 
 image: 'insecure-programmer.jpg'
 tags: ['career', 'personal', 'mental health']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=1545946'
-layout: layouts/post.liquid
 ---
 
 [The 2019 Codeland conference](https://codelandconf.com/) is tomorrow. Amid the excitement, I've been thinking about my career.

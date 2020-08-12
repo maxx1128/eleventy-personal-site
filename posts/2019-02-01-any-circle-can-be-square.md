@@ -3,7 +3,6 @@ title: "Any Circle Can Be a Square"
 date: 2019-02-01
 excerpt: "Look at anything from a narrow enough perspective, and it can be whatever your mind wants."
 tags: ['philosophy']
-layout: layouts/post.liquid
 ---
 
 One part of a useful book, ["How Not to be Wrong: The Power of Mathematical Thinking"](https://www.google.com/aclk?sa=l&ai=DChcSEwin75XQn5jgAhXInrMKHTx-C40YABADGgJxbg&sig=AOD64_1vurcKpysMAylCFcat6FVpP_QpJQ&adurl=&ctype=5&q=){:target="_blank"} always stuck with me. It was a section about circles.

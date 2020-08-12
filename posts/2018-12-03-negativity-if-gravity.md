@@ -3,7 +3,6 @@ title: "Negativity is Like Gravity"
 date:  2018-12-03
 excerpt: "My mind's first reaction is often negative, and I try to work around these carefully so they don't pull me down."
 tags: ['mental health']
-layout: layouts/post.liquid
 ---
 
 My mind's first reaction to tough events is almost always negative. It's not hard to understand why, since negative thinking is easier on my mind:

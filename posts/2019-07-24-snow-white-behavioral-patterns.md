@@ -5,7 +5,6 @@ excerpt: "A beginning coder's guide to the other half of behavioral design patte
 image: 'snow-white-behavioral.jpeg'
 tags: ['javascript', 'Design Pattern Fairy Tales']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=745684'
-layout: layouts/post.liquid
 ---
 
 Welcome to the third entry in my “Design Pattern Fairy Tales” series! It aims to explain design patterns in a more accessible way - that is, fairy tale metaphors.

@@ -3,7 +3,6 @@ title: "My 3/15 Week in Lessons: Embrace the Play"
 date: "2019-03-15"
 excerpt: "This week was learning about balance - balance of work and play, and balance of explore and exploit."
 tags: ['career']
-layout: layouts/post.liquid
 ---
 
 While this week was mostly typical for what I learned, the biggest lesson came just moments ago. I've learned I'm officially an adult!

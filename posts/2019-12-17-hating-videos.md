@@ -5,7 +5,6 @@ excerpt: "A Sunday video game session put me in a terrible mood, and made me rea
 image: 'hating-videos.jpg'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=575236'
 tags: ['mental health', 'personal']
-layout: layouts/post.liquid
 ---
 
 Last Sunday started on a good note and ended on a miserable one. The good note was waking up earlier, showering and getting dressed. The bad note began when I started what I'd planned to be a brief video game session. Fast forward five hours, and I'd covered both video games and some "Let's Play" videos without much else.

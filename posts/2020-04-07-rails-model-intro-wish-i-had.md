@@ -5,7 +5,6 @@ excerpt: "Ruby on Rails is a great web app framework, but it's tough to learn fo
 image: 'rails-model-intro.jpg'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2904099'
 tags: ['ruby', 'Intros I Wish I Had']
-layout: layouts/post.liquid
 ---
 
 As the pandemic rages on, I need to distract myself. What better way than by diving into some Ruby on Rails? I focused entirely on front-end early in my career, but have come to enjoy Ruby and Ruby on Rails for the back-end. Ruby's clear syntax coupled with Rails' convention over configuration makes it a joy to code with. I still have much to learn, but all this makes the learning fun!

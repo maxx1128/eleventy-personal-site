@@ -5,7 +5,6 @@ excerpt: "Working on my personal site has helped keep me sane in quarantine. Thi
 image: "restyled-code-blocks.png"
 featured_image_link: "https://safebooru.org/index.php?page=post&s=view&id=2706841"
 tags: ["css", "design"]
-layout: layouts/post.liquid
 ---
 
 To stay sane in quarantine, I've been busying myself with updates to my site. So far I've done the following:

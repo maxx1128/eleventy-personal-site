@@ -3,7 +3,6 @@ title: "My 3/8 Week in Lessons: Please Mansplain that to Me"
 date: "2019-03-08"
 excerpt: "This weeks lessons cover how men can avoid mansplaining, avoiding JavaScript Data Mutation, making smaller PRs, and not being a jerk on International Womens Day."
 tags: ['career']
-layout: layouts/post.liquid
 ---
 
 Happy International Women's Day, everyone!

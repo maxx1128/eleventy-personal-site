@@ -4,7 +4,6 @@ date         : 2017-06-21
 excerpt      : All web developers will fight Impostor Syndrome at some point, and find their own way to fight back.
 image : fighting-off-imposter-syndrome.jpg
 tags: ['career', 'mental health']
-layout: layouts/post.liquid
 ---
 
 Many things can be reliably said about almost all web developers:

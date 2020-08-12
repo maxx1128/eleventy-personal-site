@@ -5,7 +5,6 @@ excerpt: "A beginning coder's guide to structural design patterns with an altern
 image: 'cinderella-structural.jpeg'
 tags: ['javascript', 'Design Pattern Fairy Tales']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2510905'
-layout: layouts/post.liquid
 ---
 
 Welcome to the fourth entry in my “Design Pattern Fairy Tales” series! It aims to explain design patterns in a more accessible way - that is, fairy tale metaphors.

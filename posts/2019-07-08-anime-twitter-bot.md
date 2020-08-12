@@ -5,7 +5,6 @@ excerpt: "After weeks of looking for a workable approach, I finally build a Node
 image: 'twitter-bot.jpg'
 tags: ['javascript', 'anime']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=947559'
-layout: layouts/post.liquid
 ---
 
 A few months ago I tweeted this absolutely true statement.

@@ -3,7 +3,6 @@ title: "Individuality Is A Job"
 date:  2018-06-10
 excerpt: "Is uniqueness something natural for us, or does it take work?"
 tags: ['philosophy', 'mental health']
-layout: layouts/post.liquid
 ---
 
 Is uniqueness something natural for us, or does it take work?

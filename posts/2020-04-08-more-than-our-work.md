@@ -5,7 +5,6 @@ excerpt: "In a culture hyperfocused on productivity and economics, we should rem
 image: 'more-than-our-work.jpg'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2608680'
 tags: ['tough stuff', 'mental health', 'coronavirus']
-layout: layouts/post.liquid
 ---
 
 The Coronavirus is still spreading and peaking, and most of us are stuck inside. This seems easy, but we're inside while under extra constant stress and anxiety for ourselves, our loved ones, our countries, and the world itself.

@@ -3,7 +3,6 @@ title: "Three Lessons From a Luxury Vacation"
 date:  2018-09-30
 excerpt: "Three useful lessons taken away from my first, and possibly last, actual luxury vacation"
 tags: ['personal']
-layout: layouts/post.liquid
 ---
 
 In August I did the unthinkable - I went on vacation to an all-inclusive resort. It's unthinkable for someone with so little self-confidence to think they deserved luxury, and so simple-minded they'd be happy with a vacation to a vineyard and a few bookstores.

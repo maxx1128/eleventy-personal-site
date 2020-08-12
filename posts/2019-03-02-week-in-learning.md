@@ -3,7 +3,6 @@ title: "My Week in Lessons for 3/1"
 date: "2019-03-01"
 excerpt: "My first (of hopefully many) weekly lessons learned covers brittle tests, complex components, stupid questions, and existential emotions."
 tags: ['career']
-layout: layouts/post.liquid
 ---
 
 My biggest lessons in testing, writing, humanity, and [anime-inspired woodblocks](https://www.maxwellantonucci.com/notes/2019-02-22.html) eventually become posts on my site. But each week, I learn and relearn lots of little things that never make the cut. They can be through work at my job, books I read, random thoughts implanted by the lizard people, or Twitter, but they rarely go on to become full-on posts and fall by the mental wayside.

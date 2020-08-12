@@ -4,7 +4,6 @@ date         : 2017-12-30
 excerpt      : "It's amazing how many worries vanish by thinking 'I have the benefit of not caring what they think.'"
 image        : fromm-answer-themselves.jpeg
 tags: ['mental health', 'philosophy']
-layout: layouts/post.liquid
 ---
 
 It's amazing how many worries of mine vanish by thinking **"I have the benefit of not caring what they think."**

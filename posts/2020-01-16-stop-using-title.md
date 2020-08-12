@@ -4,7 +4,6 @@ date: "2020-01-16"
 excerpt: "Title is an HTML attribute you can technically use but never should. For the sake of your website, health, and future children. Escape it while you can."
 image: 'stop-title.jpg'
 tags: ['web accessibility']
-layout: layouts/post.liquid
 ---
 
 I'd like to talk about `title`. Hopefully for the last time.

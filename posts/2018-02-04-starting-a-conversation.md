@@ -3,7 +3,6 @@ title: "Don't Just 'Start a Conversation'"
 date:  2018-02-06
 excerpt: "People 'just trying to start a conversation' are never worth listening to."
 tags: ['philosophy', 'mental health']
-layout: layouts/post.liquid
 ---
 
 * "I'm just trying to start a conversation."

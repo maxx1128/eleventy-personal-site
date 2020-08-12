@@ -5,7 +5,6 @@ excerpt: "Nickel and Dimed is a must-read looking at the struggles the working p
 image: 'nickel-and-dimed.png'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=3014557'
 tags: ['tough stuff']
-layout: layouts/post.liquid
 ---
 
 ["Nickel and Dimed"](https://www.amazon.com/Nickel-Dimed-Not-Getting-America/dp/0312626681) has been on my "To Read" list for a long time. It details a reporter's firsthand research into the working poor by living that life. In several months, the author works as a waitress, a care assistant, a maid, and a retail worker. All while balancing food, housing, transport, and life.

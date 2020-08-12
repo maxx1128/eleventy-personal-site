@@ -5,7 +5,6 @@ excerpt: "A beginning coder's guide to half of the behavioral design patterns wi
 image: 'goldilocks-three-behavioral-patterns.jpg'
 tags: ['javascript', 'Design Pattern Fairy Tales']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2692747'
-layout: layouts/post.liquid
 ---
 
 Welcome to the second entry in my "Design Pattern Fairy Tales" series!
