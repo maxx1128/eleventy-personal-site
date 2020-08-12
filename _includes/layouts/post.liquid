@@ -4,7 +4,7 @@ layout: layouts/base.liquid
 
 {% assign banner_image = "/assets/images/featured/" | append: image %}
 
-<header class="header--with-image header--with-custom-image width-100 py-3" style="background-image: url('{{ banner_image }}')">
+<header class="{% if image %}header--with-custom-image{% else %}header--with-image{% endif %} width-100 py-3" {% if image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
   <div class="header__text resp-max-width">
     <div class="relative py-4">
       <small class="block mb-2 font-weight-bold">
