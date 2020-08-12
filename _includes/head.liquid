@@ -1,47 +1,47 @@
 <head>
-  {% if page.postLabel == "Exocortex" %}
+  {% if contentType == "Exocortex" %}
     {% assign isExocortex = true %}
 
-    {% if page.category_page == true %}
+    {% if category_page == true %}
       {% assign isExocortexCategory = true %}
     {% endif %}
   {% endif %}
 
-  {% if page.postLabel == "Note" %}
-    {% assign title = page.date | date: '%B %d, %Y' | prepend: "Note on " | append: " - " | append: site.title %}
+  {% if contentType == "Note" %}
+    {% assign title = date | date: '%B %d, %Y' | prepend: "Note on " | append: " - " | append: metadata.title %}
   {% elsif isExocortex %}
-    {% assign title = page.title | append: " - Exocortex - " | append: site.title %}
-  {% elsif page.title %}
-    {% assign title = page.title | append: " - " | append: site.title %}
+    {% assign title = title | append: " - Exocortex - " | append: metadata.title %}
+  {% elsif title %}
+    {% assign title = title | append: " - " | append: metadata.title %}
   {% else %}
-    {% assign title = site.title %}
+    {% assign title = metadata.title %}
   {% endif %}
 
-  {% if page.tagline and page.tagline != '' %}
-    {% assign description = page.tagline %}
-  {% elsif page.excerpt and page.excerpt != '' %}
-    {% assign description = page.excerpt | strip_html | strip_newlines | truncate: 160 %}
+  {% if tagline and tagline != '' %}
+    {% assign description = tagline %}
+  {% elsif excerpt and excerpt != '' %}
+    {% assign description = excerpt | strip_html | strip_newlines | truncate: 160 %}
   {% elsif isExocortex %}
     {% if isExocortexCategory %}
-      {% assign description = "List of saved documents related to " | append: page.category | append: "." %}
+      {% assign description = "List of saved documents related to " | append: category | append: "." %}
     {% else %}
-      {% assign description = "Saved notes on " | append: page.title | append: " from the " | append: page.category | append: " folder." %}
+      {% assign description = "Saved notes on " | append: title | append: " from the " | append: category | append: " folder." %}
     {% endif %}
   {% else %}
-    {% assign description = site.description %}
+    {% assign description = metadata.description %}
   {% endif %}
 
-  {% if page.postLabel == "Blog Post" %}
-    {% assign featured_image = site.url | append: "/assets/images/featured/" | append: page.image %}
+  {% if contentType == "Blog Post" %}
+    {% assign featured_image = metadata.url | append: "assets/images/featured/" | append: image %}
   {% else %}
-    {% assign featured_image = site.url | append: "/assets/images/global/profile.jpg" %}
+    {% assign featured_image = metadata.url | append: "assets/images/global/profile.jpg" %}
   {% endif %}
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="{{ site.url | append: '/assets/images/global/favicon.ico' }}" />
-  <link rel="apple-touch-icon" sizes="192x192" href="{{ site.url | append: '/assets/images/icons/icon-192.png' }}" />
+  <link rel="shortcut icon" href="{{ metadata.url | append: 'assets/images/global/favicon.ico' }}" />
+  <link rel="apple-touch-icon" sizes="192x192" href="{{ metadata.url | append: 'assets/images/icons/icon-192.png' }}" />
 
   <title>{{ title }}</title>
   <meta name="thumbnail" content="{{ featured_image }}" />
@@ -51,18 +51,18 @@
   <meta name="description" content="{{ description }}">
   <link rel="manifest" href="/manifest.webmanifest">
 
-  {% if page.url == "/404.html" %}
+  {% if url == "/404.html" %}
     <meta http-equiv="refresh" content="3; url=/">
   {% endif %}
 
   <link rel="stylesheet" type="text/css" href='/assets/css/main.css'>
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url | append: '/rss.xml' }}">
+  <link rel="canonical" href="{{ url | replace:'index.html','' | prepend: metadata.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ metadata.title }}" href="{{ metadata.url | append: '/rss.xml' }}">
 
   <!-- Open Graph data -->
   <meta property="og:title" content="{{ title }}" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
+  <meta property="og:url" content="{{ url | replace:'index.html','' | prepend: metadata.url }}" />
   <meta property="og:description" content="{{ description }}" />
   <meta property="og:site_name" content="maxwellantonucci.com" />
   <meta property="og:image" content="{{ featured_image }}"/>
@@ -78,5 +78,5 @@
   <meta property="twitter:image" content="{{ featured_image }}"/>
   <meta name="twitter:creator" content="@Maxwell_Dev">
 
-  <link type="application/atom+xml" rel="alternate" href="{{ site.url | append: '/rss.xml' }}" title="Max Antonucci">
+  <link type="application/atom+xml" rel="alternate" href="{{ metadata.url | append: '/rss.xml' }}" title="Max Antonucci">
 </head>
