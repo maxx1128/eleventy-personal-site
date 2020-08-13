@@ -2,7 +2,6 @@
 title: 92 Ways to Talk to Anyone
 category: 92 Ways To Talk To Anyone
 category_page: true
-
 ---
 
 This book has lots of useful soft skill tips on everything from meeting people to discussing sensitive topics. They won't fix deep issues with being social, but has lots of good tricks to polish how one handles social situations and dynamics.

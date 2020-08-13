@@ -21,7 +21,7 @@ So please read up on the sleazy horror of Trump University, both for intrigue an
 
 ## Assumptive Language
 
-A major theme in many of the playbook is what I call "assumptive language." Several paragraphs end with the importance of being _short, simple, and assumptive._
+A major theme in much of the playbook is what I call "assumptive language." Several paragraphs end with the importance of being _short, simple, and assumptive._
 
 Assumptive language basically has built in suppositions that aren't directly said by the seller, but are built into something else they say. Similar to notes from _The Gentle Art of Verbal Self-Defense,_ the trick is to build assumption X into a statement but get the buyer to focus on responding to statement Y, which is the "bait". Responding to statement Y makes the seller "swallow" assumption X, and makes them more likely to act as though they agreed with it.
 

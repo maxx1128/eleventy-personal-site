@@ -2,7 +2,6 @@
 title: Pragmatic Programmer
 category: Pragmatic Programmer
 category_page: true
-
 ---
 
 The Pragmatic Programmer is known as the evergreen of evergreen programming books. It outlines a wide array of principles and strategies for programmers to follow.

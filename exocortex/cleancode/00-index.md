@@ -2,7 +2,6 @@
 title: Clean Code
 category: Clean Code
 category_page: true
-
 ---
 
 Clean Code is a huge, useful book on scalable, maintainable code. To many it is a bible or career-changer. That's why it has its own folder.
