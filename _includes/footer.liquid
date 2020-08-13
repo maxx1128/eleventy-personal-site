@@ -1,4 +1,4 @@
-<footer class="footer bg-primary-darker text-mono-white">
+<footer class="footer bg-primary-lighter">
   <div class="resp-max-width pt-8 pb-4">
     {% unless title contains 'About Me' %}
       <img class="logo logo--footer ml-4 mb-4 border-radius-full hidden-md-down" src="/assets/images/global/profile.jpg" alt="" />
@@ -21,7 +21,7 @@
         <ul class="list-reset flex flex-column flex-justify-start mb-0 pb-2 text-small">
           {% for menu in menu %}
             <li class="inline-block mb-1">
-              <a class="text-action-lighter" href="{{ menu.link }}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
+              <a href="{{ menu.link }}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
                 {{ menu.name }}
               </a>
             </li>
@@ -37,7 +37,7 @@
         <ul class="list-reset flex flex-column flex-justify-start mb-0 pb-2 text-small">
           {% for social in social %}
             <li class="inline-block mb-1">
-              <a class="text-action-lighter" href="{{ social.url }}" target="_blank" rel="noopener">
+              <a href="{{ social.url }}" target="_blank" rel="noopener">
                 {{ social.name }}
               </a>
             </li>
