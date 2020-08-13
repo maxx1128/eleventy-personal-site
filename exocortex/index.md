@@ -1,4 +1,5 @@
 ---
+title: Exocortex
 layout: layouts/exocortex.liquid
 ---
 

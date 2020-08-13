@@ -7,21 +7,4 @@ no-max-width: true
   {{ content }}
 </article>
 
-<ul>
-  {% for category in collections.exocortex_menu %}
-    <li>
-      <a href="{{ category.url }}">
-        {{ category.data.title }}
-      </a>
-    </li>
-    <ul>
-      {% for entry in category.entries %}
-        <li>
-          <a href="{{ entry.url }}">
-            {{ entry.data.title }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endfor %}
-</ul>
+{% include exocortexmenu.liquid %}

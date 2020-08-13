@@ -90,15 +90,33 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addCollection("exocortex_menu", function (collection) {
+    const getAllCategories = (categoryList, page) => {
+      const newCategory = page.data.category;
+
+      if (newCategory && !categoryList.includes(newCategory)) {
+        return [...categoryList, newCategory];
+      } else {
+        return categoryList;
+      }
+    };
+
+    const createCategoryObjects = (category) => {
+      return {
+        "title"   : category,
+        "entries" : null
+      }
+    }
+
     const allPages = collection.getFilteredByGlob("./exocortex/**/*.md"),
-          categoryPages = allPages.filter(page => page.data.category_page),
-          entryPages = allPages.filter(page => !page.data.category_page);
+          categories = allPages
+                        .reduce(getAllCategories, [])
+                        .map(createCategoryObjects);
 
-    categoryPages.forEach(category => {
-      category.entries = entryPages.filter(page => page.data.category == category.data.category);
-    });
+          categories.forEach(category => {
+            category.entries = allPages.filter(page => page.data.category == category.title);
+          });
 
-    return categoryPages.reverse();
+    return categories.reverse();
   });
 
   eleventyConfig.addPassthroughCopy("img");

@@ -1,0 +1,22 @@
+<div class="exocortex-nav__container">
+  <nav>
+    <ul role="tablist" aria-multiselectable="true">
+      {% for category in collections.exocortex_menu %}
+        <li>
+          <button aria-expanded="false">
+            {{ category.title }}
+          </button>
+        </li>
+        <ul>
+          {% for entry in category.entries %}
+            <li>
+              <a href="{{ entry.url }}">
+                {{ entry.data.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
