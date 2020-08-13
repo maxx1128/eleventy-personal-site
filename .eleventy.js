@@ -78,6 +78,13 @@ module.exports = function(eleventyConfig) {
       .reverse();
   });
 
+  eleventyConfig.addCollection("recent_notes", function (collection) {
+    return collection.getFilteredByGlob("./notes/*.md")
+      .filter(hideFutureItems)
+      .reverse()
+      .slice(0, 2);
+  });
+
   eleventyConfig.addCollection("exocortex", function (collection) {
     return collection.getFilteredByGlob("./exocortex/**/*.md").reverse();
   });

@@ -65,15 +65,13 @@ title: Homepage
 </div>
 
 <section id="notes">
-  {% for note in collections.notes reversed %}
-    {% if forloop.index < 3 %}
-      {% include note.liquid,
-        date: note.data.date
-        content: note.templateContent
-        url: note.url
-        index: forloop.index
-      %}
-    {% endif %}
+  {% for note in collections.recent_notes reversed %}
+    {% include note.liquid,
+      date: note.data.date
+      content: note.templateContent
+      url: note.url
+      index: forloop.index
+    %}
   {% endfor %}
 </section>
 
