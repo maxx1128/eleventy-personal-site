@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "92WaysTalkToAnyone",
+    "name": "92 Ways To Talk To Anyone"
+  }, {
+    "slug": "accessibility",
+    "name": "Accessibility"
+  }, {
+    "slug": "accessibilityForEveryone",
+    "name": "Accessibility For Everyone"
+  }, {
+    "slug": "cleancode",
+    "name": "Clean Code"
+  }, {
+    "slug": "conferences",
+    "name": "Conferences"
+  }, {
+    "slug": "css",
+    "name": "CSS"
+  }, {
+    "slug": "frontend",
+    "name": "Front-end"
+  }, {
+    "slug": "javascript",
+    "name": "Javascript"
+  }, {
+    "slug": "nonfiction",
+    "name": "Nonfiction"
+  }, {
+    "slug": "other",
+    "name": "Other"
+  }, {
+    "slug": "practicalObjectOrientedDesign",
+    "name": "Practical Object-Oriented Design With Ruby"
+  }, {
+    "slug": "pragmaticProgrammer",
+    "name": "The Pragmatic Programmer"
+  }, {
+    "slug": "pragmaticThinkingAndLearning",
+    "name": "Pragmatic Thinking And Learning"
+  }, {
+    "slug": "programming",
+    "name": "Programming"
+  }, {
+    "slug": "ruby",
+    "name": "Ruby"
+  }, {
+    "slug": "softskills",
+    "name": "Soft Skills"
+  }, {
+    "slug": "stopWorryingStartLiving",
+    "name": "How to Stop Worrying and Start Living"
+  }, {
+    "slug": "strongThinking",
+    "name": "Strong Thinking"
+  }, {
+    "slug": "webDesign",
+    "name": "Web Design"
+  }, {
+    "slug": "winFriendsInfluencePeople",
+    "name": "How to Win Friends and Influence People"
+  }, {
+    "slug": "writingfiction",
+    "name": "Writing Fiction"
+  }
+]

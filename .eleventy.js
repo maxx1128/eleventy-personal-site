@@ -82,9 +82,17 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob("./exocortex/**/*.md").reverse();
   });
 
-  eleventyConfig.addLayoutAlias("post", "layouts/post.liquid");
-  eleventyConfig.addLayoutAlias("notes", "layouts/note.liquid");
-  // eleventyConfig.addLayoutAlias("exocortex", "layouts/post.liquid");
+  eleventyConfig.addCollection("exocortex_menu", function (collection) {
+    const allPages = collection.getFilteredByGlob("./exocortex/**/*.md"),
+          categoryPages = allPages.filter(page => page.data.category_page),
+          entryPages = allPages.filter(page => !page.data.category_page);
+
+    categoryPages.forEach(category => {
+      category.entries = entryPages.filter(page => page.data.category == category.data.category);
+    });
+
+    return categoryPages.reverse();
+  });
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("assets/**/*");
