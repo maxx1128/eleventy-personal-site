@@ -34,9 +34,9 @@
   },
   "scripts": {
     "build": "eleventy",
-    "serve": "eleventy --serve",
-    "write": "eleventy --serve",
-    "start": "eleventy --serve",
+    "serve": "eleventy --serve --quiet",
+    "write": "eleventy --serve --quiet",
+    "start": "eleventy --serve --quiet",
     "debug": "DEBUG=* eleventy",
     "dev": "run-p write sass:dev js:dev",
     "prod": "npm run sass:prod && npm run js:build && npm run build",
