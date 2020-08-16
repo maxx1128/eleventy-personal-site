@@ -1,0 +1,34 @@
+.exocortex-layout__wrapper--js {
+
+  .exocortex-menu__list {
+    display: none;
+  }
+
+  .exocortex-menu__list--level-1 {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+
+    z-index: 1;
+  }
+
+  .exocortex-menu__list-item--active > .exocortex-menu__list {
+    display: block;
+  }
+
+  .exocortex-menu__list-item--level-1 {
+    position: relative;
+  }
+
+  .exocortex-menu__button {
+    padding: spacing(2);
+    width: 100%;
+
+    text-decoration: underline;
+    font-size: type(font-size, small);
+
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}

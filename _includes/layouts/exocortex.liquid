@@ -3,8 +3,14 @@ layout: layouts/base.liquid
 no-max-width: true
 ---
 
-<article class="resp-max-width">
-  {{ content }}
-</article>
+<div class="exocortex-layout__wrapper">
+  {% include exocortexmenu.liquid %}
 
-{% include exocortexmenu.liquid %}
+  <article id="content" class="resp-max-width">
+    <h1>
+      {{ title }}
+    </h1>
+
+    {{ content }}
+  </article>
+</div>

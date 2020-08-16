@@ -1,22 +1,31 @@
-<div class="exocortex-nav__container">
-  <nav>
-    <ul role="tablist" aria-multiselectable="true">
-      {% for category in collections.exocortex_menu %}
-        <li>
-          <button aria-expanded="false">
-            {{ category.title }}
-          </button>
-        </li>
-        <ul>
-          {% for entry in category.entries %}
-            <li>
-              <a href="{{ entry.url }}">
-                {{ entry.data.title }}
-              </a>
+<nav id="exocortex-menu" class="bg-primary-lightest">
+  <ul class="flex flex-column sm--flex-row list-reset resp-max-width">
+    {% for group in collections.exocortex_menu %}
+      <li class="exocortex-menu__list-item exocortex-menu__list-item--level-1 mb-0 flex-item">
+        <button class="exocortex-menu__button exocortex-menu__button--level-1" aria-expanded="false">
+          {{ group.name }}
+        </button>
+
+        <ul class="exocortex-menu__list exocortex-menu__list--level-1 list-reset bg-primary-lighter">
+          {% for category in group.categories reversed %}
+            <li class="exocortex-menu__list-item exocortex-menu__list-item--level-2 mb-0">
+              <button class="exocortex-menu__button exocortex-menu__button--level-2" aria-expanded="false">
+                {{ category.title }}
+              </button>
+
+              <ul class="exocortex-menu__list exocortex-menu__list--level-2 list-reset bg-primary-lightest">
+                {% for entry in category.entries %}
+                  <li class="mb-0 p-2 text-small text-center">
+                    <a class="exocortex-menu__link" href="{{ entry.url }}">
+                      {{ entry.data.title }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
             </li>
           {% endfor %}
         </ul>
-      {% endfor %}
-    </ul>
-  </nav>
-</div>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

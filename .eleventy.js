@@ -90,6 +90,22 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addCollection("exocortex_menu", function (collection) {
+    let exocortexGroups = [
+      {
+        "slug": "books",
+        "name": "Books",
+        "category_names": ["92 Ways To Talk To Anyone", "Accessibility for Everyone", "Clean Code", "Pragmatic Programmer", "Pragmatic Thinking and Learning", "How to Stop Worrying and Stop Living", "How To Win Friends and Influence People"]
+      }, {
+        "slug": "coding",
+        "name": "Coding",
+        "category_names": ["Accessibility", "Conferences", "CSS", "Front-end", "Javascript", "Practical Object Oriented Programming in Ruby", "Programming", "Ruby", "Web Design"]
+      }, {
+        "slug": "adulting",
+        "name": "Adulting",
+        "category_names": ["Nonfiction", "Soft Skills", "Strong Thinking", "Writing Fiction", "Other"]
+      }
+    ];
+
     const getAllCategories = (categoryList, page) => {
       const newCategory = page.data.category;
 
@@ -116,7 +132,13 @@ module.exports = function(eleventyConfig) {
             category.entries = allPages.filter(page => page.data.category == category.title);
           });
 
-    return categories.reverse();
+    exocortexGroups.map(group => {
+      const groupCategories = categories.filter(category => group.category_names.includes(category.title));
+      group.categories = groupCategories;
+      return group;
+    });
+
+    return exocortexGroups;
   });
 
   eleventyConfig.addPassthroughCopy("img");

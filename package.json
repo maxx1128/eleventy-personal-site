@@ -34,19 +34,21 @@
   },
   "scripts": {
     "build": "eleventy",
-    "serve": "eleventy --serve --quiet",
-    "write": "eleventy --serve --quiet",
-    "start": "eleventy --serve --quiet",
+    "serve": "eleventy --serve --quiet --incremental",
+    "write": "eleventy --serve --quiet --incremental",
+    "start": "eleventy --serve --quiet --incremental",
     "debug": "DEBUG=* eleventy",
     "dev": "run-p write sass:dev js:dev",
     "prod": "npm run sass:prod && npm run js:build && npm run build",
     "sass:dev": "npm run sass && npm-run-all sass-dev:*",
     "sass:prod": "npm run sass && npm-run-all -p sass-prod:*",
     "sass": "node-sass --output-style compressed _sass/ -o assets/css",
-    "sass-dev:watch": "chokidar '_sass/**/**/**/*.scss' -c 'npm run sass'",
+    "sass-copy": "cp assets/css/main.css _site/assets/css/",
+    "sass-dev:watch": "chokidar '_sass/**/**/**/*.scss' -c 'npm run sass && npm run sass-copy'",
     "sass-prod:autoprefixer": "postcss assets/css/*.css --use autoprefixer --no-map -d assets/css",
     "js:dev": "npm run js:build && npm run js:watch",
-    "js:watch": "chokidar '_javascript/*.js' -c \"npm run js:build\"",
-    "js:build": "cat _javascript/*.js > assets/javascript/main.js"
+    "js:watch": "chokidar '_javascript/*.js' -c \"npm run js:build && npm run js-copy\"",
+    "js:build": "cat _javascript/*.js > assets/javascript/main.js",
+    "js-copy": "cp assets/javascript/main.js _site/assets/javascript/"
   }
 }
