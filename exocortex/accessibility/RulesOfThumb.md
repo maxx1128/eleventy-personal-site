@@ -50,3 +50,36 @@ When choosing between making something work and making it perfect, make it work 
 People may argue they need it to be perfect for reasons like consistent branding or having a neat feature. My response to that is most users care about it working more. If it's imperfect but works, users can do what they need and are happy. If it's perfect but more fragile, it'll break for users and they'll be furious regardless of what else was added. Durable solutions make for happier users, even if you have to sacrifice some fanciness.
 
 If you're unsure if users can understand something, remember this mantra: **when in doubt, spell it out.** Adding some explanatory text is the simplest, and one of the most accessible, ways to provide extra context and info.
+
+## Colors
+
+Colors are a major part of an accessible website, since it's a core way of conveying meaning and information. There many disabilities and conditions that affect how users perceive color, partially or completely. Accessible color schemes and color design convey the needed meaning despite common disabilities affecting color perception.
+
+* **Don't convey meaning with only color,** since not all users may be able to see it. Using icons, text, or other visual notifiers focused on the same content help get the message across consistently.
+* **Give text colors enough contrast.** Low-contrast colors are hard to read in many scenarions, including regular users who don't have their glasses or are outside with a glare on their phones. Aim for a contrast ratio between the text and background of:
+  * 4.5 to 1 if smaller than 18 pixels
+  * 3 to 1 if equal to or larger than 18 pixels
+* **Test all used color combinations.** A color palette won't use all possible combinations in a site, but each one that is used should be checked for proper contrast. This mostly applies to text, but make sure any meaning conveyed by other contrasts is still noticeable (although this is discouraged).
+* **Avoid too much color crammed together.** It can quickly get overwhelming and nonsensical, especially for those with cognitive impairments.
+
+## Mobile Devices
+
+###  Accessing Interactive Elements
+
+Touch elements shouldn't be right or left hand dependent. You can get around this with full-width interaction elements or containers, so someone reaching for them from either side can get to them.
+
+Also make it clear you can interact with them. Use color schemes that communicate interactivity with distinct "action" colors that stand apart from others. Also place interactive elements in well-established locations you'd expect them to be in like the bottom navigation.
+
+###  Touch Gestures
+
+Aim for the recommended 44x44 pixel dimensions for touch elements. Properly space them away from other touch elements to decrease accidental clicks.
+
+Add instructions or good visual cues for custom gestures. These can be as simple as icons with short explainer texts explaining the action and its effect.
+
+Group elements that perform the same action into a singular, larger actionable item. For example, group the name and logo into the same anchor tag to the homepage. Don't put each in a separate anchor tag.
+
+###  Inputs
+
+Specify input types in the markup so mobile keyboards can choose the best layout, such as `type="number"` so keyboards only show numbers.
+
+Use simpler inputs like checkboxes or radio when possible, since they're easier for small screens.
