@@ -1,6 +1,6 @@
 {% assign note_index = index | default: 1 %}
 
-<article class="note-styler note-coloring--{{ note_index }}">
+<article class="note-styler note-coloring--{{ note_index }} {{ class }}">
   <div class="resp-max-width py-4">
     <h3 class="mt-0">
       {% if url %}
