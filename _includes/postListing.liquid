@@ -1,0 +1,46 @@
+{% assign postLimit = limit | default: 999 %}
+
+<section class="{{ wrapper_class }}">
+  {% for post in posts limit: postLimit %}
+    {% assign post_image = metadata.post.imagePath | append: post.data.image %}
+
+    <div class="post-listing relative flex flex-align-center">
+      <div class="post-listing__date relative mr-6 md--flex flex-column flex-align-center flex-justify-center border-radius-circle bg-primary-darker text-mono-white hidden-md-down">
+        <span class="font-family-header text-h5 font-weight-bold">
+          {{ post.data.date | date: "%b %e" }}
+        </span>
+
+        <span class="font-family-header text-h4">
+          {{ post.data.date | date: "%Y" }}
+        </span>
+
+        {% if post.data.image %}
+          <span class="post-listing__thumbnail border-radius-circle" style="background-image: url('{{ post_image }}')"></span>
+        {% endif %}
+      </div>
+
+      <span class="post-listing__line bg-primary-base"></span>
+
+      <article class="post-listing__article py-4 md--py-8 md--ml-4 flex-item flex flex-column flex-justify-center">
+        <small class="mb-0 hidden-md-up">
+          <strong>
+            {{ post.data.date | date: "%B %e, %Y" }}
+          </strong>
+        </small>
+        <h3 class="mt-0">
+          <a href="{{ post.url }}">
+            {{ post.data.title }}
+          </a>
+        </h3>
+
+        <p>
+          {{ post.data.excerpt }}
+        </p>
+
+        {% include tagList
+          tags: post.data.tags
+        %}
+      </article>
+    </div>
+  {% endfor %}
+</section>

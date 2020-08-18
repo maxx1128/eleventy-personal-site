@@ -2,7 +2,7 @@
 layout: layouts/base.liquid
 ---
 
-{% assign banner_image = "/assets/images/featured/" | append: image %}
+{% assign banner_image = metadata.post.imagePath | append: image %}
 
 <header class="{% if image %}header--with-custom-image{% else %}header--with-image{% endif %} width-100 py-3" {% if image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
   <div class="header__text resp-max-width">

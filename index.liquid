@@ -37,18 +37,11 @@ title: Homepage
   </p>
 </div>
 
-<section class="resp-max-width mb-4">
-  <ul>
-    {% assign recent_posts = collections.posts %}
-    {% for post in recent_posts limit: 3 %}
-      <li>
-        <a href="{{ post.url }}">
-          {{ post.data.title }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+{% include postListing.liquid
+  wrapper_class: "resp-max-width mb-4",
+  posts: collections.posts,
+  limit: 3
+%}
 
 <div class="resp-max-width pt-4">
   <p class="mb-0">

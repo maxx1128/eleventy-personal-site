@@ -1,0 +1,10 @@
+<ul class="list-reset flex flex-align-start flex-wrap sm--flex-nowrap">
+  {% for tag in tags %}
+    {% assign tagUrl = "/tags/" | append: tag %}
+    <li class="tag mr-2 mb-2 sm--mb-0 bg-action-dark text-tiny border-radius-small">
+      <a href="{{ tagUrl | url }}" class="upper no-underline text-action-lighter">
+        {{ tag }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

@@ -16,5 +16,8 @@
     "name": "Your Name Here",
     "email": "youremailaddress@example.com",
     "url": "https://example.com/about-me/"
+  },
+  "post": {
+    "imagePath": "/assets/images/featured/"
   }
 }

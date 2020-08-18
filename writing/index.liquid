@@ -12,26 +12,8 @@ pagination:
   Stuff I've written will go here.
 </p>
 
-<ol>
-  {% for post in posts %}
-    <li>
-      <a href="{{ post.url | url }}">
-        {{ post.data.title }}
-      </a>
-      <ul>
-        {% for tag in post.data.tags %}
-          {% if tag != "posts" %}
-            {% assign tagUrl = "/tags/" | append: tag  %}
-            <li>
-              <a href="{{ tagUrl | url }}" class="post-tag">
-                {{ tag }}
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </li>
-  {% endfor %}
-</ol>
+{% include postListing
+  posts: posts
+%}
 
 {% include pagination.liquid %}

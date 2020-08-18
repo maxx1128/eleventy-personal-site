@@ -1,0 +1,60 @@
+@function listing-gradient($start: color(primary, dark), $end: color(primary, dark)) {
+  @return linear-gradient(180deg, $start 0%, color(primary, light) 30%, color(primary, light), 70%, $end 100%);
+}
+
+$date-size: 6rem;
+$thumbnail-size: $date-size * 0.8;
+
+.post-listing__date {
+  min-width: $date-size;
+  max-width: $date-size;
+  min-height: $date-size;
+  max-height: $date-size;
+
+  margin-bottom: $thumbnail-size * 0.75;
+
+  z-index: 1;
+}
+
+.post-listing__thumbnail {
+  position: absolute;
+  top: 85%;
+
+  min-width: $thumbnail-size;
+  max-width: $thumbnail-size;
+  min-height: $thumbnail-size;
+  max-height: $thumbnail-size;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.post-listing__line {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: calc((#{$date-size} / 2) - #{spacing(1)});
+  bottom: 0;
+  width: spacing(2);
+
+  background-repeat-y: no-repeat;
+  background-image: listing-gradient();
+
+  .post-listing:first-of-type & {
+    background-image: listing-gradient($start: color(mono, white));
+  }
+
+  .post-listing:last-of-type & {
+    background-image: listing-gradient($end: color(mono, white));
+  }
+
+  @include larger-than(md) {
+    display: block;
+  }
+}
+
+.post-listing__article {
+  .post-listing:not(:last-of-type) & {
+    border-bottom: 2px solid color(primary, dark);
+  }
+}
