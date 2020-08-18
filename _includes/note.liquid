@@ -1,19 +1,54 @@
 {% assign note_index = index | default: 1 %}
 
-<article class="note-styler note-coloring--{{ note_index }} {{ class }}">
+<article class="note-styler note-coloring--{{ note_index }} {{ class }} flex flex-column">
   <div class="resp-max-width py-4">
-    <h3 class="mt-0">
+    {% if singleNotePage %}
+      <h2 class="mt-0">
+    {% else %}
+      <h3 class="mt-0">
+    {% endif %}
+
       {% if url %}
         <a href="{{ url }}">
       {% endif %}
 
-        {{ date | date: '%B %d, %Y' }}
+        {{ date | date: metadata.note.dateFormat }}
 
       {% if url %}
         </a>
       {% endif %}
-    </h3>
+
+    {% if singleNotePage %}
+      </h2>
+    {% else %}
+      </h3>
+    {% endif %}
 
     {{ content }}
   </div>
+
+  {% if singleNotePage %}
+    <div class="resp-max-width pb-4 mt-auto">
+      {% assign nextNote = collections.notes | getNextCollectionItem: page %}
+      {% assign previousNote = collections.notes | getPreviousCollectionItem: page %}
+
+      <ul class="list-reset m-0 p-0 flex flex-column xl--flex-row flex-justify-between text-small">
+        {% if nextNote %}
+          <li>
+            Next: <a href="{{ nextNote.url | url }}">{{ nextNote.data.date | date: metadata.note.dateFormat }}</a>
+          </li>
+        {% endif %}
+
+        <li id="random-navigator-wrapper" class="random-navigator-wrapper--note hidden" class="xl--px-4">
+          Random: <a href="javascript:void();"></a>
+        </li>
+
+        {% if previousNote %}
+          <li>
+            Previous: <a href="{{ previousNote.url | url }}">{{ previousNote.data.date | date: metadata.note.dateFormat }}</a>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+  {% endif %}
 </article>

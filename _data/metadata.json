@@ -19,5 +19,8 @@
   },
   "post": {
     "imagePath": "/assets/images/featured/"
+  },
+  "note": {
+    "dateFormat": "%B %d, %Y"
   }
 }

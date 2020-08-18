@@ -39,14 +39,14 @@ layout: layouts/base.liquid
       {% else %}
         {% if postLabel %}
           <small class="block {% if postLabel == 'Note' %}mb-0{% else %}mb-2{% endif %} font-weight-bold">
-            {{ postLabel }}{% if has_date %} from {{ date | date: '%B %d, %Y' }}{% endif %}
+            {{ postLabel }}{% if has_date %} from {{ date | date: metadata.note.dateFormat }}{% endif %}
           </small>
         {% endif %}
       {% endif %}
 
       <h1 class="my-0 text-h2">
         {% if postLabel == "Note" %}
-          {{ date | date: '%B %d, %Y' }}
+          {{ date | date: metadata.note.dateFormat }}
         {% else %}
           {{ title }}
         {% endif %}

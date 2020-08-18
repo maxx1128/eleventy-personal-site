@@ -2,7 +2,7 @@
 
 <article class="celebration celebrations-layout__item {{ type_class }} pt-4 px-4 xl--pb-4 flex flex-column relative" style="background-image: url('/assets/images/celebrations/{{ image }}');">
   <tiny class="block mb-2 italic">
-    {{ date | date: '%B %d, %Y' }}
+    {{ date | date: metadata.note.dateFormat }}
   </tiny>
 
   {% if link %}

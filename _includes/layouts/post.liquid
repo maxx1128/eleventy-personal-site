@@ -8,7 +8,7 @@ layout: layouts/base.liquid
   <div class="header__text resp-max-width">
     <div class="relative py-4">
       <small class="block mb-2 font-weight-bold">
-        Blog Post from {{ date | date: '%B %d, %Y' }}
+        Blog Post from {{ date | date: metadata.note.dateFormat }}
       </small>
 
       <h1 class="my-0 text-h2">
@@ -25,3 +25,27 @@ layout: layouts/base.liquid
 <article id="content" class="post-content resp-max-width width-100 py-4 sm--py-6 lg--mt-4">
   {{ content | safe }}
 </article>
+
+{% assign nextPost = collections.posts | getNextCollectionItem: page %}
+{% assign previousPost = collections.posts | getPreviousCollectionItem: page %}
+
+<div class="resp-max-width">
+  <ul class="list-reset m-0 p-0">
+
+    {% if nextPost %}
+      <li>
+        Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>
+      </li>
+    {% endif %}
+
+    <li id="random-navigator-wrapper" class="hidden">
+      Random: <a href="javascript:void();"></a>
+    </li>
+
+    {% if previousPost %}
+      <li>
+        Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>
+      </li>
+    {% endif %}
+  </ul>
+</div>
