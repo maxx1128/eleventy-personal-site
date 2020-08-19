@@ -1,44 +1,84 @@
 <nav aria-labelledby="my-pagination">
-  <h2 id="my-pagination">This is my Pagination</h2>
-  <ol>
-    {% if page.url != pagination.href.first %}
-      <li>
-        <a href="{{ pagination.href.first }}">
+  <h2 id="my-pagination" class="screenReader">
+    Pagination
+  </h2>
+
+  <ul class="list-reset flex flex-column sm--flex-row flex-align-center flex-justify-between text-small">
+    <div class="flex">
+      {% if page.url != pagination.href.first and pagination.href.first != pagination.href.previous %}
+        <li class="mr-2 mb-0">
+          <a href="{{ pagination.href.first }}">
+            First
+          </a>
+        </li>
+      {% elsif page.url == pagination.href.first %}
+        <li class="mr-2 mb-0">
           First
-        </a>
-      </li>
-    {% endif %}
+        </li>
+      {% endif %}
 
-    {% if pagination.href.previous %}
-      <li>
-        <a href="{{ pagination.href.previous }}">
-          Previous
-        </a>
-      </li>
-    {% endif %}
+      {% if pagination.href.previous %}
+        <li class="mb-0">
+          <a href="{{ pagination.href.previous }}">
+            Previous
+          </a>
+        </li>
+      {% endif %}
+    </div>
 
-    {% for pageEntry in pagination.pages %}
-      <li>
-        <a href="{{ pagination.hrefs[forloop.index0] }}" {% if page.url == pagination.hrefs[forloop.index0] %} aria-current="page"{% endif %}>
-          Page {{ forloop.index }}
-        </a>
-      </li>
-    {% endfor %}
+    <div class="flex">
+      {% for pageEntry in pagination.pages %}
+        {% assign inPaginationRange = false %}
+        {% assign prevPage1 = forloop.index0 | minus: 1 %}
+        {% assign prevPage2 = forloop.index0 | minus: 2 %}
+        {% assign nextPage1 = forloop.index0 | plus: 1 %}
+        {% assign nextPage2 = forloop.index0 | plus: 2 %}
 
-    {% if pagination.href.next %}
-      <li>
-        <a href="{{ pagination.href.next }}">
-          Next
-        </a>
-      </li>
-    {% endif %}
+        {% if page.url == pagination.hrefs[forloop.index0]
+          or page.url == pagination.hrefs[prevPage1]
+          or page.url == pagination.hrefs[prevPage2]
+          or page.url == pagination.hrefs[nextPage1]
+          or page.url == pagination.hrefs[nextPage2]
+        %}
+          {% assign inPaginationRange = true %}
+        {% endif %}
 
-    {% if page.url != pagination.href.last %}
-      <li>
-        <a href="{{ pagination.href.last }}">
+        {% if inPaginationRange %}
+          <li class="mx-1 mb-0">
+            {% if page.url == pagination.hrefs[forloop.index0] %}
+              <span class="pagination-link pagination-link--current" aria-current="page">
+                {{ forloop.index }}
+              </span>
+            {% else %}
+              <a href="{{ pagination.hrefs[forloop.index0] }}" class="pagination-link">
+                {{ forloop.index }}
+              </a>
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="flex">
+      {% if pagination.href.next %}
+        <li class="mb-0">
+          <a href="{{ pagination.href.next }}">
+            Next
+          </a>
+        </li>
+      {% endif %}
+
+      {% if page.url != pagination.href.last and pagination.href.last != pagination.href.next %}
+        <li class="mb-0 ml-2">
+          <a href="{{ pagination.href.last }}">
+            Last
+          </a>
+        </li>
+      {% elsif page.url == pagination.href.last %}
+        <li class="mb-0 ml-2">
           Last
-        </a>
-      </li>
-    {% endif %}
-  </ol>
+        </li>
+      {% endif %}
+    </div>
+  </ul>
 </nav>
