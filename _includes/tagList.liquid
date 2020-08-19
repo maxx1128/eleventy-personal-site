@@ -1,7 +1,7 @@
-<ul class="list-reset flex flex-align-start flex-wrap sm--flex-nowrap">
+<ul class="list-reset flex flex-align-start flex-wrap {% if wrap %}flex-justify-center{% else %}sm--flex-nowrap{% endif %}">
   {% for tag in tags %}
     {% assign tagUrl = "/tags/" | append: tag %}
-    <li class="tag mr-2 mb-2 sm--mb-0 bg-action-dark text-tiny border-radius-small">
+    <li class="tag mb-2 {% if wrap %}mx-1{% else %}mr-2 sm--mb-0{% endif %} bg-action-dark text-tiny border-radius-small">
       <a href="{{ tagUrl | url }}" class="upper no-underline text-action-lighter">
         {{ tag }}
       </a>
