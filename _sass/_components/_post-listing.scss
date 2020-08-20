@@ -5,6 +5,12 @@
 $date-size: 6rem;
 $thumbnail-size: $date-size * 0.8;
 
+.post-listing {
+  &:last-of-type {
+    padding-bottom: spacing(6);
+  }
+}
+
 .post-listing__date {
   min-width: $date-size;
   max-width: $date-size;
