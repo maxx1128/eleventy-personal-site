@@ -6,7 +6,7 @@
           {{ myGroup.name }}
         </button>
 
-        <ul class="exocortex-menu__list exocortex-menu__list--level-1 list-reset bg-primary-lighter">
+        <ul class="exocortex-menu__list exocortex-menu__list--level-1 list-reset bg-primary-lighter box-shadow-3">
           {% for myCategory in myGroup.categories reversed %}
             <li class="exocortex-menu__list-item exocortex-menu__list-item--level-2 mb-0">
               <button class="exocortex-menu__button exocortex-menu__button--level-2 {% if category == myCategory.title %}font-weight-bold{% endif %}" aria-expanded="false">
