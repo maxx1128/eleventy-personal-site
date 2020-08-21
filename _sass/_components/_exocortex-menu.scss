@@ -22,6 +22,12 @@
   }
 
   .exocortex-menu__button {
+    &[aria-expanded="true"] {
+      font-weight: 700;
+    }
+  }
+
+  .exocortex-menu__button {
     padding: spacing(2);
     width: 100%;
 

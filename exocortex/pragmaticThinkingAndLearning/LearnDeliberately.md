@@ -1,6 +1,6 @@
 ---
 title: Learn Deliberately
-category: Pragmatic Thinking And Learning
+category: Pragmatic Thinking and Learning
 date: 2020-06-09
 ---
 

@@ -94,11 +94,11 @@ module.exports = function(eleventyConfig) {
       {
         "slug": "books",
         "name": "Books",
-        "category_names": ["92 Ways To Talk To Anyone", "Accessibility for Everyone", "Clean Code", "Pragmatic Programmer", "Pragmatic Thinking and Learning", "How to Stop Worrying and Stop Living", "How To Win Friends and Influence People"]
+        "category_names": ["How to Stop Worrying and Start Living", "92 Ways To Talk To Anyone", "Accessibility for Everyone", "Clean Code", "Practical Object Oriented Programming in Ruby", "Pragmatic Programmer", "Pragmatic Thinking and Learning", "How To Win Friends and Influence People"]
       }, {
         "slug": "coding",
         "name": "Coding",
-        "category_names": ["Accessibility", "Conferences", "CSS", "Front-end", "Javascript", "Practical Object Oriented Programming in Ruby", "Programming", "Ruby", "Web Design"]
+        "category_names": ["Accessibility", "Conferences", "CSS", "Front-end", "Javascript", "Programming", "Ruby", "Web Design"]
       }, {
         "slug": "adulting",
         "name": "Adulting",

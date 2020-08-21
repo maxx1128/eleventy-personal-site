@@ -1,6 +1,6 @@
 ---
 title: Gain Experience
-category: Pragmatic Thinking And Learning
+category: Pragmatic Thinking and Learning
 date: 2020-06-08
 ---
 

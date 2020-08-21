@@ -1,6 +1,6 @@
 ---
 title: Break the Worry Habit
-category: How To Stop Worrying and Start Living
+category: How to Stop Worrying and Start Living
 date: 2020-06-09
 ---
 
