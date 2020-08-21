@@ -188,6 +188,14 @@ pre code {
   }
 
   pre.language-#{$language} {
+    .theme-dark & {
+      @if (lightness($color) > 50) {
+        $text-color: color(mono, white);
+      } @else {
+        $text-color: color(mono, dark);
+      }
+    }
+
     code.language-#{$language} {
       border-color: $color;
     }
