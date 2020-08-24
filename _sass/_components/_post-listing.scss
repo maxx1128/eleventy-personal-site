@@ -2,7 +2,7 @@
   @return linear-gradient(180deg, $start 0%, color(primary, light) 30%, color(primary, light), 70%, $end 100%);
 }
 
-$date-size: 5.25rem;
+$date-size: 5.5rem;
 $thumbnail-size: $date-size * 0.8;
 $read-time-time: $thumbnail-size * 0.65;
 
@@ -85,6 +85,10 @@ $read-time-time: $thumbnail-size * 0.65;
 }
 
 .post-listing__article {
+  @include larger-than(md) {
+    min-height: 17.5rem;
+  }
+
   .post-listing:not(:last-of-type) & {
     border-bottom: 2px solid color(primary, dark);
   }
