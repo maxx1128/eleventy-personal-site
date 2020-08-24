@@ -1,6 +1,6 @@
 <head>
   {% if contentType == "Note" %}
-    {% assign title = date | date: metadata.note.dateFormat | prepend: "Note on " | append: " - " | append: metadata.title %}
+    {% assign title = date | noteDate | prepend: "Note on " | append: " - " | append: metadata.title %}
   {% elsif title %}
     {% assign title = title | append: " - " | append: metadata.title %}
   {% else %}

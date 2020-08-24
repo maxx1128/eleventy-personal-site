@@ -11,9 +11,7 @@
       {% if url %}
         <a href="{{ url }}">
       {% endif %}
-
-        {{ date | date: metadata.note.dateFormat }}
-
+        {{ date | noteDate }}
       {% if url %}
         </a>
       {% endif %}

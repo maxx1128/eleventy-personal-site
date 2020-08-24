@@ -5,6 +5,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const moment = require("moment");
 
 const hideFutureItems = (item) => {
   let now = new Date().getTime();
@@ -23,9 +24,18 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
 
+  eleventyConfig.addFilter("noteDate", dateObj => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('LLLL d, yyyy');
+  });
+
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+  });
+
+  eleventyConfig.addLiquidFilter("toUTCString", (date) => {
+    const utc = new Date(date).toUTCString();
+    return moment.utc(utc).format("MMMM D, YYYY");
   });
 
   // Get the first `n` elements of a collection.

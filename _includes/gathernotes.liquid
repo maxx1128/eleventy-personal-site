@@ -2,7 +2,7 @@
   [
     {% for note in collections.notes %}
       {
-        "title" : "{{ note.data.date | date: metadata.note.dateFormat }}",
+        "title" : "{{ note.date | noteDate }}",
         "url"   : "{{ note.url }}"
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
