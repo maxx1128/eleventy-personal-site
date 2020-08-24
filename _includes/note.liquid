@@ -28,27 +28,29 @@
   </div>
 
   {% if singleNotePage %}
-    <div class="resp-max-width pb-4 mt-auto">
-      {% assign nextNote = collections.notes | getNextCollectionItem: page %}
-      {% assign previousNote = collections.notes | getPreviousCollectionItem: page %}
+    <div class="mt-auto bg-primary-lightest">
+      <div class="resp-max-width pb-4">
+        {% assign nextNote = collections.notes | getNextCollectionItem: page %}
+        {% assign previousNote = collections.notes | getPreviousCollectionItem: page %}
 
-      <ul class="list-reset m-0 p-0 flex flex-column xl--flex-row flex-justify-between text-small">
-        {% if nextNote %}
-          <li>
-            Next: <a href="{{ nextNote.url | url }}">{{ nextNote.data.date | date: metadata.note.dateFormat }}</a>
+        <ul class="list-reset m-0 p-0 pt-4 flex flex-column xl--flex-row flex-justify-between text-small">
+          {% if nextNote %}
+            <li class="mb-0">
+              <strong>Next:</strong> <a href="{{ nextNote.url | url }}">{{ nextNote.date | noteDate }}</a>
+            </li>
+          {% endif %}
+
+          <li id="random-navigator-wrapper" class="random-navigator-wrapper--note mb-0 hidden" class="xl--px-4">
+            <strong>Random:</strong> <a href="javascript:void();"></a>
           </li>
-        {% endif %}
 
-        <li id="random-navigator-wrapper" class="random-navigator-wrapper--note hidden" class="xl--px-4">
-          Random: <a href="javascript:void();"></a>
-        </li>
-
-        {% if previousNote %}
-          <li>
-            Previous: <a href="{{ previousNote.url | url }}">{{ previousNote.data.date | date: metadata.note.dateFormat }}</a>
-          </li>
-        {% endif %}
-      </ul>
+          {% if previousNote %}
+            <li class="mb-0">
+              <strong>Previous:</strong> <a href="{{ previousNote.url | url }}">{{ previousNote.date | noteDate }}</a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
     </div>
   {% endif %}
 </article>
