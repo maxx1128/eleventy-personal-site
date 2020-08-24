@@ -9,11 +9,12 @@ pagination:
 ---
 
 <p>
-  Stuff I've written will go here.
+  You can either scroll down for a straight archive or all my archive, or click one of the below tags to see writing from a specific category. <a class="hidden" id="random-post-link">Or surprise yourself with a totally random blog post.</a>
 </p>
 
 {% include tagList
   tags: collections.tagList,
+  classes: "py-8"
   wrap: true
 %}
 

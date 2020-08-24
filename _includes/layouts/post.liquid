@@ -29,23 +29,28 @@ layout: layouts/base.liquid
 {% assign nextPost = collections.posts | getNextCollectionItem: page %}
 {% assign previousPost = collections.posts | getPreviousCollectionItem: page %}
 
-<div class="resp-max-width">
-  <ul class="list-reset m-0 p-0">
+<div class="bg-primary-lightest pt-4">
+  <div class="resp-max-width">
+    <ul class="list-reset m-0 p-0">
 
-    {% if nextPost %}
-      <li>
-        Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>
+      {% if nextPost %}
+        <li class="flex flex-column md--flex-row mb-0 pb-4">
+          <strong class="pr-2">Next:</strong>
+          <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>
+        </li>
+      {% endif %}
+
+      <li id="random-navigator-wrapper" class="hidden flex flex-column md--flex-row mb-0 pb-4">
+        <strong class="pr-2">Random:</strong>
+        <a href="javascript:void();"></a>
       </li>
-    {% endif %}
 
-    <li id="random-navigator-wrapper" class="hidden">
-      Random: <a href="javascript:void();"></a>
-    </li>
-
-    {% if previousPost %}
-      <li>
-        Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>
-      </li>
-    {% endif %}
-  </ul>
+      {% if previousPost %}
+        <li class="flex flex-column md--flex-row mb-0 pb-4">
+          <strong class="pr-2">Previous:</strong>
+          <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>
+        </li>
+      {% endif %}
+    </ul>
+  </div>
 </div>
