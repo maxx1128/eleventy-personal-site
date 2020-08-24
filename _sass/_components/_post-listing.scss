@@ -2,8 +2,9 @@
   @return linear-gradient(180deg, $start 0%, color(primary, light) 30%, color(primary, light), 70%, $end 100%);
 }
 
-$date-size: 5.5rem;
+$date-size: 5.25rem;
 $thumbnail-size: $date-size * 0.8;
+$read-time-time: $thumbnail-size * 0.65;
 
 .post-listing {
   &:last-of-type {
@@ -17,13 +18,37 @@ $thumbnail-size: $date-size * 0.8;
   min-height: $date-size;
   max-height: $date-size;
 
-  margin-bottom: $thumbnail-size * 0.75;
+  margin-bottom: $read-time-time;
 
   z-index: 1;
 }
 
-.post-listing__thumbnail {
+.post-listing__date {
+  min-width: $date-size;
+  max-width: $date-size;
+  min-height: $date-size;
+  max-height: $date-size;
+
+  margin-top: $read-time-time;
+
+  z-index: 1;
+}
+
+.post-listing__thumbnail,
+.post-listing__read-time {
   position: absolute;
+}
+
+.post-listing__read-time {
+  bottom: 85%;
+
+  min-width: $read-time-time;
+  max-width: $read-time-time;
+  min-height: $read-time-time;
+  max-height: $read-time-time;
+}
+
+.post-listing__thumbnail {
   top: 85%;
 
   min-width: $thumbnail-size;

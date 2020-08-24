@@ -19,14 +19,3 @@
     noteLinkElement.setAttribute('href', randomNote.url);
   }
 })();
-
-(function() {
-  const documents = window.ContentData.documents,
-        randomDocument = documents[Math.floor(Math.random() * documents.length)],
-        documentLinkElement = document.getElementById('random-exocortex-link');
-
-  if (documentLinkElement) {
-    documentLinkElement.classList.remove('hidden');
-    documentLinkElement.setAttribute('href', randomDocument.url);
-  }
-})();

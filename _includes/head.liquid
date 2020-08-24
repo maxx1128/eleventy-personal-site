@@ -1,16 +1,6 @@
 <head>
-  {% if contentType == "Exocortex" %}
-    {% assign isExocortex = true %}
-
-    {% if category_page == true %}
-      {% assign isExocortexCategory = true %}
-    {% endif %}
-  {% endif %}
-
   {% if contentType == "Note" %}
     {% assign title = date | date: metadata.note.dateFormat | prepend: "Note on " | append: " - " | append: metadata.title %}
-  {% elsif isExocortex %}
-    {% assign title = title | append: " - Exocortex - " | append: metadata.title %}
   {% elsif title %}
     {% assign title = title | append: " - " | append: metadata.title %}
   {% else %}
@@ -21,12 +11,6 @@
     {% assign description = tagline %}
   {% elsif excerpt and excerpt != '' %}
     {% assign description = excerpt | strip_html | strip_newlines | truncate: 160 %}
-  {% elsif isExocortex %}
-    {% if isExocortexCategory %}
-      {% assign description = "List of saved documents related to " | append: category | append: "." %}
-    {% else %}
-      {% assign description = "Saved notes on " | append: title | append: " from the " | append: category | append: " folder." %}
-    {% endif %}
   {% else %}
     {% assign description = metadata.description %}
   {% endif %}

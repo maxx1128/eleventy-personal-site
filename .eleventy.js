@@ -85,62 +85,6 @@ module.exports = function(eleventyConfig) {
       .slice(0, 2);
   });
 
-  eleventyConfig.addCollection("exocortex", function (collection) {
-    return collection.getFilteredByGlob("./exocortex/**/*.md").reverse();
-  });
-
-  eleventyConfig.addCollection("exocortex_menu", function (collection) {
-    let exocortexGroups = [
-      {
-        "slug": "books",
-        "name": "Books",
-        "category_names": ["How to Stop Worrying and Start Living", "92 Ways To Talk To Anyone", "Accessibility for Everyone", "Clean Code", "Practical Object Oriented Programming in Ruby", "Pragmatic Programmer", "Pragmatic Thinking and Learning", "How To Win Friends and Influence People"]
-      }, {
-        "slug": "coding",
-        "name": "Coding",
-        "category_names": ["Accessibility", "Conferences", "CSS", "Front-end", "Javascript", "Programming", "Ruby", "Web Design"]
-      }, {
-        "slug": "adulting",
-        "name": "Adulting",
-        "category_names": ["Nonfiction", "Soft Skills", "Strong Thinking", "Writing Fiction", "Other"]
-      }
-    ];
-
-    const getAllCategories = (categoryList, page) => {
-      const newCategory = page.data.category;
-
-      if (newCategory && !categoryList.includes(newCategory)) {
-        return [...categoryList, newCategory];
-      } else {
-        return categoryList;
-      }
-    };
-
-    const createCategoryObjects = (category) => {
-      return {
-        "title"   : category,
-        "entries" : null
-      }
-    }
-
-    const allPages = collection.getFilteredByGlob("./exocortex/**/*.md"),
-          categories = allPages
-                        .reduce(getAllCategories, [])
-                        .map(createCategoryObjects);
-
-          categories.forEach(category => {
-            category.entries = allPages.filter(page => page.data.category == category.title);
-          });
-
-    exocortexGroups.map(group => {
-      const groupCategories = categories.filter(category => group.category_names.includes(category.title));
-      group.categories = groupCategories;
-      return group;
-    });
-
-    return exocortexGroups;
-  });
-
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("assets/**/*");
   eleventyConfig.addPassthroughCopy("serviceworker.js");

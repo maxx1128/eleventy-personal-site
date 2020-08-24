@@ -17,6 +17,17 @@
         {% if post.data.image %}
           <span class="post-listing__thumbnail border-radius-circle" style="background-image: url('{{ post_image }}')"></span>
         {% endif %}
+
+        <span class="post-listing__read-time flex flex-column flex-align-center flex-justify-center text-center text-tiny border-radius-circle bg-primary-dark">
+          {% assign word_count = post.templateContent | split: " " | size %}
+          {% if word_count < 360 %}
+            <strong>1</strong>
+            min
+          {% else %}
+            <strong>{{ word_count | divided_by: 180 | round }}</strong>
+            mins
+          {% endif %}
+        </span>
       </div>
 
       <span class="post-listing__line bg-primary-base"></span>

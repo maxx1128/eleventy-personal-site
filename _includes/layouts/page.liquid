@@ -17,31 +17,19 @@ layout: layouts/base.liquid
   {% assign has_date = false %}
 {% endif %}
 
-{% if postLabel == "Exocortex" %}
-  {% assign isExocortex = true %}
-{% endif %}
-
 {% if postLabel == "Note" %}
   {% assign header_class = header_class | append: " pt-2" %}
 {% else %}
   {% assign header_class = header_class | append: " header--with-image py-3" %}
 {% endif %}
 
-{% if isExocortex %}
-  {% assign header_class = header_class | append: " header--exocortex" %}
-{% endif %}
-
 <header class="{{ header_class }} width-100" {% if banner_image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
   <div class="header__text resp-max-width">
     <div class="relative py-4">
-      {% if isExocortex %}
-        {% include exocortexBreadcrumb.html %}
-      {% else %}
-        {% if postLabel %}
-          <small class="block {% if postLabel == 'Note' %}mb-0{% else %}mb-2{% endif %} font-weight-bold">
-            {{ postLabel }}{% if has_date %} from {{ date | date: metadata.note.dateFormat }}{% endif %}
-          </small>
-        {% endif %}
+      {% if postLabel %}
+        <small class="block {% if postLabel == 'Note' %}mb-0{% else %}mb-2{% endif %} font-weight-bold">
+          {{ postLabel }}{% if has_date %} from {{ date | date: metadata.note.dateFormat }}{% endif %}
+        </small>
       {% endif %}
 
       <h1 class="my-0 text-h2">
