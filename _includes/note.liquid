@@ -34,17 +34,17 @@
         <ul class="list-reset m-0 p-0 pt-4 flex flex-column xl--flex-row flex-justify-between text-small">
           {% if nextNote %}
             <li class="mb-0">
-              <strong>Next:</strong> <a href="{{ nextNote.url | url }}">{{ nextNote.date | noteDate }}</a>
+              <strong>Next Note:</strong> <a href="{{ nextNote.url | url }}">{{ nextNote.date | noteDate }}</a>
             </li>
           {% endif %}
 
           <li id="random-navigator-wrapper" class="random-navigator-wrapper--note mb-0 hidden" class="xl--px-4">
-            <strong>Random:</strong> <a href="javascript:void();"></a>
+            <strong>Random Note:</strong> <a href="javascript:void();"></a>
           </li>
 
           {% if previousNote %}
             <li class="mb-0">
-              <strong>Previous:</strong> <a href="{{ previousNote.url | url }}">{{ previousNote.date | noteDate }}</a>
+              <strong>Previous Note:</strong> <a href="{{ previousNote.url | url }}">{{ previousNote.date | noteDate }}</a>
             </li>
           {% endif %}
         </ul>
