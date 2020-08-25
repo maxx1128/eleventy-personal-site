@@ -68,7 +68,7 @@ I think I already know this on a subconscious level. I tend to exaggerate my goo
 
 <img alt="" src="/assets/images/posts/feeling-fear/trail-mix.jpeg" class="block mx-auto md--width-75" />
 
-<img alt="" src="/assets/images/posts/feeling-fear/bitch-closed.jpeg" class="block mx-auto md--width-75" />
+<img alt="" src="/assets/images/posts/feeling-fear/bitch-closed.jpeg" class="block mx-auto mb-4 md--width-75" />
 
 I'm also not forgetting my passions related to coding, reading, and writing.
 
