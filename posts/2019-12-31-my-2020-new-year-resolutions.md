@@ -71,8 +71,7 @@ I won't say I'm feeling too good or bad about 2019 or 2020. I'm upset about how 
 If that's the case, you may wonder why I'm bothering with these resolutions at all. If I may reference my post on being a perfectly unhappy developer:
 
 > [These activities] make me feel like a human going headfirst into the turmoil of existence. Seeing a spectrum of ideas and feelings that push me up, drag me down, and toss me somewhere else. To find something new. To struggle with a new obstacle. To discover a new strength.
-> <br />
-> <br />
+
 > Most of all, they make me feel I'm making the best possible use of my time alive.
 
 So next year here's to doing more of what makes me feel alive. To going through pain and joy in the path to help myself and others in some small way.
