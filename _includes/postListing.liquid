@@ -5,7 +5,7 @@
     {% assign post_image = metadata.post.imagePath | append: post.data.image %}
 
     <div class="post-listing relative flex flex-align-center">
-      <div class="post-listing__date relative mr-6 md--flex flex-column flex-align-center flex-justify-center border-radius-circle bg-primary-darker text-mono-white hidden-md-down">
+      <div class="post-listing__date relative mr-6 md--flex flex-column flex-align-center flex-justify-center border-radius-circle bg-primary-darker text-mono-white box-shadow-2 hidden-md-down">
         <span class="font-family-header text-h6 font-weight-bold">
           {{ post.date | readableDate | date: "%b %e" }}
         </span>
@@ -15,10 +15,10 @@
         </span>
 
         {% if post.data.image %}
-          <span class="post-listing__thumbnail border-radius-circle" style="background-image: url('{{ post_image }}')"></span>
+          <span class="post-listing__thumbnail box-shadow-1 border-radius-circle" style="background-image: url('{{ post_image }}')"></span>
         {% endif %}
 
-        <span class="post-listing__read-time flex flex-column flex-align-center flex-justify-center text-center text-tiny border-radius-circle bg-primary-dark">
+        <span class="post-listing__read-time flex flex-column flex-align-center flex-justify-center text-center text-tiny border-radius-circle bg-primary-dark box-shadow-1">
           {% assign word_count = post.templateContent | split: " " | size %}
           {% if word_count < 360 %}
             <strong>1</strong>
