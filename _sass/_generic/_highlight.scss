@@ -180,22 +180,14 @@ pre code {
   $button-bg: '';
 
   @if (lightness($color) > 50) {
-    $text-color: color(mono, black);
+    $text-color: #000;
     $button-bg: color(primary, dark);
   } @else {
-    $text-color: color(mono, white);
+    $text-color: #FFF;
     $button-bg: color(primary, light);
   }
 
   pre.language-#{$language} {
-    .theme-dark & {
-      @if (lightness($color) > 50) {
-        $text-color: color(mono, white);
-      } @else {
-        $text-color: color(mono, dark);
-      }
-    }
-
     code.language-#{$language} {
       border-color: $color;
     }
