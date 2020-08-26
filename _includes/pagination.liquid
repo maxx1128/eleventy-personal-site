@@ -8,19 +8,19 @@
       {% if page.url != pagination.href.first and pagination.href.first != pagination.href.previous %}
         <li class="mr-2 mb-0">
           <a href="{{ pagination.href.first }}">
-            First
+            First <span class="screenReader">Page</span>
           </a>
         </li>
       {% elsif page.url == pagination.href.first %}
-        <li class="mr-2 mb-0">
-          First
+        <li class="mr-2 mb-0 italic">
+          You're at the first page!
         </li>
       {% endif %}
 
       {% if pagination.href.previous %}
         <li class="mb-0">
           <a href="{{ pagination.href.previous }}">
-            Previous
+            Previous <span class="screenReader">Page</span>
           </a>
         </li>
       {% endif %}
@@ -63,7 +63,7 @@
       {% if pagination.href.next %}
         <li class="mb-0">
           <a href="{{ pagination.href.next }}">
-            Next
+            Next <span class="screenReader">Page</span>
           </a>
         </li>
       {% endif %}
@@ -71,12 +71,12 @@
       {% if page.url != pagination.href.last and pagination.href.last != pagination.href.next %}
         <li class="mb-0 ml-2">
           <a href="{{ pagination.href.last }}">
-            Last
+            Last <span class="screenReader">Page</span>
           </a>
         </li>
       {% elsif page.url == pagination.href.last %}
-        <li class="mb-0 ml-2">
-          Last
+        <li class="mb-0 ml-2 italic">
+          You're at the last page!
         </li>
       {% endif %}
     </div>
