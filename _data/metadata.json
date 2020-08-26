@@ -1,26 +1,22 @@
 {
   "title": "Maxwell Antonucci",
-  "url": "https://www.maxwellantonucci.com/",
+  "url": " https://www.maxwellantonucci.com/",
   "description": "Journalist turned full-time coder, part-time ponderer.",
   "feed": {
     "subtitle": "Journalist turned full-time coder, part-time ponderer.",
-    "filename": "feed.xml",
-    "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "filename": "rss.xml",
+    "path": "/rss.xml",
+    "id": "https://www.maxwellantonucci.com/"
   },
   "jsonfeed": {
-    "path": "/feed/feed.json",
-    "url": "https://example.com/feed/feed.json"
+    "path": "/feed.json",
+    "url": "https://www.maxwellantonucci.com/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
+    "name": "Max Antonucci",
+    "url": "https://www.maxwellantonucci.com/about/"
   },
   "post": {
     "imagePath": "/assets/images/featured/"
-  },
-  "note": {
-    "dateFormat": "%B %d, %Y"
   }
 }

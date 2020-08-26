@@ -17,6 +17,6 @@
   },
   {
      "name": "RSS Feed",
-     "url": "https://www.maxwellantonucci.com/rss.xml"
+     "url": "/rss.xml"
   }
 ]
