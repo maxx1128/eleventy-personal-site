@@ -4,10 +4,6 @@
       return window.ContentData.notes;
     }
 
-    if (linkWrapper.classList.contains('random-navigator-wrapper--document')) {
-      return window.ContentData.documents;
-    }
-
     return window.ContentData.posts;
   }
 
@@ -18,6 +14,8 @@
     let blockedURLs    = [window.location.pathname];
     if (nextLink)     { blockedURLs.push(nextLink.getAttribute('href')); }
     if (previousLink) { blockedURLs.push(previousLink.getAttribute('href')); }
+
+    console.log(blockedURLs);
 
     return data.filter(content => !blockedURLs.some(blockedURL => content.url.includes(blockedURL)));
   }

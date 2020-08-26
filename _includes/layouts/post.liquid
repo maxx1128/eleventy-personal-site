@@ -53,7 +53,9 @@ layout: layouts/base.liquid
       {% if nextPost %}
         <li class="flex flex-column md--flex-row mb-0 pb-4">
           <strong class="pr-2">Next Post:</strong>
-          <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>
+          <a class="random-navigator__next-link" href="{{ nextPost.url | url }}">
+            {{ nextPost.data.title }}
+          </a>
         </li>
       {% endif %}
 
@@ -65,7 +67,9 @@ layout: layouts/base.liquid
       {% if previousPost %}
         <li class="flex flex-column md--flex-row mb-0 pb-4">
           <strong class="pr-2">Previous Post:</strong>
-          <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>
+          <a class="random-navigator__previous-link" href="{{ previousPost.url | url }}">
+            {{ previousPost.data.title }}
+          </a>
         </li>
       {% endif %}
     </ul>

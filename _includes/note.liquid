@@ -34,7 +34,10 @@
         <ul class="list-reset m-0 p-0 pt-4 flex flex-column xl--flex-row flex-justify-between text-small">
           {% if nextNote %}
             <li class="mb-0">
-              <strong>Next Note:</strong> <a href="{{ nextNote.url | url }}">{{ nextNote.date | noteDate }}</a>
+              <strong>Next Note:</strong>
+              <a class="random-navigator__next-link" href="{{ nextNote.url | url }}">
+                {{ nextNote.date | noteDate }}
+              </a>
             </li>
           {% endif %}
 
@@ -44,7 +47,10 @@
 
           {% if previousNote %}
             <li class="mb-0">
-              <strong>Previous Note:</strong> <a href="{{ previousNote.url | url }}">{{ previousNote.date | noteDate }}</a>
+              <strong>Previous Note:</strong>
+              <a class="random-navigator__previous-link" href="{{ previousNote.url | url }}">
+                {{ previousNote.date | noteDate }}
+              </a>
             </li>
           {% endif %}
         </ul>
