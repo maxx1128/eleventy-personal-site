@@ -1,4 +1,4 @@
 _site/
 node_modules/
 assets/css/*.css
-assets/js/*.js
+assets/javascript/*.js
