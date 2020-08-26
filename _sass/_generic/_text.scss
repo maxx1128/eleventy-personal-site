@@ -18,6 +18,7 @@ h6 {
 
     .direct-link {
       position: absolute;
+      top: 0;
       right: calc(100% + #{spacing(2)});
     }
   }
