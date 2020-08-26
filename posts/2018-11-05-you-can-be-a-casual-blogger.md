@@ -46,7 +46,9 @@ _Ahem,_ more importantly, **I've found when I force my writing, I can't stand by
 For so long I thought I was unprofessional. But I realized this just works best for me, and helped me fit writing into my new adult schedule. I write less than many great bloggers here, but I don't lose time for other things I love - reading, learning, boxing, and burying Ess in garbage Puyos after a 3-part combo and seeing her cry in agonizing defeat.
 
 <span class="block mx-auto sm--width-75 md--width-50">
-  ![Image courtesy of All The Tropes Wiki and sweet vengeance.](https://vignette.wikia.nocookie.net/allthetropes/images/f/fa/Puyo_Puyo_Tetris_Ess_Crying.png/revision/latest?cb=20180220194221)
+  <img src="https://vignette.wikia.nocookie.net/allthetropes/images/f/fa/Puyo_Puyo_Tetris_Ess_Crying.png/revision/latest?cb=20180220194221"
+       alt="Image courtesy of All The Tropes Wiki and sweet vengeance."
+  />
 </span>
 
 Yeah, you heard me!

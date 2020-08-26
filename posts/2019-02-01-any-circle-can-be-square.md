@@ -5,7 +5,7 @@ excerpt: "Look at anything from a narrow enough perspective, and it can be whate
 tags: ['philosophy']
 ---
 
-One part of a useful book, ["How Not to be Wrong: The Power of Mathematical Thinking"](https://www.google.com/aclk?sa=l&ai=DChcSEwin75XQn5jgAhXInrMKHTx-C40YABADGgJxbg&sig=AOD64_1vurcKpysMAylCFcat6FVpP_QpJQ&adurl=&ctype=5&q=){:target="_blank"} always stuck with me. It was a section about circles.
+One part of a useful book, ["How Not to be Wrong: The Power of Mathematical Thinking"](https://www.google.com/aclk?sa=l&ai=DChcSEwin75XQn5jgAhXInrMKHTx-C40YABADGgJxbg&sig=AOD64_1vurcKpysMAylCFcat6FVpP_QpJQ&adurl=&ctype=5&q=) always stuck with me. It was a section about circles.
 
 It's fair to say we'd all recognize a circle if one was drawn for us. Our brain would see a shape that's curved, with no straight edges or lines, and go _"oh, this is a circle."_ It'd be pretty obvious.
 
