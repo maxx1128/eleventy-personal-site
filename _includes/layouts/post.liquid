@@ -7,9 +7,18 @@ layout: layouts/base.liquid
 <header class="{% if image %}header--with-custom-image{% else %}header--with-image{% endif %} width-100 py-3" {% if image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
   <div class="header__text resp-max-width">
     <div class="relative py-4">
-      <small class="block mb-2 font-weight-bold">
-        {{ date | toUTCString }}
-      </small>
+      <div class="flex flex-justify-between">
+        <small class="block mb-2 font-weight-bold">
+          {{ date | toUTCString }}
+        </small>
+
+        <span class="hidden-md-down">
+          {% include tagList
+            tags: tags
+            rightAlign: true
+          %}
+        </span>
+      </div>
 
       <h1 class="my-0 text-h2">
         {{ title }}
@@ -24,6 +33,14 @@ layout: layouts/base.liquid
 
 <article id="content" class="post-content resp-max-width width-100 py-4 sm--py-6 lg--mt-4">
   {{ content | safe }}
+
+  {% if featured_image_link %}
+    <small class="inline-block pt-8 mb-0 italic">
+      <a href="{{ featured_image_link }}" target="_blank" rel="noopener">
+        Featured image courtesy of this link.
+      </a>
+    </small>
+  {% endif %}
 </article>
 
 {% assign nextPost = collections.posts | getPreviousCollectionItem: page %}
