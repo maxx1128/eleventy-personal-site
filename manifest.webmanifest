@@ -1,0 +1,21 @@
+{
+  "name": "Maxwell Antonucci",
+  "short_name": "Max Antonucci",
+  "description": "Max Antonucci's personal website and blog.",
+  "icons": [
+    {
+      "src": "/assets/images/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/images/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "minimal-ui",
+  "background_color": "#46AFB9",
+  "theme_color": "#184C51"
+}

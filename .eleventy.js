@@ -110,6 +110,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("assets/**/*");
   eleventyConfig.addPassthroughCopy("serviceworker.js");
+  eleventyConfig.addPassthroughCopy("manifest.webmanifest");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
