@@ -17,7 +17,7 @@ This is the most common response I've seen online, almost always from white guys
 
 But that's based on the false idea that accessibility only helps people with constant or visible disabilities. **Some people do benefit more from an accessible site, but everyone benefits to some extent.**
 
-<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">I was also tipped off this person is an asshole when they wrote a &quot;majority of websites don&#39;t have a large enough accessible user-base to make accessibility worth the development time.&quot;<br><br>That&#39;s a huge lack of empathy and good business-sense since it helps EVERYONE.</p>&mdash; Max Antonucci (@Maxwell_Dev) <a href="https://twitter.com/Maxwell_Dev/status/1072898353015517184?ref_src=twsrc%5Etfw">December 12, 2018</a></blockquote> <script async
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">I was also tipped off this person is an asshole when they wrote a &quot;majority of websites don&#39;t have a large enough accessible user-base to make accessibility worth the development time.&quot;<br><br>That&#39;s a huge lack of empathy and good business-sense since it helps EVERYONE.</p>&mdash; Max Antonucci (@Maxwell_Dev) <a href="https://twitter.com/Maxwell_Dev/status/1072898353015517184?ref_src=twsrc%5Etfw">December 12, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 A big point in [one accessibility post I wrote](https://dev.to/maxwell_dev/the-web-accessibility-introduction-i-wish-i-had-4ope) is remembering stress cases. Stress cases aren't only about what we see as disabilities, like blindness. They include temporary or environmental conditions that affect everyone. Even the privileged, able-bodied app's audience will deal with stress cases like:
 
@@ -44,7 +44,7 @@ This is why it's important to get accessibility buy-in early on. The later it ge
 
 I heard this in a chat before and recently saw it play out on Twitter.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sarah, I&#39;m very sorry to hear about your poor experience with us. If you would like to discuss this or if you are still having issues accessing our website please DM us with your contact number and a time that would be good for you to further discuss.</p>&mdash; People&#39;s United Bank (@PeoplesUnited) <a href="https://twitter.com/PeoplesUnited/status/1121597826058924032?ref_src=twsrc%5Etfw">April 26, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sarah, I&#39;m very sorry to hear about your poor experience with us. If you would like to discuss this or if you are still having issues accessing our website please DM us with your contact number and a time that would be good for you to further discuss.</p>&mdash; People&#39;s United Bank (@PeoplesUnited) <a href="https://twitter.com/PeoplesUnited/status/1121597826058924032?ref_src=twsrc%5Etfw">April 26, 2019</a></blockquote>
 
 This falls apart since **it violates a core tenet of programming: automating boring, repetitive tasks.** Compare the two below options and tell me which sounds more efficient.
 
@@ -99,5 +99,3 @@ I'd prefer to persuade people with the "don't be a dick to others" argument. But
 Please remember this post next time someone pushes back against accessibility, online or in person. I encourage you to use it as a reference (or send them a link to save more time).
 
 Our time is better spent on productive tasks like improving our accessibility knowledge, building better interfaces, and losing the trail of people who need to get over their alligator bites. Seriously, they'll heal in a few months. Move on!
-
-_Have any other anti-accessibility arguments you've heard and the counter-arguments you gave? Please comment with them below!_

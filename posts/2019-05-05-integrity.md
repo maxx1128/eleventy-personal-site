@@ -13,7 +13,7 @@ Integrity is the work this vegetarian does to cut meat from their diet. But what
 
 What about if they eat meat once every two years? Every six months? Once a month? Every two weeks? Once a week? At what point does this person move from "has integrity" to "doesn't have integrity?"
 
-Another option is integrity is a sliding scale, not a black and white label. A vegetarian who eats meat once a month has some integrity, but one who only eats it once a year has more. This already sounds more reasonable.
+Another option for integrity is a sliding scale, not a black and white label. A vegetarian who eats meat once a month has some integrity, but one who only eats it once a year has more. This already sounds more reasonable.
 
 If that's the case, the question's no longer "do I have integrity?" It's "do I have as much integrity as I want?"
 
