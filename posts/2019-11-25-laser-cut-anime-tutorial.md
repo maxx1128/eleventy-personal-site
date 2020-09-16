@@ -38,7 +38,7 @@ The first step in laser-cutting an image is, as you'd guess, choosing an image. 
 For this example lets go with the first image I laser cut with this technique: [an anime drawing of a girl adjusting her glasses](https://safebooru.org/index.php?page=post&s=view&id=2444294). The image is clear, and the contrast and lighting are good, so it should translate well.
 
 <span class="block mx-auto sm--width-50">
- ![An anime drawing of a girl looking forward and adjusting her glasses.](/assets/images/posts/laser-cut-anime-demo/step_1/original.png)
+ <img src="/assets/images/posts/laser-cut-anime-demo/step_1/original.png" alt="An anime drawing of a girl looking forward and adjusting her glasses." />
 </span>
 
 ## Simplify The Image
@@ -62,7 +62,7 @@ You'll see two sliders below it, "dark/white" and "sharp/soft." There are no sta
 For my example photo, I got a good outline without much tweaking. Once it's ready, hit "Download or Print on One Page" and save a copy of the image.
 
 <span class="block mx-auto sm--width-75">
- ![A simplified outline of the drawing with no color and minimal noise.](/assets/images/posts/laser-cut-anime-demo/step_2/outline.png)
+ <img src="/assets/images/posts/laser-cut-anime-demo/step_2/outline.png" alt="A simplified outline of the drawing with no color and minimal noise." />
 </span>
 
 ### Make the Shadow
@@ -74,7 +74,7 @@ Slide the first one to the left for "Dark," and the second to the right for "Sof
 In this example, no adjustments are needed.
 
 <span class="block mx-auto sm--width-75">
- ![A simplified version of the image's shadows that can be layered under the outline.](/assets/images/posts/laser-cut-anime-demo/step_2/shadows.png)
+ <img src="/assets/images/posts/laser-cut-anime-demo/step_2/shadows.png" alt="A simplified version of the image's shadows that can be layered under the outline." />
 </span>
 
 ## Convert the Images on Inkscape
@@ -86,13 +86,13 @@ Now that we have our images, we need to prepare them for the laser cutter. Like 
 Right now the images are just that, standard images. We need to convert them to bitmaps to properly edit and send them to the laser cutter. Select one image, then from the menu select "Path > Trace Bitmap..."
 
 <span class="block mx-auto sm--width-50">
- ![An opened Inkscape menu with an option to trace an image.](/assets/images/posts/laser-cut-anime-demo/step_3/trace_bitmap.png)
+ <img src="/assets/images/posts/laser-cut-anime-demo/step_3/trace_bitmap.png" alt="An opened Inkscape menu with an option to trace an image." />
 </span>
 
 You'll see a window like the one below pop up. There are lots of settings for how to trace the image, but we don't need most of them. Use the same settings as below, "Brightness Cutoff" with a 0.5 threshold, and you'll trace it just fine.
 
 <span class="block mx-auto sm--width-75">
- ![An Inkscape window for tracing the shadow image to a bitmap.](/assets/images/posts/laser-cut-anime-demo/step_3/shadow_trace.png)
+ <img src="/assets/images/posts/laser-cut-anime-demo/step_3/shadow_trace.png" alt="An Inkscape window for tracing the shadow image to a bitmap." />
 </span>
 
 When you close the window, you may wonder where your new version of the image went. Tracing an image puts the bitmap version right over the original, so click it, drag it away, and delete the original. You now have a laser cutter-friendly version of your image - in this case, the shadow version.
@@ -100,19 +100,19 @@ When you close the window, you may wonder where your new version of the image we
 I recommend making the shadow fill a pure green color, using the "fill and stroke" window. You can use whatever color you want though, as long as it's purely that color so the laser cutter recognizes it.
 
 <span class="block mx-auto sm--width-75">
- ![A bitmap version of the image shadow with a green fill color.](/assets/images/posts/laser-cut-anime-demo/step_3/shadow_result.png)
+ <img src="/assets/images/posts/laser-cut-anime-demo/step_3/shadow_result.png" alt="A bitmap version of the image shadow with a green fill color." />
 </span>
 
 Do the same thing for the outline image, except make it a different color. My preference is red since it contrasts well with green.
 
 <span class="block mx-auto sm--width-75">
- ![A bitmap version of the image outline with a red fill color.](/assets/images/posts/laser-cut-anime-demo/step_3/border_result.png)
+ <img src="/assets/images/posts/laser-cut-anime-demo/step_3/border_result.png" alt="A bitmap version of the image outline with a red fill color." />
 </span>
 
 Lastly, position the images so the outline is just above the shadow (this is where keeping them in separate layers helps). You should now see something like this, with both coming together to form something quite close to the original. **The outline layer should be visible over the shadow layer in areas they overlap!**
 
 <span class="block mx-auto sm--width-75">
- ![The red outline overlaid on top of the green shadow to create the final laser cut image.](/assets/images/posts/laser-cut-anime-demo/step_3/shadow_and_border.png)
+ <img src="/assets/images/posts/laser-cut-anime-demo/step_3/shadow_and_border.png" alt="The red outline overlaid on top of the green shadow to create the final laser cut image." />
 </span>
 
 ### Delete Extra Noise
@@ -126,7 +126,7 @@ I recommend zooming in because if there are many nodes visible on the screen, it
 Once you've got your image ready, all that's left is exporting it to the laser cutter with the following settings. This post assumes it's being cut into a piece of wood.
 
 <span class="block mx-auto sm--width-50">
- ![The laser cutter settings for the red and green layers.](/assets/images/posts/laser-cut-anime-demo/step_4/laser_settings.png)
+ <img src="/assets/images/posts/laser-cut-anime-demo/step_4/laser_settings.png" alt="The laser cutter settings for the red and green layers." />
 </span>
 
 The logic behind this is pretty simple:
@@ -141,7 +141,7 @@ If this is your first time running a setup like this, **I recommend testing it o
 With that, the laser print should be set. You can see an example of how this looks by seeing how this tutorial's example turned out.
 
 <span class="block mx-auto sm--width-50">
- ![The final result of the girl with glasses artwork laser-cut on a piece of wood.](/assets/images/posts/laser-cut-anime-demo/step_5/result.jpeg)
+ <img src="/assets/images/posts/laser-cut-anime-demo/step_5/result.jpeg" alt="The final result of the girl with glasses artwork laser-cut on a piece of wood." />
 </span>
 
 So please, go forth, laser-cut your artwork and photos, and share them with the MakeHaven world!
