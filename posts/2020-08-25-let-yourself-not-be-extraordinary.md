@@ -23,7 +23,7 @@ Some people really are extraordinary, and you may be one of those few people who
 
 I thought this idea would depress me, but it liberates me. **Without the pressure to be extraordinary, I'm free to be as good (and as bad) at things as I naturally am.** I can enjoy how good I am at things instead of hating myself for how far I am below being super amazing awesome at them.
 
-If this is tough to accept, I recommend measuring yourself more by virtues than comparable skills. You can "rank" people on their paycheck or number of side projects, but not on their honesty on integrity. They make us awesome without worrying about comparisons or elements we can't control.
+If this is tough to accept, I recommend measuring yourself more by virtues than comparable skills. You can "rank" people on their paycheck or number of side projects, but not on their honesty or integrity. They make us awesome without worrying about comparisons or elements we can't control.
 
 No one other than the Dalai Lama is going to be famous or spectacular for only their virtue. But they'll still be a great, if not an extraordinary person. The other people around them will likely be happy they're around too.
 
