@@ -9,7 +9,7 @@ tags: ["javascript"]
 
 ### The Basic Markup
 
-```hbs
+```handlebars
 <!-- wrapper.hbs -->
 <div class="relative {{@class}}">
   {{yield
@@ -38,7 +38,7 @@ export default class Dropdown extends Component {
 }
 ```
 
-```hbs
+```handlebars
 <!-- toggle.hbs -->
 <button
   class="dropdown__toggle cursor {{@class}} {{if @isOpen "dropdown__toggle--active"}}"
@@ -47,7 +47,7 @@ export default class Dropdown extends Component {
 </button>
 ```
 
-```hbs
+```handlebars
 <!-- menu.hbs -->
 <ul
   class="dropdown__menu absolute abs-t-100 abs-r-none list-none m-none p-none bg-mono-blank box-shadow-2 color-mono-darker {{if @isOpen '' 'hidden'}}"
@@ -68,7 +68,7 @@ export default class Dropdown extends Component {
 }
 ```
 
-```hbs
+```handlebars
 <!-- example.hbs -->
 <Dropdown::Wrapper as |dd|>
   <dd.toggle>
@@ -88,7 +88,7 @@ export default class Dropdown extends Component {
 
 ### Aria Tags
 
-```hbs
+```handlebars
 <!-- toggle.hbs -->
 <button
   type="button"
@@ -101,7 +101,7 @@ export default class Dropdown extends Component {
 </button>
 ```
 
-```hbs
+```handlebars
 <!-- menu.hbs -->
 <ul
   aria-labelledby={{@id}}
@@ -111,7 +111,7 @@ export default class Dropdown extends Component {
 </ul>
 ```
 
-```hbs
+```handlebars
 <!-- wrapper.hbs -->
 <div class="relative {{@class}}" {{did-insert this.getElements}}>
   {{yield
@@ -304,7 +304,7 @@ export default class Dropdown extends Component {
 }
 ```
 
-```hbs
+```handlebars
 <!-- wrapper.hbs -->
 <div class="relative {{@class}}" {{did-insert this.getElements}}>
   {{yield
@@ -325,7 +325,7 @@ export default class Dropdown extends Component {
 </div>
 ```
 
-```hbs
+```handlebars
 <!-- toggle.hbs -->
 <button
   type="button"
@@ -346,7 +346,7 @@ Before I set it up, one thing I realized is a disadvantage to a fully custom men
 
 ### A Menu Component
 
-```hbs
+```handlebars
 <!-- item.hbs -->
 <li class="dropdown__item">
   {{yield}}
@@ -366,7 +366,7 @@ Before I set it up, one thing I realized is a disadvantage to a fully custom men
 
 ### A Seperator Component
 
-```hbs
+```handlebars
 <!-- seperator.hbs -->
 <li role="separator" class="dropdown__separator my-half mx-none bg-mono-muted"></li>
 ```
@@ -381,7 +381,7 @@ Before I set it up, one thing I realized is a disadvantage to a fully custom men
 
 ## Wrapping Up
 
-```hbs
+```handlebars
 <!-- example.hbs -->
 <Dropdown::Wrapper
   @id="menu-new"
