@@ -1,18 +1,191 @@
-* Figure out how I'm breaking down the progression of the article
-* Remove all the Sass functions?
-* Create a GIST of all the final code
+---
+title: "How to Make an Accessible Ember Dropdown Component"
+date: ""
+excerpt: ""
+tags: ["javascript"]
+---
 
-1. Allow custom toggle and menu items
-  * Needs to pass in two yields
-2. Set up basic open and close functionality
-  * Passed from the wrapper to the components
-3. Add needed aria tags
-4. Add accessible keyboard functionality
-  * Mention a lot of this is taken from the Ember bootstrap dropdown, with the extra stuff taken out
-  * Include last bits for killing the listening events as needed
-5. Save time with menu and divider components
+## Custom Toggle and Menu Elements
 
-```javascript
+### The Basic Markup
+
+```handlebars
+<!-- wrapper.hbs -->
+<div class="relative {{@class}}">
+  {{yield
+    (hash
+      toggle=(component this.toggleComponent
+        isOpen=this.isOpen
+      )
+      menu=(component this.menuComponent
+        isOpen=this.isOpen
+      )
+    )
+  }}
+</div>
+```
+
+```typescript
+// wrapper.ts
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
+
+export default class Dropdown extends Component {
+  toggleComponent = 'dropdown/toggle';
+  menuComponent = 'dropdown/menu';
+
+  @tracked isOpen = false;
+}
+```
+
+```handlebars
+<!-- toggle.hbs -->
+<button
+  class="dropdown__toggle cursor {{@class}} {{if @isOpen "dropdown__toggle--active"}}"
+>
+  {{yield}}
+</button>
+```
+
+```handlebars
+<!-- menu.hbs -->
+<ul
+  class="dropdown__menu absolute abs-t-100 abs-r-none list-none m-none p-none bg-mono-blank box-shadow-2 color-mono-darker {{if @isOpen '' 'hidden'}}"
+>
+  {{yield}}
+</ul>
+```
+
+```scss
+// dropdown.scss
+.dropdown__menu {
+  min-width: 160px;
+  z-index: 4000;
+}
+
+.dropdown__toggle {
+  border-width: 0;
+}
+```
+
+```handlebars
+<!-- example.hbs -->
+<Dropdown::Wrapper as |dd|>
+  <dd.toggle>
+    Menu Toggle
+  </dd.toggle>
+
+  <dd.menu>
+    <li>
+      Menu Item 1
+    </li>
+    <li>
+      Menu Item 2
+    </li>
+  </dd.menu>
+</Dropdown::Wrapper>
+```
+
+### Aria Tags
+
+```handlebars
+<!-- toggle.hbs -->
+<button
+  type="button"
+  class="dropdown__toggle cursor {{@class}} {{if @isOpen "dropdown__toggle--active"}}"
+  aria-haspopup="true"
+  aria-controls={{@id}}
+  aria-expanded={{if @isOpen "true" "false"}}
+>
+  {{yield}}
+</button>
+```
+
+```handlebars
+<!-- menu.hbs -->
+<ul
+  aria-labelledby={{@id}}
+  class="dropdown__menu absolute abs-t-100 abs-r-none list-none m-none p-none bg-mono-blank box-shadow-2 color-mono-darker {{if @isOpen '' 'hidden'}}"
+>
+  {{yield}}
+</ul>
+```
+
+```handlebars
+<!-- wrapper.hbs -->
+<div class="relative {{@class}}" {{did-insert this.getElements}}>
+  {{yield
+    (hash
+      toggle=(component this.toggleComponent
+        id=@id
+        isOpen=this.isOpen
+      )
+      menu=(component this.menuComponent
+        id=@id
+        isOpen=this.isOpen
+      )
+    )
+  }}
+</div>
+```
+
+## Opening and Closing
+
+### Button Events
+
+```typescript
+// wrapper.ts
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
+import { action } from '@ember/object';
+
+export default class Dropdown extends Component {
+  toggleComponent = 'dropdown/toggle';
+  menuComponent = 'dropdown/menu';
+  toggleElement!: HTMLElement | null;
+  menuElement!: HTMLElement | null;
+
+  @tracked isOpen = false;
+
+  @action
+  getElements(el: any) {
+    this.toggleElement = el.querySelector('.dropdown__toggle');
+    this.menuElement = el.querySelector('.dropdown__menu');
+  }
+
+  @action
+  toggleDropdown() {
+    if (this.isOpen) {
+      this.closeDropdown();
+    } else {
+      this.openDropdown();
+    }
+  }
+
+  @action
+  openDropdown() {
+    this.isOpen = true;
+  }
+
+  @action
+  closeDropdown() {
+    this.isOpen = false;
+  }
+}
+```
+
+### Custom Keyboard Events
+
+This will likely need to be broken down into subsections
+
+#### Basic Key Events
+
+#### Close Events
+
+#### Managing Event Listeners
+
+```typescript
+// wrapper.ts
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
@@ -131,7 +304,8 @@ export default class Dropdown extends Component {
 }
 ```
 
-```hbs
+```handlebars
+<!-- wrapper.hbs -->
 <div class="relative {{@class}}" {{did-insert this.getElements}}>
   {{yield
     (hash
@@ -151,10 +325,11 @@ export default class Dropdown extends Component {
 </div>
 ```
 
-```hbs
+```handlebars
+<!-- toggle.hbs -->
 <button
   type="button"
-  class="dropdown__toggle border-a-w-none cursor {{@class}} {{if @isOpen "dropdown__toggle--active"}}"
+  class="dropdown__toggle cursor {{@class}} {{if @isOpen "dropdown__toggle--active"}}"
   aria-haspopup="true"
   aria-controls={{@id}}
   aria-expanded={{if @isOpen "true" "false"}}
@@ -165,64 +340,76 @@ export default class Dropdown extends Component {
 </button>
 ```
 
-```hbs
-<ul
-  aria-labelledby={{@id}}
-  class="dropdown__menu absolute abs-t-100 abs-r-none list-none m-none p-none bg-mono-blank box-shadow-2 color-mono-darker {{if @isOpen '' 'hidden'}}"
->
-  {{yield}}
-</ul>
-```
+## Menu and Divider Components
 
-```hbs
+Before I set it up, one thing I realized is a disadvantage to a fully custom menu - I'd have to copy the needed styling for each list item each time. Solved with another component.
+
+### A Menu Component
+
+```handlebars
+<!-- item.hbs -->
 <li class="dropdown__item">
   {{yield}}
 </li>
 ```
 
-```hbs
+```scss
+// dropdown.scss
+.dropdown__item {
+  & > * {
+    display: block;
+    padding: 0.33rem 1rem;
+    white-space: nowrap;
+  }
+}
+```
+
+### A Seperator Component
+
+```handlebars
+<!-- seperator.hbs -->
 <li role="separator" class="dropdown__separator my-half mx-none bg-mono-muted"></li>
 ```
 
 ```scss
-.dropdown__toggle {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.dropdown__toggle-image {
-  max-width: 26px;
-  max-height: 26px;
-}
-
-.dropdown__toggle--nav.dropdown__toggle--active {
-  background-color: color(primary, darker);
-}
-
-.dropdown__menu {
-  min-width: 160px;
-
-  z-index: z-index(dropdown);
-}
-
-.dropdown__item {
-  & > * {
-    display: block;
-    padding: spacing(third) spacing();
-    line-height: type(line-height, p);
-    white-space: nowrap;
-  }
-
-  a {
-    color: color(mono, darker);
-
-    @include hovers() {
-      background-color: color(mono, light);
-    }
-  }
-}
-
+// dropdown.scss
 .dropdown__separator {
   height: 1px;
   overflow: hidden;
 }
 ```
+
+## Wrapping Up
+
+```handlebars
+<!-- example.hbs -->
+<Dropdown::Wrapper
+  @id="menu-new"
+  @class="inline-flex flex-align-center mr-base"
+as |dd|>
+  <dd.toggle @class="mdc-button">
+    Menu Toggle
+  </dd.toggle>
+
+  <dd.menu>
+    <Dropdown::Item>
+      <a href="#">
+        Link 1
+      </a>
+    </Dropdown::Item>
+    <Dropdown::Item>
+      <a href="#">
+        Link 2
+      </a>
+    </Dropdown::Item>
+    <Dropdown::Separator />
+    <Dropdown::Item>
+      <a href="#">
+        Link 3
+      </a>
+    </Dropdown::Item>
+  </dd.menu>
+</Dropdown::Wrapper>
+```
+
+* Gist url = https://gist.github.com/maxx1128/51862efc8b30fb46c33e2200e05187f2
