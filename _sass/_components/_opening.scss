@@ -1,9 +1,5 @@
 .opening {
   @include larger-than(md) {
-    min-height: 55vh;
-  }
-
-  @include larger-than(lg) {
-    min-height: 65vh;
+    min-height: 53vh;
   }
 }

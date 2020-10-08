@@ -1,6 +1,6 @@
-<footer class="footer bg-primary-lightest">
-  <div class="resp-max-width pt-8 pb-4">
-    {% unless title contains 'About Me' %}
+{% unless title contains 'About Me' %}
+  <footer class="footer box-shadow-1">
+    <div class="resp-max-width pt-8 pb-4">
       <img class="logo ml-4 mb-4 border-radius-full hidden-md-down" src="/assets/images/global/profile.jpg" alt="" />
 
       <h2 class="mt-0 text-h5">
@@ -10,40 +10,6 @@
       <p>
         I'm Max Antonucci, a front-end developer from Connecticut. I work at SeeClickFix, a civic tech app that lets citizens report local issues to municipal governments. I also enjoy writing, reading, boxing, video games, and escaping our shared physical reality to a realm of pure energy. Then doing some more reading.
       </p>
-    {% endunless %}
-
-    <div class="flex flex-column md--flex-row">
-      <div class="flex-item-full">
-        <h3 class="mt-0 mb-2 text-h6">
-          Explore my Site
-        </h3>
-
-        <ul class="list-reset flex flex-column flex-justify-start mb-0 pb-2 text-small">
-          {% for menu in menu %}
-            <li class="inline-block mb-1">
-              <a href="{{ menu.link }}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
-                {{ menu.name }}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-
-      <div class="flex-item-full">
-        <h3 class="mt-0 mb-2 text-h6">
-          Find me on the Interwebs
-        </h3>
-
-        <ul class="list-reset flex flex-column flex-justify-start mb-0 pb-2 text-small">
-          {% for social in social %}
-            <li class="inline-block mb-1">
-              <a href="{{ social.url }}" target="_blank" rel="noopener">
-                {{ social.name }}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
     </div>
-  </div>
-</footer>
+  </footer>
+{% endunless %}
