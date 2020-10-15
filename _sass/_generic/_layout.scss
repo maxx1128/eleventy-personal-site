@@ -1,10 +1,52 @@
+$layout-side-col-width: 215px;
+
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "header"
+    "content"
+    "side"
+    "footer";
+
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+
+  @include larger-than(grail) {
+    grid-template-areas:
+      "header header header"
+      "nav content side"
+      "footer footer footer";
+
+    grid-template-columns: $layout-side-col-width 1fr $layout-side-col-width;
+    grid-template-rows: auto 1fr auto;
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
 }
 
 main {
-  flex: 1 1 auto;
+  grid-area: content;
+}
+
+aside {
+  grid-area: side;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.main--with-custom-image {
+  @include larger-than(grail) {
+    margin-top: 5.5rem;
+  }
 }
 
 .resp-max-width {
@@ -16,5 +58,10 @@ main {
 
   @include larger-than(xl) {
     max-width: breakpoint(lg);
+  }
+
+  @include larger-than(grail) {
+    padding-right: spacing(6);
+    padding-left: spacing(6);
   }
 }

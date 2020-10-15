@@ -1,0 +1,37 @@
+{% assign nextPost = collections.posts | getPreviousCollectionItem: page %}
+{% assign previousPost = collections.posts | getNextCollectionItem: page %}
+
+<div class="height-100 flex flex-column">
+  <ul class="list-reset m-0 p-0">
+    {% if nextPost %}
+      <li class="flex flex-column mb-0 pb-4">
+        <strong>Next Post:</strong>
+        <a class="random-navigator__next-link text-small" href="{{ nextPost.url | url }}">
+          {{ nextPost.data.title }}
+        </a>
+      </li>
+    {% endif %}
+
+    <li id="random-navigator-wrapper" class="hidden flex flex-column mb-0 pb-4">
+      <strong>Random Post:</strong>
+      <a class="text-small" href="javascript:void();"></a>
+    </li>
+
+    {% if previousPost %}
+      <li class="flex flex-column mb-0 pb-4">
+        <strong>Previous Post:</strong>
+        <a class="random-navigator__previous-link text-small" href="{{ previousPost.url | url }}">
+          {{ previousPost.data.title }}
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+
+  {% if featured_image_link %}
+    <small class="inline-block mt-auto mb-0 pt-2 grail--pt-8 italic">
+      <a href="{{ featured_image_link }}" target="_blank" rel="noopener">
+        Featured image courtesy of this link.
+      </a>
+    </small>
+  {% endif %}
+</div>

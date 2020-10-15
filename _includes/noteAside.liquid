@@ -1,0 +1,29 @@
+<div class="mt-auto">
+  {% assign nextNote = collections.notes | getNextCollectionItem: page %}
+  {% assign previousNote = collections.notes | getPreviousCollectionItem: page %}
+
+  <ul class="list-reset m-0 p-0 flex flex-column flex-justify-between text-small">
+    {% if nextNote %}
+      <li class="flex grail--flex-column mb-4">
+        <strong class="pr-1">Next Note:</strong>
+        <a class="random-navigator__next-link" href="{{ nextNote.url | url }}">
+          {{ nextNote.date | noteDate }}
+        </a>
+      </li>
+    {% endif %}
+
+    <li id="random-navigator-wrapper" class="random-navigator-wrapper--note flex grail--flex-column mb-4 hidden">
+      <strong class="pr-1">Random Note:</strong>
+      <a href="javascript:void();"></a>
+    </li>
+
+    {% if previousNote %}
+      <li class="flex grail--flex-column mb-4">
+        <strong class="pr-1">Previous Note:</strong>
+        <a class="random-navigator__previous-link" href="{{ previousNote.url | url }}">
+          {{ previousNote.date | noteDate }}
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+</div>
