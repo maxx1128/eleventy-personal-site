@@ -1,57 +1,46 @@
-<nav class="nav__header width-100 flex flex-column mx-auto text-mono-black bg-primary-lightest">
-  <div class="resp-max-width flex flex-column sm--flex-row flex-justify-between">
-    <div class="py-2 flex flex-column flex-align-start">
-      <h1 class="my-0 mr-4 text-h6">
-        <a class="text-mono-black" href="{% if page.url == '/' %}#content{% else %}/{% endif %}">
-          Max Antonucci
+<nav class="nav__header width-100 flex flex-column mx-auto bg-primary-lightest">
+  <ul id="navigation-menu" class="px-2 nav__main-menu mb-0 py-0 grail--py-1 flex grail--flex-column flex-justify-between list-reset">
+    {% for menu_item in menu %}
+      {% if menu_item.link == page.url %}
+        {% assign active_page = true %}
+        {% assign current_page = true %}
+      {% elsif page.url contains '/posts/' and menu_item.link == '/writing/' %}
+        {% assign active_page = true %}
+        {% assign current_page = false %}
+      {% elsif page.url contains '/writing/' and menu_item.link contains '/writing/' %}
+        {% assign active_page = true %}
+        {% assign current_page = false %}
+      {% elsif page.url contains '/tags/' and menu_item.link == '/writing/' %}
+        {% assign active_page = true %}
+        {% assign current_page = false %}
+      {% elsif page.url contains '/notes/' and menu_item.link contains '/notes/' %}
+        {% assign active_page = true %}
+        {% assign current_page = false %}
+      {% else %}
+        {% assign active_page = false %}
+        {% assign current_page = false %}
+      {% endif %}
+
+      <li class="inline-block mb-0 text-center">
+        <a class="block px-2 py-1 my-px text-small {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{% endif %}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
+          {{ menu_item.name }}
         </a>
-      </h1>
-      <p class="my-0 text-tiny italic">
-        {{metadata.description}}
-      </p>
-    </div>
+      </li>
+    {% endfor %}
+  </ul>
 
-    <div class="theme-switcher flex mb-4 sm--mb-0 text-tiny">
-      {% for theme in themes %}
-        <div class="theme-switcher__option flex flex-align-center {% unless forloop.last %}mr-2{% endunless %}">
-          <input class="theme-switcher__input" type="radio" id="theme-{{ theme.name }}" name="theme-selector" value="{{ theme.name }}"\>
-          <label class="theme-switcher__label inline-block px-3 py-1 capitalize text-action-darker border-radius-small bg-primary-lightest" for="theme-{{ theme.name }}">
-            {{ theme.name }}
-          </label>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
+  <div class="hidden grail--flex flex-column px-4 pt-12 text-center">
+    <h3 class="mt-0 mb-2 text-h6">
+      My Social Links
+    </h3>
 
-  <div class="bg-primary-lighter">
-    <ul id="navigation-menu" class="nav__main-menu resp-max-width mb-0 py-1 md--py-0 flex flex-justify-between list-reset">
-      {% for menu_item in menu %}
-
-          {% if menu_item.link == page.url %}
-            {% assign active_page = true %}
-            {% assign current_page = true %}
-          {% elsif page.url contains '/posts/' and menu_item.link == '/writing/' %}
-            {% assign active_page = true %}
-            {% assign current_page = false %}
-          {% elsif page.url contains '/writing/' and menu_item.link contains '/writing/' %}
-            {% assign active_page = true %}
-            {% assign current_page = false %}
-          {% elsif page.url contains '/tags/' and menu_item.link == '/writing/' %}
-            {% assign active_page = true %}
-            {% assign current_page = false %}
-          {% elsif page.url contains '/notes/' and menu_item.link contains '/notes/' %}
-            {% assign active_page = true %}
-            {% assign current_page = false %}
-          {% else %}
-            {% assign active_page = false %}
-            {% assign current_page = false %}
-          {% endif %}
-
-          <li class="inline-block mb-0 text-center {% unless forloop.last %}mr-4{% endunless %}">
-            <a class="block p-2 my-px text-mono-black text-small {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{% endif %}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
-              {{ menu_item.name }}
-            </a>
-          </li>
+    <ul class="list-reset flex flex-column flex-justify-start mb-0 pb-2 text-small">
+      {% for social in social %}
+        <li class="inline-block mb-2">
+          <a href="{{ social.url }}" target="_blank" rel="noopener">
+            {{ social.name }}
+          </a>
+        </li>
       {% endfor %}
     </ul>
   </div>

@@ -16,16 +16,16 @@
   {% endif %}
 
   {% if contentType == "Blog Post" %}
-    {% assign featured_image = metadata.url | append: "assets/images/featured/" | append: image %}
+    {% assign featured_image = metadata.url | append: "/assets/images/featured/" | append: image %}
   {% else %}
-    {% assign featured_image = metadata.url | append: "assets/images/global/profile.jpg" %}
+    {% assign featured_image = metadata.url | append: "/assets/images/global/profile.jpg" %}
   {% endif %}
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="{{ metadata.url | append: 'assets/images/global/favicon.ico' }}" />
-  <link rel="apple-touch-icon" sizes="192x192" href="{{ metadata.url | append: 'assets/images/icons/icon-192.png' }}" />
+  <link rel="shortcut icon" href="{{ metadata.url | append: '/assets/images/global/favicon.ico' }}" />
+  <link rel="apple-touch-icon" sizes="192x192" href="{{ metadata.url | append: '/assets/images/icons/icon-192.png' }}" />
 
   <title>{{ title }}</title>
   <meta name="thumbnail" content="{{ featured_image }}" />
@@ -40,13 +40,13 @@
   {% endif %}
 
   <link rel="stylesheet" type="text/css" href='/assets/css/main.css'>
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: metadata.url | replace: '//', '/' }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ metadata.title }}" href="{{ metadata.url | append: 'rss.xml' }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: metadata.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ metadata.title }}" href="{{ metadata.url | append: '/rss.xml' }}">
 
   <!-- Open Graph data -->
   <meta property="og:title" content="{{ title }}" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: metadata.url | replace: '//', '/' }}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: metadata.url }}" />
   <meta property="og:description" content="{{ description }}" />
   <meta property="og:site_name" content="maxwellantonucci.com" />
   <meta property="og:image" content="{{ featured_image }}"/>

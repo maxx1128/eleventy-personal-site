@@ -12,16 +12,6 @@ h6 {
   .post-content &:first-child {
     margin-top: 0;
   }
-
-  @include larger-than(xl) {
-    position: relative;
-
-    .direct-link {
-      position: absolute;
-      top: 0;
-      right: calc(100% + #{spacing(2)});
-    }
-  }
 }
 
 tiny {

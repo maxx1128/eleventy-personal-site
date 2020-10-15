@@ -1,0 +1,28 @@
+{% assign banner_image = metadata.post.imagePath | append: image %}
+
+<div class="{% if image %}header--with-custom-image{% else %}header--with-image{% endif %} width-100 py-3" {% if image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
+  <div class="header__text resp-max-width">
+    <div class="relative py-4">
+      <div class="flex flex-justify-between">
+        <small class="block mb-2 font-weight-bold">
+          {{ date | toUTCString }}
+        </small>
+
+        <span class="hidden-md-down">
+          {% include tagList
+            tags: tags
+            rightAlign: true
+          %}
+        </span>
+      </div>
+
+      <h1 class="my-0 text-h2">
+        {{ title | replace: " - Maxwell Antonucci", ""}}
+      </h1>
+    </div>
+
+    <p class="py-0 mt-1 mb-2 text-small font-weight-light">
+      {{ excerpt }}
+    </p>
+  </div>
+</div>

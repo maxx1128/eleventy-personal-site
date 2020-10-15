@@ -7,11 +7,31 @@
       Skip To Content
     </a>
 
+    <header>
+      {% include topHeader.liquid %}
+
+      {% if layout contains "page.liquid" %}
+        {% include pageHeader.liquid %}
+      {% elsif layout contains "post.liquid" %}
+        {% include postHeader.liquid %}
+      {% endif %}
+    </header>
+
     {% include nav.liquid %}
 
-    <main>
+    <main class="{% if image %}main--with-custom-image{% endif %}">
       {{ content | safe }}
     </main>
+
+    <aside class="bg-primary-lightest {% unless layout contains "post.liquid" or layout contains "note.liquid" %}hidden grail--flex{% endunless %}">
+      <div class="resp-max-width py-4">
+        {% if layout contains "post.liquid" %}
+          {% include postAside.liquid %}
+        {% elsif layout contains "note.liquid" %}
+          {% include noteAside.liquid %}
+        {% endif %}
+      </div>
+    </aside>
 
     {% include footer.liquid %}
     {% include footerscripts.liquid %}

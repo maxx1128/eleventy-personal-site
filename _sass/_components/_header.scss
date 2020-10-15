@@ -1,3 +1,7 @@
+.top-header {
+  z-index: 1;
+}
+
 .header--with-image,
 .header--with-custom-image {
   box-shadow: container(box-shadow, 2);
@@ -14,6 +18,7 @@
 }
 
 .header--with-custom-image {
+  position: relative;
   box-shadow: inset 0 0 0 1000px rgba(color(shadow, light), $g-box-shadow-inset-opacity);
 
   @include larger-than(md) {
@@ -27,6 +32,19 @@
       margin-bottom: -10%;
 
       box-shadow: inset 0 0 0 1000px rgba(color(shadow, light), $g-box-shadow-inset-opacity), container(box-shadow, 2);
+    }
+  }
+
+  @include larger-than(grail) {
+    margin-bottom: 0;
+
+    .header__text {
+      position: absolute;
+      padding-bottom: spacing(2);
+      margin-bottom: 0;
+      right: $layout-side-col-width;
+      bottom: -6rem;
+      left: $layout-side-col-width;
     }
   }
 }

@@ -24,37 +24,4 @@
 
     {{ content }}
   </div>
-
-  {% if singleNotePage %}
-    <div class="mt-auto bg-primary-lightest">
-      <div class="resp-max-width pb-4">
-        {% assign nextNote = collections.notes | getNextCollectionItem: page %}
-        {% assign previousNote = collections.notes | getPreviousCollectionItem: page %}
-
-        <ul class="list-reset m-0 p-0 pt-4 flex flex-column xl--flex-row flex-justify-between text-small">
-          {% if nextNote %}
-            <li class="mb-0">
-              <strong>Next Note:</strong>
-              <a class="random-navigator__next-link" href="{{ nextNote.url | url }}">
-                {{ nextNote.date | noteDate }}
-              </a>
-            </li>
-          {% endif %}
-
-          <li id="random-navigator-wrapper" class="random-navigator-wrapper--note mb-0 hidden" class="xl--px-4">
-            <strong>Random Note:</strong> <a href="javascript:void();"></a>
-          </li>
-
-          {% if previousNote %}
-            <li class="mb-0">
-              <strong>Previous Note:</strong>
-              <a class="random-navigator__previous-link" href="{{ previousNote.url | url }}">
-                {{ previousNote.date | noteDate }}
-              </a>
-            </li>
-          {% endif %}
-        </ul>
-      </div>
-    </div>
-  {% endif %}
 </article>
