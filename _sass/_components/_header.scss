@@ -9,6 +9,10 @@
   background-size: cover;
   background-image: url("/assets/images/global/header-default.jpg");
   background-color: color(primary, lightest);
+
+  @include larger-than(grail) {
+    background-position: 50% 80%;
+  }
 }
 
 .header--with-image {
@@ -23,19 +27,20 @@
 
   @include larger-than(md) {
     padding-top: 35vh;
-    margin-bottom: 9%;
+    margin-bottom: 11rem;
 
     box-shadow: none;
 
     .header__text {
       padding-bottom: spacing(2);
-      margin-bottom: -10%;
+      margin-bottom: -12rem;
 
       box-shadow: inset 0 0 0 1000px rgba(color(shadow, light), $g-box-shadow-inset-opacity), container(box-shadow, 2);
     }
   }
 
   @include larger-than(grail) {
+    padding-top: 45vh;
     margin-bottom: 0;
 
     .header__text {
@@ -43,7 +48,7 @@
       padding-bottom: spacing(2);
       margin-bottom: 0;
       right: $layout-side-col-width;
-      bottom: -6rem;
+      bottom: -7rem;
       left: $layout-side-col-width;
     }
   }
