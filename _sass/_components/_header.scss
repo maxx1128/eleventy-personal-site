@@ -22,35 +22,10 @@
 }
 
 .header--with-custom-image {
-  position: relative;
-  box-shadow: inset 0 0 0 1000px rgba(color(shadow, light), $g-box-shadow-inset-opacity);
+  padding-top: 20vh;
 
   @include larger-than(md) {
     padding-top: 35vh;
-    margin-bottom: 11rem;
-
-    box-shadow: none;
-
-    .header__text {
-      padding-bottom: spacing(2);
-      margin-bottom: -12rem;
-
-      box-shadow: inset 0 0 0 1000px rgba(color(shadow, light), $g-box-shadow-inset-opacity), container(box-shadow, 2);
-    }
-  }
-
-  @include larger-than(grail) {
-    padding-top: 45vh;
-    margin-bottom: 0;
-
-    .header__text {
-      position: absolute;
-      padding-bottom: spacing(2);
-      margin-bottom: 0;
-      right: $layout-side-col-width;
-      bottom: -7rem;
-      left: $layout-side-col-width;
-    }
   }
 }
 

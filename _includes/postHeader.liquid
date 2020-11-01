@@ -1,6 +1,6 @@
 {% assign banner_image = metadata.post.imagePath | append: image %}
 
-<div class="{% if image %}header--with-custom-image{% else %}header--with-image{% endif %} width-100 py-3" {% if image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
+<div class="{% unless %}header--with-image{% endunless %}">
   <div class="header__text pb-2 resp-max-width">
     <div class="relative py-4">
       <div class="flex flex-justify-between">
@@ -25,6 +25,9 @@
       {{ excerpt }}
     </p>
   </div>
-
-  <div {% if image %}style="background-image: url('{{ banner_image }}')"{% endif %}></div>
 </div>
+
+{% if image %}
+  <div class="header--with-custom-image width-100 py-3" style="background-image: url('{{ banner_image }}')">
+  </div>
+{% endif %}

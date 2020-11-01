@@ -9,17 +9,18 @@
 
     <header>
       {% include topHeader.liquid %}
-
-      {% if layout contains "page.liquid" %}
-        {% include pageHeader.liquid %}
-      {% elsif layout contains "post.liquid" %}
-        {% include postHeader.liquid %}
-      {% endif %}
     </header>
 
     {% include nav.liquid %}
 
-    <main class="{% if image %}main--with-custom-image{% endif %}">
+    <main>
+      <header>
+        {% if layout contains "page.liquid" %}
+          {% include pageHeader.liquid %}
+        {% elsif layout contains "post.liquid" %}
+          {% include postHeader.liquid %}
+        {% endif %}
+      </header>
       {{ content | safe }}
     </main>
 
