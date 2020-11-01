@@ -30,11 +30,9 @@ code, pre {
 	-ms-hyphens: none;
 	hyphens: none;
 	background: #272822;
-	color: #f8f8f2;
+  color: #f8f8f2;
 }
-pre {
-	overflow: auto;
-}
+
 :not(pre) > code {
 	padding: .1em;
 	border-radius: .3em;
@@ -132,6 +130,7 @@ pre {
   box-shadow: container(box-shadow, 1);
 
   overflow: hidden;
+  max-width: calc(100vw - 2rem);
 
   // Text
   &::before {
@@ -165,7 +164,6 @@ pre code {
   display: block;
   margin: 0;
   padding: spacing(4);
-  max-width: 100%;
   max-height: rem(500px);
 
   font-size: type(font-size, small);
@@ -173,6 +171,7 @@ pre code {
   border-top: spacing(4) solid #c5c5d0;
 
   overflow: scroll;
+  max-width: 100%;
 }
 
 // Block code for specific languages
