@@ -92,7 +92,7 @@ $note-colors: (
     --note-background-color: #{$light};
   }
 
-  .theme-dark {
+  @include darkMode() {
     .note-coloring--#{$index} {
       --note-text-color: #{$light};
       --note-background-color: #{$dark};

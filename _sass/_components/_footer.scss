@@ -1,4 +1,4 @@
-.theme-dark {
+@include darkMode() {
   .footer {
     --color-primary-darker: #{color(primary, lighter)};
 

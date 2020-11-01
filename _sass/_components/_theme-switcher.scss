@@ -1,3 +1,9 @@
+@media (prefers-color-scheme: dark) {
+  .theme-switcher {
+    display: none;
+  }
+}
+
 .theme-switcher__input {
   opacity: 0;
   position: fixed;
@@ -13,7 +19,7 @@
 
   // Focus states
   &:focus + .theme-switcher__label {
-    outline: 1px dashed color(action, light);
+    outline: 2px solid color(action, base);
     outline-offset: 2px;
   }
 }

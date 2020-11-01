@@ -12,6 +12,8 @@ body {
 
   background-color: color(mono, white);
 
+  transition-duration: 0s;
+
   @include larger-than(md) {
     font-size: 110%;
   }
@@ -21,6 +23,7 @@ body {
   }
 }
 
-body {
-  transition-duration: 0s;
+a:focus {
+  outline: 2px solid color(action, base);
+  outline-offset: 2px;
 }

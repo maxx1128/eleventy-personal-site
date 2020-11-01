@@ -107,7 +107,7 @@ code {
   background-color: color(mono, black);
 }
 
-.theme-dark {
+@include darkMode() {
   code {
     --color-mono-black: #{color(primary, lighter)};
     --color-mono-white: #{color(primary, darkest)};

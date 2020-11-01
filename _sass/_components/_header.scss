@@ -29,7 +29,7 @@
   }
 }
 
-.theme-dark {
+@include darkMode() {
   .header--with-image {
     background-image: url("/assets/images/global/header-dark.jpg");
   }

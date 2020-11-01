@@ -2,6 +2,18 @@
   @return red($hex), green($hex), blue($hex);
 }
 
+@mixin darkMode() {
+  .theme-dark {
+    @content;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      @content;
+    }
+  }
+}
+
 $primary-darker: #026754;
 $primary-lightest: #d0effa;
 
@@ -30,7 +42,7 @@ $primary-lightest: #d0effa;
 $dark-theme-primary-darkest: #d4ddf4;
 $dark-theme-primary-lighter: #003d53;
 
-.theme-dark {
+@include darkMode() {
   --color-primary-darkest: #{$dark-theme-primary-darkest};
   --color-primary-darker: #9db7e5;
   --color-primary-dark: #5995d4;
