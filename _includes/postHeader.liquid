@@ -16,7 +16,7 @@
         </span>
       </div>
 
-      <h1 class="my-0 text-h2">
+      <h1 class="mt-2 mb-0">
         {{ title | replace: " - Maxwell Antonucci", ""}}
       </h1>
     </div>
@@ -27,7 +27,7 @@
   </div>
 </div>
 
-{% if image %}
+{% comment %} {% if image %}
   <div class="header--with-custom-image width-100 py-3" style="background-image: url('{{ banner_image }}')">
   </div>
-{% endif %}
+{% endif %} {% endcomment %}

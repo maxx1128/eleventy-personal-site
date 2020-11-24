@@ -9,7 +9,7 @@
 <div class="{{ header_class }} width-100" {% if banner_image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
   <div class="header__text resp-max-width">
     <div class="relative py-4">
-      <h1 class="my-0 text-h2">
+      <h1 class="my-0">
         {% if postLabel == "Note" %}
           {{ date | noteDate }}
         {% else %}

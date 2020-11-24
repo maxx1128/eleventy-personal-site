@@ -3,8 +3,8 @@ $layout-side-col-width: 215px;
 body {
   display: grid;
   grid-template-areas:
-    "header"
     "nav"
+    "header"
     "content"
     "side"
     "footer";

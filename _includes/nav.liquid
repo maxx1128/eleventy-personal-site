@@ -1,4 +1,4 @@
-<nav class="nav__header width-100 flex flex-column mx-auto bg-primary-lightest">
+<nav class="nav__header width-100 flex flex-column mx-auto">
   <ul id="navigation-menu" class="px-2 nav__main-menu mb-0 py-0 grail--py-1 flex grail--flex-column flex-justify-between list-reset">
     {% for menu_item in menu %}
       {% if menu_item.link == page.url %}
@@ -21,7 +21,7 @@
         {% assign current_page = false %}
       {% endif %}
 
-      <li class="inline-block mb-0 text-center">
+      <li class="inline-block mb-0 text-center grail--text-left">
         <a class="block px-2 py-1 my-px text-small {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{% endif %}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
           {{ menu_item.name }}
         </a>
@@ -29,9 +29,9 @@
     {% endfor %}
   </ul>
 
-  <div class="hidden grail--flex flex-column px-4 pt-12 text-center">
+  <div class="hidden grail--flex flex-column px-4 pt-12 text-center grail--text-left">
     <h3 class="mt-0 mb-2 text-h6">
-      My Social Links
+      Social Links
     </h3>
 
     <ul class="list-reset flex flex-column flex-justify-start mb-0 pb-2 text-small">
