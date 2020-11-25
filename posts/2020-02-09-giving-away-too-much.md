@@ -4,6 +4,7 @@ date: "2020-02-09"
 excerpt: "Selfishness can be bad in many contexts, but embracing it in the right away is one of the most selfless things we can (and should) do."
 image: 'giving-too-much.png'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2353876'
+featured_image_align_y: '30'
 tags: ['mental health']
 ---
 

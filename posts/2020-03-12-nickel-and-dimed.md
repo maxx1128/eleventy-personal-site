@@ -4,6 +4,7 @@ date: "2020-03-12"
 excerpt: "Nickel and Dimed is a must-read looking at the struggles the working poor face every day. These are the best lessons I pulled from it and don't want to forget, for my empathy's sake."
 image: 'nickel-and-dimed.jpg'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=3014557'
+featured_image_align_y: '45'
 tags: ['tough stuff']
 ---
 

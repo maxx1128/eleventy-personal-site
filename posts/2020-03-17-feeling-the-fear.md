@@ -4,6 +4,7 @@ date: "2020-03-17"
 excerpt: "Fear isn't in short supply with Coronavirus hitting the United States. For me, hygiene and social distancing are easier than managing the fear."
 image: 'feeling-fear.jpg'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=312338'
+featured_image_align_y: '25'
 tags: ['mental health', 'coronavirus']
 ---
 

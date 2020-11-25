@@ -15,10 +15,5 @@
 
     border-right: 2px solid color(primary, darker);
     border-left: 2px solid color(primary, darker);
-
-    .header--with-custom-image + & {
-      margin-top: 0;
-      padding-top: spacing(6);
-    }
   }
 }

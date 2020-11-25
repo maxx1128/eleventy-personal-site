@@ -4,6 +4,7 @@ date: "2020-03-10"
 excerpt: "Watching cars pass on a highway captures one of the most important, if also the most damaging, mental shortcuts our minds make."
 image: 'highway.jpg'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2928945'
+featured_image_align_y: '20'
 tags: ['philosophy']
 ---
 

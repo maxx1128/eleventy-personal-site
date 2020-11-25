@@ -43,12 +43,6 @@ footer {
   grid-area: footer;
 }
 
-.main--with-custom-image {
-  @include larger-than(grail) {
-    margin-top: 6.5rem;
-  }
-}
-
 .resp-max-width {
   width: 100%;
   margin: 0 auto;

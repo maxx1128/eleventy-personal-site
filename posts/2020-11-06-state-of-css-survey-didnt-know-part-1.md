@@ -5,6 +5,7 @@ excerpt: "The State of CSS Survey recommends those who take it learn more about 
 image: "css-survey-1.jpg"
 tags: ["css"]
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=2298263
+featured_image_align_y: '35'
 ---
 
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

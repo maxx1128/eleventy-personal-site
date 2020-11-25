@@ -1,33 +1,26 @@
 {% assign banner_image = metadata.post.imagePath | append: image %}
 
-<div class="{% unless %}header--with-image{% endunless %}">
-  <div class="header__text pb-2 resp-max-width">
-    <div class="relative py-4">
-      <div class="flex flex-justify-between">
-        <small class="block mb-2 font-weight-bold">
-          {{ date | toUTCString }}
-        </small>
+<div class="header {% if image %}header--with-custom-image{% endif %}" {% if image %}style="background-image: url('{{ banner_image }}');{% endif %} {% if featured_image_align_y %}background-position-y: {{ featured_image_align_y }}%;{% endif %}">
+  <div class="header__text flex flex-column pb-2 resp-max-width">
+    <div class="flex flex-justify-between pt-4 mb-auto">
+      <small class="block mb-2 font-weight-bold">
+        {{ date | toUTCString }}
+      </small>
 
-        <span class="hidden-md-down">
-          {% include tagList
-            tags: tags
-            rightAlign: true
-          %}
-        </span>
-      </div>
-
-      <h1 class="mt-2 mb-0">
-        {{ title | replace: " - Maxwell Antonucci", ""}}
-      </h1>
+      <span class="hidden-md-down">
+        {% include tagList
+          tags: tags
+          rightAlign: true
+        %}
+      </span>
     </div>
+
+    <h1 class="mt-2 mb-4">
+      {{ title | replace: " - Maxwell Antonucci", ""}}
+    </h1>
 
     <p class="py-0 mt-1 mb-2 text-small font-weight-light">
       {{ excerpt }}
     </p>
   </div>
 </div>
-
-{% comment %} {% if image %}
-  <div class="header--with-custom-image width-100 py-3" style="background-image: url('{{ banner_image }}')">
-  </div>
-{% endif %} {% endcomment %}

@@ -4,6 +4,7 @@ date: "2020-05-11"
 excerpt: "Working on my personal site has helped keep me sane in quarantine. This includes a long-overdue style update for my site's code snippets to make them sleeker and clearer."
 image: "restyled-code-blocks.png"
 featured_image_link: "https://safebooru.org/index.php?page=post&s=view&id=2706841"
+featured_image_align_y: "40"
 tags: ["css", "design"]
 ---
 

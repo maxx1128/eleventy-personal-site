@@ -2,12 +2,6 @@
 layout: layouts/base.liquid
 ---
 
-{% if image %}
-  {% assign banner_image = metadata.post.imagePath | append: image %}
-  <div class="header--with-custom-image width-100 py-3" style="background-image: url('{{ banner_image }}')">
-  </div>
-{% endif %}
-
 <article id="content" class="post-content post-content--bordered width-100">
   <div class="resp-max-width">
     {{ content | safe }}
