@@ -1,5 +1,5 @@
-<nav class="nav__header width-100 flex flex-column mx-auto">
-  <ul id="navigation-menu" class="px-2 nav__main-menu mb-0 py-0 grail--py-1 flex grail--flex-column flex-justify-between list-reset">
+<nav class="resp-max-width width-100 flex flex-column mx-auto">
+  <ul id="navigation-menu" class="mb-0 py-0 flex-justify-between list-reset">
     {% for menu_item in menu %}
       {% if menu_item.link == page.url %}
         {% assign active_page = true %}
@@ -21,15 +21,15 @@
         {% assign current_page = false %}
       {% endif %}
 
-      <li class="inline-block mb-0 text-center grail--text-left">
-        <a class="block px-2 py-1 my-px text-small {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{% endif %}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
+      <li class="inline-block mr-4 my-1 text-center">
+        <a class="block my-px text-small {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{% endif %}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
           {{ menu_item.name }}
         </a>
       </li>
     {% endfor %}
   </ul>
 
-  <div class="hidden grail--flex flex-column px-4 pt-12 text-center grail--text-left">
+  {% comment %} <div class="flex flex-column px-4 pt-12 text-center">
     <h3 class="mt-0 mb-2 text-h6">
       Social Links
     </h3>
@@ -43,5 +43,5 @@
         </li>
       {% endfor %}
     </ul>
-  </div>
+  </div> {% endcomment %}
 </nav>

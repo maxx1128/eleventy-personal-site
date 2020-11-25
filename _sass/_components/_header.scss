@@ -1,7 +1,3 @@
-.top-header {
-  z-index: 1;
-}
-
 .header {
   box-shadow: container(box-shadow, 2);
   background-position: center;
@@ -13,12 +9,12 @@
 
 .header--with-custom-image {
   .header__text {
-    @include larger-than(xl) {
-      min-height: 35vh;
+    @include larger-than(lg) {
+      min-height: 40vh;
     }
 
-    @include larger-than(grail) {
-      min-height: 40vh;
+    @include larger-than(xxl) {
+      min-height: 45vh;
     }
   }
 }
