@@ -2,9 +2,9 @@
 {% assign previousPost = collections.posts | getNextCollectionItem: page %}
 
 <div class="height-100 flex flex-column">
-  <ul class="list-reset m-0 p-0">
+  <ul class="list-reset m-0 p-0 flex flex-column xl--flex-row">
     {% if nextPost %}
-      <li class="flex flex-column mb-0 pb-4">
+      <li class="flex-item-full flex flex-column mb-0 pb-4 xl--pb-0 xl--pr-4">
         <strong>Next Post:</strong>
         <a class="random-navigator__next-link text-small" href="{{ nextPost.url | url }}">
           {{ nextPost.data.title }}
@@ -12,13 +12,13 @@
       </li>
     {% endif %}
 
-    <li id="random-navigator-wrapper" class="hidden flex flex-column mb-0 pb-4">
+    <li id="random-navigator-wrapper" class="hidden flex-item-full flex flex-column mb-0 pb-4 xl--pb-0 xl--pr-4">
       <strong>Random Post:</strong>
       <a class="text-small" href="javascript:void();"></a>
     </li>
 
     {% if previousPost %}
-      <li class="flex flex-column mb-0 pb-4">
+      <li class="flex-item-full flex flex-column mb-0">
         <strong>Previous Post:</strong>
         <a class="random-navigator__previous-link text-small" href="{{ previousPost.url | url }}">
           {{ previousPost.data.title }}
@@ -28,7 +28,7 @@
   </ul>
 
   {% if featured_image_link %}
-    <small class="inline-block mt-auto mb-0 pt-2 grail--pt-8 italic">
+    <small class="inline-block mt-auto mb-0 pt-2 italic">
       <a href="{{ featured_image_link }}" target="_blank" rel="noopener">
         Featured image courtesy of this link.
       </a>

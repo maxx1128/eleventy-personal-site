@@ -124,13 +124,14 @@ code {
 // block code wrapper
 pre {
   position: relative;
-  margin-bottom: spacing();
+  margin-right: var(--pre-x-margin);
+  margin-bottom: spacing(6);
+  margin-left: var(--pre-x-margin);
 
   border-radius: spacing(2);
   box-shadow: container(box-shadow, 1);
 
   overflow: hidden;
-  max-width: calc(100vw - 2rem);
 
   // Text
   &::before {

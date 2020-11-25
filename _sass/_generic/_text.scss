@@ -54,13 +54,14 @@ ol,
 ul,
 small,
 tiny {
-  margin-bottom: spacing(5);
+  margin-bottom: spacing(6);
 
   line-height: strip-unit(type(line-height, normal));
 }
 
 ol,
 ul {
+  margin-top: 0;
   padding-left: spacing(6);
 
   @include larger-than(md) {

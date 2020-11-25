@@ -1,61 +1,19 @@
-$layout-side-col-width: 215px;
-
 body {
-  display: grid;
-  grid-template-areas:
-    "nav"
-    "header"
-    "content"
-    "side"
-    "footer";
-
-  grid-template-columns: 1fr;
-  min-height: 100vh;
-
-  @include larger-than(grail) {
-    grid-template-areas:
-      "header header header"
-      "nav content side"
-      "footer footer footer";
-
-    grid-template-columns: $layout-side-col-width 1fr $layout-side-col-width;
-    grid-template-rows: auto 1fr auto;
-  }
-}
-
-header {
-  grid-area: header;
-}
-
-nav {
-  grid-area: nav;
-}
-
-main {
-  grid-area: content;
-}
-
-aside {
-  grid-area: side;
-}
-
-footer {
-  grid-area: footer;
+  display: flex;
+  flex-direction: column;
 }
 
 .resp-max-width {
   width: 100%;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: spacing();
   padding-left: spacing();
-  max-width: breakpoint(md);
-
-  @include larger-than(xl) {
-    max-width: breakpoint(lg);
-  }
+  max-width: calc(#{$g-content-max-width} + (#{spacing()} * 2));
 
   @include larger-than(grail) {
     padding-right: spacing(6);
     padding-left: spacing(6);
+    max-width: calc(#{$g-content-max-width} + (#{spacing(6)} * 2));
   }
 }
