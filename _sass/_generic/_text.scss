@@ -86,12 +86,12 @@ p {
 }
 
 a {
-  color: color(action, dark);
+  color: color(action);
 }
 
 hr {
   height: 3px;
   margin: spacing(6) 0;
 
-  background-color: color(primary, darker);
+  background-color: color(primary, dark);
 }

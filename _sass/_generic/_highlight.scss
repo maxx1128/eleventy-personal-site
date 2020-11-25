@@ -109,8 +109,8 @@ code {
 
 @include darkMode() {
   code {
-    --color-mono-black: #{color(primary, lighter)};
-    --color-mono-white: #{color(primary, darkest)};
+    --color-mono-black: #{color(mono, white)};
+    --color-mono-white: #{color(mono, black)};
   }
 }
 

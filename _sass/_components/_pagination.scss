@@ -6,12 +6,12 @@
   justify-content: center;
 
   box-shadow: container(box-shadow, 1);
-  border: 1px solid color(action, dark);
+  border: 1px solid color(action);
   border-radius: container(border-radius, circle);
 }
 
 .pagination-link--current {
   color: color(mono, white);
 
-  background-color: color(action, dark);
+  background-color: color(action);
 }
