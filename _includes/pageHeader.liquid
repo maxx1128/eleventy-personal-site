@@ -6,7 +6,7 @@
   {% assign header_class = header_class | append: " header py-3" %}
 {% endif %}
 
-<div class="{{ header_class }} width-100" {% if banner_image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
+<header class="{{ header_class }} width-100 border-primary-top border-primary-bottom" {% if banner_image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
   <div class="header__text resp-max-width">
     <div class="relative py-4">
       <h1 class="my-0">
@@ -24,4 +24,4 @@
       {% endif %}
     </div>
   </div>
-</div>
+</header>
