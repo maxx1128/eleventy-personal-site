@@ -23,15 +23,17 @@
       {{ content | safe }}
     </main>
 
-    <aside class="{% unless layout contains "post.liquid" or layout contains "note.liquid" %}flex{% endunless %}">
-      <div class="resp-max-width py-4">
-        {% if layout contains "post.liquid" %}
-          {% include postAside.liquid %}
-        {% elsif layout contains "note.liquid" %}
-          {% include noteAside.liquid %}
-        {% endif %}
-      </div>
-    </aside>
+    {% if layout contains "post.liquid" or layout contains "note.liquid" %}
+      <aside class="py-4 border-primary-top">
+        <div class="resp-max-width py-4">
+          {% if layout contains "post.liquid" %}
+            {% include postAside.liquid %}
+          {% elsif layout contains "note.liquid" %}
+            {% include noteAside.liquid %}
+          {% endif %}
+        </div>
+      </aside>
+    {% endif %}
 
     {% include footer.liquid %}
     {% include footerscripts.liquid %}

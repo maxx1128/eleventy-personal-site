@@ -8,3 +8,11 @@
     }
   }
 }
+
+.border-primary-top {
+  border-top: spacing(border) solid color(primary, base);
+}
+
+.border-primary-bottom {
+  border-bottom: spacing(border) solid color(primary, base);
+}
