@@ -44,11 +44,13 @@ Now the margin's position is set relative to the start of the writing mode. **If
 
 [You can read a much better, more detailed explanation of logical properties from Rachel Andrew here](https://www.smashingmagazine.com/2018/03/understanding-logical-properties-values/). Or you can see a quick demo of hers below.
 
-<p class="codepen" data-height="450" data-theme-id="light" data-default-tab="result" data-user="rachelandrew" data-slug-hash="yvGEbZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Grid and writing-mode">
-  <span>See the Pen <a href="https://codepen.io/rachelandrew/pen/yvGEbZ">
-  Grid and writing-mode</a> by rachelandrew (<a href="https://codepen.io/rachelandrew">@rachelandrew</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+<div class="mb-4">
+  <p class="codepen" data-height="450" data-theme-id="light" data-default-tab="result" data-user="rachelandrew" data-slug-hash="yvGEbZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Grid and writing-mode">
+    <span>See the Pen <a href="https://codepen.io/rachelandrew/pen/yvGEbZ">
+    Grid and writing-mode</a> by rachelandrew (<a href="https://codepen.io/rachelandrew">@rachelandrew</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+</div>
 
 I should note at the time I'm writing this, there's little browser support for this feature. But it's good to get a basic understanding early on so you're ready to use it when you can.
 
@@ -78,11 +80,13 @@ For any design with a visual right behind an element, like a banner image behind
 
 With this, we can add a few filters to make a "frosted glass" effect. I can blur the image, lower the contrast, and brighten it up.
 
-<p class="codepen" data-height="453" data-theme-id="light" data-default-tab="result" data-user="max1128" data-slug-hash="VwjdZMY" style="height: 453px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CSS Survey Backdrop Filter example">
-  <span>See the Pen <a href="https://codepen.io/max1128/pen/VwjdZMY">
-  CSS Survey Backdrop Filter example</a> by Maxwell Antonucci (<a href="https://codepen.io/max1128">@max1128</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+<div class="mb-4">
+  <p class="codepen" data-height="453" data-theme-id="light" data-default-tab="result" data-user="max1128" data-slug-hash="VwjdZMY" style="height: 453px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CSS Survey Backdrop Filter example">
+    <span>See the Pen <a href="https://codepen.io/max1128/pen/VwjdZMY">
+    CSS Survey Backdrop Filter example</a> by Maxwell Antonucci (<a href="https://codepen.io/max1128">@max1128</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+</div>
 
 Now the text is easier to read while letting the original image shine through for a sleeker, more polished effect. Most browsers supported this except for IE and Firefox. I happen to use Firefox a lot, so I hid `backdrop-filter` behind a `@supports` query with basic light blue background color as a fallback. Progressive enhancement always wins!
 
@@ -128,11 +132,13 @@ This unwanted event is called "[scroll chaining](https://developer.mozilla.org/e
 
 **If you're scrolling in that area, even when you reach the end, it won't ever scroll you past that area.** You can check this out in action below if you're using a supportive browser (which is now most of them aside from IE and Safari).
 
-<p class="codepen" data-height="525" data-theme-id="light" data-default-tab="result" data-user="max1128" data-slug-hash="XWKBQJb" style="height: 517px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="overscroll-behavior example">
-  <span>See the Pen <a href="https://codepen.io/max1128/pen/XWKBQJb">
-  overscroll-behavior example</a> by Maxwell Antonucci (<a href="https://codepen.io/max1128">@max1128</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+<div class="mb-4">
+  <p class="codepen" data-height="525" data-theme-id="light" data-default-tab="result" data-user="max1128" data-slug-hash="XWKBQJb" style="height: 517px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="overscroll-behavior example">
+    <span>See the Pen <a href="https://codepen.io/max1128/pen/XWKBQJb">
+    overscroll-behavior example</a> by Maxwell Antonucci (<a href="https://codepen.io/max1128">@max1128</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+</div>
 
 Now the user will reach the end of the modal content and go no further, as God intended.
 
@@ -156,11 +162,13 @@ I won't lie, despite this property seeming so simple, it took me the longest to 
 
 Let's say I want to change how numeral expressions like "1st" and "3rd" appear on my website. `font-variant-numeric` can change that in ways that are both correct and incorrect.
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="max1128" data-slug-hash="rNLrLjb" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="font-variant-numeric Example">
-  <span>See the Pen <a href="https://codepen.io/max1128/pen/rNLrLjb">
-  font-variant-numeric Example</a> by Maxwell Antonucci (<a href="https://codepen.io/max1128">@max1128</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+<div class="mb-4">
+  <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="max1128" data-slug-hash="rNLrLjb" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="font-variant-numeric Example">
+    <span>See the Pen <a href="https://codepen.io/max1128/pen/rNLrLjb">
+    font-variant-numeric Example</a> by Maxwell Antonucci (<a href="https://codepen.io/max1128">@max1128</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+</div>
 
 I personally see limited use cases for a feature like this. But that could be because it's outside my range of experiences or needs, so I'll limit my judgment for now.
 

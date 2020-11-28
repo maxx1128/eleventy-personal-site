@@ -7,7 +7,7 @@ tags: ['anime', 'javascript']
 ---
 After over a year in purgatory, one of my side projects is finally finished. It's a small piece of Pokemon fandom I'd wanted to make for a while now: a Pokemon personality quiz! To be more specific, a "What Eevee Evolution Are You" quiz. [You can view (and take) the quiz at this site.](https://eeveequiz.com/)
 
-<img class="post-content--partial-bleed" src="/assets/images/posts/eevee-quizzes-singletons/eeveelution_home.png" alt="The homepage of the 'What Eeveelution Are You' quiz site." />
+![The homepage of the "What Eeveelution Are You" quiz site.](/assets/images/posts/eevee-quizzes-singletons/eeveelution_home.png)
 
 _(For the record, I'm an Espeon and overjoyed about it.)_
 
@@ -23,7 +23,7 @@ According to [Ember's documentation on Services](https://guides.emberjs.com/rele
 
 Services are Ember's version of the Singleton design pattern (I'm just going to refer to them as services here). There's only one instance in the app that persists across every page. Any changes made to it carry across all pages and components. I used a service to control and organize all data related to quiz questions and progress.
 
-<img class="post-content--full-bleed" src="/assets/images/posts/eevee-quizzes-singletons/eevee_art.jpeg" alt="A drawing of all the Eevee evolutions sitting together" />
+![A drawing of all the Eevee evolutions sitting together](/assets/images/posts/eevee-quizzes-singletons/eevee_art.jpeg)
 
 For example, one property in this service is the current question. If this changes anywhere in my app, every page gets that change since they all use the same instance. It's how, when you go to another page during the quiz, you can still pick up where you left off.
 
@@ -59,7 +59,7 @@ This `progress` value is then passed into the `progress-bar` component. It uses 
 
 The service makes it easy to get the following (adorable) effect.
 
-<img class="post-content--partial-bleed" src="/assets/images/posts/eevee-quizzes-singletons/quiz_flow.gif" alt="A GIF showing different Eevees running across the screen as a user completes the quiz." />
+![A GIF showing different Eevees running across the screen as a user completes the quiz.](/assets/images/posts/eevee-quizzes-singletons/quiz_flow.gif)
 
 ### Changing the Menu when you Finish the Quiz
 

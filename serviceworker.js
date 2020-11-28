@@ -13,6 +13,7 @@ addEventListener('install', installEvent => {
           'index.html',
           'notes/index.html',
           'now/index.html',
+          'celebrations/index.html',
           'writing/index.html',
           '/assets/images/global/profile.jpg'
         ]);

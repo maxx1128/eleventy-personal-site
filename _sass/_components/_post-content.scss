@@ -1,4 +1,4 @@
-.post-content {
+.post-content--bordered {
   padding-top: spacing(4);
   padding-bottom: spacing(4);
 
@@ -7,47 +7,13 @@
     padding-bottom: spacing(6);
   }
 
-  @supports (display: grid) {
-    display: grid;
-    grid-template-columns:
-      1fr
-      #{"min(#{$g-content-max-width}, calc(100% - #{spacing(6)}))"}
-      1fr;
+  @include larger-than(grail) {
+    padding-top: spacing(4);
+    padding-bottom: spacing(4);
+    margin-top: spacing(4);
+    margin-bottom: spacing(4);
 
-    & > * {
-      grid-column: 2;
-    }
-
-    pre,
-    .post-content--full-bleed,
-    .post-content--partial-bleed,
-    .cp_embed_wrapper {
-      width: 100%;
-      grid-column: 1 / -1;
-    }
-
-    pre,
-    .post-content--partial-bleed,
-    .cp_embed_wrapper {
-      margin-right: auto;
-      margin-left: auto;
-      max-width: breakpoint(xl);
-    }
-
-    .post-content--full-bleed,
-    .post-content--partial-bleed,
-    .cp_embed_wrapper {
-      margin-top: spacing(8);
-      margin-bottom: spacing(8);
-    }
-  }
-}
-
-@supports not (display: grid) {
-  .post-content {
-    width: 100%;
-    max-width: $g-content-max-width;
-    margin-right: auto;
-    margin-left: auto;
+    border-right: 2px solid color(primary, darker);
+    border-left: 2px solid color(primary, darker);
   }
 }

@@ -54,7 +54,7 @@ ol,
 ul,
 small,
 tiny {
-  margin-bottom: spacing(6);
+  margin-bottom: spacing(5);
 
   line-height: strip-unit(type(line-height, normal));
 }
@@ -86,12 +86,12 @@ p {
 }
 
 a {
-  color: color(action);
+  color: color(action, dark);
 }
 
 hr {
   height: 3px;
   margin: spacing(6) 0;
 
-  background-color: color(primary, dark);
+  background-color: color(primary, darker);
 }

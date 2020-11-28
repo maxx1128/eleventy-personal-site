@@ -5,7 +5,7 @@
     {% assign post_image = metadata.post.imagePath | append: post.data.image %}
 
     <div class="post-listing relative flex flex-align-center">
-      <div class="post-listing__date relative mr-6 md--flex flex-column flex-align-center flex-justify-center border-radius-circle bg-primary-dark text-mono-white box-shadow-2 hidden-md-down">
+      <div class="post-listing__date relative mr-6 md--flex flex-column flex-align-center flex-justify-center border-radius-circle bg-primary-darker text-mono-white box-shadow-2 hidden-md-down">
         <span class="font-family-header font-weight-bold">
           {{ post.date | readableDate | date: "%b %e" }}
         </span>

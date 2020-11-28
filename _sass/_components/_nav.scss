@@ -1,0 +1,16 @@
+.nav__main-menu {
+  overflow-x: scroll;
+  max-width: 100vw;
+
+  font-size: type(font-size, small);
+
+  @include larger-than(sm) {
+    margin: 0 auto;
+    width: 100%;
+    max-width: breakpoint(md);
+  }
+
+  @include larger-than(xl) {
+    max-width: breakpoint(lg);
+  }
+}
