@@ -7,11 +7,13 @@
   }
 }
 
-$g-box-shadow-shade-1: rgba(color(mono, black), 0.1);
-$g-box-shadow-shade-2: rgba(color(mono, black), 0.14);
-$g-box-shadow-shade-3: rgba(color(mono, black), 0.18);
-$g-box-shadow-shade-4: rgba(color(mono, black), 0.22);
-$g-box-shadow-shade-5: rgba(color(mono, black), 0.26);
+$g-box-shadow-shade-1: rgba(color(shadow, dark), 0.1);
+$g-box-shadow-shade-2: rgba(color(shadow, dark), 0.14);
+$g-box-shadow-shade-3: rgba(color(shadow, dark), 0.18);
+$g-box-shadow-shade-4: rgba(color(shadow, dark), 0.22);
+$g-box-shadow-shade-5: rgba(color(shadow, dark), 0.26);
+
+$g-box-shadow-inset-opacity: 0.9;
 
 $containers-map: (
   border-radius: (

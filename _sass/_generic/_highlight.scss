@@ -109,8 +109,8 @@ code {
 
 @include darkMode() {
   code {
-    --color-mono-black: #{color(mono, white)};
-    --color-mono-white: #{color(mono, black)};
+    --color-mono-black: #{color(primary, lighter)};
+    --color-mono-white: #{color(primary, darkest)};
   }
 }
 
@@ -124,14 +124,13 @@ code {
 // block code wrapper
 pre {
   position: relative;
-  margin-right: var(--pre-x-margin);
-  margin-bottom: spacing(6);
-  margin-left: var(--pre-x-margin);
+  margin-bottom: spacing();
 
   border-radius: spacing(2);
   box-shadow: container(box-shadow, 1);
 
   overflow: hidden;
+  max-width: calc(100vw - 2rem);
 
   // Text
   &::before {

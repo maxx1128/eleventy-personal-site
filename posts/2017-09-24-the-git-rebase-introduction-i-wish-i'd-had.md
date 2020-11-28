@@ -37,7 +37,7 @@ Let's say when you created your branch off of the master branch, the master bran
 
 Rebasing is **taking all your branch's commits and adding them on top of commit #5 instead of commit #1**. If you consider commit #1 as the "base" of your branch, you're changing that base to the most recent one, commit #5. Hence why it's called rebasing!
 
-<img class="post-content--full-bleed" src="/assets/images/posts/git-rebase-introduction/rebase-example.jpeg" alt="Someone taking a pull request based on an outdated commit, and moving it to the most recent one." />
+![Someone taking a pull request based on an outdated commit, and moving it to the most recent one.](/assets/images/posts/git-rebase-introduction/rebase-example.jpeg)
 
 ### Okay, so HOW do I Rebase something?
 

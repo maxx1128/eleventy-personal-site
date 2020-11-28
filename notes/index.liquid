@@ -10,7 +10,7 @@ pagination:
   alias: notes
 ---
 
-<div class="pb-4">
+<div class="resp-max-width pb-4">
   <p>
     Sometimes I want to write things that can't work as a blog post, I don't want to lose amid Twitter, or don't make any sense. For all these streams of conscious, I have my Notes. They have lots of colors to match how across the board they can get.
   </p>
@@ -20,7 +20,7 @@ pagination:
   </p>
 </div>
 
-<section class="post-content--full-bleed">
+<section>
   {% for note in notes %}
     {% include note.liquid,
       date: note.data.date
@@ -31,6 +31,6 @@ pagination:
   {% endfor %}
 </section>
 
-<div class="mt-4 sm--mt-6">
+<div class="resp-max-width mt-4 sm--mt-6">
   {% include pagination.liquid %}
 </div>

@@ -1,23 +1,25 @@
-<div class="resp-max-width flex flex-column sm--flex-row flex-justify-between">
-  <div class="py-2 flex flex-column flex-align-start">
-    <h1 class="my-0 mr-4 text-h6">
-      <a class="text-mono-black" href="{% if page.url == '/' %}#content{% else %}/{% endif %}">
-        Max Antonucci
-      </a>
-    </h1>
-    <p class="my-0 text-tiny italic">
-      {{metadata.description}}
-    </p>
-  </div>
+<div class="top-header box-shadow-1">
+  <div class="resp-max-width flex flex-column sm--flex-row flex-justify-between">
+    <div class="py-2 flex flex-column flex-align-start">
+      <h1 class="my-0 mr-4 text-h6">
+        <a class="text-mono-black" href="{% if page.url == '/' %}#content{% else %}/{% endif %}">
+          Max Antonucci
+        </a>
+      </h1>
+      <p class="my-0 text-tiny italic">
+        {{metadata.description}}
+      </p>
+    </div>
 
-  <div class="theme-switcher flex mb-4 sm--mb-0 text-tiny">
-    {% for theme in themes %}
-      <div class="theme-switcher__option flex flex-align-center {% unless forloop.last %}mr-2{% endunless %}">
-        <input class="theme-switcher__input" type="radio" id="theme-{{ theme.name }}" name="theme-selector" value="{{ theme.name }}"\>
-        <label class="theme-switcher__label inline-block px-3 py-1 capitalize text-action-base border-radius-small" for="theme-{{ theme.name }}">
-          {{ theme.name }}
-        </label>
-      </div>
-    {% endfor %}
+    <div class="theme-switcher flex mb-4 sm--mb-0 text-tiny">
+      {% for theme in themes %}
+        <div class="theme-switcher__option flex flex-align-center {% unless forloop.last %}mr-2{% endunless %}">
+          <input class="theme-switcher__input" type="radio" id="theme-{{ theme.name }}" name="theme-selector" value="{{ theme.name }}"\>
+          <label class="theme-switcher__label inline-block px-3 py-1 capitalize text-action-darker border-radius-small bg-primary-lightest" for="theme-{{ theme.name }}">
+            {{ theme.name }}
+          </label>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>

@@ -1,3 +1,7 @@
+@function derive-rgb-values-from-hex($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
 @mixin darkMode() {
   .theme-dark {
     @content;
@@ -10,25 +14,54 @@
   }
 }
 
+$primary-darker: #026754;
+$primary-lightest: #d0effa;
+
 :root {
-  --color-primary-dark: #16697a;
-  --color-primary-base: #489fb5;
-  --color-primary-light: #82c0cc;
+  --color-primary-darkest: #00392a;
+  --color-primary-darker: #{$primary-darker};
+  --color-primary-dark: #07a291;
+  --color-primary-base: #0BBEB7;
+  --color-primary-light: #65cdd5;
+  --color-primary-lighter: #a6dee8;
+  --color-primary-lightest: #{$primary-lightest};
 
-  --color-action-base: #D62246;
+  --color-action-darker: #800206;
+  --color-action-dark: #ad1019;
+  --color-action-base: #E2252A;
+  --color-action-light: #ec897d;
+  --color-action-lighter: #f7d5cb;
 
-  --color-mono-black: #020402;
-  --color-mono-white: #FFFEFC;
+  --color-mono-black: #111111;
+  --color-mono-white: #f4fefd;
+
+  --color-shadow-dark: #{derive-rgb-values-from-hex($primary-darker)};
+  --color-shadow-light: #{derive-rgb-values-from-hex($primary-lightest)};
 }
 
+$dark-theme-primary-darkest: #d4ddf4;
+$dark-theme-primary-lighter: #003d53;
+
 @include darkMode() {
-  --color-primary-dark: #82c0cc;
-  --color-primary-light: #16697a;
+  --color-primary-darkest: #{$dark-theme-primary-darkest};
+  --color-primary-darker: #9db7e5;
+  --color-primary-dark: #5995d4;
+  --color-primary-base: #005b92;
+  --color-primary-light: #005b92;
+  --color-primary-lighter: #{$dark-theme-primary-lighter};
+  --color-primary-lightest: #002a34;
 
-  --color-action-base: #E7657F;
+  --color-action-darker: #c7f7f6;
+  --color-action-dark: #67dac8;
+  --color-action-base: #00BD89;
+  --color-action-light: #007849;
+  --color-action-lighter: #00451e;
 
-  --color-mono-black: #FFFEFC;
-  --color-mono-white: #020402;
+  --color-mono-black: #f4fefd;
+  --color-mono-white: #181820;
+
+  --color-shadow-dark: #{derive-rgb-values-from-hex($dark-theme-primary-darkest)};
+  --color-shadow-light: #{derive-rgb-values-from-hex($dark-theme-primary-lighter)};
 }
 
 // This function pulls specific color values from the below map
@@ -41,17 +74,30 @@
 // Map for storing all color variables
 $color-map: (
   primary: (
+    darkest: var(--color-primary-darkest),
+    darker: var(--color-primary-darker),
     dark: var(--color-primary-dark),
     base: var(--color-primary-base),
-    light: var(--color-primary-light)
+    light: var(--color-primary-light),
+    lighter: var(--color-primary-lighter),
+    lightest: var(--color-primary-lightest)
   ),
 
   action: (
-    base: var(--color-action-base)
+    darker: var(--color-action-darker),
+    dark: var(--color-action-dark),
+    base: var(--color-action-base),
+    light: var(--color-action-light),
+    lighter: var(--color-action-lighter)
   ),
 
   mono: (
     black: var(--color-mono-black),
     white: var(--color-mono-white)
+  ),
+
+  shadow: (
+    dark: var(--color-shadow-dark),
+    light: var(--color-shadow-light)
   )
 );

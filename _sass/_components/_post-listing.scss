@@ -86,7 +86,7 @@ $read-time-time: $thumbnail-size * 0.65;
 
 .post-listing__article {
   .post-listing:not(:last-of-type) & {
-    border-bottom: spacing(border) solid color(primary, dark);
+    border-bottom: 2px solid color(primary, dark);
   }
 }
 
