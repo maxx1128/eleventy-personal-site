@@ -1,6 +1,6 @@
 {% assign banner_image = metadata.post.imagePath | append: image %}
 
-<div class="header {% if image %}header--with-custom-image{% endif %}" {% if image %}style="background-image: url('{{ banner_image }}');{% endif %} {% if featured_image_align_y %}background-position-y: {{ featured_image_align_y }}%;{% endif %}">
+<div class="header border-primary-top border-primary-bottom {% if image %}header--with-custom-image{% endif %}" {% if image %}style="background-image: url('{{ banner_image }}');{% endif %} {% if featured_image_align_y %}background-position-y: {{ featured_image_align_y }}%;{% endif %}">
   <div class="header__text flex flex-column pb-2 resp-max-width">
     <div class="flex flex-justify-between pt-4 mb-auto">
       <small class="block mb-2 font-weight-bold">

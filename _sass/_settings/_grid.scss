@@ -9,6 +9,8 @@
   }
 }
 
+$g-content-max-width: 65ch;
+
 // Map for the breakpoints and max width
 $breakpoint-map: (
   xs: 0,
@@ -16,7 +18,5 @@ $breakpoint-map: (
   md: rem(650px),
   lg: rem(800px),
   xl: rem(900px),
-  xxl: rem(1000px),
-  xxxl: rem(1200px),
-  grail: rem(1350px)
+  xxl: rem(1000px)
 );

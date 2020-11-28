@@ -7,6 +7,8 @@
       Skip To Content
     </a>
 
+    {% include nav.liquid %}
+
     <header>
       {% include topHeader.liquid %}
 
@@ -17,21 +19,21 @@
       {% endif %}
     </header>
 
-    {% include nav.liquid %}
-
     <main>
       {{ content | safe }}
     </main>
 
-    <aside class="{% unless layout contains "post.liquid" or layout contains "note.liquid" %}hidden grail--flex{% endunless %}">
-      <div class="resp-max-width py-4">
-        {% if layout contains "post.liquid" %}
-          {% include postAside.liquid %}
-        {% elsif layout contains "note.liquid" %}
-          {% include noteAside.liquid %}
-        {% endif %}
-      </div>
-    </aside>
+    {% if layout contains "post.liquid" or layout contains "note.liquid" %}
+      <aside class="xl--py-2 border-primary-top">
+        <div class="resp-max-width py-4">
+          {% if layout contains "post.liquid" %}
+            {% include postAside.liquid %}
+          {% elsif layout contains "note.liquid" %}
+            {% include noteAside.liquid %}
+          {% endif %}
+        </div>
+      </aside>
+    {% endif %}
 
     {% include footer.liquid %}
     {% include footerscripts.liquid %}

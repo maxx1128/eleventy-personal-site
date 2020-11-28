@@ -54,13 +54,14 @@ ol,
 ul,
 small,
 tiny {
-  margin-bottom: spacing(5);
+  margin-bottom: spacing(6);
 
   line-height: strip-unit(type(line-height, normal));
 }
 
 ol,
 ul {
+  margin-top: 0;
   padding-left: spacing(6);
 
   @include larger-than(md) {
@@ -86,12 +87,12 @@ p {
 }
 
 a {
-  color: color(action, dark);
+  color: color(action);
 }
 
 hr {
   height: 3px;
   margin: spacing(6) 0;
 
-  background-color: color(primary, darker);
+  background-color: color(primary, dark);
 }
