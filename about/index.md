@@ -8,13 +8,15 @@ Who am I exactly? There's several ways to answer that.
 
 ## The Business Answer
 
-<img class="logo ml-4 mb-4 border-radius-full hidden-sm-down" src="/assets/images/global/profile.jpg" alt="Maxwell's profile picture" />
+<div>
+  <img class="logo ml-4 mb-4 border-radius-full hidden-sm-down" src="/assets/images/global/profile.jpg" alt="Maxwell's profile picture" />
 
-I'm a front-end developer working at [SeeClickFix](https://seeclickfix.com/) and living in New Haven. My focuses are CSS, JavaScript, and web accessibility.
+  I'm a front-end developer working at [SeeClickFix](https://seeclickfix.com/) and living in New Haven. My focuses are CSS, JavaScript, and web accessibility.
 
-I also write about programming. I often write to explain tough topics, like git rebasing and functional JavaScript, in simple and weird ways, like with cupcakes or angels and mutants.
+  I also write about programming. I often write to explain tough topics, like git rebasing and functional JavaScript, in simple and weird ways, like with cupcakes or angels and mutants.
 
-In my free time I enjoy reading, boxing, making things at MakeHaven, and pondering the philosophical.
+  In my free time I enjoy reading, boxing, making things at MakeHaven, and pondering the philosophical.
+</div>
 
 ## The Personal Answer
 
