@@ -14,7 +14,7 @@ I'd like it to be something like that. Even with the pandemic, there's plenty of
 
 But while this accomplishments list wasn't empty, it was a lot shorter than I expected. This is true even when it came to small things like "reading different books." Turns out I spent a lot of time rereading online comics. As amazing as Eyeshield 21 is, it shouldn't keep me from my virtual library.
 
-**That's when I realized I'd spent too much time inside my comfort zone, embracing risk and failure as much as I should have.**
+**That's when I realized I'd spent too much time inside my comfort zone, and not embracing risk and failure as much as I should have.**
 
 I thought of an unfortunate number of examples of this:
 
