@@ -15,7 +15,7 @@
         </span>
 
         {% if post.data.image %}
-          <span class="post-listing__thumbnail box-shadow-1 border-radius-circle border-primary bg-mono-white" style="background-image: url('{{ post_image }}')"></span>
+          {% comment %} <span class="post-listing__thumbnail box-shadow-1 border-radius-circle border-primary bg-mono-white" style="background-image: url('{{ post_image }}')"></span> {% endcomment %}
         {% endif %}
 
         <span class="post-listing__read-time flex flex-column flex-align-center flex-justify-center text-center text-tiny border-radius-circle bg-primary-dark box-shadow-1">

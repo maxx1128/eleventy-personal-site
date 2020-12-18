@@ -1,4 +1,4 @@
-const version         = 'V1.11',
+const version         = 'V1.12',
       staticCacheName = `${version}staticfiles`;
 
 addEventListener('install', installEvent => {
@@ -13,14 +13,15 @@ addEventListener('install', installEvent => {
           'index.html',
           'notes/index.html',
           'now/index.html',
-          'writing/index.html',
-          '/assets/images/global/profile.jpg'
+          'writing/index.html'
         ]);
 
         // Need to Cache
         return staticCache.addAll([
           '/assets/images/global/header-default.jpg',
           '/assets/images/global/header-dark.jpg',
+          '/assets/images/global/favicon.ico',
+          '/assets/images/global/profile.jpg',
           '/assets/css/main.css',
           '/assets/js/main.js'
         ]);
