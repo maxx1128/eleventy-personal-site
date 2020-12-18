@@ -6,36 +6,48 @@ white-footer: true
 ---
 
 <div id="content">
-  <div class="resp-max-width py-4 my-4 lg--py-12 lg--my-12">
-    <h1 class="mt-0">
-      Hello Readers.
-    </h1>
+  <div class="slant-top-padding slant-bottom-padding bg-primary-light">
+    <div class="resp-max-width py-10 text-center">
+      <h1 class="mt-0">
+        Hello Readers.
+      </h1>
 
-    <p class="text-h6">
-      I’m Max Antonucci. I write code, blog posts, notebooks, and musings.
-    </p>
-
-    <p>
-      <strong>As a programmer</strong>, I code for the front-end and back-end. For my work, I write a lot of JavaScript, Ruby, and Ruby on Rails. I'm also building more specialized knowledge in web accessibility and design systems.
-    </p>
-
-    <p>
-      <strong>As a writer</strong>, I write to remember lessons I've learned in programming, mental health, philosophy, and life in general. Or random things I need to get out of my head.
-    </p>
-
-    <p class="mb-0">
-      <strong>As a chainsaw juggler,</strong> I don't do anything since I don't exist.
-    </p>
+      <p class="text-h6 mb-0">
+        I’m Max Antonucci. I write code, blog posts, notebooks, and musings.
+      </p>
+    </div>
   </div>
 
-  <div class="resp-max-width">
-    <h2>
-      Recent Writing
-    </h2>
+  <div class="slant-top-left slant-bottom-padding bg-mono-muted border-primary-base">
+    <div class="resp-max-width py-10 text-center">
+      <p>
+        <strong>As a programmer</strong>, I code for the front-end and back-end. For my work, I write a lot of JavaScript, Ruby, and Ruby on Rails. I'm also building more specialized knowledge in web accessibility and design systems.
+      </p>
 
-    <p>
-      My blog is where I keep my big lessons. Sometimes they're important code knowledge or concepts. Sometimes it's career or life lessons. Other times it's broad changes in how I think. But they're all short stories taken from the novel of my life.
-    </p>
+      <p>
+        <strong>As a writer</strong>, I write to remember lessons I've learned in programming, mental health, philosophy, and life in general. Or random things I need to get out of my head.
+      </p>
+
+      <p class="mb-0">
+        <strong>As a chainsaw juggler,</strong> I don't do anything since I don't exist.
+      </p>
+    </div>
+  </div>
+
+  <div class="slant-top-right bg-mono-white border-primary-light">
+    <div class="resp-max-width">
+      <h2 class="mt-0 pt-10">
+        Recent Writing
+      </h2>
+
+      <p>
+        My blog is where I keep my big lessons. Sometimes they're important code knowledge or concepts. Sometimes it's career or life lessons. Other times it's broad changes in how I think. But they're all short stories taken from the novel of my life.
+      </p>
+
+      <p>
+        <a href="/writing/">You can read more of my blog here.</a> <a class="hidden" id="random-post-link">Or read a completely random blog post.</a>
+      </p>
+    </div>
   </div>
 
   {% include postListing.liquid
@@ -44,11 +56,7 @@ white-footer: true
     limit: 3
   %}
 
-  <div class="resp-max-width pt-4">
-    <p class="mb-0">
-      <a href="/writing/">Read more of my blog posts.</a> <a class="hidden" id="random-post-link">Or read a completely random blog post.</a>
-    </p>
-
+  <div class="resp-max-width pt-4 slant-bottom-padding">
     <h2>
       Recent Notes
     </h2>
@@ -56,9 +64,13 @@ white-footer: true
     <p>
       Whatever I want to write but can't quite fit into my blog goes here. From the profound to the silly to the random, it shall be scribbled in a note.
     </p>
+
+    <p>
+      <a href="/notes/">You can read more of my notes here.</a> <a class="hidden" id="random-note-link">Or read a completely random note.</a>
+    </p>
   </div>
 
-  <section id="notes">
+  <section id="notes" class="notes-collection notes-collection--flip-angles">
     {% for note in collections.recent_notes reversed %}
       {% include note.liquid,
         date: note.data.date
@@ -68,10 +80,4 @@ white-footer: true
       %}
     {% endfor %}
   </section>
-
-  <div class="resp-max-width py-4">
-    <p class="mb-0">
-      <a href="/notes/">Read more of my notes.</a> <a class="hidden" id="random-note-link">Or read a completely random note.</a>
-    </p>
-  </div>
 </div>
