@@ -13,21 +13,23 @@
 :root {
   --color-primary-dark: #16697a;
   --color-primary-base: #489fb5;
-  --color-primary-light: #82c0cc;
+  --color-primary-light: #97d4e0;
 
   --color-action-base: #D62246;
 
   --color-mono-black: #020402;
+  --color-mono-muted: #ddf5fa;
   --color-mono-white: #FFFEFC;
 }
 
 @include darkMode() {
-  --color-primary-dark: #82c0cc;
+  --color-primary-dark: #97d4e0;
   --color-primary-light: #16697a;
 
   --color-action-base: #E7657F;
 
   --color-mono-black: #FFFEFC;
+  --color-mono-muted: #052c33;
   --color-mono-white: #020402;
 }
 
@@ -52,6 +54,7 @@ $color-map: (
 
   mono: (
     black: var(--color-mono-black),
+    muted: var(--color-mono-muted),
     white: var(--color-mono-white)
   )
 );
