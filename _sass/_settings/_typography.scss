@@ -16,7 +16,7 @@ $g-modular-scale--ratio: 1.25; // Major third
 
 // Font families
 $g-font-family-base: "WorkSans", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-$g-font-family-header: "Futura", -apple-system, BlinkMacSystemFont, "Gill Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$g-font-family-header: "Aller", "Futura", -apple-system, BlinkMacSystemFont, "Gill Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 $g-font-family-mono: "Courier New", "Consolas", "Courier", monospace;
 
 @font-face {
@@ -34,6 +34,12 @@ $g-font-family-mono: "Courier New", "Consolas", "Courier", monospace;
   font-family: WorkSans;
   font-style: italic;
   src: url("../type/work-sans/WorkSans-LightItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Aller;
+  font-weight: bold;
+  src: url("../type/aller/Aller_Bd.ttf") format("truetype");
 }
 
 :root {
