@@ -22,24 +22,28 @@ $g-font-family-mono: "Courier New", "Consolas", "Courier", monospace;
 @font-face {
   font-family: WorkSans;
   src: url("../type/work-sans/WorkSans-Light.otf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: WorkSans;
   font-weight: bold;
   src: url("../type/work-sans/WorkSans-Medium.otf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: WorkSans;
   font-style: italic;
   src: url("../type/work-sans/WorkSans-LightItalic.otf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Aller;
   font-weight: bold;
   src: url("../type/aller/Aller_Bd.ttf") format("truetype");
+  font-display: swap;
 }
 
 :root {
