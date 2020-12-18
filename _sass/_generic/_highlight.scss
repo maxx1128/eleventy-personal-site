@@ -55,8 +55,9 @@ pre > code.highlight {
 // block code wrapper
 pre {
   position: relative;
+  margin-top: var(--spacing-4);
   margin-right: var(--pre-x-margin);
-  margin-bottom: spacing(6);
+  margin-bottom: var(--spacing-12);
   margin-left: var(--pre-x-margin);
 
   border-radius: spacing(2);
