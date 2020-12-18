@@ -17,3 +17,16 @@ body {
     max-width: calc(#{$g-content-max-width} + (#{spacing(6)} * 2));
   }
 }
+
+footer {
+  background-color: color(mono, muted);
+
+  &.footer--white,
+  aside + & {
+    background-color: color(mono, white);
+  }
+}
+
+aside {
+  background-color: color(mono, muted);
+}

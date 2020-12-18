@@ -2,6 +2,6 @@
 layout: layouts/base.liquid
 ---
 
-<article id="content" class="post-content width-100 {% unless no-padding or postLabel == 'Note' %}{% endunless %}">
-  {{content}}
+<article id="content" class="post-content width-100 {% if pagination %}post-content--listing{% endif %}">
+  {{ content }}
 </article>
