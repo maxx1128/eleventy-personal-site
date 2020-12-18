@@ -10,7 +10,7 @@ To this day, one of my favorite online articles is The Oatmeal's comic on being 
 
 But I've found the real reason: I'm not a happy person either.
 
-![Staring down at shattered glass.](/assets/images/posts/perfectly-unhappy-developer/glass.png)
+<img class="post-content--full-bleed" src="/assets/images/posts/perfectly-unhappy-developer/glass.png" alt="Staring down at shattered glass." />
 
 This doesn't mean I'm miserable or don't like my life. But the parts of my life I enjoy the most don't fit common definitions of happiness.
 
@@ -41,7 +41,7 @@ They make me feel frustrated and inadequate, insecure and lost.
 
 They make me feel astounded and intrigued, busy and complex.
 
-![A surreal landscape view over an island.](/assets/images/posts/perfectly-unhappy-developer/space.jpg)
+<img class="post-content--full-bleed" src="/assets/images/posts/perfectly-unhappy-developer/space.jpg" alt="A surreal landscape view over an island." />
 
 They make me feel like a human going headfirst into the turmoil of existence. Seeing a spectrum of ideas and feelings that push me up, drag me down, and toss me somewhere else. To find something new. To struggle with a new obstacle. To discover a new strength.
 
