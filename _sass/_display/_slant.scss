@@ -1,0 +1,85 @@
+:root {
+  --slant-padding: 5vw;
+}
+
+@mixin create-slant-effect($y, $x) {
+  $psuedo: '';
+  position: relative;
+  z-index: 1;
+
+  @if ($y == 'top') {
+    $psuedo: 'before';
+    clip-path: polygon(0% 100%, 100% 100%, 100% -500%, 0% -500%);
+  } @else {
+    $psuedo: 'after';
+    clip-path: polygon(0% 500%, 100% 500%, 100% 0%, 0% 0%);
+  }
+
+  &::#{$psuedo} {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    height: 5rem;
+
+    background: inherit;
+    border-width: 0px;
+    border-style: solid;
+    border-color: inherit;
+
+    z-index: -1;
+
+    @if ($y == 'top') {
+      top: 0;
+      border-top-width: 2px;
+    } @else {
+      bottom: 0;
+      border-bottom-width: 2px;
+    }
+
+    @if ($x == 'left') {
+      @if ($y == 'top') {
+        transform: skewY(3deg);
+      } @else {
+        transform: skewY(-3deg);
+      }
+
+      transform-origin: 100%;
+    } @else {
+      @if ($y == 'top') {
+        transform: skewY(-3deg);
+      } @else {
+        transform: skewY(3deg);
+      }
+
+      transform-origin: 0%;
+    }
+  }
+}
+
+.slant-top-right {
+  @include create-slant-effect('top', 'right');
+}
+
+.slant-top-left {
+  @include create-slant-effect('top', 'left');
+}
+
+.slant-bottom-right {
+  @include create-slant-effect('bottom', 'right');
+}
+
+.slant-bottom-left {
+  @include create-slant-effect('bottom', 'left');
+}
+
+.slant-top-padding {
+  padding-top: var(--slant-padding);
+}
+
+.slant-bottom-padding {
+  padding-bottom: var(--slant-padding);
+}
