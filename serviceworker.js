@@ -1,4 +1,4 @@
-const version         = 'V1.12',
+const version         = 'V1.13',
       staticCacheName = `${version}staticfiles`;
 
 addEventListener('install', installEvent => {
@@ -22,6 +22,8 @@ addEventListener('install', installEvent => {
           '/assets/images/global/header-dark.jpg',
           '/assets/images/global/favicon.ico',
           '/assets/images/global/profile.jpg',
+          '/assets/images/icons/192.png',
+          '/assets/images/icons/512.png',
           '/assets/css/main.css',
           '/assets/js/main.js'
         ]);
