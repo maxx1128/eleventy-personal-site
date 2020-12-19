@@ -36,7 +36,7 @@ One example: a big hobby of mine is drawing. This year I bought a used iPad with
 
 So I'm going to get an early start on changing that. Here's a partial drawing I did a few hours ago as of this writing (after many mistakes and restarts along the way).
 
-<img class="mb-4" src="/assets/images/posts/birthday-resolution-failure/drawing-example.jpg" alt="A drawing of a woman's head and shoulders.">
+<img class="post-content--partial-bleed" src="/assets/images/posts/birthday-resolution-failure/drawing-example.jpg" alt="A drawing of a woman's head and shoulders.">
 
 I think it came out well enough since it's pretty clear what it is, an above-the-shoulder drawing of a random woman. But there's also areas I can improve on next time: line consistency, element width, shading, variations in line thickness, etc. **But at least I drew it in the first place, and have plans to draw more later, despite the mistakes. That's the more important thing.**
 
