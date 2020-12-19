@@ -1,4 +1,4 @@
-<nav aria-labelledby="my-pagination">
+<nav class="resp-max-width py-8" aria-labelledby="my-pagination">
   <h2 id="my-pagination" class="screenReader">
     Pagination
   </h2>
@@ -26,7 +26,7 @@
       {% endif %}
     </div>
 
-    <div class="flex">
+    <div class="flex my-4 sm--my-0">
       {% for pageEntry in pagination.pages %}
         {% assign inPaginationRange = false %}
         {% assign prevPage1 = forloop.index0 | minus: 1 %}

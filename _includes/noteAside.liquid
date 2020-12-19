@@ -2,7 +2,7 @@
   {% assign nextNote = collections.notes | getNextCollectionItem: page %}
   {% assign previousNote = collections.notes | getPreviousCollectionItem: page %}
 
-  <ul class="list-reset m-0 p-0 flex flex-column xl--flex-row flex-justify-between text-small">
+  <ul class="list-reset m-0 p-0 flex flex-column md--flex-row flex-justify-between text-small">
     {% if nextNote %}
       <li class="flex flex-column mb-4 xl--mb-0">
         <strong class="pr-1">Next Note:</strong>

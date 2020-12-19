@@ -101,7 +101,10 @@ $note-colors: (
 }
 
 .note-styler {
+  padding-bottom: var(--slant-padding);
+
   color: var(--note-text-color);
+  border-color: var(--note-text-color);
   background-color: var(--note-background-color);
 
   a {
@@ -115,6 +118,27 @@ $note-colors: (
     a {
       color: var(--note-background-color);
     }
+  }
+
+  &:nth-of-type(even) {
+    @include create-slant-effect('top', 'left');
+  }
+
+  &:nth-of-type(odd) {
+    @include create-slant-effect('top', 'right');
+    padding-top: spacing();
+  }
+}
+
+.notes-collection--flip-angles .note-styler {
+  &:nth-of-type(even) {
+    @include create-slant-effect('top', 'right');
+    padding-top: spacing();
+  }
+
+  &:nth-of-type(odd) {
+    @include create-slant-effect('top', 'left');
+    padding-top: 0;
   }
 }
 
