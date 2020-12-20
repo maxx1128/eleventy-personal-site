@@ -5,7 +5,7 @@
     {% assign post_image = metadata.post.imagePath | append: post.data.image %}
 
     <div class="post-listing relative flex flex-align-center">
-      <div class="post-listing__date relative mr-6 md--flex flex-column flex-align-center flex-justify-center border-radius-circle bg-primary-dark text-mono-white box-shadow-2 hidden-md-down">
+      <div class="post-listing__date relative mr-6 md--flex flex-column flex-align-center flex-justify-center border-radius-circle bg-mono-muted box-shadow-2 hidden-md-down">
         <span class="font-family-header font-weight-bold">
           {{ post.date | readableDate | date: "%b %e" }}
         </span>
@@ -15,10 +15,10 @@
         </span>
 
         {% if post.data.image %}
-          {% comment %} <span class="post-listing__thumbnail box-shadow-1 border-radius-circle border-primary bg-mono-white" style="background-image: url('{{ post_image }}')"></span> {% endcomment %}
+          {% comment %} <span class="post-listing__thumbnail box-shadow-1 border-radius-circle bg-mono-muted" style="background-image: url('{{ post_image }}')"></span> {% endcomment %}
         {% endif %}
 
-        <span class="post-listing__read-time flex flex-column flex-align-center flex-justify-center text-center text-tiny border-radius-circle bg-primary-dark box-shadow-1">
+        <span class="post-listing__read-time flex flex-column flex-align-center flex-justify-center text-center text-tiny border-radius-circle bg-mono-muted box-shadow-1">
           <strong>{{ post.templateContent | postReadTime }}</strong>
           mins
         </span>

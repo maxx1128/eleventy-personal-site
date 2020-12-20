@@ -2,6 +2,11 @@
   padding-top: spacing(4);
   padding-bottom: spacing(4);
 
+  &.post-content--listing {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   @include larger-than(sm) {
     padding-top: spacing(6);
     padding-bottom: spacing(6);
@@ -26,7 +31,7 @@
       grid-column: 1 / -1;
     }
 
-    pre,
+    // pre,
     .post-content--partial-bleed,
     .cp_embed_wrapper {
       margin-right: auto;
@@ -39,6 +44,14 @@
     .cp_embed_wrapper {
       margin-top: spacing(4);
       margin-bottom: spacing(8);
+
+      &.post-content--full-bleed--no-mt {
+        margin-top: 0;
+      }
+
+      &.post-content--full-bleed--no-mb {
+        margin-bottom: 0;
+      }
     }
   }
 }

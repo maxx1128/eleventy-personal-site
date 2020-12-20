@@ -2,21 +2,10 @@
   @each $label, $color in $swatches {
     .bg-#{$palette}-#{$label} { background-color: $color; }
     .text-#{$palette}-#{$label} { color: $color; }
-
-    .text-#{$palette}-#{$label}--hover {
-      @include hovers() { color: $color; }
-    }
+    .border-#{$palette}-#{$label} { border-color: $color; }
   }
 }
 
-.border-primary {
-  border: spacing(border) solid color(primary, base);
-}
-
-.border-primary-top {
-  border-top: spacing(border) solid color(primary, base);
-}
-
-.border-primary-bottom {
-  border-bottom: spacing(border) solid color(primary, base);
-}
+// .border-primary-light {
+//   border: spacing(border) solid color(primary, light);
+// }

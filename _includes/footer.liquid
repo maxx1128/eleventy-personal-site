@@ -1,5 +1,5 @@
 {% unless title contains 'About Me' %}
-  <footer class="footer border-primary-top">
+  <footer class="footer {% if white-footer %}footer--white{% endif %} border-primary-base {% if contentType == 'Note' %}slant-top-right{% else %}slant-top-left{% endif %}">
     <div class="resp-max-width pt-8 pb-4">
       <img class="logo ml-4 mb-4 border-radius-full hidden-md-down" src="/assets/images/global/profile.jpg" alt="" />
 

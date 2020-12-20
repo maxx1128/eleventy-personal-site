@@ -19,19 +19,31 @@
       {% endif %}
     </header>
 
-    <main>
+    <main class="
+      {% unless main-hide-slant == true or contentType == 'Note' %}
+        slant-top-left bg-mono-white border-primary-base
+        {% unless title contains 'Notes' %}
+          slant-bottom-padding
+        {% endunless %}
+      {% endunless %}">
       {{ content | safe }}
     </main>
 
     {% if layout contains "post.liquid" or layout contains "note.liquid" %}
-      <aside class="xl--py-2 border-primary-top">
-        <div class="resp-max-width py-4">
+      <aside class="{% if contentType == 'Note' %}slant-top-left{% else %}slant-top-right{% endif %} slant-bottom-padding border-primary-light">
+        <div class="resp-max-width py-8">
           {% if layout contains "post.liquid" %}
             {% include postAside.liquid %}
           {% elsif layout contains "note.liquid" %}
             {% include noteAside.liquid %}
           {% endif %}
         </div>
+      </aside>
+    {% endif %}
+
+    {% if pagination %}
+      <aside class="slant-top-right slant-bottom-padding border-primary-light">
+        {% include pagination.liquid %}
       </aside>
     {% endif %}
 

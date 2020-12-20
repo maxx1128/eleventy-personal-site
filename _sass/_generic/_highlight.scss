@@ -35,11 +35,6 @@ code, pre {
 	hyphens: none;
 }
 
-:not(pre) > code {
-	padding: .1em;
-	border-radius: .3em;
-}
-
 pre > code.highlight {
 	outline: 0.4em solid #f92672;
 	outline-offset: .4em;
@@ -50,100 +45,138 @@ pre > code.highlight {
   padding: 3px 4px;
 
   font-size: calc(#{type(font-size, p)} * 0.8);
+
+  border-radius: .3em;
+  background-color: color(mono, muted);
 }
 
 // block code wrapper
 pre {
+  $large-polygon-container: polygon(0% 500%, 100% 500%, 100% -100%, 0% -100%);
+
+  @include create-slant-effect('top', 'left');
+  @include create-slant-effect('bottom', 'left');
+
   position: relative;
-  margin-top: var(--spacing-4);
+  margin-top: 4rem;
   margin-right: var(--pre-x-margin);
-  margin-bottom: var(--spacing-12);
+  margin-bottom: 6rem;
   margin-left: var(--pre-x-margin);
 
-  border-radius: spacing(2);
-  box-shadow: container(box-shadow, 2);
+  border-color: color(primary, base);
 
-  overflow: hidden;
+  clip-path: $large-polygon-container;
 
-  // Text
-  &::before {
-    content: 'Code';
-    position: absolute;
-    top: 3px;
-    left: spacing(4);
+  &:nth-of-type(even) {
+    @include create-slant-effect('top', 'right');
+    @include create-slant-effect('bottom', 'right');
 
-    text-transform: uppercase;
-    color: color(mono, black);
-    font-family: type(font-family, mono);
-    font-size: type(font-size, xtiny);
+    // margin-bottom: 4rem;
+    clip-path: $large-polygon-container;
   }
+}
 
-  // Button
-  &::after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    right: spacing(2);
-    width: 8px;
-    height: 8px;
-
-    border-radius: 100%;
-    background-color: color(primary, dark);
+// Headings after code blocks
+pre {
+  & + h1,
+  & + h2,
+  & + h3,
+  & + h4,
+  & + h5,
+  & + h6 {
+    margin-top: 0;
   }
 }
 
 // block code
 pre code {
+  position: relative;
   display: block;
-  margin: 0;
-  padding: spacing(4);
+  margin: 0 auto;
+  padding: 4rem spacing(2) spacing(8);
   max-height: rem(500px);
 
   font-size: type(font-size, small);
 
-  border-top: spacing(4) solid #c5c5d0;
-
   overflow: scroll;
-  max-width: 100%;
+  max-width: 44rem;
+
+  &::before,
+  &::after {
+    top: 0;
+    left: spacing(2);
+  }
+
+  &::before {
+    content: 'Code';
+    position: absolute;
+    padding: 3px;
+
+    text-transform: uppercase;
+    font-size: type(font-size, tiny);
+
+    z-index: 2;
+  }
+
+  &::after {
+    --code-name-bg-color: #{color(mono, white)};
+    --code-triangle-length: 5.5rem;
+
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0rem solid transparent;
+    border-left: var(--code-triangle-length) solid var(--code-name-bg-color);
+    border-bottom: 2.25rem solid transparent;
+
+    z-index: 1;
+  }
+}
+
+pre:nth-of-type(even) {
+  code::before,
+  code::after { top: spacing(2); }
 }
 
 // Block code for specific languages
 @each $language, $color in $highlight-languages {
   $text-color: '';
-  $button-bg: '';
 
   @if (lightness($color) > 50) {
     $text-color: #000;
-    $button-bg: color(primary, dark);
   } @else {
     $text-color: #FFF;
-    $button-bg: color(primary, light);
   }
 
   pre.language-#{$language} {
+    border-color: $color;
+
     code.language-#{$language} {
-      border-color: $color;
-    }
+      &::before {
+        content: $language;
 
-    &::after {
-      background-color: $button-bg;
-    }
+        color: $text-color;
+      }
 
-    &::before {
-      content: $language;
-      color: $text-color;
+      &::after {
+        $triangle-length: str-length($language) + 1.5;
+
+        --code-name-bg-color: #{$color};
+        --code-triangle-length: #{$triangle-length * 1rem};
+      }
     }
   }
 }
 
 // Code base text and background colors
-code {
+pre {
   color: color(mono, black);
   background-color: #ecf8f7;
 }
 
 @include darkMode() {
-  code {
+  pre {
     background-color: #24252b;
   }
 }
