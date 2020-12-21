@@ -18,6 +18,10 @@ addEventListener('install', installEvent => {
 
         // Need to Cache
         return staticCache.addAll([
+          '/assets/type/work-sans/WorkSans-Light.otf',
+          '/assets/type/work-sans/WorkSans-Medium.otf',
+          '/assets/type/work-sans/WorkSans-LightItalic.otf',
+          '/assets/type/aller/Aller_Bd.ttf',
           '/assets/images/global/header-default.jpg',
           '/assets/images/global/header-dark.jpg',
           '/assets/images/global/favicon.ico',
