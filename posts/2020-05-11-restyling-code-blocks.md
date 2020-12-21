@@ -8,6 +8,8 @@ featured_image_align_y: "40"
 tags: ["css", "design"]
 ---
 
+*Update: I've redesigned my site's code snippets at least once more since posting this, which is why the code and visuals described here won't line up with my site. But I'm keeping this blog post here, unchanged, on the advice of my lawyer.*
+
 To stay sane in quarantine, I've been busying myself with updates to my site. So far I've done the following:
 
 - Added a celebrations page
