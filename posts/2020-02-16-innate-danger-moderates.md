@@ -1,5 +1,8 @@
 ---
-date: 2020-02-16
+title: "The Innate Danger of Moderates"
+date: "2020-02-16"
+excerpt: "If you think moderate positions are the 'high ground,' know that civil rights leaders thought it was a bigger threat than extremists."
+tags: ["tough stuff", "philosophy"]
 ---
 
 This note is for people who see anger and criticism for aspects of today's society. Instead of supporting it, they call it "disruptive" or "too angry." I have a small history lesson for you.
@@ -11,3 +14,5 @@ During the civil rights movement, plenty of white moderates supported civil righ
 The short version: these moderates understood issues in the abstract. But they never experienced the cruel effects firsthand. **They say the status quo should change but have no desire to change it - often because they benefit even at others' expense.** So they dismiss any push to change the status quo as disruptive. Even if it's for a cause they "support."
 
 Yes, these efforts are disruptive. By definition, one needs to disrupt a bad system to fix it. You need to tear out a broken pipe to put in a better on. Dismissing these efforts as "people only looking for attention" exposes one's privilege fast. They never had to fight what so many others do each day.
+
+If you truly care about others and their rights, you need to accept the sacrifices that come with that. This includes giving a little on your own, so groups can collectively get what they needed but were deprived of for centuries.

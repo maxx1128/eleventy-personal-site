@@ -1,5 +1,8 @@
 ---
-date: 2020-05-23
+title: "Don't Abdicate Work to the 'Heroes'"
+date: "2020-05-23"
+excerpt: "Giving thanks to others should not be an excuse to avoid your share of work in a pandemic."
+tags: ["coronavirus", "tough stuff"]
 ---
 
 Imagine a group of people living in a home. They gather piles of dry wood everywhere. They vageuely know it's a bad idea and it'll eventually cause some kind of disaster but do nothing else. Then one day there's a spark, the dry wood catches fire, and the house is set ablaze.

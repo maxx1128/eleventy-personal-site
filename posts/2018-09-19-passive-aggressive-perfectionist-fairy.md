@@ -1,6 +1,8 @@
 ---
-date: 2018-09-19
 title: "The Passive-Aggressive Perfectionist Fairy"
+date: "2018-09-19"
+excerpt: "It's the fairy tormenting almost every aspect of my existence."
+tags: ["mental health", "tough stuff", "personal"]
 ---
 
 Cartoonist and web developer Rachel Nabors once drew [a comic about something she called the "Self-Doubt Fairy."](http://www.rachelthegreat.com/comics_stories/self-doubt-fairy/) I've found I have a similar voice in my head I call the "Passive-Aggressive Perfectionist Fairy," or PAP Fairy, and is just as bad for my mental health.

@@ -1,5 +1,8 @@
 ---
-date: 2020-07-21
+title: "Keeping Healthy by Controlling Anger"
+date: "2020-07-21"
+excerpt: "Anger shouldn't motivate us at the cost of our physical health, even amid injustice in a pandemic."
+tags: ["coronavirus", "mental health"]
 ---
 
 During this particular pandemic, there are lots of people I'm understandably angry at:

@@ -1,5 +1,8 @@
 ---
-date: 2019-11-24
+title: "Getting my Coding Hands Dirty"
+date: "2019-11-24"
+excerpt: "It's important to read and write about how I learn to code, as long as it doesn't detract from writing actual code."
+tags: ["career"]
 ---
 
 There are many ways for programmers to learn and improve, such as:

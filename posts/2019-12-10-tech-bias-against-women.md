@@ -1,5 +1,8 @@
 ---
-date: 2019-12-10
+title: "Tech and its Bias Against Women"
+date: "2019-12-10"
+excerpt: "It's hard to escape the dominant tech assumption that a woman-dominated isn't 'normal.'"
+tags: ["tough stuff", "career"]
 ---
 
 Recently in a local Slack group, I shared a tweet from someone dissing Ruby on Rails. While this is unforgivable, that's not what this note is about. Part of the context was a woman being hired in an all-women company.
