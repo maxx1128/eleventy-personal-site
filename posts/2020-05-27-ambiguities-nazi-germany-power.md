@@ -1,5 +1,8 @@
 ---
-date: 2020-05-27
+title: "The Ambiguities as Nazi Germany Rose To Power"
+date: "2020-05-27"
+excerpt: "Nazi Germany is universally seen as bad now, but it happened much later than many today would have expected."
+tags: ["tough stuff"]
 ---
 
 I recently read [a book about life in Nazi Germany leading up to World War II](https://www.amazon.com/Garden-Beasts-Terror-American-Hitlers-ebook/dp/B004HFRJM6). What struck me most was how ambiguous and mixed peoples' feelings were. Today the horrors of the Nazi Party are black and white, but not leading up to the war.

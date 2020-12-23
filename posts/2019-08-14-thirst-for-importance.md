@@ -1,5 +1,8 @@
 ---
-date: 2019-08-14
+title: "The Thirst for Importance"
+date: "2019-08-14"
+excerpt: "A person's natural urge to feel important, as natural as hunger and thirst, shows itself in many ways."
+tags: ["tough stuff", "philosophy"]
 ---
 
 One book I've been reading talked about a person's need to feel important. How it's so vital to one's well-being, it's on the same level of hunger and thirst. The more I considered it, the less absurd I realized it was.

@@ -1,6 +1,8 @@
 ---
-date: 2018-11-28
 title: "Some Meaning Behind Birthdays"
+date: "2018-11-28"
+excerpt: "A new birthday lets my understanding of their importance evolve."
+tags: ["personal", "philosophy"]
 ---
 
 To be honest, I never thought birthdays were too important. The day I was born was a result of almost pure randomness and luck, which makes it hard to see it as meaningful. Before I saw birthdays as a measure of how much someone cares (too much) about aging. The more they care, the more of their attention is stuck on youth, aging, and having a portrait in their hallway reflect their inner ugliness while they pursue eternal youth.
@@ -11,9 +13,7 @@ Lately I've seen a different meaning that doesn't relate to the birthday person 
 
 So this note goes to the people who took a little time to wish me a happy birthday, either in person or online. It's a strong sign someone's grateful to know me, and I'm quite grateful for that in turn. As thanks, here's a gif of a corgi going off a water slide in slow motion.
 
-<div>
-  <img src="/assets/images/notes/corgi-water-slide.gif" style="margin: 0 auto; display: block; margin-bottom: 2rem;" />
-</div>
+<img class="mb-4" src="/assets/images/notes/corgi-water-slide.gif" alt="A corgi majestically jumping off a water slide into a pool." />
 
 This note also goes to myself, who after realizing all this, will actually try to wish others a happy birthday instead of realizing I forget in a panic several days later.
 

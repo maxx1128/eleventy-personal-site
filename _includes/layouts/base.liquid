@@ -41,7 +41,7 @@
       </aside>
     {% endif %}
 
-    {% if pagination %}
+    {% if pagination and hidePagination != true %}
       <aside class="slant-top-right slant-bottom-padding border-primary-light">
         {% include pagination.liquid %}
       </aside>

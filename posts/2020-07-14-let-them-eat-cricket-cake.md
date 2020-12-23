@@ -1,5 +1,8 @@
 ---
-date: 2020-07-14
+title: "Let Them Eat Cricket Cake"
+date: "2020-07-14"
+excerpt: "It's fun to imagine the future of widespread, sustainable eating could be eating crickets. In many different forms."
+tags: ["other", "tough stuff"]
 ---
 
 As delicious as meat is, eating it is unsustainable for the planet. But I read something surprising: [we could help save the world be swapping meat with insects](https://www.nbcnews.com/mach/environment/how-eating-crickets-could-help-save-planet-n721416).

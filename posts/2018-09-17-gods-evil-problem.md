@@ -1,6 +1,8 @@
 ---
-date: 2018-09-17
 title: "God's Evil Problem"
+date: "2018-09-17"
+excerpt: "'The Problem of Evil' seems to be used more to justify the world's existing evil."
+tags: ["tough stuff", "philosophy"]
 ---
 
 In all definitions of God I've heard, they're all-good, all-powerful, and all-knowing. I assume a God would need at least that much going for it to be worth worshipping.
@@ -16,6 +18,6 @@ A common response I've heard is it's all part of "God's Plan." Human's can't und
 
 First off, I'm worried that someone's willing to swallow a design where they'll never know the reason for so much suffering. Plus no one could understand if a design "beyond human understanding" was for the greater good. By definition, no one could know if this plan of God's is good or bad.
 
-Even worse is how someone could accept these evil designs in the name of "faith in those with power." That's the kind of belief those in power are happy for people to have. The same leaders who, coincidentally, preach religion as a source of morals and inspiration. **Makes me wonder if this answer to the "Problem of Evil" is how humans do so many evil things.**
+Even worse is how someone could accept these evil designs in the name of "faith in those with power." That's the kind of belief those in power are happy for people to have. The same leaders who, coincidentally, preach religion as a source of morals and inspiration. **Makes me wonder if this answer to the "Problem of Evil" is how humans justify doing so many evil things.**
 
 Instead of justifying evil to protect beliefs, people may be better off trying to understand the world's evil more, decrease it, and build their beliefs from there. Then would it really matter how much of a role "God" played?
