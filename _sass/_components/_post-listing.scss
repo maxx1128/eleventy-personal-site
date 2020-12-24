@@ -36,11 +36,12 @@ $read-time-time: $thumbnail-size * 0.65;
 
 .post-listing__read-time {
   bottom: 85%;
-
   min-width: $read-time-time;
   max-width: $read-time-time;
   min-height: $read-time-time;
   max-height: $read-time-time;
+
+  line-height: 1.1;
 }
 
 .post-listing__thumbnail {
