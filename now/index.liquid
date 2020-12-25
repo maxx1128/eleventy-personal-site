@@ -44,10 +44,6 @@ tagline: Everything I'm doing right now, added right after it happens
   Reading and Listening
 </h2>
 
-{% comment %}
-  Include links to all the resources!
-{% endcomment %}
-
 <p>
   Like so many people, I have a giant backlog of articles, podcasts, and fiction and nonfiction books I know I'll never get through. But this ensures I'll never have an excuse to be bored in the future, and I can accept this tradeoff.
 </p>
@@ -70,13 +66,40 @@ tagline: Everything I'm doing right now, added right after it happens
   Playing
 </h2>
 
-<p>
+<p class="slant-bottom-padding">
   The COVID-19 pandemic has limited my playtime quite a bit, as you, dear reader, have likely dealt with yourself. My main leisure activity these days is reading, since the Libby app makes it easy to check out a wide variety of eBooks from my library whenever I want. Free books you can get without needing to leave your home are a pandemic survivor's best friend.
 </p>
 
-<p>
-  My second goof-off getaway these days is my Nintendo Switch. Most of my games are story-driven or visual novels, so they're not too different from books in the end. They're more like books with higher stakes on a big screen.
-</p>
+<div class="post-content--full-bleed post-content--full-bleed--no-mb bg-mono-muted border-primary-base slant-bottom-padding slant-top-right pt-8">
+  <section class="now-books__wrapper post-content--partial-bleed post-content--full-bleed--no-mt post-content--full-bleed--no-mb flex flex-wrap flex-justify-center flex-align-center pb-6">
+    <h3 class="flex-item-full mt-0 mx-4 text-center">
+      Books I'm Reading Now
+    </h3>
+    {% for book in currentBooks %}
+      {% include book.liquid,
+        book: book
+      %}
+    {% endfor %}
+  </section>
+  <section class="now-books__wrapper post-content--partial-bleed post-content--full-bleed--no-mt post-content--full-bleed--no-mb flex flex-wrap flex-justify-center flex-align-center pb-6">
+    <h3 class="flex-item-full mt-0 mx-4 text-center">
+      Books I Recently Finished
+    </h3>
+    {% for book in finishedBooks %}
+      {% include book.liquid,
+        book: book
+      %}
+    {% endfor %}
+  </section>
+</div>
+
+<div class="post-content--full-bleed post-content--full-bleed--no-mt slant-top-padding slant-top-left bg-mono-white border-primary-base">
+  <div class="resp-max-width">
+    <p>
+      My second goof-off getaway these days is my Nintendo Switch. Most of my games are story-driven or visual novels, so they're not too different from books in the end. They're more like books with higher stakes on a big screen.
+    </p>
+  </div>
+</div>
 
 <p>
   Before the pandemic had its winter spike, in my spare time I often visited <a target="_blank" rel="noopener" href="https://www.makehaven.org/" target="_blank">MakeHaven</a> to worked on craft and art projects. Most involve laser and vinyl cutting, and are nice ways to escape the computer screen for a while. The MakeHaven community is also amazing and supportive to all its makers.
