@@ -2,6 +2,7 @@
 
 require 'mini_magick'
 require 'piet'
+require 'piet-binary'
 
 class ShrinkAndOptimizeImages
   def execute
