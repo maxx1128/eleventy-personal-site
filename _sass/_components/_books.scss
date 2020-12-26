@@ -8,6 +8,13 @@
   background-color: rgba(241, 250, 255, 0.925);
 }
 
+@include darkMode() {
+  .book__title,
+  .book__author {
+    background-color: rgba(1, 22, 32, 0.925);
+  }
+}
+
 .book__title {
   top: 0;
 
