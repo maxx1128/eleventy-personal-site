@@ -1,4 +1,4 @@
-const version         = 'V1.19',
+const version         = 'V1.20',
       staticCacheName = `${version}staticfiles`;
 
 addEventListener('install', installEvent => {
@@ -8,28 +8,28 @@ addEventListener('install', installEvent => {
       .then(staticCache => {
         // Nice to Cache
         staticCache.addAll([
+          '/assets/type/work-sans/WorkSans-Light.otf',
+          '/assets/type/work-sans/WorkSans-Medium.otf',
+          '/assets/type/work-sans/WorkSans-LightItalic.otf',
+          '/assets/type/aller/Aller_Bd.ttf',
           'about/index.html',
           '404.html',
           'index.html',
           'notes/index.html',
           'now/index.html',
-          'writing/index.html'
-        ]);
-
-        // Need to Cache
-        return staticCache.addAll([
-          '/assets/type/work-sans/WorkSans-Light.otf',
-          '/assets/type/work-sans/WorkSans-Medium.otf',
-          '/assets/type/work-sans/WorkSans-LightItalic.otf',
-          '/assets/type/aller/Aller_Bd.ttf',
+          'writing/index.html',
           '/assets/images/global/header-default.jpg',
           '/assets/images/global/header-dark.jpg',
           '/assets/images/global/favicon.ico',
           '/assets/images/global/profile.jpg',
           '/assets/images/icons/icon-192.png',
-          '/assets/images/icons/icon-512.png',
+          '/assets/images/icons/icon-512.png'
+        ]);
+
+        // Need to Cache
+        return staticCache.addAll([
           '/assets/css/main.css',
-          '/assets/js/main.js'
+          '/assets/javascript/main.js'
         ]);
       })
   );
