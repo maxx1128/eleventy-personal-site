@@ -88,6 +88,11 @@ p {
 
 a {
   color: color(action);
+
+  &:focus {
+    outline: 2px solid color(action, base);
+    outline-offset: 2px;
+  }
 }
 
 hr {

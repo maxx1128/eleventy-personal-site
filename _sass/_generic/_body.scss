@@ -1,31 +1,13 @@
 * { box-sizing: border-box; }
 
-html,
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
 
-  font-size: 95%;
-  font-weight: type(font-weight, base);
-  font-family: type(font-family);
-  color: color(mono, black);
-
   background-color: color(mono, white);
 
   transition-duration: 0s;
-
-  @include larger-than(sm) {
-    font-size: 100%;
-  }
-
-  @include larger-than(md) {
-    // font-size: 110%;
-  }
-
-  @include larger-than(lg) {
-    font-size: 110%;
-  }
 }
 
 a:focus {
