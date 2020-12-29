@@ -17,10 +17,10 @@ body {
   }
 
   html:not(.webfonts-loaded):not(.no-js) & {
-    font-family: "Open Sans";
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    word-spacing: 0.45px;
+    font-family: -apple-system, BlinkMacSystemFont;
+    letter-spacing: 1.15px;
+    word-spacing: -0.55px;
+    font-weight: 200;
 
     h1,
     h2,
