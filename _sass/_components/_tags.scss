@@ -1,3 +1,40 @@
 .tag {
+  position: relative;
+  height: 1.5rem;
   padding: 2px 7px;
+
+  z-index: 1;
+
+  a {
+    outline-offset: 9px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: -5px;
+    width: 5px;
+    height: 5px;
+
+    border-radius: 100%;
+    background-color: color(mono, white);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -9px;
+    bottom: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    border-radius: 1.5rem;
+    border-bottom-left-radius: 1rem;
+    background-color: color(action);
+
+    z-index: -1;
+    transform: rotate(45deg);
+  }
 }
