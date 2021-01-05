@@ -105,6 +105,18 @@ module.exports = function(eleventyConfig) {
       .reverse();
   });
 
+  eleventyConfig.addCollection("feed", function (collection) {
+    const allContent = [...collection.getFilteredByGlob("./notes/*.md"), ...collection.getFilteredByGlob("./posts/*.md")].sort((a, b) => {
+      if (a.date < b.date) { return -1; }
+      if (a.date > b.date) { return 1; }
+      return 0;
+    })
+
+    return allContent
+      .filter(hideFutureItems)
+      .reverse();
+  });
+
   eleventyConfig.addCollection("recent_notes", function (collection) {
     return collection.getFilteredByGlob("./notes/*.md")
       .filter(hideFutureItems)
