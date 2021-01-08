@@ -18,6 +18,14 @@ body {
   }
 }
 
+.resp-max-width--large {
+  max-width: calc(#{breakpoint(xl)} + (#{spacing()} * 2));
+
+  @include larger-than(grail) {
+    max-width: calc(#{breakpoint(xl)} + (#{spacing(6)} * 2));
+  }
+}
+
 footer {
   background-color: color(mono, muted);
 

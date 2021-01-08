@@ -4,30 +4,11 @@
   {% for post in posts limit: postLimit %}
     {% assign post_image = metadata.post.imagePath | append: post.data.image %}
 
-    <div class="post-listing relative flex flex-align-center">
-      <div class="post-listing__date relative mr-6 md--flex flex-column flex-align-center flex-justify-center border-radius-circle bg-mono-muted box-shadow-2 hidden-md-down">
-        <span class="font-family-header font-weight-bold">
-          {{ post.date | readableDate | date: "%b %e" }}
-        </span>
+    <div class="post-listing relative flex flex-align-center sm--py-4">
+      <span class="post-listing__thumbnail" {% if post.data.image %}style="background-image: url('{{ post_image }}')"{% endif %}></span>
 
-        <span class="font-family-header text-h5">
-          {{ post.date | readableDate | date: "%Y" }}
-        </span>
-
-        {% if post.data.image %}
-          {% comment %} <span class="post-listing__thumbnail box-shadow-1 border-radius-circle bg-mono-muted" style="background-image: url('{{ post_image }}')"></span> {% endcomment %}
-        {% endif %}
-
-        <span class="post-listing__read-time flex flex-column flex-align-center flex-justify-center text-center text-tiny border-radius-circle bg-mono-muted box-shadow-1">
-          <strong>{{ post.templateContent | postReadTime }}</strong>
-          mins
-        </span>
-      </div>
-
-      <span class="post-listing__line bg-primary-base"></span>
-
-      <article class="post-listing__article {% if post.data.image %}post-listing__article--tall{% endif %} py-4 md--py-8 lg--py-12 md--ml-4 flex-item flex flex-column flex-justify-center">
-        <small class="mb-0 hidden-md-up">
+      <article class="post-listing__article py-8 md--py-12 px-4 md--px-6 flex-item flex flex-column flex-justify-center">
+        <small class="mb-0">
           <strong>
             {{ post.date | readableDate | date: "%B %e, %Y" }}
           </strong>

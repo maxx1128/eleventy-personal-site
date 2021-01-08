@@ -19,6 +19,9 @@ hidePagination: true
 
 {% assign posts = collections[tag] | reverse %}
 
-{% include postListing
-  posts: posts
-%}
+<div class="post-content--full-bleed">
+  {% include postListing
+    wrapper_class: "resp-max-width resp-max-width--large",
+    posts: posts
+  %}
+</div>
