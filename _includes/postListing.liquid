@@ -1,14 +1,12 @@
 {% assign postLimit = limit | default: 999 %}
 
-<section class="{{ wrapper_class }}">
+<section class="post-listing__wrapper {{ wrapper_class }}">
   {% for post in posts limit: postLimit %}
     {% assign post_image = metadata.post.imagePath | append: post.data.image %}
 
-    <div class="post-listing relative flex flex-align-center sm--py-4">
-      <span class="post-listing__thumbnail" {% if post.data.image %}style="background-image: url('{{ post_image }}')"{% endif %}></span>
-
-      <article class="post-listing__article py-8 md--py-12 px-4 md--px-6 flex-item flex flex-column flex-justify-center">
-        <small class="mb-0">
+    <div class="post-listing flex flex-align-center">
+      <article class="post-listing__article py-8 px-4 md--px-6 flex-item flex flex-column flex-justify-center" {% if post.data.image %}style="background-image: url('{{ post_image }}')"{% endif %}>
+        <small class="lg--mt-8 mb-0">
           <strong>
             {{ post.date | readableDate | date: "%B %e, %Y" }}
           </strong>
@@ -24,7 +22,8 @@
         </p>
 
         {% include tagList
-          tags: post.data.tags
+          tags: post.data.tags,
+          classes: "lg--mb-8"
         %}
       </article>
     </div>
