@@ -1,4 +1,4 @@
-.tag {
+.tag:not(.token) {
   position: relative;
   height: 1.5rem;
   padding: 2px 7px;
