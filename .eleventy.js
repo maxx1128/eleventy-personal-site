@@ -8,9 +8,11 @@ const markdownItAnchor = require("markdown-it-anchor");
 const moment = require("moment");
 
 const hideFutureItems = (item) => {
-  let now = new Date().getTime();
-  if(now < item.date.getTime()) return false;
-  return true;
+  const now = new Date(),
+        postDate = item.date,
+        wasPublishedLater = postDate < now;
+
+  return wasPublishedLater;
 }
 
 module.exports = function(eleventyConfig) {
