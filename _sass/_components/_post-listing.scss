@@ -74,8 +74,8 @@
   border-top-width: 0;
   border-bottom-width: 0;
   box-shadow:
-    0px 0px 50px inset rgba(0, 15, 35, 0.3),
-    1000px 1000px 1000px inset rgba(221, 247, 255, 0.9125);
+    inset 0px 0px 50px rgba(0, 15, 35, 0.3),
+    inset 1000px 1000px 1000px rgba(221, 247, 255, 0.9125);
 }
 
 @include darkMode() {
@@ -86,7 +86,7 @@
   .post-listing__article {
     border-color: color(primary, light);
     box-shadow:
-      0px 0px 50px inset rgba(221, 247, 255, 0.3),
-      1000px 1000px 1000px inset rgba(0, 15, 35, 0.9);
+      inset 0px 0px 50px rgba(221, 247, 255, 0.3),
+      inset 1000px 1000px 1000px rgba(0, 15, 35, 0.9);
   }
 }
