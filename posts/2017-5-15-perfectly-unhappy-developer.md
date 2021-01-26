@@ -20,7 +20,7 @@ The basic gist of my thoughts during it was I felt the gathering lacked meaning.
 
 But I had no idea what I found meaningful.
 
-### Tear Myself Apart, Put Myself Back Together
+## Tear Myself Apart, Put Myself Back Together
 
 Since leaving college, I've been searching out activities I find meaningful. Whether they make me happy is secondary.
 

@@ -108,7 +108,7 @@ One more note for the men out there:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Reminder to men being even more dickish to women on <a href="https://twitter.com/hashtag/InternationalWomensDay?src=hash&amp;ref_src=twsrc%5Etfw">#InternationalWomensDay</a>: the more you rely on your privilege, the more you&#39;re going to mistake equality for oppression.<br><br>So please, get a hobby. Preferably one that&#39;s not on Twitter.</p>&mdash; Max Antonucci (@Maxwell_Dev) <a href="https://twitter.com/Maxwell_Dev/status/1104084980609761281?ref_src=twsrc%5Etfw">March 8, 2019</a></blockquote>
 
-### Your Tweet of Zen
+## Your Tweet of Zen
 
 One last tweet in the spirit of #InternationalWomensDay:
 

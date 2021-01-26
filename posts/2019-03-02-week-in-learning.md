@@ -60,7 +60,7 @@ The result? This week I finally added notes on [ARIA attributes](/exocortex/acce
 
 The lesson? **Savor the small note-taking victories, since they add a lot to one's knowledge and stock market value over time.**
 
-### Your Tweet of Zen
+## Your Tweet of Zen
 
 If this is going to be recurring thing for me, I want to end on a playful note. I landed on sharing a thought-provoking tweet from the week, give or take a few days. So here it is, your Tweet of Zen.
 

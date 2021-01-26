@@ -90,7 +90,7 @@ We do this using a `fixup` commit, which is done like so:
 
 This is incredibly useful for updating commits without polluting the history with lots of "small fix" changes that make it tedious and confusing. The best commit histories tell an understandable story. Autosquashing keeps it from getting overwhelmed by obnoxious footnotes. So make use of it!
 
-### Enjoy your Cupcakes!
+## Enjoy your Cupcakes!
 
 Hopefully this post helped explain the basics of git rebasing, what it does, and how to start making use of it. Finally understanding rebases myself has made them a frequent, essential tool for my job. I hope other junior devs can do the same without some of the frustrations/post-push panic attacks I had in the process.
 

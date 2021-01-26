@@ -200,7 +200,7 @@ chmod u+x bin/<file_name>  # Make a bin file executable
 
 There's a few more folders in my skeleton I haven't noted, like `doc/` and `data`. But with my current experience and focus I'm unlikely to touch them anytime soon, so I'll save them for another day.
 
-### Conclusion
+## Conclusion
 
 The dissection is now complete, and you now know the basic setup for all my future vanilla Ruby projects! You can find [the entire Ruby skeleton on Github](https://github.com/maxx1128/ruby-skeleton) to poke and play around with. You can also see [the Ruby newsletter project I pulled examples from](https://github.com/maxx1128/ruby_anime_newsletter) to see how the skeleton translates to something real (even at a beginner level).
 

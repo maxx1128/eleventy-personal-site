@@ -157,7 +157,7 @@ If that was the case, I accept any pushback, see the mistake, adjust my behavior
 
 This has thankfully happened less and less as time goes on. But it will keep happening and that's fine. I ask how to improve, and things get better all around.
 
-### Wrapping Up
+## Wrapping Up
 
 In my opinion, being a tech ally is not a label or a badge one can point out. It's a habit, a process, and something one continually does to encourage positive change.
 

@@ -186,7 +186,7 @@ It waits for the Twitter data, creates the email body with it, and sends that bo
 module.exports = () => send_newsletter();
 ```
 
-### Newsletter Complete! Again!
+## Newsletter Complete! Again!
 
 Once again I've covered a lot, and this isn't even the whole refactor. I also used Node environmental variables to protect my API keys, and used an Express server instead of Heroku's scheduled tasks. As a whole the refactor let me dirty my hands with many areas I'd mostly just read about - more ES6 syntax, async/await, and Heroku app configuration.
 

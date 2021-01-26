@@ -11,7 +11,7 @@ In a weird way I find it comforting. The whole ["everyone staring at their scree
 
 Regardless of how it affects my routine, attention is still a hot commodity today. As such, it should be budgeted and saved in the same way.
 
-### The Attention Economy
+## The Attention Economy
 
 As a whole, this ["attention economy"](https://www.nytimes.com/2015/08/03/your-money/what-is-our-attention-really-worth.html) isn't new or surprising. In a digital world people expect so much to be free, especially entertainment. Often the only way to profit from something is targeted ads, which only work when businesses know as much about us as possible. So they need people using and staring at their screens as long as possible to gather all the data they can. Attention leads to data, data leads to ads, ads finally lead to revenue.
 
@@ -23,7 +23,7 @@ Many businesses only see our attention as a source of revenue. Businesses withou
 
 You may see why this is a bad thing.
 
-### Spend Your Attention Wisely
+## Spend Your Attention Wisely
 
 This is all why I see my attention as something to be used extra carefully. It's finite and can improve or destroy our lives, depending on how it's spent.
 

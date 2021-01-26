@@ -12,7 +12,7 @@ Short version: Thanks to Node, absolutely.
 
 Long Version: Keep reading.
 
-### The Dilemma
+## The Dilemma
 
 A favorite twitter bot of mine regularly tweets high-quality anime wallpapers. They're fun to scroll through (though some can lean towards NSFW), but there's often too many to choose from. So I wondered, could I pick out a few and see those each day? Specifically in a morning email?
 
@@ -20,7 +20,7 @@ Turns out, yes! Node makes it possible, and I've been eager to try and use Node 
 
 So on a whim, I visited the public library, got my music going, and gave it a shot.
 
-### Breaking Down the Problem
+## Breaking Down the Problem
 
 My first step in any ambitious coding task is breaking things down to their smallest parts. After researching what I could use for making my "Wallpaper Newsletter," I wound up with these tasks:
 
@@ -38,7 +38,7 @@ The NPM modules I used were:
 
 I'll start with the simplest task.
 
-### 1) Getting the Date Ranges
+## 1) Getting the Date Ranges
 
 **Problem:** I needed to get dates for my Twitter API request, specifically for the current day and yesterday.
 
@@ -75,7 +75,7 @@ module.exports = {
 
 I now had the needed dates for searching through tweets! Then came a harder part, making the API request.
 
-### 2) Make a Twitter API Request
+## 2) Make a Twitter API Request
 
 **Problem:** I had my date range, now I needed to get the actual tweets! This meant accessing the Twitter API and sending a query.
 
@@ -131,7 +131,7 @@ module.exports = T.get('search/tweets', { q: 'from:AceWallpaperBot since:' + dat
 
 With that completed request, this step was done but the function wasn't. I had more data than I needed - I only want images from the five tweets with the most likes! This brings me to step three.
 
-### 3) Get the Five Most-liked Tweets
+## 3) Get the Five Most-liked Tweets
 
 **Problem:** I've got the Twitter data I wanted, but there's too much! I want to go through the results, pick the five people liked the most, and save what I need from them.
 
@@ -197,7 +197,7 @@ module.exports = T.get('search/tweets', { q: 'from:AceWallpaperBot since:' + dat
 ```
 At long last! This module lets me get the Twitter data this newsletter needs, organized and ready to go.
 
-### 4) Send an Email with the Wallpapers
+## 4) Send an Email with the Wallpapers
 
 **Problem:** I have the top five wallpapers! Now how do I send them in an email?
 
@@ -319,7 +319,7 @@ module.exports = function sendEmail() {
 
 There's only one step left...
 
-### Send the Email Each Morning
+## Send the Email Each Morning
 
 **Problem:** My newsletter is complete! But how can I make it mail itself each morning?
 

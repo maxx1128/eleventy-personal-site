@@ -79,7 +79,7 @@ When all else fails, sometimes I think it's enough to be a positive presence aro
 
 Sometimes this is all I can do, but it's always the bare minimum of what I can do to help others. The whole point of living selflessly is making others feel better, and we all get small chances to do so in our everyday interactions with others.
 
-#### So What Can a Blog Post Do?
+## So What Can a Blog Post Do?
 
 So I'm once again asking myself: as a coder and a writer, what good can something like a blog post do for the world?
 

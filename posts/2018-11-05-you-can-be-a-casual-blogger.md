@@ -68,7 +68,7 @@ But my answer is **being a selfish writer is okay, since writing selfishly and w
 
 Writing this way may even make your articles better. It's helped me focus on ideas and content I care about without worrying about their reception. It's easier to lose myself in the details, find a a good angle, and post something that people enjoy reading. In a way, a selfish attitude has helped me give this community better blog posts!
 
-### In Conclusion
+## In Conclusion
 
 I'm going to forego the usual "neat and tidy recap and conclusion" and end with this: Don't let a fear of not "doing things right" keep you from writing. Even if you only post something once every two months. That's been me a few times, I'll have more times like it, and will still enjoy writing.
 

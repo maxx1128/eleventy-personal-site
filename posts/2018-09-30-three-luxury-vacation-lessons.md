@@ -58,7 +58,7 @@ For example, when the number of mistakes and miscommunications reached a boiling
 
 So while the location may seem like the most important decision, it's actually who you're going with (or not going with). In all honesty, I think it'd be better to travel alone that with the wrong person. All that trip would do is make things worse without any guarantee they'd split up afterwards. I got very lucky it was the total opposite. **So for both good or bad relationships, big vacations together will shake things up. Be ready for the tremors regardless.**
 
-### Conclusion
+## Conclusion
 
 My biggest takeaway from this vacation was an obvious one in hindsight, that luxury vacations aren't automatically better. The extravagent details and "oohs and aahs" from the people I told about it did a good job fooling me up until we arrived. By the time I left, I know it'd be a while until I stay at a place with "all-inclusive" in the title.
 

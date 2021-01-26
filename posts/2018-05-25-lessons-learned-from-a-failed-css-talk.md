@@ -73,8 +73,7 @@ My own "charm" I use is self-deprecating humor and obscure anime and philosophy 
 > Do I contradict myself?
 > Very well then I contradict myself;
 > (I am large, I contain multitudes.)
-
-### Conclusion
+## Conclusion
 
 At the end of that meetup, I was offered to finish up the talk at a later meetup.
 

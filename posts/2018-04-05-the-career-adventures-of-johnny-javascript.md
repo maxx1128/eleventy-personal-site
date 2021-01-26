@@ -143,7 +143,7 @@ This tip is about knowing what kind of imprint you leave. **Your work will alway
 
 Ask yourselves these questions now before you look back and wish you'd done it differently. They truth may not set you free, but it can at least nudge you to a better path.
 
-### Conclusion
+## Conclusion
 
 "The Adventures of Johnny Bunko" helped take many inklings I'd had about my career and crystallize them into actual advice. Despite being written ten years ago, it's stayed relevant. One could even argue it's only become more important as the coding industry has grown.
 
