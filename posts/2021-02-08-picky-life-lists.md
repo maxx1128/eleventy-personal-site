@@ -1,6 +1,6 @@
 ---
 title: "Be Picky with Your Life's Lists"
-date: "2021-02-01"
+date: "2021-02-03"
 excerpt: "We have lists of what we want, unlimited items we can add, and limited time to spend on them. Be picky."
 image: "picky-life-lists.png"
 tags: ["mental health"]
