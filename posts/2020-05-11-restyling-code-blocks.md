@@ -5,7 +5,7 @@ excerpt: "Working on my personal site has helped keep me sane in quarantine. Thi
 image: "restyled-code-blocks.png"
 featured_image_link: "https://safebooru.org/index.php?page=post&s=view&id=2706841"
 featured_image_align_y: "40"
-tags: ["css", "design"]
+tags: ["css", "front-end"]
 ---
 
 *Update: I've redesigned my site's code snippets at least once more since posting this, which is why the code and visuals described here won't line up with my site. But I'm keeping this blog post here, unchanged, on the advice of my lawyer.*

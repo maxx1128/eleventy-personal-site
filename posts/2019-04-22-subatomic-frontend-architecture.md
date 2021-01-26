@@ -3,7 +3,7 @@ title: "How to Build a SubAtomic Frontend Architecture"
 date: "2019-04-22"
 excerpt: "A SubAtomic Frontend Architecture balances Atomic CSS and BEM class naming to build a fast, flexible framework."
 image: 'subatomic.png'
-tags: ['css', 'design']
+tags: ['css', 'front-end']
 ---
 My current job has me handling a few things:
 
