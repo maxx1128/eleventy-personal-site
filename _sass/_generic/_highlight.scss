@@ -94,6 +94,7 @@ pre code {
   display: block;
   margin: 0 auto;
   padding: 4rem spacing(2) spacing(8);
+  min-height: rem(150px);
   max-height: rem(500px);
 
   font-size: type(font-size, small);
