@@ -10,19 +10,13 @@ body {
   padding-right: spacing();
   padding-left: spacing();
   max-width: calc(#{$g-content-max-width} + (#{spacing()} * 2));
-
-  @include larger-than(grail) {
-    padding-right: spacing(6);
-    padding-left: spacing(6);
-    max-width: calc(#{$g-content-max-width} + (#{spacing(6)} * 2));
-  }
 }
 
 .resp-max-width--large {
-  max-width: calc(#{breakpoint(xxl)} + (#{spacing()} * 2));
+  max-width: breakpoint(xxl);
 
-  @include larger-than(grail) {
-    max-width: calc(#{breakpoint(xxl)} + (#{spacing(6)} * 2));
+  @include larger-than(xxxl) {
+    max-width: breakpoint(xxxl);
   }
 }
 
