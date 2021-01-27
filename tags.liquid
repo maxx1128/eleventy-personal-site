@@ -17,7 +17,7 @@ permalink: /tags/{{ tag }}/
 hidePagination: true
 ---
 
-{% assign posts = collections[tag] | reverse %}
+{% assign posts = collections[tag] | reverse | onlyPublished %}
 
 <div class="post-content--full-bleed">
   {% include postListing

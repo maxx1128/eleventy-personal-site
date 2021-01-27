@@ -57,6 +57,10 @@ module.exports = function(eleventyConfig) {
     return moment.utc(utc).format("YYYY/MM/DD/");
   });
 
+  eleventyConfig.addLiquidFilter("onlyPublished", (posts) => {
+    return posts.filter(hideFutureItems);
+  });
+
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
     if( n < 0 ) {
