@@ -75,7 +75,7 @@ tagline: Everything I'm doing right now, added right after it happens
     <h3 class="flex-item-full mt-0 mx-4 text-center">
       Books I'm Reading Now
     </h3>
-    {% for book in currentBooks %}
+    {% for book in books["current"] %}
       {% include book.liquid,
         book: book
       %}
@@ -85,7 +85,7 @@ tagline: Everything I'm doing right now, added right after it happens
     <h3 class="flex-item-full mt-0 mx-4 text-center">
       Books I Recently Finished
     </h3>
-    {% for book in finishedBooks %}
+    {% for book in books["finished"] %}
       {% include book.liquid,
         book: book
       %}
