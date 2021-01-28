@@ -32,7 +32,7 @@ _Dun dun._
 
 ## Do Good Research
 
-Fear only helps when it's backed by good information. Bad info risks me doing too little or doing too much. Oor doing something stupid like investing in gold. Even without scams, misinformation, or untrustworthy elected officials, good research isn't easy. So I've been using a few basic rules to highlight the good info.
+Fear only helps when it's backed by good information. Bad info risks me doing too little or doing too much. Or doing something stupid like investing in gold. Even without scams, misinformation, or untrustworthy elected officials, good research isn't easy. So I've been using a few basic rules to highlight the good info.
 
 * Listen to medical experts, not politicians or anyone relying on a re-election. Even if what the experts say is less comforting.
 * [Focus on info that informs your actions](https://twitter.com/yaneerbaryam/status/1239387200766304257/photo/1), since taking the right action fast is one of the best fear and stress relievers.

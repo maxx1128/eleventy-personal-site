@@ -34,13 +34,13 @@
   },
   "scripts": {
     "build": "eleventy",
-    "serve": "eleventy --serve --quiet --incremental",
-    "write": "eleventy --serve --quiet --incremental",
     "start": "eleventy --serve --quiet --incremental",
+    "serve": "yarn start",
+    "write": "yarn start",
     "debug": "DEBUG=* eleventy",
     "dev": "run-p write sass:dev js:dev",
     "dev-sass": "run-p write sass:dev",
-    "prod": "npm run ruby:goodreads && npm run sass:prod && npm run js:build && npm run build",
+    "prod": "npm run sass:prod && npm run js:build && npm run build",
     "sass:dev": "npm run sass && npm-run-all sass-dev:*",
     "sass:prod": "npm run sass && npm-run-all -p sass-prod:*",
     "sass": "node-sass --output-style compressed _sass/ -o assets/css",
@@ -50,8 +50,7 @@
     "js:dev": "npm run js:build && npm run js:watch",
     "js:watch": "chokidar '_javascript/*.js' -c \"npm run js:build && npm run js-copy\"",
     "js:build": "cat _javascript/*.js > assets/javascript/main.js",
-    "js-copy": "cp assets/javascript/main.js _site/assets/javascript/",
-    "ruby:goodreads": "bundle exec rake get_goodreads_data"
+    "js-copy": "cp assets/javascript/main.js _site/assets/javascript/"
   },
   "dependencies": {
     "moment": "^2.27.0",
