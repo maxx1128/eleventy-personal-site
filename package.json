@@ -54,6 +54,7 @@
     "ruby:goodreads": "bundle exec rake get_goodreads_data"
   },
   "dependencies": {
-    "moment": "^2.27.0"
+    "moment": "^2.27.0",
+    "node-fetch": "^2.6.1"
   }
 }
