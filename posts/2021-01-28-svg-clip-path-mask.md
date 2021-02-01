@@ -137,6 +137,6 @@ I've still got plenty to learn with SVG, but `clip-path` and `mask` are two foun
 
 Rereading this post, I think the second part may just be me using learning to handle the mental stress of extended quarantine. But the point about writing better code still stands.
 
-So focus on that. I need to take   a long walk. To the wine shop.
+So focus on that. I need to take a long walk. To the wine shop.
 
 *If you're not sure where to start, [this Pen that doubles as a basic SVG tutorial](https://codepen.io/HunorMarton/pen/PoGbgqj) helped me immensely. You can also grab a copy of ["Practical SVG" from the "A Book Apart" series](https://abookapart.com/products/practical-svg).*
