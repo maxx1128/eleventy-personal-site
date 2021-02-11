@@ -42,10 +42,6 @@
     padding: 0 spacing(1);
   }
 
-  @include larger-than(xxxl) {
-    flex: 0 1 33%;
-  }
-
   &:nth-of-type(even) {
     @include post-right-edge();
   }
@@ -63,28 +59,6 @@
     &:nth-of-type(4n+2),
     &:nth-of-type(4n+3) {
       @include post-left-edge();
-    }
-  }
-
-  @include larger-than(xxxl) {
-    &:nth-of-type(4n+1),
-    &:nth-of-type(4n+3),
-    &:nth-of-type(4n+5) {
-      @include post-left-edge();
-    }
-
-    &:nth-of-type(4n+2),
-    &:nth-of-type(4n+4),
-    &:nth-of-type(4n+6) {
-      @include post-right-edge();
-    }
-  }
-}
-
-.post-listing--homepage {
-  @include larger-than(xxxl) {
-    .post-listing:nth-of-type(4) {
-      display: none;
     }
   }
 }

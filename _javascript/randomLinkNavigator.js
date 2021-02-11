@@ -15,8 +15,6 @@
     if (nextLink)     { blockedURLs.push(nextLink.getAttribute('href')); }
     if (previousLink) { blockedURLs.push(previousLink.getAttribute('href')); }
 
-    console.log(blockedURLs);
-
     return data.filter(content => !blockedURLs.some(blockedURL => content.url.includes(blockedURL)));
   }
 
