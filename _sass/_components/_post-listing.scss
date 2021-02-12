@@ -1,3 +1,6 @@
+$listing-edge-opacity: 0.5;
+$listing-fill-opacity: 0.92;
+
 @mixin post-right-edge() {
   .post-listing__thumbnail {
     left: -5rem;
@@ -74,8 +77,8 @@
   border-top-width: 0;
   border-bottom-width: 0;
   box-shadow:
-    inset 0px 0px 50px rgba(0, 15, 35, 0.3),
-    inset 1000px 1000px 1000px rgba(221, 247, 255, $header-box-shadow-inset-opacity);
+    inset 0px 0px 50px header-box-shadow-color("dark", $listing-edge-opacity),
+    inset 1000px 1000px 1000px header-box-shadow-color("blank", $listing-fill-opacity);
 }
 
 @include darkMode() {
@@ -86,7 +89,7 @@
   .post-listing__article {
     border-color: color(primary, light);
     box-shadow:
-      inset 0px 0px 50px rgba(221, 247, 255, 0.3),
-      inset 1000px 1000px 1000px rgba(0, 15, 35, $header-box-shadow-inset-opacity-dark);
+      inset 0px 0px 50px header-box-shadow-color("light", $listing-edge-opacity),
+      inset 1000px 1000px 1000px header-box-shadow-color("dark", $listing-fill-opacity);
   }
 }
