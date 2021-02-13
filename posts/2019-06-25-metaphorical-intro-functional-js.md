@@ -188,7 +188,7 @@ console.log(doubledArray); // [4, 8, 12]
 // The original array hasn't been mutated!
 ```
 
-There are many great methods to learn, and covering them all is another post altogether. [Check out my study repo for a quick look at different array prototype methods](/exocortex/javascript/ArrayMethods.html), or just google around for them!
+[There are many great array methods to learn, with great documentation for them out there](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array). Skim over them when you have a chance!
 
 #### Bonus: Chain Array Prototype Methods
 
@@ -216,7 +216,7 @@ doubledArray   = array
 
 ### Remember Reduce
 
-`reduce` is a prototype method I want to highlight since it's arguably the most powerful. On its own, it can recreate almost any other prototype method and can make more complex and powerful ones. Reduce is another blog post too, so once again [I refer you to my study notebook (or Google) to quickly learn more about `reduce`](/exocortex/javascript/ReduceFunction.html). Just remember these important facts:
+`reduce` is a prototype method I want to highlight since it's arguably the most powerful. On its own, it can recreate almost any other prototype method and can make more complex and powerful ones. There's [great documentation on `reduce`]((https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)) out there, so for now just remember these important facts:
 
 1. Reduce is great for complex merging or manipulation of data, as long as you make sure another prototype method doesn't already do what you need.
 2. Everything about other prototype methods, such as chaining and passing in functions, applies to reduce.
@@ -280,8 +280,6 @@ divideBy(7)(28); // true
 ```
 
 As you can see, curried functions help your code whether you use them once or dozens of times in your program!
-
-Curried functions are also tough to understand, so [I have another note that better breaks currying down if you need it](/exocortex/javascript/Currying.html#what-is-currying).
 
 Here's another example of HOFs that takes a function as the `fn` argument. The function accepting it refers to it like any other variable.
 

@@ -66,7 +66,7 @@ What metaphors would you use for the relationship between HTML and CSS? What abo
 * HTML and CSS in a webpage are like a human wearing fancy clothes. HTML markup is the basic human body, and CSS styling are the clothes they wear and even how they pose.
 * JavaScript functions are like habits. Our brains save common actions as "habits" so we can repeat them without thinking. JavaScript functions are like a program's habits, things the code saves them for later and can repeat with little thinking.
 
-This is also part of why [I keep an online notebook of everything useful I learn](/exocortex.html), even if a page is mostly rewording what others said or wrote. As long as I can write a decent explanation in my own words, it gives me good examples or metaphors to remind myself with in case I forget it later.
+This is also part of why [I keep an online notebook of everything useful I learn](https://www.notion.so/ExoCortex-6e3ae755edae4650a4d9ce190138f230), even if a page is mostly rewording what others said or wrote. As long as I can write a decent explanation in my own words, it gives me good examples or metaphors to remind myself with in case I forget it later.
 
 I've used metaphors like this at family gatherings to explain what I do and how it relates to what they see on other sites. It quickly assured them I was a smart, functioning adult who could make a living. That right there is reason enough for _anyone_ to learn effective metaphor use.
 

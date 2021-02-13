@@ -50,16 +50,6 @@ One reason the above lesson took so long is something I'm embarrassed to admit a
 
 So in the second half of the Great Activity Stream Refactoring of 2019, I made myself ask more questions. Even around basic feedback, I asked for clarification if I didn't get it. **Asking basic questions is tough, but the more I ask now, the less need I'll need to ask later.**
 
-## Take Gradual Notes
-
-This weekend I looked at my backlog of articles and projects to take notes on. But I realized with everything I wanted to read, I wouldn't have enough time. This has happened many times and it ends the same: I wipe my backlog clean, think I won't make the same mistake, and the cycle continues.
-
-I tried a more gradual note-taking approach this week, sprinkling a few minutes of it whenever I could: during lulls at work, at lunch, or lounging time after dinner. I still wouldn't learn as much as I wanted, but it was a step in the right direction.
-
-The result? This week I finally added notes on [ARIA attributes](/exocortex/accessibility/AriaAttributes.html) and [mobile accessibility tips](/exocortex/accessibility/MobileDeviceAccessibility.html).
-
-The lesson? **Savor the small note-taking victories, since they add a lot to one's knowledge and stock market value over time.**
-
 ## Your Tweet of Zen
 
 If this is going to be recurring thing for me, I want to end on a playful note. I landed on sharing a thought-provoking tweet from the week, give or take a few days. So here it is, your Tweet of Zen.

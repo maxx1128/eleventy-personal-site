@@ -72,7 +72,7 @@ Most shiny developer tools come and go with time, situational needs, or when the
 * Building a fast typing speed
 * Find answers in online documentation and APIs
 
-The Pragmatic Programmer is my go-to recommendation for anyone who wants a full understanding of the core of programming. I think you should read the whole book yourself, but if you're strapped for time, [I have notes on the broad concepts and ideas from the Pragmatic Programmer here](https://www.exocortex.maxwellantonucci.com/posts/pragmaticprogrammer/pragmaticapproach/). Just know that, at the time I'm posting this, the notes are a work in progress.
+The Pragmatic Programmer is my go-to recommendation for anyone who wants a full understanding of the core of programming. I think you should read the whole book yourself, but if you're strapped for time, [I have notes on the broad concepts and ideas from the Pragmatic Programmer here](https://www.notion.so/maxantonucci/A-Pragmatic-Approach-6d5217e946c543d69ecf6aea8809d8a9). Just know that, at the time I'm posting this, the notes are a work in progress.
 
 ### Remember Your Love of Coding
 

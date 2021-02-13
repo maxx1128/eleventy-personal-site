@@ -13,7 +13,7 @@ But the toughest part is when I learn a lesson or overcome a struggle, only to r
 
 **So last week, I made it a lot easier and wrote a script to email myself random bits of my writing each day.**
 
-Exposing all my site's writing for this was as simple as making a couple of giant XML files. There's one for blog posts, one for the Exocortex, and one for my notes. You can see the blog post example below, and [you can see the output at this XML file](/api/blog.xml).
+Exposing all my site's writing for this was as simple as making a couple of giant XML files. There's one for blog posts, one for the Exocortex, and one for my notes. You can see the blog post example below, and [you can see the output at this XML file](/rss.xml).
 
 ```html
 {% raw %}{% assign posts = site.posts %}

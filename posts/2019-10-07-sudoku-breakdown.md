@@ -152,7 +152,7 @@ Getting all the numbers in a column isn't done for me, but isn't too tricky eith
 
 Let's think about this in JavaScript terms. If we define each array as `row` in a loop, column one would be `row[0][0]`, `row[1][0]`, `row[2][0]`, and so on until `row[8][0]`. So the function first needs to loop through and gather data from each row.
 
-When it comes to gathering data while looping, functional JavaScript has `reduce`! [`reduce` is too vast to cover here](/exocortex/javascript/ReduceFunction.html), but what matters here is it gives you a variable that carries over in the loop. So you could make this variable an array, and add a value to it over each row number. Which I do in the below `gatherColumn` function.
+When it comes to gathering data while looping, functional JavaScript has `reduce`! `reduce` is too vast to cover here, but what matters here is it gives you a variable that carries over in the loop. So you could make this variable an array, and add a value to it over each row number. Which I do in the below `gatherColumn` function.
 
 ```javascript
 const gatherColumn = (board, columnNum) => board.reduce((total, row) => [...total, row[columnNum]], []);

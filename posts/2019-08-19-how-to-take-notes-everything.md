@@ -7,7 +7,7 @@ tags: ['writing', 'career']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2815426'
 ---
 
-I've done lots of writing lately, but almost none of it has gone towards blog posts. Instead, it's gone towards my online notebook, now called the more badass-sounding [Exocortex](/exocortex.html). I've read of it being called a "knowledge notebook" or a "personal wiki," which mean the same but aren't as badass.
+I've done lots of writing lately, but almost none of it has gone towards blog posts. Instead, it's gone towards my online notebook, now called the more badass-sounding [Exocortex](https://www.notion.so/ExoCortex-6e3ae755edae4650a4d9ce190138f230). I've read of it being called a "knowledge notebook" or a "personal wiki," which mean the same but aren't as badass.
 
 An Exocortex is a giant collection of notes on everything you can imagine. It can range from code tricks, life strategies, favorite fiction, or revenge plots. The biggest reason I've worked on it is I can now say "I'm strengthening up my Exocortex" and sound like a supervillain. But there are many, more _useful_ benefits get from adding to it:
 
@@ -30,7 +30,7 @@ First, only **scan** the content. Look at the table of contents, summaries, chap
 
 As you scan, note any **questions** you have. They can be about code, new words, or old words that you didn't expect to see. They can also be questions about what you expect to learn. Could this thing help you pull off a side-project idea you've had for months? If not, what else could?
 
-Then it's time to **read** the content. As you read, **record** the most important points. Play with the info as you read it. Take notes in different forms, or rephrase them in a new or silly way. For example, I found the articles on [JavaScript currying](/exocortex/javascript/Currying.html#what-is-currying) tough to understand. So I took notes on it as if a coder were talking to JavaScript itself.
+Then it's time to **read** the content. As you read, **record** the most important points. Play with the info as you read it. Take notes in different forms, or rephrase them in a new or silly way.
 
 Once that's done, take some time now and then to **review** your notes. Add extra knowledge you've learned writing them. Discuss it with others. Quiz yourself on different points. Only rereading the info doesn't help much.
 
@@ -63,7 +63,7 @@ The trade-off is I make slower progress in each book, but all other things being
 
 ### For Articles, Keep a Few Lists
 
-Articles may or may not have material worth taking notes on. When they do, unlike books, I rarely make a new note or section in my notebook for only one. It's better to have notes based around topics and add info to each from relevant articles as I find them. An example is [my note on JavaScript array methods](/exocortex/javascript/ArrayMethods.html). If I find an article with a new method, I'll pluck that info from it and add it to the existing note.
+Articles may or may not have material worth taking notes on. When they do, unlike books, I rarely make a new note or section in my notebook for only one. It's better to have notes based around topics and add info to each from relevant articles as I find them.
 
 Organizing the articles I want to read and take notes on is another task. Lately, I've kept articles in one of three lists:
 
