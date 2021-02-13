@@ -51,12 +51,12 @@ $g-font-family-mono: "Courier New", "Consolas", "Courier", monospace;
   --font-family-header: #{$g-font-family-header};
   --font-family-mono: #{$g-font-family-mono};
 
-  --font-size-h1: #{decimal-round(modular-scale(4), 2)};
-  --font-size-h2: #{decimal-round(modular-scale(3), 2)};
-  --font-size-h3: #{decimal-round(modular-scale(2), 2)};
-  --font-size-h4: #{decimal-round(modular-scale(1), 2)};
-  --font-size-h5: #{decimal-round(modular-scale(0), 2)};
-  --font-size-h6: #{decimal-round(modular-scale(0), 2)};
+  --font-size-h1: #{decimal-round(modular-scale(5), 2)};
+  --font-size-h2: #{decimal-round(modular-scale(4), 2)};
+  --font-size-h3: #{decimal-round(modular-scale(3), 2)};
+  --font-size-h4: #{decimal-round(modular-scale(2), 2)};
+  --font-size-h5: #{decimal-round(modular-scale(1), 2)};
+  --font-size-h6: #{decimal-round(modular-scale(1), 2)};
   --font-size-large: #{decimal-round(modular-scale(1), 2)};
   --font-size-p: #{decimal-round(modular-scale(0), 2)};
   --font-size-small: #{decimal-round(modular-scale(-1), 2)};

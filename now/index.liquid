@@ -4,6 +4,12 @@ title: Now
 tagline: Everything I'm doing right now, added right after it happens
 ---
 
+{% if books["current"] or books["finished"] %}
+  {% assign hasBooks = true %}
+{% else %}
+  {% assign hasBooks = false %}
+{% endif %}
+
 <p>
   Work history and portfolios only tell someone so much. So here's some info about what I'm doing <strong>right now</strong>.
 </p>
@@ -17,8 +23,15 @@ tagline: Everything I'm doing right now, added right after it happens
 </p>
 
 <p>
-  My broader career goals are to keep learning more about JavaScript, Ruby, and the larger architecture of the web and websites. My more specific ones are around WCAG 2.1 accessibility standards and the different ways sites can meet those standards, like with progressive web apps. I also want to learn more about GSAP animations and SVG, but that's more for fun.
+  My broader career goals are to keep learning more about JavaScript, Ruby, and the larger architecture of the web and websites. My more specific ones are around WCAG 2.1 accessibility standards and the different ways sites can meet those standards, like with progressive web apps. I also want to learn how to make generative code art with tools like SVG, GSAP, and Canvas, but that's more for fun.
 </p>
+
+<p class="codepen" data-height="479" data-theme-id="light" data-default-tab="js,result" data-user="max1128" data-slug-hash="KKNpVGP" style="height: 479px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="SVG Coordinate-based Generative Art">
+  <span>See the Pen <a href="https://codepen.io/max1128/pen/KKNpVGP">
+  SVG Coordinate-based Generative Art</a> by Maxwell Antonucci (<a href="https://codepen.io/max1128">@max1128</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 <p>
   One of the best ways I'm learning things is working them into the personal site you're reading right now. I'm trying to get my hands dirty with more new code and not limit myself to reading books and articles about code without actually using them.
@@ -66,40 +79,48 @@ tagline: Everything I'm doing right now, added right after it happens
   Playing
 </h2>
 
-<p class="slant-bottom-padding">
+<p class="{% if hasBooks %}slant-bottom-padding{% endif %}">
   The COVID-19 pandemic has limited my playtime quite a bit, as you, dear reader, have likely dealt with yourself. My main leisure activity these days is reading, since the Libby app makes it easy to check out a wide variety of eBooks from my library whenever I want. Free books you can get without needing to leave your home are a pandemic survivor's best friend.
 </p>
 
-<div class="post-content--full-bleed post-content--full-bleed--no-mb bg-mono-muted border-primary-base slant-bottom-padding slant-top-right pt-8">
-  <section class="now-books__wrapper post-content--partial-bleed post-content--full-bleed--no-mt post-content--full-bleed--no-mb flex flex-wrap flex-justify-center flex-align-center pb-6">
-    <h3 class="flex-item-full mt-0 mx-4 text-center">
-      Books I'm Reading Now
-    </h3>
-    {% for book in books["current"] %}
-      {% include book.liquid,
-        book: book
-      %}
-    {% endfor %}
-  </section>
-  <section class="now-books__wrapper post-content--partial-bleed post-content--full-bleed--no-mt post-content--full-bleed--no-mb flex flex-wrap flex-justify-center flex-align-center pb-6">
-    <h3 class="flex-item-full mt-0 mx-4 text-center">
-      Books I Recently Finished
-    </h3>
-    {% for book in books["finished"] %}
-      {% include book.liquid,
-        book: book
-      %}
-    {% endfor %}
-  </section>
-</div>
-
-<div class="post-content--full-bleed post-content--full-bleed--no-mt slant-top-padding slant-top-left bg-mono-white border-primary-base">
-  <div class="resp-max-width">
-    <p class="mb-0">
-      My second goof-off getaway these days is my Nintendo Switch. Most of my games are story-driven or visual novels, so they're not too different from books in the end. They're more like books with higher stakes on a big screen.
-    </p>
+{% if hasBooks %}
+  <div class="post-content--full-bleed post-content--full-bleed--no-mb bg-mono-muted border-primary-base slant-bottom-padding slant-top-right pt-8">
+    <section class="now-books__wrapper post-content--partial-bleed post-content--full-bleed--no-mt post-content--full-bleed--no-mb flex flex-wrap flex-justify-center flex-align-center pb-6">
+      <h3 class="flex-item-full mt-0 mx-4 text-center">
+        Books I'm Reading Now
+      </h3>
+      {% for book in books["current"] %}
+        {% include book.liquid,
+          book: book
+        %}
+      {% endfor %}
+    </section>
+    <section class="now-books__wrapper post-content--partial-bleed post-content--full-bleed--no-mt post-content--full-bleed--no-mb flex flex-wrap flex-justify-center flex-align-center pb-6">
+      <h3 class="flex-item-full mt-0 mx-4 text-center">
+        Books I Recently Finished
+      </h3>
+      {% for book in books["finished"] %}
+        {% include book.liquid,
+          book: book
+        %}
+      {% endfor %}
+    </section>
   </div>
-</div>
+{% endif %}
+
+{% if hasBooks %}
+  <div class="post-content--full-bleed post-content--full-bleed--no-mt slant-top-padding slant-top-left bg-mono-white border-primary-base">
+    <div class="resp-max-width">
+{% endif %}
+
+<p class="{% if hasBooks %}mb-0{% endif %}">
+  My second goof-off getaway these days is my Nintendo Switch. Most of my games are story-driven or visual novels, so they're not too different from books in the end. They're more like books with higher stakes on a big screen.
+</p>
+
+{% if hasBooks %}
+    </div>
+  </div>
+{% endif %}
 
 <p>
   Before the pandemic had its winter spike, in my spare time I often visited <a target="_blank" rel="noopener" href="https://www.makehaven.org/" target="_blank">MakeHaven</a> to worked on craft and art projects. Most involve laser and vinyl cutting, and are nice ways to escape the computer screen for a while. The MakeHaven community is also amazing and supportive to all its makers.

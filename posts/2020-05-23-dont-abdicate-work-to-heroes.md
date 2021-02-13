@@ -5,7 +5,7 @@ excerpt: "Giving thanks to others should not be an excuse to avoid your share of
 tags: ["coronavirus", "tough stuff"]
 ---
 
-Imagine a group of people living in a home. They gather piles of dry wood everywhere. They vageuely know it's a bad idea and it'll eventually cause some kind of disaster but do nothing else. Then one day there's a spark, the dry wood catches fire, and the house is set ablaze.
+Imagine a group of people living in a home. They gather piles of dry wood everywhere. They vaguely know it's a bad idea and it'll eventually cause some kind of disaster but do nothing else. Then one day there's a spark, the dry wood catches fire, and the house is set ablaze.
 
 The firefighters arrive and start the hard, dangerous work of stopping the fire. The folks from the house thank them loudly and constantly for their work. But when the firefighters are gone, they keep hoarding dry wood.
 

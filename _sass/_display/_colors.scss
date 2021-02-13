@@ -1,3 +1,13 @@
+@function header-box-shadow-color($tone, $opacity: 0.875) {
+  @if ($tone == 'light') {
+    @return rgba(169, 226, 243, $opacity);
+  } @else if ($tone == 'blank') {
+    @return rgba(221, 247, 255, $opacity);
+  } @else {
+    @return rgba(0, 15, 35, $opacity);
+  }
+}
+
 @each $palette, $swatches in $color-map {
   @each $label, $color in $swatches {
     .bg-#{$palette}-#{$label} { background-color: $color; }
@@ -5,7 +15,3 @@
     .border-#{$palette}-#{$label} { border-color: $color; }
   }
 }
-
-// .border-primary-light {
-//   border: spacing(border) solid color(primary, light);
-// }

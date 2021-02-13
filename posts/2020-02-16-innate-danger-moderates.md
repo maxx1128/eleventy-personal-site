@@ -13,6 +13,6 @@ During the civil rights movement, plenty of white moderates supported civil righ
 
 The short version: these moderates understood issues in the abstract. But they never experienced the cruel effects firsthand. **They say the status quo should change but have no desire to change it - often because they benefit even at others' expense.** So they dismiss any push to change the status quo as disruptive. Even if it's for a cause they "support."
 
-Yes, these efforts are disruptive. By definition, one needs to disrupt a bad system to fix it. You need to tear out a broken pipe to put in a better on. Dismissing these efforts as "people only looking for attention" exposes one's privilege fast. They never had to fight what so many others do each day.
+Yes, these efforts are disruptive. By definition, one needs to disrupt a bad system to fix it. You need to tear out a broken pipe to put in a better one. Dismissing these efforts as "people only looking for attention" exposes one's privilege. They never had to fight what many others fight each day.
 
 If you truly care about others and their rights, you need to accept the sacrifices that come with that. This includes giving a little on your own, so groups can collectively get what they needed but were deprived of for centuries.

@@ -23,7 +23,7 @@ My mind jumped on the simple, easy idea that my coworkers were out to get me. Th
 
 As you can likely tell, I assumed all these criticisms were about me. Therein lies the issue.
 
-It's easy for me to think that way since it's a human reflex. Our minds do tons of mental gymnastics to protect our egos from potential threats. But **unless you're about die, knee-jerk reactions are rarely worth listening to. Especially in a field where being a calm and thorough thinking is vital.**
+It's easy for me to think that way since it's a human reflex. Our minds do tons of mental gymnastics to protect our egos from potential threats. But **unless you're about die, knee-jerk reactions are rarely worth listening to. Especially in a field where calm and thorough thinking is vital.**
 
 Since this was a mental reflex, it was hard to see it in myself. The second hard part was getting around them.
 
