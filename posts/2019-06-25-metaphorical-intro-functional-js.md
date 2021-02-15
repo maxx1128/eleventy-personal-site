@@ -3,7 +3,7 @@ title: "A Metaphorical Introduction to Functional JavaScript"
 date: "2019-06-25"
 excerpt: "Functional JavaScript is my new favorite approach to writing JavaScript, but few introductions I found were beginner friendly. I break down the basics with angels, mutants, and demanding southern belles."
 image: 'functional-js-metaphors.jpg'
-tags: ['javascript']
+tags: ['javascript', 'Intros I Wish I Had']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2196900'
 ---
 
