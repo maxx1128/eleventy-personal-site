@@ -58,22 +58,24 @@ pre {
   @include create-slant-effect('bottom', 'left');
 
   position: relative;
-  margin-top: 4rem;
+  padding-right: spacing(2);
+  padding-left: spacing(2);
+  margin-top: #{'min(6vw, 4rem)'};
   margin-right: var(--pre-x-margin);
-  margin-bottom: 6rem;
+  margin-bottom: #{'min(12vw, 5rem)'};
   margin-left: var(--pre-x-margin);
 
   border-color: color(primary, base);
 
   clip-path: $large-polygon-container;
 
-  &:nth-of-type(even) {
-    @include create-slant-effect('top', 'right');
-    @include create-slant-effect('bottom', 'right');
+  // &:nth-of-type(even) {
+  //   @include create-slant-effect('top', 'right');
+  //   @include create-slant-effect('bottom', 'right');
 
-    // margin-bottom: 4rem;
-    clip-path: $large-polygon-container;
-  }
+  //   // margin-bottom: 4rem;
+  //   clip-path: $large-polygon-container;
+  // }
 }
 
 // Headings after code blocks
@@ -93,19 +95,19 @@ pre code {
   position: relative;
   display: block;
   margin: 0 auto;
-  padding: 4rem spacing(2) spacing(8);
-  min-height: rem(150px);
+  padding: 4rem 0 spacing(8);
+  min-height: rem(135px);
   max-height: rem(500px);
 
-  font-size: type('font-size', 'small');
+  font-size: type(font-size, small);
 
   overflow: scroll;
-  max-width: 44rem;
+  max-width: $g-content-max-width;
 
   &::before,
   &::after {
     top: 0;
-    left: spacing(2);
+    left: 0;
   }
 
   &::before {
@@ -114,7 +116,7 @@ pre code {
     padding: 3px;
 
     text-transform: uppercase;
-    font-size: type('font-size', 'tiny');
+    font-size: type(font-size, tiny);
 
     z-index: 2;
   }
