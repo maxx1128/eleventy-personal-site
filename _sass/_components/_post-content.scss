@@ -26,6 +26,8 @@
     }
 
     pre,
+    figure,
+    blockquote,
     .post-content--full-bleed,
     .post-content--partial-bleed,
     .cp_embed_wrapper {
@@ -33,7 +35,13 @@
       grid-column: 1 / -1;
     }
 
-    // pre,
+    figure,
+    blockquote {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: $g-content-max-width * 1.25;
+    }
+
     .post-content--partial-bleed,
     .cp_embed_wrapper {
       margin-right: auto;
