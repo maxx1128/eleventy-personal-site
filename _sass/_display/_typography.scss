@@ -1,20 +1,12 @@
 $header-els: 'h1', 'h2', 'h3', 'h4', 'h5', 'h6';
 
 body {
-  font-size: 95%;
+  font-size: 100%;
   font-weight: type(font-weight, base);
   font-family: type(font-family);
   color: color(mono, black);
   letter-spacing: 0px;
   word-spacing: 0px;
-
-  @include larger-than(sm) {
-    font-size: 100%;
-  }
-
-  @include larger-than(lg) {
-    font-size: 110%;
-  }
 
   html:not(.webfonts-loaded):not(.no-js) & {
     font-family: -apple-system, BlinkMacSystemFont;
@@ -54,10 +46,6 @@ kbd { font-family: type(font-family, mono); }
 .capitalize-sentence::first-letter { text-transform: capitalize; }
 .text-transform-none { text-transform: none; }
 
-@each $header in $header-els {
-  #{$header} { font-family: type(font-family, header); }
-}
-
 @each $label, $font-family in map-get($typography-map, font-family) {
   .font-family-#{$label} { font-family: $font-family; }
 }
@@ -66,9 +54,11 @@ kbd { font-family: type(font-family, mono); }
   .font-weight-#{$label} { font-weight: $weight; }
 }
 
-@each $label, $font-size in map-get($typography-map, font-size) {
-  #{$label},
-  .text-#{$label} { font-size: $font-size; }
+@each $label, $scale in map-get($typography-map, font-size) {
+  .text-#{$label},
+  #{$label} {
+    font-size: type(font-size, #{$label});
+  }
 }
 
 @each $label, $line-height in map-get($typography-map, line-height) {
