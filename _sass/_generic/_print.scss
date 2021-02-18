@@ -1,0 +1,25 @@
+@media print {
+  nav, aside, footer {
+    display: none !important;
+  }
+
+  * {
+    box-shadow: none !important;
+    background-image: none !important;
+    border-width: 0 !important;
+  }
+
+  .slant-top-left,
+  .slant-top-right,
+  .slant-bottom-left,
+  .slant-bottom-right,
+  pre {
+    z-index: -999 !important;
+
+    &::after,
+    &::before {
+      display: none !important;
+      border-width: 0 !important;
+    }
+  }
+}
