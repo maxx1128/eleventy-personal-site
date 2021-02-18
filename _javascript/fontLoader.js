@@ -24,4 +24,4 @@ function fontLoadedSuccess() {
   document.getElementsByTagName("html")[0].classList.add("webfonts-loaded");
 }
 
-interval = setInterval(fontLoadListener, 500);
+interval = setInterval(fontLoadListener, 25);
