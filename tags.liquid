@@ -19,7 +19,11 @@ hidePagination: true
 
 {% assign posts = collections[tag] | reverse | onlyPublished %}
 
-<div class="post-content--full-bleed">
+{% comment %}
+  The tag description can go in another slanted container here, so the post listing lines up.
+  Then the top padding here can be removed.
+{% endcomment %}
+<div class="post-content--full-bleed pt-4">
   {% include postListing
     wrapper_class: "resp-max-width resp-max-width--large",
     posts: posts

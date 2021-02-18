@@ -45,11 +45,11 @@ $listing-fill-opacity: 0.92;
     padding: 0 spacing(1);
   }
 
-  &:nth-of-type(even) {
+  &:nth-of-type(odd) {
     @include post-right-edge();
   }
 
-  &:nth-of-type(odd) {
+  &:nth-of-type(even) {
     @include post-left-edge();
   }
 
