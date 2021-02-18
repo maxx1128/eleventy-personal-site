@@ -3,8 +3,8 @@
     Pagination
   </h2>
 
-  <ul class="list-reset flex flex-column sm--flex-row flex-align-center flex-justify-between text-small">
-    <div class="pagination-item flex flex-justify-center sm--flex-justify-start">
+  <ul class="list-reset flex flex-column md--flex-row flex-align-center flex-justify-between text-small">
+    <div class="pagination-item flex flex-justify-center md--flex-justify-start">
       {% if page.url != pagination.href.first and pagination.href.first != pagination.href.previous %}
         <li class="mr-2 mb-0">
           <a href="{{ pagination.href.first }}">
@@ -26,7 +26,7 @@
       {% endif %}
     </div>
 
-    <div class="pagination-item flex flex-justify-center my-4 sm--my-0">
+    <div class="pagination-item flex flex-justify-center my-4 md--my-0">
       {% for pageEntry in pagination.pages %}
         {% assign inPaginationRange = false %}
         {% assign prevPage1 = forloop.index0 | minus: 1 %}
@@ -59,7 +59,7 @@
       {% endfor %}
     </div>
 
-    <div class="pagination-item flex flex-justify-center sm--flex-justify-end">
+    <div class="pagination-item flex flex-justify-center md--flex-justify-end">
       {% if pagination.href.next %}
         <li class="mb-0">
           <a href="{{ pagination.href.next }}">
