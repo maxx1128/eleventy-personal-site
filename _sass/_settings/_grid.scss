@@ -9,11 +9,14 @@
   }
 }
 
-$g-content-max-width: 600px;
+$g-content-min-width: 400px;
+$g-content-med-width: 75vw;
+$g-content-max-width: 700px;
 
 // Map for the breakpoints and max width
 $breakpoint-map: (
   xs: 0,
+  contentMin: rem($g-content-min-width),
   sm: rem(480px),
   md: rem(650px),
   lg: rem(800px),

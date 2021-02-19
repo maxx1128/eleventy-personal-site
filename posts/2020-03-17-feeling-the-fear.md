@@ -61,15 +61,11 @@ It's easy for me to become a robot only doing things to survive. In the process,
 
 I think I already know this on a subconscious level. I tend to exaggerate my goofier side in the face of great fear. Even as I'm dealing with overrun stores and fears of infection, I do more to keep my sense of humor present and strong. If it makes others laugh, or even grimace, that's just a bonus.
 
-<img alt="" src="/assets/images/posts/feeling-fear/blood-oath.png" class="block mx-auto md--width-75" />
-
-<img alt="" src="/assets/images/posts/feeling-fear/chaos-consent.jpeg" class="block mx-auto md--width-75" />
-
-<img alt="" src="/assets/images/posts/feeling-fear/happy-face.jpeg" class="block mx-auto md--width-75" />
-
-<img alt="" src="/assets/images/posts/feeling-fear/trail-mix.jpeg" class="block mx-auto md--width-75" />
-
-<img alt="" src="/assets/images/posts/feeling-fear/bitch-closed.jpeg" class="block mx-auto mb-4 md--width-75" />
+![](/assets/images/posts/feeling-fear/blood-oath.png)
+![](/assets/images/posts/feeling-fear/chaos-consent.jpeg)
+![](/assets/images/posts/feeling-fear/happy-face.jpeg)
+![](/assets/images/posts/feeling-fear/trail-mix.jpeg)
+![](/assets/images/posts/feeling-fear/bitch-closed.jpeg)
 
 I'm also not forgetting my passions related to coding, reading, and writing.
 

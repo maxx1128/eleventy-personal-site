@@ -16,10 +16,18 @@
 
   @supports (display: grid) {
     display: grid;
-    grid-template-columns:
-      1fr
-      #{"min(#{$g-content-max-width}, calc(100% - #{spacing(6)}))"}
-      1fr;
+    grid-template-columns: spacing() 1fr spacing();
+
+    @include larger-than(contentMin) {
+      grid-template-columns:
+        1fr
+        clamp(
+          calc(#{$g-content-min-width} - #{spacing(8)}),
+          calc(#{$g-content-med-width} - #{spacing(8)}),
+          calc(#{$g-content-max-width} - #{spacing(8)})
+        )
+        1fr;
+    }
 
     & > * {
       grid-column: 2;
@@ -30,6 +38,7 @@
     blockquote,
     .post-content--full-bleed,
     .post-content--partial-bleed,
+    .iframe-container,
     .cp_embed_wrapper {
       width: 100%;
       grid-column: 1 / -1;
@@ -39,10 +48,11 @@
     blockquote {
       margin-right: auto;
       margin-left: auto;
-      max-width: $g-content-max-width * 1.25;
+      max-width: $g-content-max-width * 1.2;
     }
 
     .post-content--partial-bleed,
+    .iframe-container,
     .cp_embed_wrapper {
       margin-right: auto;
       margin-left: auto;
@@ -51,6 +61,7 @@
 
     .post-content--full-bleed,
     .post-content--partial-bleed,
+    .iframe-container,
     .cp_embed_wrapper {
       margin-top: spacing(4);
       margin-bottom: spacing(8);

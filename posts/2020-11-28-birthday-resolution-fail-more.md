@@ -26,7 +26,7 @@ I thought of an unfortunate number of examples of this:
 * I didn't let my curiosity carry me to read about lots of new things. My mind saw it as a "failure" to not already know them, despite how illogical that is.
 * I didn't even read as many different fiction books as I wanted to. I worried I'd fail to make good choices and waste my time a bad pick. So I stuck to safer, more familiar genres or straight-up rereads.
 
-For most of my time as a 27-year-old, I stayed in my lane. There wasn't enough falling down, picking myself back up, and taking a few steps forward. **Because the only way to be better is to see where you have room for improvement. The best way to do that is to try, fail, learn, and repeat.**
+For most of my time as a 27-year-old, I stayed in my lane. There wasn't enough falling down, picking myself back up, and taking a few steps forward. **Because the only way to be better is to see where you have room for improvement. The best way to do that is to try, fail, learn, and repeat**.
 
 <img class="post-content--full-bleed" src="/assets/images/posts/birthday-resolution-failure/quote.png" alt="A quote about expanding your horizons and trying new things paired with an artwork of someone looking out over an unfamiliar countryside.">
 

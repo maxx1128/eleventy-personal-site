@@ -102,7 +102,16 @@ pre code {
   font-size: type(font-size, small);
 
   overflow: scroll;
-  max-width: $g-content-max-width;
+  width: calc(100% - #{spacing(8)});
+  max-width: 100%;
+
+  @include larger-than(contentMin) {
+    width: clamp(
+      calc(#{$g-content-min-width} - #{spacing(8)}),
+      calc(#{$g-content-med-width} - #{spacing(8)}),
+      calc(#{$g-content-max-width} - #{spacing(8)})
+    );
+  }
 
   &::before,
   &::after {

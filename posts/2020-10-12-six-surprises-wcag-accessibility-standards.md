@@ -74,7 +74,7 @@ But a quote from [the documentation's explanation of the 3.3.2 criteria on label
 
 Simply put, too much text crammed together is just as unhelpful as too little. This seems obvious now, but seeing it in the official rules drove home how I'd forgotten it. Even as I got indirectly reminded of it again while reading some manga.
 
-<img class="block mx-auto mb-4 md--width-75" src="/assets/images/posts/wcag-surprises/eyeshield-too-much-clarification.png" alt="A sports commentator in a football comic recapping the game in so much detail, no one is going to read it." />
+![A sports commentator in a football comic recapping the game in so much detail, no one is going to read it.](/assets/images/posts/wcag-surprises/eyeshield-too-much-clarification.png)
 
 All this made me wonder why this paragraph was added at all. My guess is this rule takes into account the cognitive bias that if we understand something, we assume others will too. But a lot fewer people than we'd think, if any at all, have the same foreknowledge or intuition with our website that we do.
 
