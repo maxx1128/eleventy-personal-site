@@ -1,5 +1,3 @@
-// html, sass, markdown, yaml, bash, hbs, css
-
 $highlight-languages: (
   'html': #ff977d,
   'hbs': #fda,
@@ -68,14 +66,6 @@ pre {
   border-color: color(primary, base);
 
   clip-path: $large-polygon-container;
-
-  // &:nth-of-type(even) {
-  //   @include create-slant-effect('top', 'right');
-  //   @include create-slant-effect('bottom', 'right');
-
-  //   // margin-bottom: 4rem;
-  //   clip-path: $large-polygon-container;
-  // }
 }
 
 // Headings after code blocks
@@ -120,29 +110,20 @@ pre code {
   }
 
   &::before {
+    --code-name-border-color: #{color(primary, dark)};
+
     content: 'Code';
     position: absolute;
-    padding: 3px;
+    padding: spacing(border) spacing(6) spacing(border) spacing(1);
 
+    color: color(mono, black);
     text-transform: uppercase;
-    font-size: type(font-size, tiny);
+    font-size: type(font-size, small);
+    font-weight: type(font-weight, bold);
+
+    border-bottom: 2px solid var(--code-name-border-color);
 
     z-index: 2;
-  }
-
-  &::after {
-    --code-name-bg-color: #{color(mono, white)};
-    --code-triangle-length: 5.5rem;
-
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 0rem solid transparent;
-    border-left: var(--code-triangle-length) solid var(--code-name-bg-color);
-    border-bottom: 2.25rem solid transparent;
-
-    z-index: 1;
   }
 }
 
@@ -166,16 +147,8 @@ pre:nth-of-type(even) {
 
     code.language-#{$language} {
       &::before {
+        --code-name-border-color: #{$color};
         content: $language;
-
-        color: $text-color;
-      }
-
-      &::after {
-        $triangle-length: str-length($language) + 1.5;
-
-        --code-name-bg-color: #{$color};
-        --code-triangle-length: #{$triangle-length * 1rem};
       }
     }
   }
