@@ -51,6 +51,10 @@
       max-width: $g-content-max-width * 1.2;
     }
 
+    img {
+      box-shadow: container(box-shadow, 2);
+    }
+
     .post-content--partial-bleed,
     .iframe-container,
     .cp_embed_wrapper {

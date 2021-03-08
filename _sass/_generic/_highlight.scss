@@ -60,7 +60,7 @@ pre {
   padding-left: spacing(2);
   margin-top: #{'min(6vw, 4rem)'};
   margin-right: var(--pre-x-margin);
-  margin-bottom: #{'min(12vw, 5rem)'};
+  margin-bottom: #{'min(12vw, 6rem)'};
   margin-left: var(--pre-x-margin);
 
   border-color: color(primary, base);
@@ -85,7 +85,7 @@ pre code {
   position: relative;
   display: block;
   margin: 0 auto;
-  padding: 4rem 0 spacing(8);
+  padding: 3rem 0 0;
   min-height: rem(135px);
   max-height: rem(500px);
 
