@@ -12,8 +12,8 @@
     document.getElementsByTagName("html")[0].classList.remove("no-js");
 
     const ContentData = window.ContentData || {};
-    const postData = document.getElementById("post-data").innerHTML;
-    const noteData = document.getElementById("note-data").innerHTML;
+    const postData = JSON.parse(document.getElementById("post-data").innerHTML);
+    const noteData = JSON.parse(document.getElementById("note-data").innerHTML);
 
     const setPostData = data => ContentData.posts = data;
     const setNoteData = data => ContentData.notes = data;
@@ -24,7 +24,7 @@
     };
 
     window.ContentData = ContentData;
-    window.ContentData.init(JSON.parse(postData), JSON.parse(noteData));
+    window.ContentData.init(postData, noteData);
   })();
 </script>
 
