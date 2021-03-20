@@ -11,6 +11,8 @@
     {% assign description = tagline %}
   {% elsif excerpt and excerpt != '' %}
     {% assign description = excerpt | strip_html | strip_newlines | truncate: 160 %}
+  {% elsif metaExcerpt and metaExcerpt != '' %}
+    {% assign description = metaExcerpt | strip_html | strip_newlines | truncate: 160 %}
   {% else %}
     {% assign description = metadata.description %}
   {% endif %}

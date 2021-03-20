@@ -19,8 +19,10 @@
       {{ title | replace: " - Maxwell Antonucci", ""}}
     </h1>
 
-    <p class="py-0 mt-1 mb-2 text-small font-weight-light">
-      {{ excerpt }}
-    </p>
+    {% if excerpt %}
+      <p class="py-0 mt-1 mb-2 text-small font-weight-light">
+        {{ excerpt }}
+      </p>
+    {% endif %}
   </div>
 </div>

@@ -17,9 +17,11 @@
           </a>
         </h3>
 
-        <p>
-          {{ post.data.excerpt }}
-        </p>
+        {% if post.data.excerpt %}
+          <p>
+            {{ post.data.excerpt }}
+          </p>
+        {% endif %}
 
         {% include tagList
           tags: post.data.tags,
