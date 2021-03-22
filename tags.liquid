@@ -13,6 +13,7 @@ pagination:
 layout: layouts/page.liquid
 eleventyComputed:
   title: Tagged "{{ tag }}"
+  tagline: "{{ tagDescriptions[tag] }}"
 permalink: /tags/{{ tag }}/
 hidePagination: true
 ---
