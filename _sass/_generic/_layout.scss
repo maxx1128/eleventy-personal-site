@@ -4,17 +4,12 @@ body {
 }
 
 .resp-max-width {
-  // width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: spacing();
   padding-left: spacing();
   width: clamp($g-content-min-width, $g-content-med-width, $g-content-max-width);
   max-width: 100%;
-}
-
-.resp-max-width--large {
-  width: clamp(($g-content-min-width * 1.75), ($g-content-med-width * 1.2), breakpoint(xxxl));
 }
 
 footer {
