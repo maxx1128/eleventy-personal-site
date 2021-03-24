@@ -10,11 +10,8 @@
 .header--with-custom-image {
   .header__text {
     @include larger-than(lg) {
-      min-height: 40vh;
-    }
-
-    @include larger-than(xxl) {
-      min-height: 45vh;
+      height: 25vw;
+      max-height: 300px;
     }
   }
 }
