@@ -1,4 +1,4 @@
-@function header-box-shadow-color($tone, $opacity: 0.875) {
+@function header-box-shadow-color($tone, $opacity: 0.93) {
   @if ($tone == 'light') {
     @return rgba(169, 226, 243, $opacity);
   } @else if ($tone == 'blank') {
