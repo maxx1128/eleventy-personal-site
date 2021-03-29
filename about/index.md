@@ -18,13 +18,13 @@ Who am I exactly? It's a question with many answers of varying accuracy.
   In my free time I enjoy reading, boxing, making things at MakeHaven, casual gaming, and pondering the philosophical.
 </div>
 
-## The Toxic Answer
+## The Toxic Answer I Avoid
 
 I sometimes write in my spare time. When I do, I need people to read and give positive feedback, or else it's worthless. If I don't get any, I'm worthless and it takes weeks until I pluck up the courage to write again. My value comes back to how much praise, social capital, and economic power my life brings. That includes my time for entertainment or rest.
 
 If people aren't lining up to watch a live stream of me reading a book, I'm a failure. If I can't sell it or put ads on it, it isn't worth it and should be sold off for a tax deduction.
 
-## The Healthier Answer
+## The Healthier Answer I Prefer
 
 I am not an influencer, thought leader, aggregator, or well-known in any sense. I am myself, and I'm more than enough that way.
 
@@ -50,10 +50,8 @@ In the future I aim to keep writing as much as possible. Writing code, blog post
 
 ## The Absurd Answer
 
-I'm an agent from a yet-unknown plane of reality. Where our thoughts and reality blend together in ways humans could never comprehend. My job is to keep these planes separate, and fight against those who want to collide them and destroy life as we know it. It's not an easy job, but failing it threatens our very minds and lives.
+I'm an agent sent from an alternate plane of reality, where human thought and imagination circulate through the world like air. People add to it whenever they ponder or daydream, and take from it when sudden inspiration strikes.
 
-What is this other plane of reality? It's the one you come into contact with whenever you daydream. When you have a burst of inspiration or see something in your mind's eye. It's the place where our thoughts exist and circulate like oxygen keeping us alive. Where all your best ideas and worst fears could spring to life at any moment.
-
-Where our imagination is more powerful and more deadly than we could ever...well, imagine. My job is to keep it that way.
+It's a place full of ludicrous creations and unexpected dangers. Most of us will never see it, even though we're the ones fueling it. But I see it and fight to keep it separate. Otherwise fantasy and reality could combine into something deadlier than we could ever...well, imagine.
 
 _Directed by Martin Scorsese. This film is not yet rated._
