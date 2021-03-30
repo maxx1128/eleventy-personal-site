@@ -11,7 +11,7 @@
   .header__text {
     @include larger-than(lg) {
       height: 25vw;
-      max-height: 300px;
+      max-height: 375px;
     }
   }
 }
