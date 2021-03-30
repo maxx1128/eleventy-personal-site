@@ -12,6 +12,10 @@ body {
   max-width: 100%;
 }
 
+.resp-max-width--large {
+  width: $g-content-max-width-large;
+}
+
 footer {
   background-color: color(mono, muted);
 

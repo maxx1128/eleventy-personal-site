@@ -5,27 +5,28 @@
     {% assign post_image = metadata.post.imagePath | append: post.data.image %}
 
     <article class="post-listing__article pt-1 pb-4 mb-4 lg--mb-1 lg--mb-0 px-0 lg--px-6 flex-item flex flex-column flex-justify-center" {% if post.data.image %}style="background-image: url('{{ post_image }}')"{% endif %}>
-      <small class="lg--mt-8 mb-0">
-        <strong>
-          {{ post.date | readableDate | date: "%B %e, %Y" }}
-        </strong>
-      </small>
-      <h3 class="mt-0">
-        <a href="{{ post.url }}">
-          {{ post.data.title }}
-        </a>
-      </h3>
+      <div class="post-listing__content transparent-white-bg">
+        <small class="lg--mt-8 mb-0">
+          <strong>
+            {{ post.date | readableDate | date: "%B %e, %Y" }}
+          </strong>
+        </small>
+        <h3 class="mt-0 text-h4">
+          <a href="{{ post.url }}">
+            {{ post.data.title }}
+          </a>
+        </h3>
 
-      {% if post.data.excerpt %}
-        <p class="mb-4 lg--mb-6">
-          {{ post.data.excerpt }}
-        </p>
-      {% endif %}
+        {% if post.data.excerpt %}
+          <p class="mb-4 lg--mb-6">
+            {{ post.data.excerpt }}
+          </p>
+        {% endif %}
 
-      {% include tagList
-        tags: post.data.tags,
-        classes: "lg--mb-8"
-      %}
+        {% include tagList
+          tags: post.data.tags
+        %}
+      </div>
     </article>
   {% endfor %}
 </section>

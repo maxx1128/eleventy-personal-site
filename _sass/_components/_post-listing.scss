@@ -1,47 +1,46 @@
-$listing-edge-opacity: 0.5;
-$listing-fill-opacity: 0.92;
-
-@mixin post-right-edge() {
-  clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 95%);
-}
-
-@mixin post-left-edge() {
-  clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0% 100%);
+.post-listing__wrapper {
+  display: flex;
+  padding: spacing(1);
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .post-listing__article {
-  background-size: 0 0;
-  border-bottom: spacing(border) solid color(primary, dark);
-}
+  padding: spacing(8) #{'min(10vw, 20rem)' spacing(8) 0};
+  margin: spacing(3);
+  flex: 1 1 30rem;
 
-@include larger-than(lg) {
-  .post-listing__article {
-    background-image: url("/assets/images/global/header-default.jpg");
-    background-size: cover;
-    background-position: center;
-    border: spacing(border) solid color(primary, dark);
-    border-top-width: 0;
-    border-bottom-width: 0;
-    box-shadow:
-      inset 0px 0px 50px header-box-shadow-color("dark", $listing-edge-opacity),
-      inset 1000px 1000px 1000px header-box-shadow-color("blank", $listing-fill-opacity);
+  background-size: cover;
+  border-radius: container(border-radius, small);
+  background-position: left center;
+  box-shadow: container(box-shadow, 2);
+  background-image: url("/assets/images/global/header-default.jpg");
 
-    &:nth-of-type(odd) {
-      @include post-right-edge();
-    }
-
-    &:nth-of-type(even) {
-      @include post-left-edge();
-    }
+  &:nth-of-type(5n - 2) {
+    flex-basis: 26rem;
   }
 
-  @include darkMode() {
-    .post-listing__article {
-      background-image: url("/assets/images/global/header-dark.jpg");
-      border-color: color(primary, light);
-      box-shadow:
-        inset 0px 0px 50px header-box-shadow-color("light", $listing-edge-opacity),
-        inset 1000px 1000px 1000px header-box-shadow-color("dark", $listing-fill-opacity);
-    }
+  &:nth-of-type(7n - 3) {
+    flex-basis: 34rem;
+  }
+
+  @include larger-than(xxl) {
+    max-width: 40rem;
+  }
+}
+
+.post-listing__content {
+  padding: spacing(4);
+  margin-left: -0.75rem;
+
+  box-shadow: container(box-shadow, 1);
+  border: spacing(border) solid color(primary, dark);
+  border-top-width: 0;
+  border-bottom-width: 0;
+}
+
+@include darkMode() {
+  .post-listing__article {
+    background-image: url("/assets/images/global/header-dark.jpg");
   }
 }

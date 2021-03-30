@@ -1,8 +1,8 @@
 {% assign banner_image = metadata.post.imagePath | append: image %}
 
-<div class="header slant-top-padding slant-bottom-padding {% if image %}header--with-custom-image{% endif %}" {% if image %}style="background-image: url('{{ banner_image }}');{% endif %} {% if featured_image_align_y %}background-position-y: {{ featured_image_align_y }}%;{% endif %}">
-  <div class="header__text flex flex-column pb-2 resp-max-width">
-    <div class="flex flex-justify-between pt-4 mb-auto">
+<div class="header slant-top-padding slant-bottom-padding flex flex-column flex-justify-end {% if image %}header--with-custom-image{% endif %}" {% if image %}style="background-image: url('{{ banner_image }}');{% endif %} {% if featured_image_align_y %}background-position-y: {{ featured_image_align_y }}%;{% endif %}">
+  <div class="header__text transparent-white-bg my-6 resp-max-width flex flex-column p-4 lg--p-6 my-8">
+    <div class="flex flex-justify-between mb-auto">
       <small class="block mb-2 font-weight-bold">
         {{ date | toUTCString }}
       </small>
@@ -15,12 +15,12 @@
       </span>
     </div>
 
-    <h1 class="mt-2 mb-4">
+    <h1 class="mt-2 mb-0 text-h2">
       {{ title | replace: " - Maxwell Antonucci", ""}}
     </h1>
 
     {% if excerpt %}
-      <p class="py-0 mt-1 mb-2 text-small font-weight-light">
+      <p class="my-0 mt-4 text-small font-weight-light">
         {{ excerpt }}
       </p>
     {% endif %}
