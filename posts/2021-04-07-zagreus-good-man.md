@@ -52,7 +52,7 @@ In both cases, Zagreus doesn't try to convince or gaslight them into feeling any
 
 Gratitude is so important to Zagreus, it's a gameplay mechanic. Major and minor story events rely on building good relationships with characters. These thanks range from giving him powerful skills, helpful items, or being fun to be around.
 
-![Zagreus giving Hermes a small offering as thanks for his help.](/assets/images/posts/zagreus-good-man/hermes-thanks.png)
+![Zagreus giving Chaos a small offering as thanks for his help.](/assets/images/posts/zagreus-good-man/chaos-thanks.jpg)
 
 For most of these gifts, you get nothing in return. Zagreus gives a gift, tells the person why, and the person/creature/God accepts it. He's not thanking him for specific times so he no longer "owes" them. **He shows his gratitude for a person's presence without making it transactional.** Sometimes, we're simply glad to have them in our lives and want them to know.
 
