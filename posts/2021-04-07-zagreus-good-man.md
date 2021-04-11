@@ -13,6 +13,8 @@ This game has also made me think, not only about my harmful views of failure, bu
 
 I brooded over this as I kept playing. By escape attempt 44, I had some ideas along with a new 11 escape winning streak.
 
+**Be warned, this post contains some game spoilers!**
+
 ## He's Respectful By Default
 
 Zagreus is the prince of the Underworld, so almost everyone he meets is "below" him. But you wouldn't know that from how he talks to them. He treats everyone with kindness and respect.
@@ -62,9 +64,9 @@ The above sections are about Zagreus' thoughtful and caring qualities. But let's
 
 ![Zagreus chatting with his father before they fight to the (sort of) death.](/assets/images/posts/zagreus-good-man/hades-fight.jpg)
 
-Instead of feeling shame for his violent nature, he finds the right place for it. That place is fighting his way out of the underworld, for his family, and later for his job. Most of all, Zagreus doesn't let it seep into or damage any of his relationships. And when he does, it's only in the proper context. He's not going to slice anyone only for keeping a secret or calling him short.
+Instead of feeling shame for his violent nature, he finds the right place for it. That place is fighting his way out of the underworld, for his family, and later for his job. Most of all, Zagreus doesn't let it seriously damage any of his relationships. He's not going to slice anyone up for keeping something small, like mocking him for his height or how he got killed by a rodent.
 
-The point is, accepts this as part of his genuine self. But he doesn't let any side of him destroy the others. **He finds a balance and focuses on the good each one can do.** He can be a good man without denying who he is.
+The point is, Zagreus accepts his physical, violent nature as part of his genuine self. But he doesn't let that side of him destroy the others. **He finds a balance, takes responsibility for who he is, and focuses on the good each one can do.** He can be a good man without denying who he is.
 
 ## Wrapping Up
 
