@@ -1,11 +1,11 @@
 <ul class="tag-list {{classes}} list-reset flex flex-align-start flex-wrap {% if wrap %}flex-justify-center{% else %}sm--flex-nowrap{% endif %}" aria-label="Tag List">
-  {% comment %} <span class="screenReader">
-    Tag List
-  </span> {% endcomment %}
   {% for tag in tags %}
     {% assign tagUrl = "/tags/" | append: tag %}
     <li class="tag mb-2 ml-4 bg-action-base text-tiny border-radius-small">
-      <a href="{{ tagUrl | url }}" class="upper no-underline text-mono-white">
+      <a href="{{ tagUrl | url }}" class="capitalize no-underline text-mono-white">
+        <span class="screenReader">
+          Posts tagged
+        </span>
         {{ tag }}
       </a>
     </li>
