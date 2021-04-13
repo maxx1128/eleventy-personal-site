@@ -16,7 +16,7 @@
         <div class="theme-switcher__option flex flex-align-center {% unless forloop.last %}mr-2{% endunless %}">
           <input class="theme-switcher__input" type="radio" id="theme-{{ theme.name }}" name="theme-selector" value="{{ theme.name }}"\>
           <label class="theme-switcher__label inline-block px-3 py-1 capitalize text-action-base border-radius-small" for="theme-{{ theme.name }}">
-            {{ theme.name }}
+            {{ theme.name }} theme
           </label>
         </div>
       {% endfor %}
