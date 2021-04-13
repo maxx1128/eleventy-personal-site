@@ -18,14 +18,10 @@
         </h3>
 
         {% if post.data.excerpt %}
-          <p class="mb-4 lg--mb-6">
+          <p class="mb-2">
             {{ post.data.excerpt }}
           </p>
         {% endif %}
-
-        {% include tagList
-          tags: post.data.tags
-        %}
       </div>
     </article>
   {% endfor %}
