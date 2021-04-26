@@ -101,6 +101,7 @@ $note-colors: (
 }
 
 .note-styler {
+  position: relative;
   padding-bottom: var(--slant-padding);
 
   color: var(--note-text-color);
@@ -144,4 +145,42 @@ $note-colors: (
 
 .note-styler--page {
   min-height: 50vh;
+}
+
+.note-doodle-wrapper {
+  position: relative;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.note-doodle-container {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: 0;
+
+  width: #{'min(50vw, 550px)'};
+
+  overflow: hidden;
+  opacity: 0.07;
+  z-index: -1;
+}
+
+.note-doodle-container--right {
+  right: 0;
+  left: auto;
+
+  width: #{'min(30vw, 400px)'};
+
+  display: none;
+
+  @include larger-than(md) { display: block; }
+}
+
+.note-doodle {
+  width: 100%;
+  padding: spacing(4) spacing(4) spacing(2);
+
+  fill: var(--note-text-color);
 }
