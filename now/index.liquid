@@ -89,11 +89,18 @@ tagline: Everything I'm doing right now, added right after it happens
       <h3 class="flex-item-full mt-0 mx-4 text-center">
         Books I'm Reading Now
       </h3>
-      {% for book in books["current"] %}
-        {% include book.liquid,
-          book: book
-        %}
-      {% endfor %}
+      {% assign current_book_number = books["current"] | size %}
+      {% if current_book_number > 0 %}
+        {% for book in books["current"] %}
+          {% include book.liquid,
+            book: book
+          %}
+        {% endfor %}
+      {% else %}
+        <p>
+          I'm looking for my next book now!
+        </p>
+      {% endif %}
     </section>
     <section class="now-books__wrapper post-content--partial-bleed post-content--full-bleed--no-mt post-content--full-bleed--no-mb flex flex-wrap flex-justify-center flex-align-center pb-6">
       <h3 class="flex-item-full mt-0 mx-4 text-center">
