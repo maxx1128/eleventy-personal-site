@@ -1,11 +1,11 @@
 <div class="slant-bottom-left bg-mono-white border-primary-dark {% if contentType == 'Note' %}slant-bottom-padding{% endif %}">
   <div class="resp-max-width flex flex-column-reverse lg--flex-row flex-justify-between">
     <div class="py-2 flex flex-column flex-align-start">
-      <h1 class="my-0 mr-4 text-h6">
-        <a class="text-mono-black" href="{% if page.url == '/' %}#content{% else %}/{% endif %}">
+      <p class="my-0 mr-4 text-h6 font-weight-header">
+        <a class="text-mono-black" aria-label="Homepage" href="{% if page.url == '/' %}#content{% else %}/{% endif %}">
           Max Antonucci
         </a>
-      </h1>
+      </p>
       <p class="my-0 text-tiny italic">
         {{metadata.description}}
       </p>
