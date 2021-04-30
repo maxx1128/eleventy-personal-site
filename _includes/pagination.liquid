@@ -47,11 +47,11 @@
           <li class="mx-1 mb-0">
             {% if page.url == pagination.hrefs[forloop.index0] %}
               <span class="pagination-link pagination-link--current" aria-current="page">
-                {{ forloop.index }}
+                <span class="screenReader">Pagination page</span> {{ forloop.index }}
               </span>
             {% else %}
               <a href="{{ pagination.hrefs[forloop.index0] }}" class="pagination-link">
-                {{ forloop.index }}
+                <span class="screenReader">Pagination page</span> {{ forloop.index }}
               </a>
             {% endif %}
           </li>

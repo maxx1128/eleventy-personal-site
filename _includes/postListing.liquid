@@ -8,12 +8,12 @@
       <div class="post-listing__content transparent-white-bg">
         <small class="lg--mt-8 mb-0">
           <strong>
-            {{ post.date | readableDate | date: "%B %e, %Y" }}
+            <span class="screenReader">Posted on</span> {{ post.date | readableDate | date: "%B %e, %Y" }}
           </strong>
         </small>
         <h3 class="mt-0 text-h4">
           <a href="{{ post.url }}">
-            {{ post.data.title }}
+            <span class="screenReader">Blog post:</span> {{ post.data.title }}
           </a>
         </h3>
 
