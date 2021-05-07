@@ -10,7 +10,7 @@
   border-radius: container(border-radius, small);
 }
 
-.header--with-custom-image {
+.header--with-custom-image:not(.header--with-no-min-height) {
   @include larger-than(lg) {
     min-height: 47.5vw;
   }
