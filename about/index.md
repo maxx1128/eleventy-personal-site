@@ -18,36 +18,29 @@ Who am I exactly? It's a question with many answers of varying accuracy.
   In my free time I enjoy reading, boxing, making things at MakeHaven, casual gaming, and pondering the philosophical.
 </div>
 
-## The Toxic Answer I Avoid
-
-I sometimes write in my spare time. When I do, I need people to read and give positive feedback, or else it's worthless. If I don't get any, I'm worthless and it takes weeks until I pluck up the courage to write again. My value comes back to how much praise, social capital, and economic power my life brings. That includes my time for entertainment or rest.
-
-If people aren't lining up to watch a live stream of me reading a book, I'm a failure. If I can't sell it or put ads on it, it isn't worth it and should be sold off for a tax deduction.
-
-## The Healthier Answer I Prefer
+## The Healthy Answer
 
 I am not an influencer, thought leader, aggregator, or well-known in any sense. I am myself, and I'm more than enough that way.
 
 I’m a guy trying (and often failing) to figure it all out. I happen to have a blog. I ponder obscure stuff. Sometimes I write useful things thanks to the law of averages. But I enjoy writing them, so I can be a little better for the next day.
 
-At the end of the day, I can afford a home, food, bed, and a few luxuries to entertain myself. If I'm lucky, I'll have something left over for a few donations. People want more than that, but does anyone need more in the end?
+At the end of the day, I can afford a home, food, bed, and a few luxuries to entertain myself. If I'm lucky, I'll have something left over for a few donations. People want more than that, but does anyone need more?
 
 Here's to a good, simple life.
 
+## The Toxic Answer
+
+I sometimes write in my spare time. When I do, I need people to read and give positive feedback, or else it's worthless. If I don't get any, I'm worthless and it takes weeks until I pluck up the courage to write again. My value comes back to how much praise, social capital, and economic power my life brings. That includes my time for entertainment or rest.
+
+If people aren't lining up to watch a live stream of me reading a book, I'm a failure. If I can't sell it or put ads on it, it isn't worth doing or enjoying.
+
 ## The Personal Answer
 
-There are lots of things about myself I could write about here. But if I had to choose one that's defined my life the most, it's **writing.**
+I try to live my life based on a few values. The most important ones are curiosity and empathy. Curiosity keeps me learning new things and finding new experiences, either on my own or shared by others. Empathy lets me expand my range of feelings and understanding as I go along.
 
-One of my main hobbies as a kid was writing fiction. I went to college to study journalism. Halfway through I started writing code instead.
+These values take the form of exploring new ways to craft accessible websites, reading about life through others' eyes or the invisible systems driving society, or trying to process all the above with what I write. They bring my life joy and pain in equal measure. When I go to sleep, I don't often feel happy. But [I feel fulfilled, that I did something meaningful with my time](https://www.maxwellantonucci.com/posts/2017/05/16/2017-5-15-perfectly-unhappy-developer/). That's what I want more in the end.
 
-As an adult, I'm still writing all the time. I write front-end code to make websites look pretty, run fast, and fit on phones. I write online about the code I've written, how I learned it, and how others could too. I write in my journal each night. I write notes about what other people wrote. These include code, life, philosophy, even court-released manuals on scam tactics. A dream of mine is to write a styled, interactive novel online. All the smaller things I can't fit into those, I throw into the Internet void as tweets.
-
-I do have interests other than writing. Most times I'm reading books and manga instead. In the mornings I take boxing classes. Sometimes I take walks or drink hot chocolate. I'll often play video games on the weekend. **But most of my life is writing, and I love it that way.**
-
-I love writing, in all its forms, since it gets to the core of being alive. We define our lives most by the thoughts and ideas around us,. Writing is the best way to distill these to their purest form and share them. To affect major change in the lives of others. Even if it's something silly like [a bizarre spiral animation](https://codepen.io/max1128/pen/xEOLmg). Not the best example, but you get the idea.
-
-In the future I aim to keep writing as much as possible. Writing code, blog posts, notes, maybe even fiction. I don't use Twitter as much, but I'll write more tweets too. The only things I don't want to write are restraining orders, comments for online articles, or erotic fanfiction. That aside, I'll be writing until I write my will.
-
+To throw myself into the confusing turmoil of existence, get spit out, dust myself off, feel a little stronger, and throw myself right back in.
 ## The Absurd Answer
 
 I'm an agent sent from an alternate plane of reality, where human thought and imagination circulate through the world like air. People add to it whenever they ponder or daydream, and take from it when sudden inspiration strikes.
@@ -55,3 +48,7 @@ I'm an agent sent from an alternate plane of reality, where human thought and im
 It's a place full of ludicrous creations and unexpected dangers. Most of us will never see it, even though we're the ones fueling it. But I see it and fight to keep it separate. Otherwise fantasy and reality could combine into something deadlier than we could ever...well, imagine.
 
 _Directed by Martin Scorsese. This film is not yet rated._
+
+## The Million Dollar Answer
+
+The word "tabby," now used to refer to a cat, is derived from the word Al-'Attābīya, the name of a district in the city of Baghdad.
