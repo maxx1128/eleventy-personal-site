@@ -2,10 +2,9 @@
   box-shadow: container(box-shadow, 2);
   background-position: center top;
   background-size: cover;
-  background-image: url("/assets/images/global/header-default.jpg");
 }
 
-.header__text {
+.header--with-custom-image .header__text {
   box-shadow: container(box-shadow, 2);
   border-radius: container(border-radius, small);
 }
@@ -13,11 +12,5 @@
 .header--with-custom-image:not(.header--with-no-min-height) {
   @include larger-than(lg) {
     min-height: 47.5vw;
-  }
-}
-
-@include darkMode() {
-  .header {
-    background-image: url("/assets/images/global/header-dark.jpg");
   }
 }
