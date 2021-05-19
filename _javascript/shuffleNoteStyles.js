@@ -1,7 +1,24 @@
 const doodleViewboxes = [
-  "0 0 79.5 63.5",   // Espeon
+  "0 0 80 64",   // Espeon
   "0 0 160 150", // Margaret
-  "0 0 100 142"  // Winter hat
+  "0 0 100 142", // Winter hat
+  "0 0 260 360", // Among Us
+  "0 0 277 525", // Crying Chibi
+  "0 0 600 650", // Crying Fancy
+  "0 0 633 705", // Determined wild hair
+  "0 0 466 572", // Embarassed blush
+  "0 0 500 470", // Flowers
+  "0 0 488 617", // Glaceon ice cream
+  "0 0 437 820", // Glasses doctor
+  "0 0 491 538", // Headscarf
+  "0 0 725 705", // Karen heart hold
+  "0 0 415 665", // Lyle glance
+  "0 0 391 388", // Octopus doll
+  "0 0 513 643", // Older glasses
+  "0 0 397 481", // Shy scarf
+  "0 0 275 382", // Silly wave
+  "0 0 644 683", // Super glomp
+  "0 0 540 528"  // Sword headband
 ];
 
 (function() {
@@ -49,7 +66,7 @@ const doodleViewboxes = [
         const randomIndex = classIndexes[0];
         el.parentElement.classList.remove("hidden");
 
-        if (Math.random() < 0.2) {
+        if (Math.random() < 0.5) {
           el.parentElement.classList.add("hidden");
         }
 
