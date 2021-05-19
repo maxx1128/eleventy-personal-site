@@ -54,6 +54,13 @@
     }
 
     img {
+      display: block;
+      width: auto;
+      margin-right: auto;
+      margin-left: auto;
+
+      max-height: 70vh;
+
       box-shadow: container(box-shadow, 2);
     }
 
