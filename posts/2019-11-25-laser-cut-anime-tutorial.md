@@ -8,7 +8,7 @@ tags: ['anime', 'other']
 
 One of my long-term goals at MakeHaven, a local maker space, has been finding new ways to turn anime art into laser cut art. I'm happy to say I recently made a breakthrough and can make nice-looking anime laser prints with relative ease.
 
-<ul class="flex mb-2 flex-row flex-wrap flex-align-center flex-justify-around list-reset">
+<ul class="post-content--partial-bleed flex mb-2 flex-row flex-wrap flex-align-center flex-justify-around list-reset">
   <li class="width-50 sm--width-25 p-1 mb-0">
     <img src="/assets/images/posts/laser-cut-anime-demo/examples/1.jpg" alt="" />
   </li>
