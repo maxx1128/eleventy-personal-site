@@ -19,7 +19,7 @@ Seems like a good response since it shows concern. But it also communicates disb
 This tweet from a good thread said it best:
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">That kumbaya shit does nothing for people like Tatiana who are being driven out of this industry because of hate. <br><br>That &quot;rainbows and butterflies&quot; shit does nothing for people who face physical harm because of white supremacy.</p>&mdash; Shake Shack Stan Account (@KeziyahL) <a href="https://twitter.com/KeziyahL/status/1166005871958286336?ref_src=twsrc%5Etfw">August 26, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 ### Dismissing the "Drama"
 

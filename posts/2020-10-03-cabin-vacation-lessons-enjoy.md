@@ -19,7 +19,7 @@ The other co-residents that don't give me enough space are the mice. At first, t
 
 Despite realizing mice are monsters, it was tough seeing my first dead one in a mousetrap. I'll never forget how they looked an instant before their crushing death.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">This was actually kind of traumatizing. I pried open the trap only to see a cute little mouse&#39;s dead, pleading eyes staring at me from the afterlife. Then I tossed the corpse into the woods for a larger animal to soullessly devour.<br><br>Cabin living is brutal.</p>&mdash; Max Antonucci (@Maxwell_Dev) <a href="https://twitter.com/Maxwell_Dev/status/1311822280809500672?ref_src=twsrc%5Etfw">October 2, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">This was actually kind of traumatizing. I pried open the trap only to see a cute little mouse&#39;s dead, pleading eyes staring at me from the afterlife. Then I tossed the corpse into the woods for a larger animal to soullessly devour.<br><br>Cabin living is brutal.</p>&mdash; Max Antonucci (@Maxwell_Dev) <a href="https://twitter.com/Maxwell_Dev/status/1311822280809500672?ref_src=twsrc%5Etfw">October 2, 2020</a></blockquote>
 
 The geese in the nearby lake seem to have already got the “keep away from humans” message. While canoeing, or any time I walked close to the water, they'd start honking and swimming away. They know to fear humans, both as beings who sell little traps of death and people that interrupt their mating.
 

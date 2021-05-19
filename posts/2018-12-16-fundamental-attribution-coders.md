@@ -14,4 +14,3 @@ I'm not arguing there aren't people who could do better and are just lazy - my o
 To summarize all this:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">If you&#39;re in a privileged position of having more time and energy than others to invest in your career, blame others for not having those same advantages, and call them negative or complaining when they share their experiences with you, you are an asshole. That&#39;s all.</p>&mdash; Max Antonucci (@Maxwell_Dev) <a href="https://twitter.com/Maxwell_Dev/status/1072890934134796289?ref_src=twsrc%5Etfw">December 12, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

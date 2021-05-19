@@ -93,7 +93,7 @@ Could I have kept this up if I wound up interviewing the campus' white nationali
 
 As long as no one drops a "CSS isn't a serious programming language" bomb on me.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Every so often we see a wave of people complaining CSS is broken because it doesn’t address their exact problem the exact way they think it should using patterns they find personally familiar so I guess CSS is a real programming language after all</p>&mdash; Eric Meyer, CSS Nerd (@meyerweb) <a href="https://twitter.com/meyerweb/status/1074354657739329537?ref_src=twsrc%5Etfw">December 16, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Every so often we see a wave of people complaining CSS is broken because it doesn’t address their exact problem the exact way they think it should using patterns they find personally familiar so I guess CSS is a real programming language after all</p>&mdash; Eric Meyer, CSS Nerd (@meyerweb) <a href="https://twitter.com/meyerweb/status/1074354657739329537?ref_src=twsrc%5Etfw">December 16, 2018</a></blockquote>
 
 ## 5. Be Selective with Your Knowledge
 

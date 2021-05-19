@@ -40,7 +40,7 @@ This is a common trick of Stoic philosophy, and one my eFriends have said works 
 A lot of my thoughts, as with everyone's, are out of my control. They just pop up because to what's happening around me, like a leaf falling on me outside. This sounds harsh at first, that most of my thoughts aren't really mine. But the upside is most negative thoughts also aren't mine - they're random blips that don't reflect on my character.
 
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">I’ve found that if I put the words “I observe” in front of the thought, it loses a lot of its potential power. It becomes something like a balloon floating by in the wind &amp; I can see that it’s there, then let it float away.</p>&mdash; Melanie Sumner 💥 🐹 (@melaniersumner) <a href="https://twitter.com/melaniersumner/status/1068117172499697664?ref_src=twsrc%5Etfw">November 29, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 Others I've talked to approach it differently. One person sees their negative thoughts as words going by like scrolling text on a billboard. Another phrased it like being a rock in a river, with thoughts rushing past us but not moving or really affecting her at all. Sometimes I imagine thoughts more as physical clouds that appear around my head, which I can grab and fling away so they explode in the distance. The best method is rarely the same for any two people.
 

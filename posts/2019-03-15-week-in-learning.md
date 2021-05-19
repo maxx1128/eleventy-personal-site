@@ -51,4 +51,3 @@ So depending on my time and energy, I can read and learn briskly or in-depth. Mo
 ## Your Tweet of Zen
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Brave? I&#39;m a dude writing text in a box. What&#39;s the worst that could happen?</p>&mdash; @heydon@mastodon.social (@heydonworks) <a href="https://twitter.com/heydonworks/status/1105371664190193664?ref_src=twsrc%5Etfw">March 12, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

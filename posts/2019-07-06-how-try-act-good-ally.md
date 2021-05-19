@@ -22,7 +22,7 @@ This isn't to say having privilege makes me less worthy or valuable than those w
 A big sign of someone not recognizing their privilege is when they confuse "recognizing it" with "being told they don't deserve what they have" and turning fragile.
 
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">Reply Guy #5: HIMPATHY <br>(coined by <a href="https://twitter.com/kate_manne?ref_src=twsrc%5Etfw">@kate_manne</a>)<br><br>He&#39;s worried that with all this talk about <a href="https://twitter.com/hashtag/MeToo?src=hash&amp;ref_src=twsrc%5Etfw">#MeToo</a> we&#39;re losing sight of the real victims: him and his friends.<a href="https://twitter.com/hashtag/9ReplyGuys?src=hash&amp;ref_src=twsrc%5Etfw">#9ReplyGuys</a> <a href="https://twitter.com/hashtag/himpathy?src=hash&amp;ref_src=twsrc%5Etfw">#himpathy</a> <a href="https://twitter.com/hashtag/dudeprocess?src=hash&amp;ref_src=twsrc%5Etfw">#dudeprocess</a><br><br>[tagging my co-author <a href="https://twitter.com/shrewshrew?ref_src=twsrc%5Etfw">@shrewshrew</a>] <a href="https://t.co/3TtZ7VqF0a">pic.twitter.com/3TtZ7VqF0a</a></p>&mdash; Scott Barolo (@sbarolo) <a href="https://twitter.com/sbarolo/status/1038128825215987712?ref_src=twsrc%5Etfw">September 7, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 Fully recognizing my privilege was vital, since every other positive step or change could only come after this step.
 

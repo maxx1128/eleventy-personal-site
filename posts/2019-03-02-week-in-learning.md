@@ -55,4 +55,3 @@ So in the second half of the Great Activity Stream Refactoring of 2019, I made m
 If this is going to be recurring thing for me, I want to end on a playful note. I landed on sharing a thought-provoking tweet from the week, give or take a few days. So here it is, your Tweet of Zen.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;You are being too emotional, just look at things rationally.&quot;<br> – someone who thinks their emotional desires are more important than yours.</p>&mdash; Existential Comics (@existentialcoms) <a href="https://twitter.com/existentialcoms/status/1097951639728574466?ref_src=twsrc%5Etfw">February 19, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

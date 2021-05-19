@@ -12,7 +12,7 @@ Of the many societal expectations in America, one is you must be extremely above
 
 It's most often spouted by white people, especially men, but I'm sure that's a coincidence. Those same white men will tell you so and in a loud, angry voice.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you don’t come out of this quarantine with either:<br><br>1.) a new skill<br>2.) starting what you’ve been putting off like a new business<br>3.) more knowledge <br><br>You didn’t ever lack the time, you lacked the discipline</p>&mdash; Jeremy Haynes (@TheJeremyHaynes) <a href="https://twitter.com/TheJeremyHaynes/status/1245767684484202496?ref_src=twsrc%5Etfw">April 2, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you don’t come out of this quarantine with either:<br><br>1.) a new skill<br>2.) starting what you’ve been putting off like a new business<br>3.) more knowledge <br><br>You didn’t ever lack the time, you lacked the discipline</p>&mdash; Jeremy Haynes (@TheJeremyHaynes) <a href="https://twitter.com/TheJeremyHaynes/status/1245767684484202496?ref_src=twsrc%5Etfw">April 2, 2020</a></blockquote>
 
 But back in reality, this doesn't make much sense.
 

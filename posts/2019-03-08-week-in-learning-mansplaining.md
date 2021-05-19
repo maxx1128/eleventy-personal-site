@@ -113,6 +113,6 @@ One more note for the men out there:
 One last tweet in the spirit of #InternationalWomensDay:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Does it offend anyone else that we have to push hiring for diversity by breaking it down into numbers and how those numbers increase productivity and company revenue? To me, that’s like saying, “hire these people, not b/c they’re also humans, but b/c we’ll make more money off em”</p>&mdash; 🃏Pariss Athena⚔️ (@ParissAthena) <a href="https://twitter.com/ParissAthena/status/1103270656580440064?ref_src=twsrc%5Etfw">March 6, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 See y'all next week.

@@ -9,7 +9,7 @@ featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=2575698
 Despite being of a single mind, most people have at least one other inner voice pulling them in many different directions. One tweet I saw with an Anthony Bourdain quote sums this up well.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This.<br><br>Anthony Bourdain on overcoming impulsive behavior <a href="https://t.co/GycSPkWsBq">pic.twitter.com/GycSPkWsBq</a></p>&mdash; HighExistence (@highexistence) <a href="https://twitter.com/highexistence/status/937438803488313346?ref_src=twsrc%5Etfw">December 3, 2017</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 My theory is everyone has at least one horrible voice like this. A voice that sounds just like them, trying to pull them somewhere that seems great but only hurts us in the long run. It's hard to ignore, since it seems like it's just us. If it's in our own mind and sounds just like us, it must be normal to accept what it says, right?
 

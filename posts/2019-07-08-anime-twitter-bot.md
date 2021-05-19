@@ -10,7 +10,7 @@ featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=947559
 A few months ago I tweeted this absolutely true statement.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Confession time: my secret subversive goal is drowning the internet in as much anime artwork as possible. Programming and blogging are just fronts for this.</p>&mdash; Max Antonucci (@Maxwell_Dev) <a href="https://twitter.com/Maxwell_Dev/status/1120283792785256449?ref_src=twsrc%5Etfw">April 22, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 Over the last year my anime-related side projects fueling this plot have grown in scope:
 

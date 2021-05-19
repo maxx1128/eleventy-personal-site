@@ -10,7 +10,7 @@ featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=266437
 Nearly two weeks ago I chose to unplug from Twitter. Since then, aside from cross-posts, and content I see from my Feedbin, I've spent virtually no time directly on Twitter sites.
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Unplugging from Twitter for a while. Need to refocus on catching up on my learning, I’ve been falling behind on lots of fundamental material.</p>&mdash; Max Antonucci (@Maxwell_Dev) <a href="https://twitter.com/Maxwell_Dev/status/1191715539489632262?ref_src=twsrc%5Etfw">November 5, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 I'm not the first person to get away from Twitter, and not the first to see the many perks and effects leaving has on my mental health. While there are many, I'm going to stick with the top 31 (for now).
 

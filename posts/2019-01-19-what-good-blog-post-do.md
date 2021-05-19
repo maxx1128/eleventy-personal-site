@@ -33,7 +33,7 @@ I don't need to fix things for all the homeless problems in my city. Organizatio
 One form this takes for me is how many people read what I write. I can't expect everyone to read my posts about accessibility or blogging habits, and then everyone to take that advice and miraculously solve those problems. But they can still help a handful of people in a big way. The effects it has on them can then affect people they know, and it ripples out from there. Even if it's as small as helping a fellow programmer I respect, like so:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">As you know, I am a pretty active blogger. I have a lot of goals about why I do that, but you absolutely do not need to have goals or even viewership to blog. I loved this post by <a href="https://twitter.com/Maxwell_Dev?ref_src=twsrc%5Etfw">@Maxwell_Dev</a> and wanted to re-share it.<a href="https://t.co/zmfFzB9lbH">https://t.co/zmfFzB9lbH</a></p>&mdash; Lindsey Kopacz (@littlekope0903) <a href="https://twitter.com/littlekope0903/status/1084797372616634369?ref_src=twsrc%5Etfw">January 14, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 No single person can fix a huge issue by myself, whether it's web accessibility or homelessness. That just makes the small improvements all the more important.
 

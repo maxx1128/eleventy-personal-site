@@ -52,7 +52,7 @@ With these tips too, I don't rely on my future self to remember important tasks 
 ## Remember: You Are Not Your Future Self
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This.<br><br>Anthony Bourdain on overcoming impulsive behavior <a href="https://t.co/GycSPkWsBq">pic.twitter.com/GycSPkWsBq</a></p>&mdash; HighExistence (@highexistence) <a href="https://twitter.com/highexistence/status/937438803488313346?ref_src=twsrc%5Etfw">December 3, 2017</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 I don't follow these rules because of a lack of self-control or hatred of my future self. It's simply part of being human, and I can't really blame anyone other than nature or evolution. Neither can be taken to court, so blame is pointless. While I don't have faith in my future self, I do in my present self to not lose what little control I have over my life.
 

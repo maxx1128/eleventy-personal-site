@@ -12,7 +12,7 @@ Last week was Rails Conf 2021, a gathering of coders, senior and newbie, to talk
 While I focus on the front-end, I've worked with Rails plenty at my current job and quite enjoy it. So I was looking forward to learning about new and old offerings, from Hotwire to service objects. It was also my first virtual conference, as I'm guessing was the case for many people there. It wasn't one of those MMORPG (massively multiple online role-playing game) virtual conferences I've drooled over. But I'm holding out hope for trying one someday!
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">About to do a workshop at <a href="https://twitter.com/DotNextConf?ref_src=twsrc%5Etfw">@DotNextConf</a> - the conferb ence is an online one, but those awesome folks have created a MMORPG style virtual conference where you can walk around and interact with people! How cool is that?!<a href="https://t.co/fwn89k1Za1">https://t.co/fwn89k1Za1</a> <a href="https://t.co/QUuRcCiWeO">pic.twitter.com/QUuRcCiWeO</a></p>&mdash; Michael Yarichuk (@Myarichuk) <a href="https://twitter.com/Myarichuk/status/1334842466722312194?ref_src=twsrc%5Etfw">December 4, 2020</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 In the meantime, **I thought I'd mull over the pros and cons of my first virtual conference. To save you some time, it was good!** There were drawbacks, but it's nothing the organizers can't fix next time. Plus, that doesn't mean virtual conferences can't work for everyone. I'm hoping this post can help people on the fence of whether or not to try out one themselves.
 

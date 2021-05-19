@@ -100,7 +100,7 @@ At its core, that's the difference between declarative and imperative programmin
 For a good reminder on all this with some code examples, I simply refer you to this tweet!
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I can’t be the only one always getting the concepts of Imperative and Declarative programming confused... right? 🙏✨⚛️🎀 <a href="https://twitter.com/hashtag/lolsobjs?src=hash&amp;ref_src=twsrc%5Etfw">#lolsobjs</a> <a href="https://twitter.com/hashtag/CodeNewbie?src=hash&amp;ref_src=twsrc%5Etfw">#CodeNewbie</a> <a href="https://twitter.com/hashtag/learntocode?src=hash&amp;ref_src=twsrc%5Etfw">#learntocode</a> <a href="https://t.co/ucgQ6iBaUG">pic.twitter.com/ucgQ6iBaUG</a></p>&mdash; LOLSOB.js (@lolsobjs) <a href="https://twitter.com/lolsobjs/status/1140697401155575810?ref_src=twsrc%5Etfw">June 17, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 When you're not writing JavaScript to manipulate DOMs, I've approached declarative programming **by declaring new variables instead of mutating existing ones.**
 
