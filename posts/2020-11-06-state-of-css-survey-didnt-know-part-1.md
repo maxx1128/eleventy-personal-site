@@ -14,7 +14,7 @@ Like all humans, I like answering questions since it makes me feel smart and pow
 
 That got thrown off when I saw how many CSS topics I knew little or no details about. I took note of them all as I filled out the survey. When I'd finished, I saw the survey was thinking the same thing as me.
 
-<img class="block mx-auto mb-4 sm--width-75" src="/assets/images/posts/css-survey-1/css-survey-recommendations.png" alt="A recommendation from the State of CSS survey to learn more about the topics I was not familiar with.">
+![A recommendation from the State of CSS survey to learn more about the topics I was not familiar with.](/assets/images/posts/css-survey-1/css-survey-recommendations.png)
 
 The catch is there were so many things I wanted to check, I couldn't fit them into one post. So here's the first part with what they recommended I check first, and with the rest coming later.
 
