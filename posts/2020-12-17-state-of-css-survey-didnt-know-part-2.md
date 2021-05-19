@@ -117,7 +117,7 @@ I only use rem and pixel units in my styling these days, but there are some othe
 
 First are three that don't need much explanation to most people - mm, cm, and in. **They refer to their real-life measurement units of millimeters, centimeters, and inches.** They're absolute values like pixels, which means they won't change if users adjust their browser for bigger font sizes. But they can be useful if you're styling a print-specific version of a webpage since you're working within more static sizes for your content anyway. That and they're the units many people are already used to when designing for print.
 
-The fourth unit I found, ex, is a little trickier. ["Ex" is a relative size unit equal to one unit of the current font's x-height](https://webdesign.tutsplus.com/articles/7-css-units-you-might-not-know-about--cms-22573). **A simple way to find the x-height value is to measure how high the letter "x" is in that font.**
+The fourth unit I found, ex, is a little trickier. ["Ex" is a relative size unit equal to one unit of the current font's x-height](https://webdesign.tutsplus.com/articles/7-css-units-you-might-not-know-about--cms-22573). **A simple way to find the x-height value is to measure how high the letter "x" is in that font.** It's easy once you see it.
 
 <img alt="A visual example of what determines the x-height. It's the height of the letter 'x.'" class="post-content--partial-bleed" src="/assets/images/posts/css-survey-2/x-height.jpeg" />
 
