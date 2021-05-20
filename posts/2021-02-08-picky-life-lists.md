@@ -43,7 +43,7 @@ I didn't select wisely when I selected this game. That's where the three steps c
 
 **Third, I need to be picky with what I select next.** I need to know and be firm with the core criteria for adding to my lists. If my core requirements are intriguing stories and art styles, but without grinding, cliches, or turn-based combat, I'm not compromising.
 
-<img class="post-content--partial-bleed" src="/assets/images/posts/picky-life-lists/1.png" alt="A quote from the book 'Essentiation:' 'Saying yes to one thing means saying no to several others. Even thing we may want.' It's above anime artwork of someone on the street in a breeze.">
+![A quote from the book 'Essentiation:' 'Saying yes to one thing means saying no to several others. Even thing we may want.' It's above anime artwork of someone on the street in a breeze.](/assets/images/posts/picky-life-lists/1.png)
 
 Does that mean I'll miss out on other still-enjoyable games? Yes. But I can only play so many. I need to be picky to get the most possible enjoyment from the games I do play. This lesson is so important, I'd long since added it to my quote collection.
 

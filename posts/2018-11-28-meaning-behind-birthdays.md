@@ -13,7 +13,7 @@ Lately I've seen a different meaning that doesn't relate to the birthday person 
 
 So this note goes to the people who took a little time to wish me a happy birthday, either in person or online. It's a strong sign someone's grateful to know me, and I'm quite grateful for that in turn. As thanks, here's a gif of a corgi going off a water slide in slow motion.
 
-<img class="mb-4" src="/assets/images/notes/corgi-water-slide.gif" alt="A corgi majestically jumping off a water slide into a pool." />
+!["A corgi majestically jumping off a water slide into a pool."](/assets/images/notes/corgi-water-slide.gif)
 
 This note also goes to myself, who after realizing all this, will actually try to wish others a happy birthday instead of realizing I forget in a panic several days later.
 

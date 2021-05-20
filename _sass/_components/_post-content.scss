@@ -40,6 +40,7 @@
     blockquote,
     .post-content--full-bleed,
     .post-content--partial-bleed,
+    .post-content--image-list,
     .iframe-container,
     .cp_embed_wrapper {
       width: 100%;
@@ -65,6 +66,7 @@
     }
 
     .post-content--partial-bleed,
+    .post-content--image-list,
     .iframe-container,
     .cp_embed_wrapper {
       margin-right: auto;
@@ -96,5 +98,26 @@
     max-width: $g-content-max-width;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+.post-content--image-list {
+  display: flex;
+  padding: 0;
+  margin: 0 0 spacing(4);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  list-style-type: none;
+
+  li {
+    padding-right: spacing(2);
+    padding-left: spacing(2);
+    flex: 1 1 rem(185px);
+  }
+
+  img {
+    max-height: 45vh !important;
   }
 }

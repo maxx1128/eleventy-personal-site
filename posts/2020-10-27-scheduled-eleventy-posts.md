@@ -79,11 +79,11 @@ That's where Netlify and IFTTT come in.
 
 First, [Netlify lets you add build hooks](https://docs.netlify.com/configure-builds/build-hooks/). These are URLs you can send a POST request to that trigger new builds. I set one up for daily builds and copied the given URL.
 
-<img class="block mx-auto mb-4 sm--width-75" src="/assets/images/posts/scheduled-eleventy-netlify-posts/netlify-build-hook.png" alt="">
+![](/assets/images/posts/scheduled-eleventy-netlify-posts/netlify-build-hook.png)
 
 Now I had to hit this URL each day. I remembered IFTTT as a tool for making simple, conditional web actions. So I can link their "time" and "webhook" services together into "send a POST request to this webhook every day at 7 am."
 
-<img class="block mx-auto mb-4 sm--width-75" src="/assets/images/posts/scheduled-eleventy-netlify-posts/ifttt-redeploy-applet.png" alt="">
+![](/assets/images/posts/scheduled-eleventy-netlify-posts/ifttt-redeploy-applet.png)
 
 There are some costs to this. I saw Netlify has set up built-in bandwidth and build time limits for starter accounts like mine. But considering how light and speedy Eleventy builds are, and I don't have any heavy apps hosted on Netlify, these shouldn't be an issue for casual bloggers like myself.
 

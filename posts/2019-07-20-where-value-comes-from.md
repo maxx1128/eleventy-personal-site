@@ -11,7 +11,7 @@ Does a person's life have value if the person simply exists selfishly, looking o
 
 But devoting one's life to helping others doesn't fully solve it for me. It's nearly impossible to tell when the value one gives the world balances with what one takes to stay alive. Would one need to save one life to justify our own? Would one need to save one high-value life or several lower-value lives? Or give small bits of value and inspiration to lots of different people?
 
-<img class="post-content--partial-bleed" class="block mx-auto width-75" src="/assets/images/notes/worth-life-manga.png" alt="Two panels from the 'Bungou Stray Dogs' manga with one character asking if saving others will truly make them worthy to live.">
+!["Two panels from the 'Bungou Stray Dogs' manga with one character asking if saving others will truly make them worthy to live."](/assets/images/notes/worth-life-manga.png)
 
 If one brings new life into this world with kids, does it only count if that life also brings value to the world? If someone produces a life that only takes and never gives, does that make one even _less_ worthy of life?
 

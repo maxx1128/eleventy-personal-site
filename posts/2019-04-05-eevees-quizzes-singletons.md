@@ -5,9 +5,9 @@ excerpt: "I celebrate a long-overdue side project by examining its most importan
 image: 'eevees.jpg'
 tags: ['anime', 'javascript']
 ---
-After over a year in purgatory, one of my side projects is finally finished. It's a small piece of Pokemon fandom I'd wanted to make for a while now: a Pokemon personality quiz! To be more specific, a "What Eevee Evolution Are You" quiz. [You can view (and take) the quiz at this site.](https://eeveequiz.com/)
+After over a year in purgatory, one of my side projects is finally finished. It's a small piece of Pokemon fandom I'd wanted to make for a while now: a Pokemon personality quiz! To be more specific, a "What Eevee Evolution Are You" quiz. [You can view (and take) the quiz at this site](https://eeveequiz.com/).
 
-<img class="post-content--partial-bleed" src="/assets/images/posts/eevee-quizzes-singletons/eeveelution_home.png" alt="The homepage of the 'What Eeveelution Are You' quiz site." />
+!["The homepage of the 'What Eeveelution Are You' quiz site."](/assets/images/posts/eevee-quizzes-singletons/eeveelution_home.png)
 
 _(For the record, I'm an Espeon and overjoyed about it.)_
 
@@ -59,7 +59,7 @@ This `progress` value is then passed into the `progress-bar` component. It uses 
 
 The service makes it easy to get the following (adorable) effect.
 
-<img class="post-content--partial-bleed" src="/assets/images/posts/eevee-quizzes-singletons/quiz_flow.gif" alt="A GIF showing different Eevees running across the screen as a user completes the quiz." />
+![A GIF showing different Eevees running across the screen as a user completes the quiz.](/assets/images/posts/eevee-quizzes-singletons/quiz_flow.gif)
 
 ### Changing the Menu when you Finish the Quiz
 

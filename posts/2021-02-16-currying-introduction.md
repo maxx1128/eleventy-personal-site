@@ -166,4 +166,4 @@ Plus I'll say it again, "currying" is just fun to say. Understanding it gives us
 
 _Ahem_, regardless, [happy currying](https://safebooru.org/index.php?page=post&s=view&id=3090199)!
 
-<img alt="A trainer and several pokemon gathering around a freshly-made pot of curry." class="post-content--partial-bleed" src="/assets/images/posts/currying-introduction/pokemon-curry.jpeg" />
+![A trainer and several pokemon gathering around a freshly-made pot of curry.](/assets/images/posts/currying-introduction/pokemon-curry.jpeg)

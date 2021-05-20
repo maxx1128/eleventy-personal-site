@@ -57,7 +57,7 @@ To that, I remind myself: **I am human. If I was a perfect robot, I'd be the one
 
 I had to remind myself of this lesson so often, I engraved it onto a piece of wood.
 
-<img class="block mx-auto mb-4 sm--width-75 md--width-50" src="/assets/images/posts/widening-anxieties-young-developers/perfection-excuse.jpg" alt="A piece of wood with the quote 'don't let perfectionism be an excuse for never getting started' engraved into it." />
+!["A piece of wood with the quote 'don't let perfectionism be an excuse for never getting started' engraved into it."](/assets/images/posts/widening-anxieties-young-developers/perfection-excuse.jpg)
 
 You may ask me, _"Well Max, I like this quote, but why did you pair it with random artwork of Pokémon Sword's fighting-type gym leader? Especially when you played Pokémon Shield and never fought her yourself?"_ To which I say, the reader who is disturbingly informed about my video game history, why not?
 

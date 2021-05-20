@@ -43,4 +43,4 @@ I can control all of these things. They're the ones worth putting time and energ
 
 In tough times, it's hard to remember what I can control and what I can't. I hope I don't forget over the next few weeks.
 
-<img alt="A laser-cut wood print with the quote 'grant me the serenity to accept what I cannot change, the courage to change what I can, and the wisdom to know the difference.'" src="/assets/images/posts/control-chaos/can-control-cut.jpg" class="block mx-auto md--width-75" />
+!["A laser-cut wood print with the quote 'grant me the serenity to accept what I cannot change, the courage to change what I can, and the wisdom to know the difference.'"](/assets/images/posts/control-chaos/can-control-cut.jpg)

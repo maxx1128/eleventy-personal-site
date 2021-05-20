@@ -22,14 +22,14 @@ I'm not the first person to get away from Twitter, and not the first to see the 
 
 **3) Throwing myself into laser cutting.** A lot of that extra energy had to go to a creative outlet. So I found some new tools, got some more pieces of art ready, and gave it a go. The results so far have been a lot of fun. Soon I shall tackle making my holiday gifts.
 
-<ul class="flex flex-wrap flex-align-center flex-justify-center mb-2 list-reset">
-  <li class="width-50 sm--width-33 p-2 mb-0">
+<ul class="post-content--image-list">
+  <li>
     <img src="/assets/images/posts/stopping-twitter/laser-cutting-1.jpg" alt="A laser-cut art version of an anime drawing of a girl with glasses.">
   </li>
-  <li class="width-50 sm--width-33 p-2 mb-0">
+  <li>
     <img src="/assets/images/posts/stopping-twitter/laser-cutting-2.jpg" alt="A laser-cut art version of Zelda from Breath of the Wild.">
   </li>
-  <li class="width-50 sm--width-33 p-2 mb-0">
+  <li>
     <img src="/assets/images/posts/stopping-twitter/laser-cutting-4.jpg" alt="A laser-cut art version of a girl walking with a cat through an Italian archway.">
   </li>
 </ul>

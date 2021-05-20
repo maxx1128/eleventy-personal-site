@@ -18,7 +18,7 @@ The journey begins.
 
 Most people who've worked on the front-end will recognize this kind of layout:
 
-<img alt="A layout where the image is pushed all the way to the left, with text flowing around it to the right." class="post-content--partial-bleed" src="/assets/images/posts/css-survey-2/exclusion-1.jpeg" />
+![A layout where the image is pushed all the way to the left, with text flowing around it to the right.](/assets/images/posts/css-survey-2/exclusion-1.jpeg)
 
 It's pretty simple. A designer wants to include a small image alongside the text. Having it wrap around the image lets it be included without wasting too much space.
 
@@ -28,7 +28,7 @@ Not so fast.
 
 Say one day your designer comes to you with this layout.
 
-<img alt="Another layout with two columns of text and an image in the space between them. The text in both columnds wraps around the image as needed." class="post-content--partial-bleed" src="/assets/images/posts/css-survey-2/exclusion-2.jpeg" />
+![Another layout with two columns of text and an image in the space between them. The text in both columns wrap around the image as needed.](/assets/images/posts/css-survey-2/exclusion-2.jpeg)
 
 Now, `float` isn't going to help you at all. Floats being you to one side or the other, it can't put you between two elements. There's no real way to get this effect with Grid or Flexbox that's responsive and not excessively convoluted either.
 
@@ -119,7 +119,7 @@ First are three that don't need much explanation to most people - mm, cm, and in
 
 The fourth unit I found, ex, is a little trickier. ["Ex" is a relative size unit equal to one unit of the current font's x-height](https://webdesign.tutsplus.com/articles/7-css-units-you-might-not-know-about--cms-22573). **A simple way to find the x-height value is to measure how high the letter "x" is in that font.** It's easy once you see it.
 
-<img alt="A visual example of what determines the x-height. It's the height of the letter 'x.'" class="post-content--partial-bleed" src="/assets/images/posts/css-survey-2/x-height.jpeg" />
+![A visual example of what determines the x-height. It's the height of the letter 'x.'](/assets/images/posts/css-survey-2/x-height.jpeg)
 
 This is how much `1ex` unit will be. It'll be equal to most other lowercase letters too. So it's useful for lots of typographic spacing, on a large or small scale.
 
