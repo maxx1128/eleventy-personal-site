@@ -50,37 +50,18 @@ pre > code.highlight {
 
 // block code wrapper
 pre {
-  $large-polygon-container: polygon(0% 500%, 100% 500%, 100% -100%, 0% -100%);
-
-  @include create-slant-effect('top', 'left');
-  @include create-slant-effect('bottom', 'left');
-
   display: flex;
   position: relative;
-  padding-right: spacing(2);
-  padding-left: spacing(2);
-  margin-top: #{'min(6vw, 4rem)'};
+  padding: spacing(4) spacing(2);
+  margin-top: 0;
   margin-right: var(--pre-x-margin);
-  margin-bottom: #{'min(12vw, 6rem)'};
+  margin-bottom: spacing(6);
   margin-left: var(--pre-x-margin);
-  min-height: rem(135px);
   align-items: center;
 
-  border-color: color(primary, base);
-
-  clip-path: $large-polygon-container;
-}
-
-// Headings after code blocks
-pre {
-  & + h1,
-  & + h2,
-  & + h3,
-  & + h4,
-  & + h5,
-  & + h6 {
-    margin-top: 0;
-  }
+  box-shadow: container(box-shadow, 1);
+  border-top: 2px solid color(primary, base);
+  border-bottom: 2px solid color(primary, base);
 }
 
 // block code
@@ -116,7 +97,7 @@ pre code {
 
     content: 'Code';
     position: absolute;
-    padding: spacing(border) spacing(6) spacing(border) spacing(1);
+    padding: 0 spacing(6) spacing(border) 0;
 
     color: color(mono, black);
     text-transform: uppercase;
@@ -159,13 +140,7 @@ pre:nth-of-type(even) {
 // Code base text and background colors
 pre {
   color: color(mono, black);
-  background-color: #ecf8f7;
-}
-
-@include darkMode() {
-  pre {
-    background-color: #24252b;
-  }
+  background-color: color(mono, muted);
 }
 
 // Prism Token Styles
