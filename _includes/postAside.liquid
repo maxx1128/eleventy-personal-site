@@ -3,16 +3,16 @@
 
 <div class="height-100 flex flex-column">
   {% if featured_image_link %}
-    <small class="inline-block mt-auto mb-4 italic text-center">
+    <small class="inline-block mt-auto mb-4 italic">
       <a href="{{ featured_image_link }}" target="_blank" rel="noopener">
         Featured image courtesy of this link.
       </a>
     </small>
   {% endif %}
 
-  <ul class="list-reset m-0 p-0 flex flex-column xl--flex-row">
+  <ul class="list-reset m-0 p-0 flex flex-column xl--flex-row flex-gap-4">
     {% if nextPost %}
-      <li class="flex-item-full flex flex-column mb-0 pb-4 xl--pb-0 xl--pr-6">
+      <li class="flex-item-full flex flex-column mb-0">
         <strong>Next Post:</strong>
         <a class="random-navigator__next-link text-small" href="{{ nextPost.url | url }}">
           {{ nextPost.data.title }}
@@ -20,7 +20,7 @@
       </li>
     {% endif %}
 
-    <li id="random-navigator-wrapper" class="hidden flex-item-full flex flex-column mb-0 pb-4 xl--pb-0 xl--pr-6">
+    <li id="random-navigator-wrapper" class="hidden flex-item-full flex flex-column mb-0">
       <strong>Random Post:</strong>
       <a class="text-small" href="javascript:void();"></a>
     </li>
