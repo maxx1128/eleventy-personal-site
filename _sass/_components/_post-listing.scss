@@ -1,37 +1,33 @@
 .post-listing__wrapper {
   display: flex;
-  padding: spacing(1);
+  padding: spacing(4) 0 0 spacing(1);
   flex-wrap: wrap;
   justify-content: center;
+  gap: spacing(4);
 }
 
 .post-listing__article {
   padding: spacing(8) #{'min(10vw, 20rem)' spacing(8) 0};
-  margin: spacing(3);
+  margin-left: spacing(4);
   flex: 1 1 30rem;
 
   background-size: cover;
-  border-radius: container(border-radius, small);
   background-position: left center;
   box-shadow: container(box-shadow, 2);
   background-image: url("/assets/images/global/header-default.jpg");
 
   &:nth-of-type(5n - 2) {
-    flex-basis: 26rem;
+    flex-basis: 28rem;
   }
 
   &:nth-of-type(7n - 3) {
-    flex-basis: 34rem;
-  }
-
-  @include larger-than(xxl) {
-    max-width: 40rem;
+    flex-basis: 32rem;
   }
 }
 
 .post-listing__content {
   padding: spacing(4);
-  margin-left: -0.75rem;
+  margin-left: spacing(neg4);
 
   box-shadow: container(box-shadow, 1);
   border: spacing(border) solid color(primary, dark);
