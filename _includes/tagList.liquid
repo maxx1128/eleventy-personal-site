@@ -1,7 +1,7 @@
-<ul class="tag-list {{classes}} list-reset flex flex-align-start flex-wrap {% if wrap %}flex-justify-center{% else %}sm--flex-nowrap{% endif %}" aria-label="Tag List">
+<ul class="tag-list {{classes}} list-reset flex flex-align-start flex-wrap flex-gap-2 {% if wrap %}flex-justify-center{% else %}sm--flex-nowrap{% endif %}" aria-label="Tag List">
   {% for tag in tags %}
     {% assign tagUrl = "/tags/" | append: tag %}
-    <li class="tag mb-2 ml-4 bg-action-base text-tiny border-radius-small">
+    <li class="tag mb-0 ml-2 bg-action-base text-tiny border-radius-small">
       <a href="{{ tagUrl | url }}" class="capitalize no-underline text-mono-white">
         <span class="screenReader">
           Posts tagged
