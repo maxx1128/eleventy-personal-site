@@ -1,6 +1,6 @@
 <div class="slant-bottom-left bg-mono-white border-primary-dark {% if contentType == 'Note' %}slant-bottom-padding{% endif %}">
-  <div class="resp-max-width flex flex-column-reverse lg--flex-row flex-justify-between">
-    <div class="py-2 flex flex-column flex-align-start">
+  <div class="resp-max-width py-2 flex flex-column-reverse lg--flex-row flex-justify-between flex-gap-2">
+    <div class="flex flex-column flex-align-start">
       <p class="my-0 mr-4 text-h6 font-weight-header">
         <a class="text-mono-black" aria-label="Homepage" href="{% if page.url == '/' %}#content{% else %}/{% endif %}">
           Max Antonucci
@@ -11,12 +11,12 @@
       </p>
     </div>
 
-    <div class="theme-switcher flex mb-4 sm--mb-0 text-tiny">
+    <div class="theme-switcher flex flex-justify-between sm--flex-justify-start flex-gap-2 maxWidth-md text-tiny">
       {% for theme in themes %}
-        <div class="theme-switcher__option flex flex-align-center {% unless forloop.last %}mr-2{% endunless %}">
+        <div class="theme-switcher__option flex flex-align-center">
           <input class="theme-switcher__input" type="radio" id="theme-{{ theme.name }}" name="theme-selector" value="{{ theme.name }}"\>
           <label class="theme-switcher__label inline-block px-3 py-1 capitalize text-action-base border-radius-small" for="theme-{{ theme.name }}">
-            {{ theme.name }} theme
+            {{ theme.name }} <span class="screenReader">theme</span>
           </label>
         </div>
       {% endfor %}
