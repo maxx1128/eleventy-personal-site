@@ -33,6 +33,10 @@
       padding-top: $length;
       padding-bottom: $length;
     }
+
+    @include rsp-class($bp, $bp-label, 'flex-gap-#{$label}') {
+      gap: $length;
+    }
   }
 
   @include rsp-class($bp, $bp-label, 'mt-auto') { margin-top: auto; }
