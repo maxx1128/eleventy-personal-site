@@ -1,34 +1,14 @@
-.book__title,
-.book__author {
-  right: 0;
-  left: 0;
-
-  z-index: 1;
-
-  background-color: rgba(241, 250, 255, 0.925);
-}
-
-@include darkMode() {
-  .book__title,
-  .book__author {
-    background-color: rgba(1, 22, 32, 0.925);
-  }
-}
-
 .book__title {
-  top: 0;
-
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  border-left: spacing(border) solid color(primary, base);
 }
 
 .book__author {
-  bottom: 0;
+  border-right: spacing(border) solid color(primary, base);
 }
 
 .book__image {
+  min-width: 100%;
+
   border-right: spacing(border) solid color(primary, base);
   border-left: spacing(border) solid color(primary, base);
 }

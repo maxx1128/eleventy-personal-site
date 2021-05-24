@@ -1,5 +1,5 @@
-<nav class="resp-max-width flex flex-column mx-auto mb-8">
-  <ul id="navigation-menu" class="mb-0 py-0 flex-justify-between list-reset">
+<nav class="resp-max-width mx-auto pt-2 mb-4">
+  <ul id="navigation-menu" class="flex flex-wrap flex-gap-3 mb-0 py-0 flex-justify-between list-reset">
     {% for menu_item in menu %}
       {% if menu_item.link == page.url %}
         {% assign active_page = true %}
@@ -21,7 +21,7 @@
         {% assign current_page = false %}
       {% endif %}
 
-      <li class="inline-block mr-4 my-1 text-center">
+      <li class="inline-block text-center mb-0">
         <a class="block my-px text-small {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{% endif %}" {% if menu_item.external %}target="_blank" rel="noopener"{% endif %}>
           {{ menu_item.name }}
         </a>

@@ -1,9 +1,9 @@
-<article class="now-books__item book relative m-2 py-4 px-2">
-  <img class="book__image block" src="{{ book.image_url }}" alt="">
-  <p class="book__title absolute my-0 p-1 text-small text-center font-weight-bold">
+<article class="now-books__item book relative">
+  <p class="book__title p-2 pr-8 my-0 text-small text-left font-weight-bold">
     <a href="{{ book.link }}" target="_blank" rel="noopener">{{ book.title }}</a>
   </p>
-  <p class="book__author absolute my-0 text-small text-center">
+  <img class="book__image block" src="{{ book.image_url }}" alt="">
+  <p class="book__author p-2 pl-8 my-0 text-small text-right">
     By {{ book.author }}
   </p>
 </article>
