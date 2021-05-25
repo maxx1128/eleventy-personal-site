@@ -23,7 +23,7 @@ const doodleViewboxes = [
 
 (function() {
   const noteLimit = 15;
-  const getIndexes = (arrayLength, itemLimit) => shuffle([...Array(arrayLength).keys()]).map(index => index % itemLimit);
+  const getIndexes = (arrayLength) => shuffle([...Array(arrayLength).keys()]);
   const shuffle = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
@@ -56,22 +56,25 @@ const doodleViewboxes = [
   }
 
   const shuffleDoodleImages = () => {
-    const doodleLimit = doodleViewboxes.length;
-    const elements = document.getElementsByClassName('note-doodle__use');
+    const doodleLimit = doodleViewboxes.length,
+          elements = document.getElementsByClassName('note-doodle__use'),
+          isNoteListing = document.getElementsByClassName('notes-listing').length > 0;
 
     if (elements) {
-      const classIndexes = getIndexes(noteLimit * 6, doodleLimit);
+      const classIndexes = getIndexes(doodleLimit);
 
       for (let el of elements) {
-        const randomIndex = classIndexes[0];
+        const randomIndex = classIndexes[0],
+              chanceOfBeingShown = isNoteListing ? 0.2 : 0.85,
+              hasRemainingDoodles = classIndexes.length > 0;
 
-        if (Math.random() < 0.55) {  // 55% chance of being shown
+        if (hasRemainingDoodles && Math.random() < chanceOfBeingShown) {  // 55% chance of being shown
           el.parentElement.classList.remove("hidden");
-        }
 
-        el.parentElement.setAttribute('viewBox', doodleViewboxes[randomIndex]);
-        el.setAttribute('href', `/assets/images/doodles/all.svg#doodle-${randomIndex}`);
-        classIndexes.shift();
+          el.parentElement.setAttribute('viewBox', doodleViewboxes[randomIndex]);
+          el.setAttribute('href', `/assets/images/doodles/all.svg#doodle-${randomIndex}`);
+          classIndexes.shift();
+        }
       }
     }
   }
