@@ -34,22 +34,24 @@ const doodleViewboxes = [
   }
 
   const shuffleColoringClasses = () => {
-    const elements = document.getElementsByClassName('note-styler');
+    const elements = document.getElementsByClassName('poke-coloring');
 
     function removeElStyleClass(el) {
-      var regx = new RegExp('\\b' + 'note-coloring' + '--' + '.?\\b', 'g');
+      var regx = new RegExp('\\b' + 'poke-coloring' + '--' + '.?\\b', 'g');
 
       el.className = el.className.replace(regx, '');
     }
 
     if (elements) {
-      const classIndexes = getIndexes(noteLimit, noteLimit);
+      const classIndexes = getIndexes(noteLimit);
+      console.log(elements);
+      console.log(classIndexes);
 
       for (let el of elements) {
         const randomIndex = classIndexes[0];
 
         removeElStyleClass(el);
-        el.classList.add(`note-coloring--${randomIndex}`);
+        el.classList.add(`poke-coloring--${randomIndex}`);
         classIndexes.shift();
       }
     }
