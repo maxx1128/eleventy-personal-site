@@ -13,7 +13,7 @@
         </li>
       {% elsif page.url == pagination.href.first %}
         <li class="mb-0 italic">
-          You're at the first page!
+          First page.
         </li>
       {% endif %}
 
@@ -26,7 +26,7 @@
       {% endif %}
     </div>
 
-    <div class="pagination-item flex flex-gap-1 flex-justify-center">
+    <div class="pagination-item flex flex-gap-2 flex-justify-center">
       {% for pageEntry in pagination.pages %}
         {% assign inPaginationRange = false %}
         {% assign prevPage1 = forloop.index0 | minus: 1 %}
@@ -76,7 +76,7 @@
         </li>
       {% elsif page.url == pagination.href.last %}
         <li class="mb-0 italic">
-          You're at the last page!
+          Last page.
         </li>
       {% endif %}
     </div>
