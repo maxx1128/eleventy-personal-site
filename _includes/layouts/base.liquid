@@ -16,6 +16,8 @@
         {% include pageHeader.liquid %}
       {% elsif layout contains "post.liquid" %}
         {% include postHeader.liquid %}
+      {% elsif layout contains "todayILearned.liquid" %}
+        {% include todayILearnedHeader.liquid %}
       {% endif %}
     </header>
 

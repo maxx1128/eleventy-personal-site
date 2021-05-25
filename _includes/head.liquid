@@ -1,6 +1,8 @@
 <head>
   {% if contentType == "Note" %}
     {% assign title = date | noteDate | prepend: "Note on " | append: " - " | append: metadata.title %}
+  {% elsif contentType == "Today I Learned" %}
+    {% assign title = title | prepend: "Today I learned: " | append: " - " | append: metadata.title %}
   {% elsif title %}
     {% assign title = title | append: " - " | append: metadata.title %}
   {% else %}

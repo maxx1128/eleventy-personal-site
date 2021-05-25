@@ -1,0 +1,17 @@
+<header class="poke-background--bg poke-color--text doodle__header py-12">
+  <div class="doodle__wrapper" aria-hidden="true">
+    {% include doodle.liquid,
+      alwaysShow: true,
+      align: 'right'
+    %}
+  </div>
+
+  <div class="resp-max-width slant-top-padding slant-bottom-padding">
+    <small class="block mb-4">
+      Today I learned something about <span class="underline">{{ category }}</span>:
+    </small>
+    <h1 class="my-0 text-h3">
+      {{ title | replace: "Today I learned: ", "" | replace: " - Maxwell Antonucci", ""}}
+    </h1>
+  </div>
+</header>
