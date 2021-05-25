@@ -2,14 +2,14 @@
 <html lang="en" class="no-js">
   {% include head.liquid %}
 
-  <body>
+  <body class="poke-coloring poke-coloring--14">
     <a href="#content" class="skip-to-content inline-block p-2 bg-mono-white z-dropdown">
       Skip To Content
     </a>
 
     {% include nav.liquid %}
 
-    <header>
+    <header class="poke-border--text">
       {% include topHeader.liquid %}
 
       {% if layout contains "page.liquid" %}
@@ -21,7 +21,7 @@
 
     <main class="
       {% unless main-hide-slant == true or contentType == 'Note' %}
-        slant-top-left bg-mono-white border-primary-base
+        slant-top-left bg-mono-white poke-border--text
         {% unless title contains 'Notes' %}
           slant-bottom-padding
         {% endunless %}
