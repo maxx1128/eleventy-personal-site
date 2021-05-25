@@ -100,3 +100,27 @@ $poke-colors: (
     }
   }
 }
+
+.poke-border--text {
+  border-color: var(--poke-text-color);
+}
+
+.poke-border--bg {
+  border-color: var(--poke-background-color);
+}
+
+.poke-color--text {
+  color: var(--poke-text-color);
+}
+
+.poke-color--bg {
+  color: var(--poke-background-color);
+}
+
+.poke-background--text {
+  background: var(--poke-text-color);
+}
+
+.poke-background--bg {
+  background: var(--poke-background-color);
+}
