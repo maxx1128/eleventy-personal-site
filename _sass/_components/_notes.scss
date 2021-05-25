@@ -163,8 +163,12 @@ $note-colors: (
   width: #{'min(50vw, 550px)'};
 
   overflow: hidden;
-  opacity: 0.07;
+  opacity: 0.075;
   z-index: -1;
+
+  &:not(.note-doodle-container--right) {
+    @include larger-than(xxl) { left: 2.5vw; }
+  }
 }
 
 .note-doodle-container--right {
@@ -175,12 +179,15 @@ $note-colors: (
 
   display: none;
 
-  @include larger-than(md) { display: block; }
+  @include larger-than(lg) { display: block; }
+
+  @include larger-than(xxl) { right: 2.5vw; }
 }
 
 .note-doodle {
   width: 100%;
   padding: spacing(4) spacing(4) spacing(2);
+  max-height: 45vh;
 
   fill: var(--note-text-color);
 }

@@ -1,3 +1,10 @@
-<svg class="note-doodle hidden" preserveAspectRatio="xMinYMin">
+{% if align == 'right' %}
+  {% assign preserveAspectRatio = "xMaxYMin meet" %}
+{% else %}
+  {% comment %} Default is left aligned {% endcomment %}
+  {% assign preserveAspectRatio = "xMinYMin" %}
+{% endif %}
+
+<svg class="note-doodle hidden" preserveAspectRatio="{{ preserveAspectRatio }}">
   <use class="note-doodle__use" xlink:href="/assets/images/doodles/all.svg#doodle-1"></use>
 </svg>
