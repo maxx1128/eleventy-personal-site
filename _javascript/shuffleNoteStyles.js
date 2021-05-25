@@ -64,10 +64,9 @@ const doodleViewboxes = [
 
       for (let el of elements) {
         const randomIndex = classIndexes[0];
-        el.parentElement.classList.remove("hidden");
 
-        if (Math.random() < 0.5) {
-          el.parentElement.classList.add("hidden");
+        if (Math.random() < 0.55) {  // 55% chance of being shown
+          el.parentElement.classList.remove("hidden");
         }
 
         el.parentElement.setAttribute('viewBox', doodleViewboxes[randomIndex]);
