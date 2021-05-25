@@ -28,6 +28,7 @@
 .post-listing__content {
   padding: spacing(4);
   margin-left: spacing(neg4);
+  max-width: 25rem;
 
   box-shadow: container(box-shadow, 1);
   border: spacing(border) solid color(primary, dark);
