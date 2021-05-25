@@ -1,5 +1,6 @@
 (function() {
-  const themeRadios = document.getElementsByClassName('theme-switcher__input');
+  const themeRadios = document.getElementsByClassName('theme-switcher__input'),
+        allThemes = ['light', 'dark'];
 
   function addEventListeners() {
     for (var i = 0, max = themeRadios.length; i < max; i++) {
@@ -14,19 +15,16 @@
     const themeRadio = document.getElementById(`theme-${theme}`);
     themeRadio.checked = true;
     localStorage.setItem('theme', theme);
-    replaceBodyClasses(theme);
+    replaceHtmlClasses(theme);
   }
 
-  function replaceBodyClasses(theme) {
-    const bodyEl = document.getElementsByTagName("body")[0],
+  function replaceHtmlClasses(theme) {
+    const HtmlEl = document.getElementsByTagName("html")[0],
           themeClassPrefix = "theme-";
 
-    let newClasses = bodyEl.className.split(" ").filter(bodyClass => (
-          bodyClass.lastIndexOf(themeClassPrefix, 0) !== 0
-        ));
+    allThemes.forEach(themeItem => HtmlEl.classList.remove(`${themeClassPrefix}${themeItem}`));
 
-    newClasses += `${themeClassPrefix}${theme}`
-    bodyEl.classList = newClasses;
+    HtmlEl.classList.add(`${themeClassPrefix}${theme}`);
   }
 
   function init() {
