@@ -34,7 +34,8 @@ const doodleViewboxes = [
   }
 
   const shuffleColoringClasses = () => {
-    const elements = document.getElementsByClassName('poke-coloring');
+    const elements = document.getElementsByClassName('poke-coloring'),
+          colorClassLimit = 29;
 
     function removeElStyleClass(el) {
       var regx = new RegExp('\\b' + 'poke-coloring' + '--' + '.?\\b', 'g');
@@ -43,9 +44,7 @@ const doodleViewboxes = [
     }
 
     if (elements) {
-      const classIndexes = getIndexes(noteLimit);
-      console.log(elements);
-      console.log(classIndexes);
+      const classIndexes = getIndexes(colorClassLimit);
 
       for (let el of elements) {
         const randomIndex = classIndexes[0];
