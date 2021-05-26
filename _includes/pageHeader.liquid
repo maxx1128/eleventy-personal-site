@@ -6,7 +6,7 @@
   {% assign header_class = header_class | append: " header" %}
 {% endif %}
 
-<header class="{{ header_class }} bg-primary-light width-100 slant-top-padding slant-bottom-padding" {% if banner_image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
+<header class="{{ header_class }} poke-background--bg poke-color--text width-100 slant-top-padding slant-bottom-padding" {% if banner_image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
   <div class="header__text {% if banner_image %}transparent-white-bg{% endif %} my-6 resp-max-width">
     <div class="relative py-10">
       <h1 class="my-0">
