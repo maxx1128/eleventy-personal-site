@@ -121,3 +121,9 @@
     max-height: 45vh !important;
   }
 }
+
+.post-content--image-list--large {
+  li {
+    flex-basis: rem(275px);
+  }
+}
