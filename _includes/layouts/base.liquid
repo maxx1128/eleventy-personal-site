@@ -31,13 +31,15 @@
       {{ content | safe }}
     </main>
 
-    {% if layout contains "post.liquid" or layout contains "note.liquid" %}
+    {% if layout contains "post.liquid" or layout contains "note.liquid" or layout contains "todayILearned.liquid" %}
       <aside class="{% if contentType == 'Note' %}slant-top-left{% else %}slant-top-right{% endif %} slant-bottom-padding border-primary-light">
         <div class="resp-max-width py-8">
           {% if layout contains "post.liquid" %}
             {% include postAside.liquid %}
           {% elsif layout contains "note.liquid" %}
             {% include noteAside.liquid %}
+          {% elsif layout contains "todayILearned.liquid" %}
+            {% include todayILearnedAside.liquid %}
           {% endif %}
         </div>
       </aside>
