@@ -38,7 +38,7 @@ white-footer: true
     </div>
   </div>
 
-  <div class="slant-top-right scf-mb-8 bg-mono-white poke-border--text">
+  <div class="slant-top-right slant-top-padding scf-mb-8 bg-mono-white poke-border--text">
     <div class="resp-max-width">
       <h2 class="mt-0 pt-10">
         Recent Writing
@@ -54,24 +54,54 @@ white-footer: true
     </div>
   </div>
 
-  {% include postListing.liquid
-    wrapper_class: "resp-max-width resp-max-width--large pt-4 mb-4",
-    posts: collections.posts,
-    limit: 4
-  %}
+  <div class="slant-bottom-right slant-bottom-padding bg-mono-white">
+    {% include postListing.liquid
+      wrapper_class: "resp-max-width resp-max-width--large pt-4",
+      posts: collections.posts,
+      limit: 4
+    %}
+  </div>
 
-  <div class="resp-max-width pt-4 slant-bottom-padding">
-    <h2>
-      Recent Notes
-    </h2>
+  <div class="bg-mono-muted slant-bottom-padding">
+    <div class="resp-max-width slant-top-padding slant-bottom-padding">
+      <h2 class="mt-0 slant-top-padding">
+        Recent things I've learned
+      </h2>
 
-    <p>
-      Whatever I want to write but can't quite fit into my blog goes here. From the profound to the silly to the random, it shall be scribbled in a note.
-    </p>
+      <p>
+        Programming is about continuous learning. But some lessons are too small for a blog post, but too big for a tweet. So all the medium-sized lessons I pick up have to go somewhere so I don't forget them. That's where the "Today I Learned" section comes in.
 
-    <p>
-      <a href="/notes/">You can read more of my notes here.</a> <a class="hidden" id="random-note-link">Or read a random note.</a>
-    </p>
+        <p>
+          <a href="/todayILearned/">You can read more of the things I've learned here.</a> <a class="hidden" id="random-lesson-link">Or read a random lesson.</a>
+        </p>
+      </p>
+
+      <ul class="mb-0">
+        {% for lesson in collections.todayILearned limit: 4 %}
+          <li>
+            <a href="{{lesson.url}}">
+              {{ lesson.data.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="slant-top-right bg-mono-white">
+    <div class="resp-max-width pt-4 slant-bottom-padding">
+      <h2>
+        Recent Notes
+      </h2>
+
+      <p>
+        Whatever I want to write but can't quite fit into my blog goes here. From the profound to the silly to the random, it shall be scribbled in a note.
+      </p>
+
+      <p>
+        <a href="/notes/">You can read more of my notes here.</a> <a class="hidden" id="random-note-link">Or read a random note.</a>
+      </p>
+    </div>
   </div>
 
   <section id="notes" class="notes-collection notes-collection--flip-angles">
