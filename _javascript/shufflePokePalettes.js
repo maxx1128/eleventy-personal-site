@@ -1,6 +1,6 @@
 const shufflePokePalettes = () => {
   const elements = document.getElementsByClassName('poke-coloring'),
-        colorClassLimit = 29;
+        colorClassLimit = 25;
 
   function removeElStyleClass(el) {
     var regx = new RegExp('\\b' + 'poke-coloring' + '--' + '.?\\b', 'g');

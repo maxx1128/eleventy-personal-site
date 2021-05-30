@@ -5,157 +5,162 @@
 
 $poke-colors: (
   // Jolteon
-  0: (
-    dark: #5a2c1a,
-    light: #f5f593
-  ),
-  // Uxie
-  1: (
-     dark: #8d3a4f,
-     light: #ffde9c
-   ),
-   // Charizard
-   2: (
-     dark: #084152,
-     light: #eeb45a
-   ),
-   // Espeon
-   3: (
-     dark: #314173,
-     light: #eebdee
-   ),
-   // Umbreon
-   4: (
-     dark: #02020f,
-     light: #eed552
-   ),
-   // Zoroark
-   5: (
-     dark: #202031,
-     light: #e6d8d8
-   ),
-   // Leafeon
-   6: (
-     dark: #254e47,
-     light: #f3dca7
-   ),
-   // Chandelure
-   7: (
-     dark: #3d27aa,
-     light: #c8bef9
-   ),
-   // Mewtwo
-   8: (
-     dark: #521786,
-     light: #ded5e6
-   ),
-   // Blaziken
-   9: (
-     dark: #7e2525,
-     light: #f8c47b
-   ),
-   // Ivysaur
-   10: (
-     dark: #104a39,
-     light: #fabbb6
-   ),
-   // Gallade
-   11: (
-     dark: #314e4e,
-    light: #c9e7df
-   ),
-   // Flygon
-   12: (
-     dark: #7a2932,
-    light: #9bffa2
-   ),
-   // Zekrom
-   13: (
-     dark: #1d1d27,
-     light: #6af6ff
-   ),
-   // Porygon-Z
-   14: (
-     dark: #753354,
-     light: #a8dfff
-   ),
-   // Eevee
-   15: (
-     dark: #89543E,
-     light: #ffe6ac
-   ),
-   // Dragonite
-   16: (
-     dark: #186A62,
-     light: #F9D495
-   ),
-   // Metagross
-   17: (
-     dark: #3B5987,
-     light: #C3D9F8
-   ),
-   // Galvantula
-   18: (
-     dark: #29397B,
-     light: #FFDE52
-   ),
-   // Meganium
-   19: (
-     dark: #cd2039,
-     light: #C7FF8F
-   ),
-   // Meinshao
-   20: (
-     dark: #674A8C,
-     light: #E6D5D5
-   ),
-   // Skarmory
-   21: (
-     dark: #9F283C,
-     light: #C8D5EA
-   ),
-   // Archeops
-   22: (
-     dark: #075F50,
-     light: #B2CFFA
-   ),
-   // Audino
-   23: (
-     dark: #BB3E49,
-     light: #FCEFCA
-   ),
-   // Mawile
-   24: (
-     dark: #4A4A4A,
-     light: #FFDE8B
-   ),
-   // Infernape
-   25: (
-     dark: #1B4888,
-     light: #F9AC7B
-   ),
-   // Starmie
-   26: (
-     dark: #5A529C,
-     light: #FFE694
-   ),
-   // Sandslash
-   27: (
-     dark: #7A5715,
-     light: #F8DF54
-   ),
-   // Gothitelle
-   28: (
-     dark: #4A4A4A,
-     light: #E6ACDE
-   )
+  0:
+    (
+      dark: #5a2c1a,
+      light: #f5f593
+    ),
+  // Altaria
+  1:
+    (
+      dark: #0b6b8e,
+      light: #f1f1f9
+    ),
+  // Charizard
+  2:
+    (
+      dark: #084152,
+      light: #eeb45a
+    ),
+  // Espeon
+  3:
+    (
+      dark: #314173,
+      light: #eebdee
+    ),
+  // Umbreon
+  4:
+    (
+      dark: #02020f,
+      light: #eed552
+    ),
+  // Jirachi
+  5:
+    (
+      dark: #2a6a79,
+      light: #ffea70
+    ),
+  // Leafeon
+  6:
+    (
+      dark: #453321,
+      light: #8acca5
+    ),
+  // Chandelure
+  7:
+    (
+      dark: #3d27aa,
+      light: #c8bef9
+    ),
+  // Mewtwo
+  8:
+    (
+      dark: #521786,
+      light: #ded5e6
+    ),
+  // Blaziken
+  9:
+    (
+      dark: #7e2525,
+      light: #f8c47b
+    ),
+  // Ivysaur
+  10:
+    (
+      dark: #265e40,
+      light: #ffbab3
+    ),
+  // Gallade
+  11:
+    (
+      dark: #314e4e,
+      light: #c9e7df
+    ),
+  // Flygon
+  12:
+    (
+      dark: #7a2932,
+      light: #9bffa2
+    ),
+  // Zekrom
+  13:
+    (
+      dark: #1d1d27,
+      light: #6af6ff
+    ),
+  // Porygon-Z
+  14:
+    (
+      dark: #313962,
+      light: #f99fa2
+    ),
+  // Eevee
+  15:
+    (
+      dark: #51301f,
+      light: #cebaa1
+    ),
+  // Dragonite
+  16:
+    (
+      dark: #186a62,
+      light: #f9d495
+    ),
+  // Misdreavus
+  17:
+    (
+      dark: #772c39,
+      light: #9cc5d3
+    ),
+  // Froslass
+  18:
+    (
+      dark: #6b2e99,
+      light: #c8d0df
+    ),
+  // Meganium
+  19:
+    (
+      dark: #cd2039,
+      light: #d1ffa3
+    ),
+  // Crobat
+  20:
+    (
+      dark: #58176d,
+      light: #8dc6e7
+    ),
+  // Skarmory
+  21:
+    (
+      dark: #9f283c,
+      light: #c8d5ea
+    ),
+  // Archeops
+  22:
+    (
+      dark: #075f50,
+      light: #b2cffa
+    ),
+  // Audino
+  23:
+    (
+      dark: #bb3e49,
+      light: #fcefca
+    ),
+  // Infernape
+  24:
+    (
+      dark: #1b4888,
+      light: #f9ac7b
+    )
 );
 
 
 // Default poke List stylings
 @each $index, $styles in $poke-colors {
-  $dark: map-get($styles, dark);
-  $light: map-get($styles, light);
+$dark: map-get($styles, dark);
+$light: map-get($styles, light);
 
 
   .poke-coloring--#{$index} {
