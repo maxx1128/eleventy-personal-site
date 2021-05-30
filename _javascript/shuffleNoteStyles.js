@@ -1,5 +1,5 @@
 const doodleViewboxes = [
-  "0 0 80 64",   // Espeon
+  "0 0 510 532", // Spiral braids
   "0 0 160 150", // Margaret
   "0 0 100 142", // Winter hat
   "0 0 260 360", // Among Us
@@ -18,7 +18,17 @@ const doodleViewboxes = [
   "0 0 397 481", // Shy scarf
   "0 0 275 382", // Silly wave
   "0 0 644 683", // Super glomp
-  "0 0 540 528"  // Sword headband
+  "0 0 540 528", // Sword headband
+  "0 0 480 561", // Abbi
+  "0 0 678 621", // Angel glasses
+  "0 0 727 753", // Angel
+  "0 0 585 711", // Bourbon
+  "0 0 496 816", // Cuddle hug
+  "0 0 363 470", // Jane Deering
+  "0 0 674 595", // Dragon
+  "0 0 470 860", // Eevee samurai
+  "0 0 488 820", // NLBC
+  "0 0 455 448"  // Sad side look
 ];
 
 (function() {
@@ -66,7 +76,8 @@ const doodleViewboxes = [
 
       for (let el of elements) {
         const randomIndex = classIndexes[0],
-              chanceOfBeingShown = isNoteListing ? 0.2 : 0.85,
+              alwaysShow = el.parentElement.classList.contains('node-doodle--always-show'),
+              chanceOfBeingShown = alwaysShow ? 1 : (isNoteListing ? 0.2 : 0.7),
               hasRemainingDoodles = classIndexes.length > 0;
 
         if (hasRemainingDoodles && Math.random() < chanceOfBeingShown) {  // 55% chance of being shown
@@ -82,5 +93,5 @@ const doodleViewboxes = [
 
   shuffleColoringClasses();
   // TODO: enable once more images are added in
-  // shuffleDoodleImages();
+  shuffleDoodleImages();
 })();
