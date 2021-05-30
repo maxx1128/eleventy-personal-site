@@ -7,7 +7,7 @@
 {% endif %}
 
 <header class="{{ header_class }} note-doodle__header poke-background--bg poke-color--text width-100 slant-top-padding slant-bottom-padding" {% if banner_image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
-  <div class="note-doodle__header-wrapper" aria-hidden="true">
+  <div class="note-doodle__wrapper" aria-hidden="true">
     {% include doodle.liquid,
       alwaysShow: true,
       align: 'right'

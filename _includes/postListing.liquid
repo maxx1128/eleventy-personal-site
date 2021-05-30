@@ -4,8 +4,17 @@
   {% for post in posts limit: postLimit %}
     {% assign post_image = metadata.post.imagePath | append: post.data.image %}
 
-    <article class="post-listing__article pt-1 pb-4 px-0 lg--px-6 flex-item flex flex-column flex-justify-center" {% if post.data.image %}style="background-image: url('{{ post_image }}')"{% endif %}>
-      <div class="post-listing__content transparent-white-bg">
+    <article class="post-listing__article note-doodle__listing note-doodle__listing poke-coloring poke-background--bg pt-1 pb-4 px-0 lg--px-6 flex-item flex flex-column flex-justify-center" {% if post.data.image %}style="background-image: url('{{ post_image }}')"{% endif %}>
+      {% unless post.data.image %}
+        <div class="note-doodle__wrapper" aria-hidden="true">
+          {% include doodle.liquid,
+            alwaysShow: true,
+            align: 'right'
+          %}
+        </div>
+      {% endunless %}
+
+      <div class="post-listing__content poke-border--text poke-color--text transparent-white-bg">
         <small class="lg--mt-8 mb-0">
           <strong>
             <span class="screenReader">Posted on</span> {{ post.date | readableDate | date: "%B %e, %Y" }}

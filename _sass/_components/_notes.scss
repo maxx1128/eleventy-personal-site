@@ -92,19 +92,16 @@ $doodle-opacity: 0.085;
   fill: var(--poke-text-color);
 }
 
-.note-doodle__header {
+.note-doodle__header,
+.note-doodle__listing {
   position: relative;
 
-  .note-doodle__header-wrapper {
+  .note-doodle__wrapper {
     position: absolute;
     top: -5vh;
     right: 0;
     bottom: -5vh;
     left: 0;
-
-    @include larger-than(lg) {
-      right: 2.5vw;
-    }
   }
 
   .note-doodle {
@@ -113,10 +110,28 @@ $doodle-opacity: 0.085;
     max-height: 100%;
     padding-top: 0;
     padding-bottom: 0;
+  }
+}
+
+.note-doodle__header {
+  .note-doodle {
     opacity: 0;
 
     @include larger-than(md) {
       opacity: $doodle-opacity;
     }
+  }
+
+  .note-doodle__wrapper {
+    @include larger-than(lg) {
+      right: 2.5vw;
+    }
+  }
+}
+
+.note-doodle__listing {
+  .note-doodle__wrapper {
+    top: -7.5vh;
+    bottom: -7.5vh;
   }
 }
