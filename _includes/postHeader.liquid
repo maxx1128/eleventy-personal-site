@@ -1,6 +1,15 @@
 {% assign banner_image = metadata.post.imagePath | append: image %}
 
-<div class="header poke-background--bg poke-color--text slant-top-padding slant-bottom-padding flex flex-column flex-justify-end {% if image %}header--with-custom-image{% endif %} {% if no-min-image-height %}header--with-no-min-height{% endif %}" {% if image %}style="background-image: url('{{ banner_image }}');{% endif %} {% if featured_image_align_y %}background-position-y: {{ featured_image_align_y }}%;{% endif %}">
+<div class="header note-doodle__header slant-top-padding slant-bottom-padding flex flex-column flex-justify-end {% if image %}header--with-custom-image{% else %}poke-background--bg poke-color--text{% endif %} {% if no-min-image-height %}header--with-no-min-height{% endif %}" {% if image %}style="background-image: url('{{ banner_image }}');{% endif %} {% if featured_image_align_y %}background-position-y: {{ featured_image_align_y }}%;{% endif %}">
+  {% unless image %}
+    <div class="note-doodle__header-wrapper" aria-hidden="true">
+      {% include doodle.liquid,
+        alwaysShow: true,
+        align: 'right'
+      %}
+    </div>
+  {% endunless %}
+
   <div class="header__text {% if image %}transparent-white-bg{% endif %} my-6 resp-max-width flex flex-column py-4 lg--py-6 my-8">
     <div class="flex flex-justify-between mb-auto">
       <small class="block mb-2 font-weight-bold">

@@ -1,3 +1,5 @@
+$doodle-opacity: 0.085;
+
 .note-styler {
   position: relative;
   padding-bottom: var(--slant-padding);
@@ -61,7 +63,7 @@
   width: #{'min(50vw, 550px)'};
 
   overflow: hidden;
-  opacity: 0.075;
+  opacity: $doodle-opacity;
   z-index: -1;
 
   &:not(.note-doodle-container--right) {
@@ -88,4 +90,33 @@
   max-height: 55vh;
 
   fill: var(--poke-text-color);
+}
+
+.note-doodle__header {
+  position: relative;
+
+  .note-doodle__header-wrapper {
+    position: absolute;
+    top: -5vh;
+    right: 0;
+    bottom: -5vh;
+    left: 0;
+
+    @include larger-than(lg) {
+      right: 2.5vw;
+    }
+  }
+
+  .note-doodle {
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+
+    @include larger-than(md) {
+      opacity: $doodle-opacity;
+    }
+  }
 }
