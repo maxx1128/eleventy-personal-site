@@ -134,7 +134,11 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addCollection("feed", function (collection) {
-    const allContent = [...collection.getFilteredByGlob("./notes/*.md"), ...collection.getFilteredByGlob("./posts/*.md")].sort((a, b) => {
+    const allContent = [
+      ...collection.getFilteredByGlob("./notes/*.md"),
+      ...collection.getFilteredByGlob("./posts/*.md"),
+      ...collection.getFilteredByGlob("./todayILearned/*.md")
+    ].sort((a, b) => {
       if (a.date < b.date) { return -1; }
       if (a.date > b.date) { return 1; }
       return 0;
