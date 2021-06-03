@@ -111,8 +111,6 @@ You can use `@supports` to **check if browsers support certain features.** So if
 }
 ```
 
-You c
-
 ### Color Schemes
 
 You can also check if **a user has their browser preferences set for a light or dark mode.** Light is usually considered the default, so the dark mode query may be the only one you use.
