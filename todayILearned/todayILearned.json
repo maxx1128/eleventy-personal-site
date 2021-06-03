@@ -1,0 +1,5 @@
+{
+  "contentType": "Today I Learned",
+  "layout": "layouts/todayILearned.liquid",
+  "main-hide-slant": false
+}

@@ -1,0 +1,10 @@
+<script type="application/json" id="lesson-data">
+  [
+    {% for lesson in collections.todayILearned %}
+      {
+        "title" : "{{ lesson.data.title }}",
+        "url"   : "{{ lesson.url }}"
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+</script>

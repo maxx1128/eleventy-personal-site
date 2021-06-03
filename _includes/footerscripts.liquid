@@ -5,6 +5,7 @@
 <!-- Set up JS Data -->
 {% include gatherposts.liquid %}
 {% include gathernotes.liquid %}
+{% include gatherlessons.liquid %}
 
 <!-- Save JS Data to window -->
 <script>
@@ -14,17 +15,20 @@
     const ContentData = window.ContentData || {};
     const postData = JSON.parse(document.getElementById("post-data").innerHTML);
     const noteData = JSON.parse(document.getElementById("note-data").innerHTML);
+    const lessonData = JSON.parse(document.getElementById("lesson-data").innerHTML);
 
     const setPostData = data => ContentData.posts = data;
     const setNoteData = data => ContentData.notes = data;
+    const setLessonData = data => ContentData.lessons = data;
 
-    ContentData.init = (postData, noteData) => {
+    ContentData.init = (postData, noteData, lessonData) => {
       setPostData(postData);
       setNoteData(noteData);
+      setLessonData(lessonData);
     };
 
     window.ContentData = ContentData;
-    window.ContentData.init(postData, noteData);
+    window.ContentData.init(postData, noteData, lessonData);
   })();
 </script>
 
