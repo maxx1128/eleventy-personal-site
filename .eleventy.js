@@ -146,6 +146,7 @@ module.exports = function(eleventyConfig) {
 
     return allContent
       .filter(hideFutureItems)
+      .slice(Math.max(allContent.length - 50, 1))
       .reverse();
   });
 
