@@ -42,7 +42,7 @@ contentType: "Page"
         </h2>
 
         <ul>
-          {% for lesson in collections.todayILearned %}
+          {% for lesson in collections.reversedTIL %}
             {% if lesson.data.category == category %}
               <li>
                 <a href="{{lesson.url}}">
