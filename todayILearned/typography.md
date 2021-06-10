@@ -1,6 +1,6 @@
 ---
 title: Some rules of thumb for a site's typography
-category: Design
+category: CSS and Design
 date: 2021-01-19
 ---
 

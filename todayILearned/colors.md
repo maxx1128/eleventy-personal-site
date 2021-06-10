@@ -1,6 +1,6 @@
 ---
 title: How to create good color schemes
-category: Design
+category: CSS and Design
 date: 2021-01-19
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: There are even more CSS media queries than I thought
-category: CSS
+category: CSS and Design
 date: 2021-01-17
 ---
 

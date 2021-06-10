@@ -1,6 +1,6 @@
 ---
 title: Good rules for styling borders and shadows
-category: Design
+category: CSS and Design
 date: 2021-01-19
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: The CRAP rules of design
-category: Design
+category: CSS and Design
 date: 2021-01-21
 ---
 
