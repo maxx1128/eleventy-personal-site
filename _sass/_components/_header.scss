@@ -37,7 +37,7 @@
   z-index: 1;
 
   @include larger-than(xl) {
-    width: #{"min(45%, 500px)"};
+    width: #{"max(45%, 450px)"};
     padding-right: spacing(8);
     padding-left: spacing(8);
   }
@@ -45,7 +45,7 @@
 
 .header,
 .header__large-image {
-  background-position: center top;
+  background-position: center;
   background-size: cover;
 }
 
