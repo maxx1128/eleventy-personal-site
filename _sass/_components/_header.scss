@@ -2,18 +2,6 @@
   z-index: 2;
 }
 
-.header--post {
-  padding-top: var(--slant-padding);
-  padding-bottom: var(--slant-padding);
-
-  box-shadow: container(box-shadow, 2);
-
-  @include larger-than(xl) {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
 .header--page {
   padding-top: 0;
   padding-bottom: 0;
@@ -26,6 +14,10 @@
   }
 }
 
+.header__text {
+  z-index: 1;
+}
+
 .header__text--post {
   @include larger-than(xl) {
     padding-top: var(--slant-padding);
@@ -34,6 +26,8 @@
 }
 
 .header__text--post-with-image {
+  padding-bottom: var(--slant-padding);
+
   z-index: 1;
 
   @include larger-than(xl) {
@@ -49,19 +43,10 @@
   background-size: cover;
 }
 
-.header--with-custom-image .header__text {
-  box-shadow: container(box-shadow, 2);
-  border-radius: 0;
-
-  @include smaller-than(sm) {
-    width: 100%;
-  }
-
-  @include larger-than(sm) {
-    border-radius: container(border-radius, small);
-  }
+.header__large-image {
+  height: #{"max(175px, 30vh)"};
 
   @include larger-than(xl) {
-    border-radius: 0;
+    height: auto;
   }
 }
