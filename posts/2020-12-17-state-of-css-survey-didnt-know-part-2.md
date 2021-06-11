@@ -5,7 +5,6 @@ excerpt: "Everything else I didn't know from the 2020 State of CSS Survey I coul
 image: "css-survey-2.jpg"
 tags: ["css"]
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=247170
-featured_image_align_y: '35'
 ---
 
 Last month I wrote about the first batch of CSS goodness I discovered by taking the State of CSS Survey this year. Then I got delayed from writing this second part thanks to the continued pandemic, changing apartments, and reading [the results of the State of CSS survey](https://stateofcss.com/) itself. I also think [I had a birthday of some kind](https://www.maxwellantonucci.com/posts/2020/11/28/birthday-resolution-fail-more/), I'm not sure.

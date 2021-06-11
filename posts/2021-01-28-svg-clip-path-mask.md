@@ -4,7 +4,6 @@ date: "2021-01-28"
 excerpt: "SVG opens up a lot of visual possibilities. A big part of that is using clip-path and mask to hide and show images."
 tags: ["front-end"]
 image: "svg-clip-path-mask.jpg"
-featured_image_align_y: "85"
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=3336908
 ---
 

@@ -5,7 +5,6 @@ excerpt: "We have lists of what we want, unlimited items we can add, and limited
 image: "picky-life-lists.png"
 tags: ["mental health"]
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=3140925
-featured_image_align_y: '10'
 ---
 
 Everyone I know has at least one list they will never clear.

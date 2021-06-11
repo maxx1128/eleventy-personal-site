@@ -1,6 +1,6 @@
 {% assign banner_image = metadata.post.imagePath | append: image %}
 
-<div class="header header--post doodle__header poke-color--text flex flex-column xl--flex-row flex-justify-end {% if image %}header--with-custom-image poke-background--screen{% else %}poke-background--bg{% endif %} {% if no-min-image-height %}header--with-no-min-height{% endif %}" {% if image %}style="background-image: url('{{ banner_image }}');{% endif %} {% if featured_image_align_y %}background-position-y: {{ featured_image_align_y }}%;{% endif %}">
+<div class="header header--post doodle__header poke-color--text flex flex-column xl--flex-row flex-justify-end {% if image %}header--with-custom-image poke-background--screen{% else %}poke-background--bg{% endif %} {% if no-min-image-height %}header--with-no-min-height{% endif %}" {% if image %}style="background-image: url('{{ banner_image }}');{% endif %}">
   {% unless image %}
     <div class="doodle__wrapper" aria-hidden="true">
       {% include doodle.liquid,
@@ -36,7 +36,7 @@
   </div>
 
   {% if image %}
-    <div class="header__large-image hidden-xl-down flex-item" style="background-image: url('{{ banner_image }}'); {% if featured_image_align_y %}background-position-y: {{ featured_image_align_y }}%;{% endif %}">
+    <div class="header__large-image hidden-xl-down flex-item" style="background-image: url('{{ banner_image }}');">
     </div>
   {% endif %}
 </div>

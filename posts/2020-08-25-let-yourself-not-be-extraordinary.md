@@ -4,7 +4,6 @@ date: "2020-08-25"
 excerpt: "All the time, but especially during a quarantine, it's okay to not be super amazing awesome."
 image: "not-be-extraordinary.jpg"
 featured_image_link: "https://safebooru.org/index.php?page=post&s=view&id=1493704"
-featured_image_align_y: "40"
 tags: ["coronavirus", "mental health"]
 ---
 

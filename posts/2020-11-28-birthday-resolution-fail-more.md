@@ -5,7 +5,6 @@ excerpt: "As I turn 28, I reflect and see I should start taking more risks and f
 tags: ["personal"]
 image: "birthday-resolution-failure.jpg"
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=2550571
-featured_image_align_y: '60'
 ---
 
 It's my 28th birthday today, and I'd planned to recap the things I'm proud of since my last one. They'd be new projects I tried, skills I picked up, creative projects I pushed my boundaries with, and who knows what else.
