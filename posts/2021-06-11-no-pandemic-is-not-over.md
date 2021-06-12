@@ -1,5 +1,5 @@
 ---
-title: "No, The Panemic is Not Over Yet"
+title: "No, The Pandemic is Not Over Yet"
 date: "2021-06-11"
 excerpt: "The pandemic is getting better, but it's not over. We need to stop clinging to the old normal and embraces the new normals."
 image: "pandemic-is-not-over.png"
