@@ -1,0 +1,27 @@
+---
+permalink: ./pages.json
+permalinkBypassOutputDir: true
+eleventyExcludeFromCollections: true
+---
+
+[
+  {% for pages in collections.all %}
+    {% if pages.data.contentType == "Note" %}
+      {% assign title = pages.date | noteDate | prepend: "Note on " %}
+    {% elsif pages.data.contentType == "Today I Learned" %}
+      {% assign title = pages.data.title | prepend: "Today I Learned: " %}
+    {% else %}
+      {% assign title = pages.data.title %}
+    {% endif %}
+
+    {
+      "title":"{% if title %}{{ title | addNbsp | safe }}{% else %}Max Antonucci{% endif %}",
+
+      {% if pages.data.image %}
+        "image": "assets/images/featured/{{pages.data.image}}",
+      {% endif %}
+
+      "imgName":"{% if title %}{{ title | slug | addNbsp | safe }}{% else %}home{% endif %}"
+    }{% if forloop.last == false %},{% endif %}
+  {% endfor %}
+]

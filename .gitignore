@@ -3,3 +3,4 @@ node_modules/
 assets/css/*.css
 assets/javascript/*.js
 data/books.json
+pages.json
