@@ -1,10 +1,12 @@
 <head>
+  {% assign titleSuffix = " - " | append: metadata.title %}
+
   {% if contentType == "Note" %}
-    {% assign title = date | noteDate | prepend: "Note on " | append: " - " | append: metadata.title %}
+    {% assign title = date | noteDate | prepend: "Note on " | append: titleSuffix %}
   {% elsif contentType == "Today I Learned" %}
-    {% assign title = title | prepend: "Today I learned: " | append: " - " | append: metadata.title %}
+    {% assign title = title | prepend: "Today I learned: " | append: titleSuffix %}
   {% elsif title %}
-    {% assign title = title | append: " - " | append: metadata.title %}
+    {% assign title = title | append: titleSuffix %}
   {% else %}
     {% assign title = metadata.title %}
   {% endif %}
@@ -19,11 +21,8 @@
     {% assign description = metadata.description %}
   {% endif %}
 
-  {% if contentType == "Blog Post" %}
-    {% assign featured_image = metadata.url | append: "/assets/images/featured/" | append: image %}
-  {% else %}
-    {% assign featured_image = metadata.url | append: "/assets/images/global/profile.png" %}
-  {% endif %}
+  {% assign featured_image_fileName = title | replace: titleSuffix, "" | slug | addNbsp | safe %}
+  {% assign featured_image = "/assets/images/social/" | append: featured_image_fileName | append: ".png" | prepend: metadata.url %}
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
