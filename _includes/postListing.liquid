@@ -4,18 +4,21 @@
   {% for post in posts limit: postLimit %}
     {% assign post_image = metadata.post.imagePath | append: post.data.image %}
 
-    <article class="post-listing__article doodle__listing poke-coloring poke-background--bg {% if post.data.image %}poke-background--screen{% endif %} pt-1 pb-4 px-0 lg--px-6 flex-item flex flex-column flex-justify-center" {% if post.data.image %}style="background-image: url('{{ post_image }}')"{% endif %}>
-      {% unless post.data.image %}
-        <div class="doodle__wrapper" aria-hidden="true">
-          {% include doodle.liquid,
-            alwaysShow: true,
-            align: 'right'
-          %}
-        </div>
-      {% endunless %}
+    <article class="post-listing__article doodle__listing poke-coloring poke-background--bg poke-border--text {% if post.data.image %}poke-background--screen{% endif %} flex-item flex flex-column">
+      <div class="post-listing__image flex-item" {% if post.data.image %}style="background-image: url('{{ post_image }}')"{% endif %}>
+        {% unless post.data.image %}
+          <div class="doodle__wrapper" aria-hidden="true">
+            {% capture doodleAlignment %}{% cycle 'right', 'left' %}{% endcapture %}
+            {% include doodle.liquid,
+              alwaysShow: true,
+              align: doodleAlignment
+            %}
+          </div>
+        {% endunless %}
+      </div>
 
-      <div class="post-listing__content poke-border--text poke-color--text transparent-white-bg">
-        <small class="lg--mt-8 mb-0">
+      <div class="post-listing__content poke-color--text transparent-white-bg">
+        <small class="mb-0">
           <strong>
             <span class="screenReader">Posted on</span> {{ post.date | readableDate | date: "%B %e, %Y" }}
           </strong>

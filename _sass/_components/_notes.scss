@@ -6,6 +6,8 @@
   border-color: var(--poke-text-color);
   background-color: var(--poke-background-color);
 
+  z-index: 1;
+
   a {
     color: var(--poke-text-color);
   }

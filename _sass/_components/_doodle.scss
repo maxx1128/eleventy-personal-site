@@ -1,4 +1,4 @@
-$doodle-opacity: 0.065;
+$doodle-opacity: 0.075;
 
 .doodle-wrapper {
   position: relative;
@@ -79,12 +79,5 @@ $doodle-opacity: 0.065;
     @include larger-than(lg) {
       right: 2.5vw;
     }
-  }
-}
-
-.doodle__listing {
-  .doodle__wrapper {
-    top: -7.5vh;
-    bottom: -7.5vh;
   }
 }
