@@ -6,7 +6,7 @@
 }
 
 .post-listing__article {
-  flex: 1 1 26rem;
+  flex: 1 1 20rem;
 
   box-shadow: container(box-shadow, 2);
   border-style: solid;
@@ -26,7 +26,7 @@
   }
 
   &:nth-of-type(7n - 3) {
-    flex-basis: 28rem;
+    flex-basis: 18rem;
   }
 }
 
