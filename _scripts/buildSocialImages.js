@@ -165,8 +165,10 @@ const dataPath = fs.realpathSync(dataFile);
     await page.evaluateHandle("document");
 
     const imagePath = `${dir}/${post.imgName}.png`;
+    // Remove this if I want to bring back Note and TIL custom social images
+    const skipImage = post.title.includes('Note on') || post.title.includes('Today I Learned');
 
-    if (!fs.existsSync(imagePath)) {
+    if (!fs.existsSync(imagePath) && !skipImage) {
       // Save a screenshot to [outputDir]/[previewDir]/[imgName].png
       await page.screenshot({
         path: imagePath,
