@@ -18,15 +18,6 @@
       color: var(--poke-background-color);
     }
   }
-
-  &:nth-of-type(even) {
-    @include create-slant-effect('top', 'left');
-  }
-
-  &:nth-of-type(odd) {
-    @include create-slant-effect('top', 'right');
-    padding-top: spacing();
-  }
 }
 
 .notes-collection--flip-angles .note-styler {
@@ -43,4 +34,15 @@
 
 .note-styler--page {
   min-height: 50vh;
+}
+
+.note-styler:not(.note-styler--page) {
+  &:nth-of-type(even) {
+    @include create-slant-effect('top', 'left');
+  }
+
+  &:nth-of-type(odd) {
+    @include create-slant-effect('top', 'right');
+    padding-top: spacing();
+  }
 }
