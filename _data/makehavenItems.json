@@ -1,26 +1,24 @@
 [
-  {
-     "filename": "anime-laser-cut.jpeg",
-     "altText": "A wood laser-cut image of a girl with glasses."
-  },
-  {
+   {
+     "filename": "anime-cut-kunikida.jpg",
+     "altText": "An inspirational quote about prevailing against oneself paired with anime artwork."
+   }, {
+     "filename": "buttons.png",
+     "altText": "Several buttons showing different quotes and artwork paired together."
+   }, {
      "filename": "keychains.png",
      "altText": "Wooden keychains with different programming logos laser-cut in the center."
-  },
-  {
-     "filename": "shirt.png",
-     "altText": "A shirt with the words 'Stay Curious' printed on the front in a custom vinyl."
-  },
-  {
-     "filename": "laser-art-1.png",
-     "altText": "A wooden block with a written message and artwork added using laser cutting."
-  },
-  {
-     "filename": "laser-art-2.png",
+   }, {
+     "filename": "doingOkDecoration.jpg",
+     "altText": "A wooden hanging decoration that reads 'You are doing OK' with art of two people hugging."
+   }, {
+     "filename": "SeeClickFixCut.jpg",
+     "altText": "The SeeClickFix company logo overlaid with a list of many of their local government clients."
+   }, {
+     "filename": "standingLaserCut.jpg",
+     "altText": "A wood laser-cut figure of an image as a standing decoration."
+   }, {
+     "filename": "laser-art-multi.png",
      "altText": "A large image laser cut across several wood blocks of varying size."
-  },
-  {
-     "filename": "laser-art-3.png",
-     "altText": "A hexagon-shaped wood stand with different artwork laser cut in six different sections."
-  }
+   }
 ]
