@@ -28,5 +28,39 @@ const doodleViewboxes = [
   "0 0 674 595", // Dragon
   "0 0 470 860", // Eevee samurai
   "0 0 488 820", // NLBC
-  "0 0 455 448"  // Sad side look
+  "0 0 455 448", // Sad side look
+  "0 0 4000 5000", // Aged worker
+  "0 0 2788 3952", // Angry spikes
+  "0 0 3700 4685", // Beach ponytail
+  "0 0 2830 4628", // Blush away
+  "0 0 717 833", // Business smile
+  "0 0 3505 5179", // Calm angel sits
+  "0 0 3851 3797", // Cloud smirk
+  "0 0 3905 4613", // Colored pencil smile
+  "0 0 3133 5120", // Crop top wave
+  "0 0 3673 4029", // Crying Demi
+  "0 0 496 610", // Cupcake Git
+  "0 0 3365 5372", // Early Ellisha
+  "0 0 506 1261", // Gale over shoulder
+  "0 0 545 770", // Glasses smile
+  "0 0 4032 4767", // Karen Grayson hug
+  "0 0 3648 3767", // Kaza glare
+  "0 0 3543 5361", // Krystyn persevere
+  "0 0 3633 5031", // Lonely hoody
+  "0 0 438 734", // Look love
+  "0 0 3365 3979", // Mitsuko smirk
+  "0 0 3985 3840", // Natsuki wave
+  "0 0 4349 3895", // One wing Karen
+  "0 0 4029 4017", // Open arms
+  "0 0 5127 3329", // Pizza Warrior
+  "0 0 4032 5376", // Sad Nurse
+  "0 0 3797 4341", // Simple spiked hair
+  "0 0 2417 4800", // Skirt sit
+  "0 0 3379 4444", // Smiling spiked ponytail
+  "0 0 3244 4233", // Spikey short smile
+  "0 0 3455 4973", // Surprise hat
+  "0 0 3862 4612", // Throw on Jacket
+  "0 0 3337 4951", // Travel scarf
+  "0 0 574 883", // Two dancing
+  "0 0 591 1019" // Yuno sitting
 ];
