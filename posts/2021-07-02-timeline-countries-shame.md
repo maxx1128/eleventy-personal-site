@@ -1,5 +1,8 @@
 ---
-date: 2021-07-02
+title: "The Timelines of Two Countries' Greatest Shames"
+date: "2021-07-02"
+excerpt: A little math comparing how long America had slavery to how long Germany had the Nazis.
+tags: ["tough stuff"]
 ---
 
 I've noticed a lot more movies about the horrors of Nazis in WWII than the horrors of slavery in America. There aren't zero movies about the latter, but there are much fewer than one would expect.
