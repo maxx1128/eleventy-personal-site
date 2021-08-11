@@ -25,26 +25,10 @@
       {% endif %}
 
       <li class="inline-block text-center mb-0">
-        <a class="block my-px text-small {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{% endif %}">
+        <a {% if active_page %}aria-current="page"{% endif %} class="block my-px text-small {% if active_page %}font-weight-bold{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{% endif %}">
           {{ menu_item.name }}
         </a>
       </li>
     {% endfor %}
   </ul>
-
-  {% comment %} <div class="flex flex-column px-4 pt-12 text-center">
-    <h3 class="mt-0 mb-2 text-h6">
-      Social Links
-    </h3>
-
-    <ul class="list-reset flex flex-column flex-justify-start mb-0 pb-2 text-small">
-      {% for social in social %}
-        <li class="inline-block mb-2">
-          <a class="block" href="{{ social.url }}">
-            {{ social.name }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div> {% endcomment %}
 </nav>

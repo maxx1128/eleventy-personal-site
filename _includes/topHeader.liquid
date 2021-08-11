@@ -2,7 +2,7 @@
   <div class="resp-max-width py-2 flex flex-row flex-justify-between flex-gap-4">
     <div class="flex flex-column flex-align-start">
       <p class="my-0 mr-4 text-h6 font-weight-header">
-        <a class="text-mono-black" aria-label="Homepage" href="{% if page.url == '/' %}#content{% else %}/{% endif %}">
+        <a {% if page.url == '/' %}aria-current="page"{% endif %} class="text-mono-black" aria-label="Homepage" href="{% if page.url == '/' %}#content{% else %}/{% endif %}">
           Max Antonucci
         </a>
       </p>
