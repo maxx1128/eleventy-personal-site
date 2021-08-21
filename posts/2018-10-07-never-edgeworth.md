@@ -2,14 +2,13 @@
 title: "I'll Never be Edgeworth"
 date: "2018-10-07"
 excerpt: "Role models can be good for inspiration but bad for unrealistic standards."
+image: 'edgeworth.jpg'
 tags: ["personal", "anime"]
 ---
 
 I've always wanted to be more like, and had a mild man-crush on, Miles Edgeworth.
 
 What can I say, cravats are sexy. ❤️
-
-!["Several snapshots of the fabulous Miles Edgeworth."](/assets/images/notes/edgeworth.jpg)
 
 You don't need to know who he is. Just that I've idealized Edgeworth, and others like him, for their eccentric level of intelligence. They effortlessly see the truth and stay two steps ahead of enemies. That's why people need them, and how they do so much good. He's like Dr. House, except working in law, is a more charming kind of jerk, and asexual.
 
