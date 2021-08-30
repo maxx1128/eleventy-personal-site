@@ -4,6 +4,10 @@
   }
 }
 
+.no-js .theme-switcher {
+  display: none;
+}
+
 .theme-switcher__input {
   opacity: 0;
   position: fixed;
