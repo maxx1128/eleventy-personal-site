@@ -30,7 +30,7 @@ Here's to a good, simple life.
 
 ## The Toxic Answer
 
-I sometimes write in my spare time. When I do, I need people to read and give positive feedback, or else it's worthless. If I don't get any, I'm worthless and it takes weeks until I pluck up the courage to write again. My value comes back to how much praise, social capital, and economic power my life brings. That includes my time for entertainment or rest.
+I sometimes write in my spare time. When I do, I need people to read and give positive feedback, or else it's worthless. If I don't get any, it takes weeks until I pluck up the courage to write again. My value comes back to how much praise, social capital, and economic power my life brings. That includes my time for entertainment or rest.
 
 If people aren't lining up to watch a live stream of me reading a book, I'm a failure. If I can't sell it or put ads on it, it isn't worth doing or enjoying.
 
