@@ -36,6 +36,17 @@
   background-position: center;
 }
 
+.no-js .post-listing__image:not(.post-listing__image--custom) {
+  padding-top: 0%;
+
+  & + .post-listing__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 .post-listing__content {
   padding: spacing(4);
 
