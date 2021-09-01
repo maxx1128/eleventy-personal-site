@@ -2,26 +2,17 @@
    {
       "name": "About",
       "link": "/about/"
-   },
-   {
+   }, {
       "name": "Now",
       "link": "/now/"
-   },
-   {
+   }, {
       "name": "Writing",
       "link": "/writing/"
-   },
-   {
+   }, {
       "name": "Notes",
       "link": "/notes/"
-   },
-   {
+   }, {
       "name": "Today I Learned",
       "link": "/todayILearned/"
-   },
-   {
-      "name": "Exocortex",
-      "link": "https://www.notion.so/ExoCortex-6e3ae755edae4650a4d9ce190138f230",
-      "external": "true"
    }
 ]
