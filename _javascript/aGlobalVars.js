@@ -62,5 +62,36 @@ const doodleViewboxes = [
   "0 0 3862 4612", // Throw on Jacket
   "0 0 3337 4951", // Travel scarf
   "0 0 574 883", // Two dancing
-  "0 0 591 1019" // Yuno sitting
+  "0 0 591 1019", // Yuno sitting
+  "0 0 3510 4644", // Angry Nixon
+  "0 0 3622 5165", // Anita Jigglypuff
+  "0 0 3528 5162", // Anne Smirk
+  "0 0 3864 4585", // Annoyed expression
+  "0 0 3413 5012", // Bob Portrait
+  "0 0 3974 4489", // Care Charmander
+  "0 0 3584 5306", // Cat-eared Life
+  "0 0 3750 4477", // Charl Cry
+  "0 0 3422 4806", // Dude What the Hell
+  "0 0 1952 5274", // Elf Glasses
+  "0 0 4305 3674", // Ellisha Demi Hold
+  "0 0 3913 3968", // Ellisha Madelynn Wink
+  "0 0 3172 5333", // Evil smug
+  "0 0 2334 5065", // Excited Hazel
+  "0 0 3885 5094", // Flying Fairy Life
+  "0 0 3610 4580", // Dells Glance
+  "0 0 3128 3944", // Hanselmann
+  "0 0 5056 2777", // Happy sleep
+  "0 0 3880 4057", // Hazel evil grin
+  "0 0 3152 5274", // Intense windswept
+  "0 0 4352 4032", // Jack and Sally
+  "0 0 3761 5217", // Karen Gray chu
+  "0 0 4564 3560", // Karen one wing
+  "0 0 2402 5088", // Kneeling Madelynn
+  "0 0 3465 5153", // Moon Young
+  "0 0 3880 4449", // RWJ Blue
+  "0 0 3457 4842", // Serinuma mirror
+  "0 0 4032 4644", // Sharp looking up
+  "0 0 4073 3442", // Stacy Ninetales
+  "0 0 3118 4032", // Stern Asakura
+  "0 0 3346 4948" // Therapist portrait
 ];
