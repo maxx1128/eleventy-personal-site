@@ -1,3 +1,12 @@
+.book__list-item {
+  width: 100%;
+  max-width: #{'min(45vw, 250px)'};
+
+  @include larger-than(md) {
+    max-width: #{'min(23vw, 200px)'};
+  }
+}
+
 .book__title {
   border-left: spacing(border) solid color(primary, base);
 }
@@ -11,9 +20,4 @@
 
   border-right: spacing(border) solid color(primary, base);
   border-left: spacing(border) solid color(primary, base);
-}
-
-.now-books__item {
-  width: 100%;
-  max-width: clamp(150px, 40vw, 200px);
 }
