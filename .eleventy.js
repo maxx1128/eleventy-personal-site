@@ -15,6 +15,12 @@ const hideFutureItems = (item) => {
   return wasPublishedLater;
 }
 
+const sortByDate = (a, b) => {
+  if (a.date < b.date) { return -1; }
+  if (a.date > b.date) { return 1; }
+  return 0;
+}
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -135,20 +141,15 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection("todayILearned", function (collection) {
     return collection.getFilteredByGlob("./todayILearned/*.md")
-      .sort((a, b) => {
-        if (a.date < b.date) { return -1; }
-        if (a.date > b.date) { return 1; }
-        return 0;
-      });
+      .filter(hideFutureItems)
+      .sort(sortByDate);
   });
 
   eleventyConfig.addCollection("reversedTIL", function (collection) {
     return collection.getFilteredByGlob("./todayILearned/*.md")
-      .sort((a, b) => {
-        if (a.date < b.date) { return -1; }
-        if (a.date > b.date) { return 1; }
-        return 0;
-      }).reverse();
+      .filter(hideFutureItems)
+      .sort(sortByDate)
+      .reverse();
   })
 
   eleventyConfig.addCollection("feed", function (collection) {
@@ -156,11 +157,7 @@ module.exports = function(eleventyConfig) {
       ...collection.getFilteredByGlob("./notes/*.md"),
       ...collection.getFilteredByGlob("./posts/*.md"),
       ...collection.getFilteredByGlob("./todayILearned/*.md")
-    ].sort((a, b) => {
-      if (a.date < b.date) { return -1; }
-      if (a.date > b.date) { return 1; }
-      return 0;
-    })
+    ].sort(sortByDate)
 
     return allContent
       .filter(hideFutureItems)
