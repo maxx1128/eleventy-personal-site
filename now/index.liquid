@@ -4,12 +4,6 @@ title: Now
 tagline: Everything I'm doing right now, added right after it happens
 ---
 
-{% if books["current"] or books["finished"] %}
-  {% assign hasBooks = true %}
-{% else %}
-  {% assign hasBooks = false %}
-{% endif %}
-
 <p>
   Work history and portfolios only tell someone so much. So here's some info about what I'm doing <strong>right now</strong>.
 </p>
@@ -81,73 +75,34 @@ tagline: Everything I'm doing right now, added right after it happens
   Playing
 </h2>
 
-<p class="{% if hasBooks %}slant-bottom-padding{% endif %}">
+<p class="slant-bottom-padding">
   The COVID-19 pandemic has limited my playtime quite a bit, as you, dear reader, have likely dealt with yourself. My main leisure activity these days is reading, since the Libby app makes it easy to check out a wide variety of eBooks from my library whenever I want. Free books you can get without needing to leave your home are a pandemic survivor's best friend.
 </p>
 
-{% if hasBooks %}
-  <div class="post-content--full-bleed post-content--full-bleed--no-mb flex flex-wrap flex-gap-6 bg-mono-muted border-primary-base slant-bottom-padding slant-top-right pt-8">
-    <div class="flex-item-full">
-      <h3 class="mt-0 mx-4 text-center">
-        Books I'm Reading Now
-      </h3>
-      <ul class="post-content--partial-bleed post-content--full-bleed--no-mt post-content--full-bleed--no-mb list-reset flex flex-wrap flex-justify-center flex-align-center flex-gap-4 pb-6 pl-0">
-        {% assign current_book_number = books["current"] | size %}
-        {% if current_book_number > 0 %}
-          {% for book in books["current"] %}
-            {% include book.liquid,
-              book: book
-            %}
-          {% endfor %}
-        {% else %}
-          <p>
-            I'm looking for my next book now!
-          </p>
-        {% endif %}
-      </ul>
-    </div>
+<div class="post-content--full-bleed post-content--full-bleed--no-mb flex flex-wrap flex-gap-6 bg-mono-muted border-primary-base slant-bottom-padding slant-top-right pt-8">
+  {% include bookListing.liquid
+    heading: "Books I'm Reading Now",
+    books: books["current"]
+  %}
 
-    <div class="flex-item-full">
-      <h3 class="mt-0 mx-4 text-center">
-        Books I Recently Finished
-      </h3>
-      <ul class="post-content--partial-bleed post-content--full-bleed--no-mt post-content--full-bleed--no-mb list-reset flex flex-wrap flex-justify-center flex-align-center flex-gap-4 pb-6 pl-0">
-        {% for book in books["finished"] %}
-          {% include book.liquid,
-            book: book
-          %}
-        {% endfor %}
-      </ul>
-    </div>
+  {% include bookListing.liquid
+    heading: "Books I Recently Finished",
+    books: books["finished"]
+  %}
 
-    <div class="flex-item-full">
-      <h3 class="mt-0 mx-4 text-center">
-        Books I (May) Read Later
-      </h3>
-      <ul class="post-content--partial-bleed post-content--full-bleed--no-mt post-content--full-bleed--no-mb list-reset flex flex-wrap flex-justify-center flex-align-center flex-gap-4 pb-6 pl-0">
-        {% for book in books["future"] %}
-          {% include book.liquid,
-            book: book
-          %}
-        {% endfor %}
-      </ul>
-    </div>
+  {% include bookListing.liquid
+    heading: "Books I (May) Read Later",
+    books: books["future"]
+  %}
+</div>
+
+<div class="post-content--full-bleed post-content--full-bleed--no-mt pt-6 slant-top-left bg-mono-white border-primary-base">
+  <div class="resp-max-width">
+    <p class="mb-0">
+      My second goof-off getaway these days is my Nintendo Switch. Most of my games are story-driven or visual novels, so they're not too different from books in the end. They're more like books with higher stakes on a big screen.
+    </p>
   </div>
-{% endif %}
-
-{% if hasBooks %}
-  <div class="post-content--full-bleed post-content--full-bleed--no-mt pt-6 slant-top-left bg-mono-white border-primary-base">
-    <div class="resp-max-width">
-{% endif %}
-
-<p class="{% if hasBooks %}mb-0{% endif %}">
-  My second goof-off getaway these days is my Nintendo Switch. Most of my games are story-driven or visual novels, so they're not too different from books in the end. They're more like books with higher stakes on a big screen.
-</p>
-
-{% if hasBooks %}
-    </div>
-  </div>
-{% endif %}
+</div>
 
 <p>
   Before the pandemic had its winter spike, in my spare time I often visited <a href="https://www.makehaven.org/">MakeHaven</a> to worked on craft and art projects. Most involve laser and vinyl cutting, and are nice ways to escape the computer screen for a while. The MakeHaven community is also amazing and supportive to all its makers.

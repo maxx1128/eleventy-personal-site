@@ -1,0 +1,25 @@
+<div class="flex-item-full">
+  <h3 class="mt-0 mx-4 text-center">
+    {{ heading }}
+  </h3>
+  <ul class="post-content--partial-bleed post-content--full-bleed--no-mt post-content--full-bleed--no-mb list-reset flex flex-wrap flex-justify-center flex-align-center flex-gap-4 pb-6 pl-0">
+    {% assign book_number = books | size %}
+    {% if book_number > 0 %}
+      {% for book in books %}
+        <li class="book__list-item book mb-0">
+          <p class="book__title p-2 pr-8 my-0 text-small text-left font-weight-bold">
+            <a href="{{ book.link }}">{{ book.title }}</a>
+          </p>
+          <img class="book__image block" src="{{ book.image_url }}" alt="">
+          <p class="book__author p-2 pl-8 my-0 text-small text-right">
+            By {{ book.author }}
+          </p>
+        </li>
+      {% endfor %}
+    {% else %}
+      <p>
+        No books to show here!
+      </p>
+    {% endif %}
+  </ul>
+</div>
