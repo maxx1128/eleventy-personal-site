@@ -1,10 +1,3 @@
-.post-listing__wrapper {
-  display: flex;
-  padding: spacing(4) spacing(2) 0;
-  flex-wrap: wrap;
-  gap: spacing(4);
-}
-
 .post-listing__article {
   flex: 1 1 20rem;
 
@@ -31,24 +24,11 @@
 }
 
 .post-listing__image {
-  padding-top: 40%;
+  aspect-ratio: 16 / 6;
   background-size: cover;
   background-position: center;
 }
 
-.no-js .post-listing__image:not(.post-listing__image--custom) {
-  padding-top: 0%;
-
-  & + .post-listing__content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
 .post-listing__content {
-  padding: spacing(4);
-
   z-index: 1;
 }

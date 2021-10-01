@@ -43,6 +43,7 @@ $doodle-opacity: 0.06;
   max-height: 55vh;
 
   fill: var(--poke-text-color);
+  filter: blur(2px);
 }
 
 .doodle__header,
@@ -51,9 +52,7 @@ $doodle-opacity: 0.06;
 
   .doodle__wrapper {
     position: absolute;
-    top: -5vh;
     right: 0;
-    bottom: -5vh;
     left: 0;
   }
 
@@ -67,14 +66,20 @@ $doodle-opacity: 0.06;
 }
 
 .doodle__listing {
+  .doodle__wrapper {
+    top: 0;
+    bottom: 0;
+  }
+
   .doodle {
-    opacity: $doodle-opacity * 2;
+    opacity: $doodle-opacity * 7;
   }
 }
 
 .doodle__header {
   .doodle {
     opacity: 0;
+    filter: blur(1px);
 
     @include larger-than(md) {
       opacity: $doodle-opacity;
@@ -82,6 +87,9 @@ $doodle-opacity: 0.06;
   }
 
   .doodle__wrapper {
+    top: -5vh;
+    bottom: -5vh;
+
     @include larger-than(lg) {
       right: 2.5vw;
     }
