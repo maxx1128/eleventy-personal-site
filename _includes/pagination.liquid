@@ -3,30 +3,26 @@
     Pagination
   </h2>
 
-  <ul class="list-reset flex flex-column flex-gap-4 lg--flex-row flex-align-center flex-justify-between text-small">
-    <div class="pagination-item flex flex-gap-4 flex-justify-center lg--flex-justify-start">
+  <div class="flex flex-column flex-gap-4 lg--flex-row flex-align-center flex-justify-between text-small">
+    <div class="flex flex-gap-4 flex-justify-center lg--flex-justify-start">
       {% if page.url != pagination.href.first and pagination.href.first != pagination.href.previous %}
-        <li class="mb-0">
-          <a href="{{ pagination.href.first }}">
-            First <span class="screenReader">Page</span>
-          </a>
-        </li>
+        <a href="{{ pagination.href.first }}">
+          First <span class="screenReader">Page</span>
+        </a>
       {% elsif page.url == pagination.href.first %}
-        <li class="mb-0 italic">
-          First page.
-        </li>
+        <span class="italic">
+          First page
+        </span>
       {% endif %}
 
       {% if pagination.href.previous %}
-        <li class="mb-0">
-          <a href="{{ pagination.href.previous }}">
-            Previous <span class="screenReader">Page</span>
-          </a>
-        </li>
+        <a href="{{ pagination.href.previous }}">
+          Previous <span class="screenReader">Page</span>
+        </a>
       {% endif %}
     </div>
 
-    <div class="pagination-item flex flex-gap-2 flex-justify-center">
+    <ul class="list-reset flex flex-gap-2 flex-justify-center">
       {% for pageEntry in pagination.pages %}
         {% assign inPaginationRange = false %}
         {% assign prevPage1 = forloop.index0 | minus: 1 %}
@@ -57,28 +53,24 @@
           </li>
         {% endif %}
       {% endfor %}
-    </div>
+    </ul>
 
-    <div class="pagination-item flex flex-gap-4 flex-justify-center lg--flex-justify-end">
+    <div class="flex flex-gap-4 flex-justify-center lg--flex-justify-end">
       {% if pagination.href.next %}
-        <li class="mb-0">
-          <a href="{{ pagination.href.next }}">
-            Next <span class="screenReader">Page</span>
-          </a>
-        </li>
+        <a href="{{ pagination.href.next }}">
+          Next <span class="screenReader">Page</span>
+        </a>
       {% endif %}
 
       {% if page.url != pagination.href.last and pagination.href.last != pagination.href.next %}
-        <li class="mb-0">
-          <a href="{{ pagination.href.last }}">
-            Last <span class="screenReader">Page</span>
-          </a>
-        </li>
+        <a href="{{ pagination.href.last }}">
+          Last <span class="screenReader">Page</span>
+        </a>
       {% elsif page.url == pagination.href.last %}
-        <li class="mb-0 italic">
-          Last page.
-        </li>
+        <span class="italic">
+          Last page
+        </span>
       {% endif %}
     </div>
-  </ul>
+  </div>
 </nav>
