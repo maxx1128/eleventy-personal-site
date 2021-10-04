@@ -12,7 +12,7 @@
 
     <article class="post-listing__article doodle__listing poke-coloring poke-background--bg poke-border--text {% if post.data.image %}poke-background--screen{% endif %} flex-item flex flex-column">
       {% if post.data.image %}
-        <div class="post-listing__image flex-item" style="background-image: url('{{ post_image }}')"></div>
+        <img class="post-listing__image" src="{{ post_image }}" alt="">
       {% else %}
         {% unless post.data.image %}
           <div class="doodle__wrapper" aria-hidden="true">
@@ -24,7 +24,7 @@
         {% endunless %}
       {% endif %}
 
-      <div class="post-listing__content {% unless post.data.image %}post-listing__content--full flex flex-column flex-justify-center height-100{% endunless %} poke-color--text p-4 transparent-white-bg">
+      <div class="post-listing__content {% unless post.data.image %}post-listing__content--full flex flex-column flex-justify-center height-100{% endunless %} flex-item poke-color--text p-4 transparent-white-bg">
         <small class="mb-0">
           <strong>
             <span class="screenReader">Posted on</span> {{ post.date | readableDate | date: "%B %e, %Y" }}

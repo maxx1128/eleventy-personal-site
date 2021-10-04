@@ -24,13 +24,11 @@
 }
 
 .post-listing__image {
-  aspect-ratio: 16 / 6;
-  background-size: cover;
-  background-position: center;
+  width: 100% !important;
+  height: 100%;
 
-  @include larger-than(sm) {
-    min-height: 100px;
-  }
+  aspect-ratio: 16 / 6;
+  object-fit: cover;
 }
 
 .post-listing__content {
