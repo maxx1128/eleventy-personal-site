@@ -1,6 +1,12 @@
 {% assign postLimit = limit | default: 999 %}
 
 <section class="flex pt-4 px-2 flex-wrap flex-gap-4 {{ wrapper_class }}">
+  {% if showHeading %}
+    <h2 class="screenReader">
+      Blog Post Listing
+    </h2>
+  {% endif %}
+
   {% for post in posts limit: postLimit %}
     {% assign post_image = metadata.post.imagePath | append: post.data.image %}
 
