@@ -9,7 +9,7 @@ Who am I exactly? It's a question with many answers of varying accuracy.
 ## The Business Answer
 
 <div>
-  <img class="logo ml-4 mb-4 border-radius-full hidden-sm-down" src="/assets/images/global/profile.png" alt="Maxwell's profile picture" />
+  <img width="150" height="150" class="logo ml-4 mb-4 border-radius-full hidden-sm-down" src="/assets/images/global/profile.png" alt="Maxwell's profile picture" />
 
   I'm a front-end developer working at [SeeClickFix](https://seeclickfix.com/) and living in New Haven. My focuses are CSS, JavaScript, and web accessibility.
 
