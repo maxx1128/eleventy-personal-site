@@ -8,10 +8,6 @@ addEventListener('install', installEvent => {
       .then(staticCache => {
         // Nice to Cache
         staticCache.addAll([
-          '/assets/type/work-sans/WorkSans-Light.otf',
-          '/assets/type/work-sans/WorkSans-Medium.otf',
-          '/assets/type/work-sans/WorkSans-LightItalic.otf',
-          '/assets/type/aller/Aller_Bd.ttf',
           'about/index.html',
           '404.html',
           'index.html',
