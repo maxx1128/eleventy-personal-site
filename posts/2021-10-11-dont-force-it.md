@@ -15,8 +15,8 @@ I felt restless but have no mental energy to do important work. What now?
 
 **In times like this, I only need to do work that sets me up to be more productive tomorrow. Things that don't take all that much thought.**
 
-* I won't read through my backed-up article list. I'll note which ones to read tomorrow and passed on the rest.
-* I won't work on that blog post. I'll make a bullet list of what I wanted to tackle tomorrow and saved it as a to-do list item.
+* I won't read through my backed-up article list. I'll note which ones to read tomorrow and pass on the rest.
+* I won't work on that blog post. I'll make a bullet list of what I want to tackle tomorrow and save it as a to-do list.
 * I won't do a full apartment clean. I'll put everything where it needs to be so I won't lose track of it when I'm back on the clock.
 * I won't stay up late with extra TV or reading. I'll get to bed early and make sure I sleep enough to feel rested tomorrow.
 
