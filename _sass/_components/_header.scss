@@ -37,14 +37,15 @@
   }
 }
 
-.header,
-.header__large-image {
+.header {
   background-position: center;
   background-size: cover;
 }
 
 .header__large-image {
   height: #{"max(175px, 30vh)"};
+
+  object-fit: cover;
 
   @include larger-than(xl) {
     height: auto;
