@@ -48,6 +48,6 @@
   object-fit: cover;
 
   @include larger-than(xl) {
-    height: auto;
+    height: 100%;
   }
 }
