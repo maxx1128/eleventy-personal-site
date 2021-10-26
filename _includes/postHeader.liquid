@@ -10,7 +10,12 @@
     </div>
   {% endunless %}
 
-  <div class="header__text header__text--post {% if image %}header__text--post-with-image poke-background--bg box-shadow-3{% else %}resp-max-width{% endif %} flex flex-column xl--flex-justify-center xl--my-6 {% if image %}py-4{% else %}my-6 slant-top-padding slant-bottom-padding{% endif %}">
+  <div class="header__text header__text--post flex flex-column xl--flex-justify-center xl--my-6
+              {% if image %}
+                header__text--post-with-image poke-background--bg py-4
+              {% else %}
+                resp-max-width my-6 slant-top-padding slant-bottom-padding
+              {% endif %}">
     <div class="{% if image %}resp-max-width my-6{% else %}{% endif %}">
       <div class="flex flex-justify-between mb-auto xl--mb-0">
         <small class="block mb-2 font-weight-bold">
