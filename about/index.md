@@ -11,7 +11,7 @@ Who am I exactly? It's a question with many answers of varying accuracy.
 <div>
   <img width="150" height="150" class="logo ml-4 mb-4 border-radius-full hidden-sm-down" src="/assets/images/global/profile.png" alt="Maxwell's profile picture" />
 
-  I'm a front-end developer working at [SeeClickFix](https://seeclickfix.com/) and living in New Haven. My focuses are CSS, JavaScript, and web accessibility.
+  I'm a front-end developer working at [AgileSix](https://agile6.com/) and living in New Haven. My focuses are CSS, JavaScript, and web accessibility.
 
   I also write about programming. I often write to explain tough topics, like git rebasing and functional JavaScript, in simple and weird ways, like with cupcakes or angels and mutants.
 
