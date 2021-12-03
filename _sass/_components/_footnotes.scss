@@ -1,0 +1,31 @@
+body {
+  counter-reset: footnotes;
+}
+
+.Footnotes {
+  padding-top: spacing(12);
+  margin-top: spacing(12);
+
+  border-top: 2px solid color(primary, dark);
+  background-color: color(mono, white);
+}
+
+.Footnotes__title {
+  font-size: type(font-size, h3);
+}
+
+.Footnotes__ref[role='doc-noteref']::after {
+  content: '[' counter(footnotes) ']';
+  margin-left: 2px;
+
+  font-size: type(font-size, tiny);
+  text-decoration: underline;
+
+  counter-increment: footnotes;
+  vertical-align: super;
+  cursor: pointer;
+}
+
+.Footnotes__list-item {
+  font-size: type(font-size, small);
+}

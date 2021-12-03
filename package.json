@@ -60,6 +60,7 @@
     "buildSocialImages": "node _scripts/buildSocialImages"
   },
   "dependencies": {
+    "eleventy-plugin-footnotes": "^0.10.0",
     "moment": "^2.29.1",
     "node-fetch": "^2.6.6"
   }
