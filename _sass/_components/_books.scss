@@ -9,6 +9,13 @@
 
 .book__title {
   border-left: spacing(border) solid color(primary, base);
+
+  a {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
 
 .book__author {
