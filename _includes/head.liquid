@@ -3,8 +3,6 @@
 
   {% if contentType == "Note" %}
     {% assign title = date | noteDate | prepend: "Note on " | append: titleSuffix %}
-  {% elsif contentType == "Today I Learned" %}
-    {% assign title = title | prepend: "Today I learned: " | append: titleSuffix %}
   {% elsif title %}
     {% assign title = title | append: titleSuffix %}
   {% else %}
@@ -23,8 +21,6 @@
 
   {% if contentType == "Note" %}
     {% assign featured_image = "/assets/images/global/social-note.png" | prepend: metadata.url %}
-  {% elsif contentType == "Today I Learned" %}
-    {% assign featured_image = "/assets/images/global/social-til.jpg" | prepend: metadata.url %}
   {% else %}
     {% comment %} Only use this to bring back Note and TIL social images {% endcomment %}
     {% assign featured_image_fileName = title | replace: titleSuffix, "" | slug | addNbsp | safe %}

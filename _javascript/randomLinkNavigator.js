@@ -4,10 +4,6 @@
       return window.ContentData.notes;
     }
 
-    if (linkWrapper.classList.contains('random-navigator-wrapper--lesson')) {
-      return window.ContentData.lessons;
-    }
-
     return window.ContentData.posts;
   }
 

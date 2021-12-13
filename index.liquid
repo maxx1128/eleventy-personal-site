@@ -60,32 +60,6 @@ white-footer: true
     limit: 4
   %}
 
-  {% comment %} <div class="bg-mono-muted slant-bottom-padding">
-    <div class="resp-max-width slant-top-padding slant-bottom-padding">
-      <h2 class="mt-0 slant-top-padding">
-        Recent things I've learned
-      </h2>
-
-      <p>
-        Programming is about continuous learning. But some lessons are too small for a blog post and too big for a tweet. So all these medium-sized lessons go to the "Today I Learned" section.
-
-        <p>
-          <a href="/todayILearned/">You can read more of the things I've learned here.</a> <a class="hidden" id="random-lesson-link">Or read a random lesson.</a>
-        </p>
-      </p>
-
-      <ul class="mb-0">
-        {% for lesson in collections.todayILearned limit: 4 %}
-          <li>
-            <a href="{{lesson.url}}">
-              {{ lesson.data.title }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div> {% endcomment %}
-
   <div class="resp-max-width pt-4 slant-bottom-padding">
     <h2>
       Recent Notes

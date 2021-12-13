@@ -125,22 +125,6 @@ module.exports = function (eleventyConfig) {
     return [...tagSet]
   })
 
-  eleventyConfig.addCollection('TILCategories', function (collection) {
-    let categorySet = new Set()
-    collection.getAll().forEach(function (item) {
-      if (
-        'contentType' in item.data &&
-        item.data.contentType === 'Today I Learned'
-      ) {
-        let category = item.data.category
-        categorySet.add(category)
-      }
-    })
-
-    // returning an array in addCollection works in Eleventy 0.5.3
-    return [...categorySet].sort()
-  })
-
   eleventyConfig.addCollection('posts', function (collection) {
     return collection
       .getFilteredByGlob('./posts/*.md')
@@ -155,26 +139,10 @@ module.exports = function (eleventyConfig) {
       .reverse()
   })
 
-  eleventyConfig.addCollection('todayILearned', function (collection) {
-    return collection
-      .getFilteredByGlob('./todayILearned/*.md')
-      .filter(hideFutureItems)
-      .sort(sortByDate)
-  })
-
-  eleventyConfig.addCollection('reversedTIL', function (collection) {
-    return collection
-      .getFilteredByGlob('./todayILearned/*.md')
-      .filter(hideFutureItems)
-      .sort(sortByDate)
-      .reverse()
-  })
-
   eleventyConfig.addCollection('feed', function (collection) {
     const allContent = [
       ...collection.getFilteredByGlob('./notes/*.md'),
       ...collection.getFilteredByGlob('./posts/*.md'),
-      ...collection.getFilteredByGlob('./todayILearned/*.md'),
     ].sort(sortByDate)
 
     return allContent

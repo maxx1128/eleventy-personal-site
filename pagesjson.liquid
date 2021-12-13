@@ -8,8 +8,6 @@ eleventyExcludeFromCollections: true
   {% for pages in collections.all %}
     {% if pages.data.contentType == "Note" %}
       {% assign title = pages.date | noteDate | prepend: "Note on " %}
-    {% elsif pages.data.contentType == "Today I Learned" %}
-      {% assign title = pages.data.title | prepend: "Today I Learned: " %}
     {% else %}
       {% assign title = pages.data.title %}
     {% endif %}
