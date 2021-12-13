@@ -1,4 +1,4 @@
-const version = 'V1.94',
+const version = 'V1.95',
   staticCacheName = `${version}staticfiles`
 
 addEventListener('install', (installEvent) => {

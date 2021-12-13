@@ -29,6 +29,6 @@ const shuffleDoodleImages = () => {
   }
 }
 
-;(function () {
+(function () {
   shuffleDoodleImages()
-})()
+})();
