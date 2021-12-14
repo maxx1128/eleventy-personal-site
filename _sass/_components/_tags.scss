@@ -1,40 +1,29 @@
+$tag-side-size: 22px;
+$tag-dot-size: $tag-side-size / 4;
+
 .tag:not(.token) {
   position: relative;
-  height: 1.5rem;
-  padding: 2px 7px;
+  padding: 2px 7px 2px $tag-side-size;
 
   z-index: 1;
+  clip-path: polygon(0% 50%, $tag-side-size 100%, 100% 100%, 100% 0%, $tag-side-size 0%);
 
   a {
-    outline-offset: 9px;
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 9px;
-    left: -5px;
-    width: 5px;
-    height: 5px;
-
-    border-radius: 100%;
-    background-color: color(mono, white);
+    outline-color: color(mono, white);
+    outline-offset: 0;
   }
 
   &::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: -9px;
-    bottom: 0;
-    width: 1.5rem;
-    height: 1.5rem;
+    top: calc(50% - (#{$tag-dot-size} / 2));
+    left: calc((#{$tag-side-size} / 2) - (#{$tag-dot-size} / 10));
+    width: $tag-dot-size;
+    height: $tag-dot-size;
 
-    border-radius: 1.5rem;
-    border-bottom-left-radius: 1rem;
-    background-color: color(action);
+    border-radius: 100%;
+    background-color: color(mono, white);
 
-    z-index: -1;
-    transform: rotate(45deg);
+    z-index: 2;
   }
 }
