@@ -1,5 +1,7 @@
+$base-article-size: 25rem;
+
 .post-listing__article {
-  flex: 1 1 20rem;
+  flex: 1 1 $base-article-size;
 
   box-shadow: container(box-shadow, 2);
   border-style: solid;
@@ -11,15 +13,11 @@
   overflow: hidden;
 
   &:first-of-type {
-    flex-basis: 40rem;
+    flex-basis: $base-article-size * 2;
   }
 
   &:nth-of-type(5n - 2) {
-    flex-basis: 24rem;
-  }
-
-  &:nth-of-type(7n - 3) {
-    flex-basis: 18rem;
+    flex-basis: $base-article-size * 1.2;
   }
 }
 
