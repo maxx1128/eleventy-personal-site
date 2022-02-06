@@ -128,7 +128,7 @@ const dataPath = fs.realpathSync(dataFile);
       forPage.postImage = getPostImage('assets/images/global/social-note.png');
     } else if (staticPageTitles.includes(post.title)) {
       forPage.isStatic = true;
-      forPage.postImage = getPostImage('assets/images/global/profile.png');
+      forPage.postImage = getPostImage('assets/images/global/profile.jpg');
     } else {
       forPage.postImage = false;
     }

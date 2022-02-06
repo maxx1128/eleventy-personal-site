@@ -82,7 +82,7 @@ This is best shown with an example. Here's the simplified HTML from my personal 
 <div class="bg-teal-darker text-white shadow-lg z-10">
   <nav class="flex flex-col max-w-md mx-auto">
     <div class="hidden md:flex items-center py-2 px-2 md:px-4">
-      <img class="nav__logo mr-4 rounded-full" src="/assets/images/global/profile.png" alt="Maxwell's profile picture" />
+      <img class="nav__logo mr-4 rounded-full" src="/assets/images/global/profile.jpg" alt="Maxwell's profile picture" />
 
       <p class="my-0 text-sm italic">
         {{site.description}}

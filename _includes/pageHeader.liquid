@@ -1,10 +1,6 @@
 {% assign header_class = "" %}
 
-{% if postLabel == "Note" %}
-  {% assign header_class = header_class | append: " pt-2" %}
-{% else %}
-  {% assign header_class = header_class | append: " header" %}
-{% endif %}
+{% assign header_class = header_class | append: " header" %}
 
 <header class="{{ header_class }} header--page doodle__header poke-background--bg poke-color--text width-100 slant-top-padding slant-bottom-padding" {% if banner_image %}style="background-image: url('{{ banner_image }}')"{% endif %}>
   <div class="doodle__wrapper" aria-hidden="true">
@@ -17,11 +13,7 @@
   <div class="header__text {% if banner_image %}transparent-white-bg{% endif %} py-6 resp-max-width">
     <div class="relative py-12">
       <h1 class="my-0">
-        {% if postLabel == "Note" %}
-          {{ date | noteDate }}
-        {% else %}
-          {{ title | replace: " - Maxwell Antonucci", ""}}
-        {% endif %}
+        {{ title | replace: " - Maxwell Antonucci", ""}}
       </h1>
 
       {% if tagline %}

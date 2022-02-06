@@ -10,5 +10,4 @@
   }
 
   setRandomPostLink(window.ContentData.posts, 'random-post-link');
-  setRandomPostLink(window.ContentData.notes, 'random-note-link');
 })();

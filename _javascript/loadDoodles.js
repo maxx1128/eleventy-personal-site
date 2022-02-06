@@ -1,7 +1,6 @@
 const shuffleDoodleImages = () => {
   const doodleLimit = doodleViewboxes.length,
-    elements = document.getElementsByClassName('doodle__use'),
-    isNoteListing = document.getElementsByClassName('notes-listing').length > 0
+    elements = document.getElementsByClassName('doodle__use');
 
   if (elements) {
     const classIndexes = getIndexes(doodleLimit)

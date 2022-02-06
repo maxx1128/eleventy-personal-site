@@ -132,16 +132,8 @@ module.exports = function (eleventyConfig) {
       .reverse()
   })
 
-  eleventyConfig.addCollection('notes', function (collection) {
-    return collection
-      .getFilteredByGlob('./notes/*.md')
-      .filter(hideFutureItems)
-      .reverse()
-  })
-
   eleventyConfig.addCollection('feed', function (collection) {
     const allContent = [
-      ...collection.getFilteredByGlob('./notes/*.md'),
       ...collection.getFilteredByGlob('./posts/*.md'),
     ].sort(sortByDate)
 
@@ -149,14 +141,6 @@ module.exports = function (eleventyConfig) {
       .filter(hideFutureItems)
       .slice(Math.max(allContent.length - 50, 1))
       .reverse()
-  })
-
-  eleventyConfig.addCollection('recent_notes', function (collection) {
-    return collection
-      .getFilteredByGlob('./notes/*.md')
-      .filter(hideFutureItems)
-      .reverse()
-      .slice(0, 2)
   })
 
   eleventyConfig.addPassthroughCopy('img')
