@@ -12,10 +12,6 @@ $base-article-size: 25rem;
 
   overflow: hidden;
 
-  &:first-of-type {
-    flex-basis: $base-article-size * 2;
-  }
-
   &:nth-of-type(5n - 2) {
     flex-basis: $base-article-size * 1.2;
   }
