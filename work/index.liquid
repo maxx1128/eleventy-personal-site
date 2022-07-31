@@ -1,0 +1,73 @@
+---
+layout: layouts/page.liquid
+title: Work
+tagline: Code samples and side projects
+main-hide-slant: true
+removeArticleTopPadding: true
+---
+
+<div class="post-content--full-bleed post-content--full-bleed--no-mt post-content--full-bleed--no-mb slant-top-left pt-10 slant-bottom-padding bg-mono-muted poke-border--text">
+  <div class="resp-max-width">
+    <p>
+      Like most programmers, my work is a mix of code I've written for jobs, to practice new skills, to solve small problems in my life, and to answer pointless questions I asked myself in the dead of night.
+    </p>
+
+    <p>
+      <strong>Disclaimer:</strong> I can't show code samples from all of my jobs here. Some are either proprietary or just not easily reached by any old web browser. If you're still curious about my career work, check out <a href="https://www.linkedin.com/in/maxwellantonucci/">my LinkedIn page.</a>
+    </p>
+  </div>
+</div>
+
+<div class="post-content--full-bleed post-content--full-bleed--no-mt slant-top-right lg--pt-8 slant-bottom-padding bg-mono-white border-primary-light">
+  <div class="resp-max-width resp-max-width--large mt-10">
+    <section class="flex flex-wrap flex-justify-center flex-gap-4">
+      {% for workItem in work %}
+        {% assign descrWords = workItem.description | split: " " %}
+        {% assign workSizeClass = "" %}
+
+        {% if descrWords.length > 40 %}
+          {% assign workSizeClass = "work-item--large" %}
+        {% elsif descrWords.length > 32 %}
+          {% assign workSizeClass = "work-item--medium" %}
+        {% endif %}
+
+        <article class="work-item {{ workSizeClass }} flex flex-column flex-item box-shadow-2">
+          <ul aria-hidden="true" class="list-reset flex flex-wrap flex-gap-2 px-4 md--px-6 py-2">
+            {% for tag in workItem.tags %}
+              <li class="text-puny mb-0 bg-primary-dark text-mono-muted border-radius-small px-2 pt-border upper">
+                {{ tag }}
+              </li>
+            {% endfor %}
+          </ul>
+
+          <img class="work-item__image {% if workItem.fullImageHeight %}work-item__image--full-height{% endif %}" src='/assets/images/work/{% if workItem.image %}{{ workItem.image }}{% else %}placeholder.jpg{% endif %}' alt="" />
+
+          <div class="work-item__content flex flex-column px-4 py-4 md--px-6 height-100">
+            <h3 class="text-h5">
+              {{ workItem.title }}
+            </h3>
+
+            <p class="text-small">
+
+              {{ workItem.description }}
+            </p>
+
+            <div class="flex flex-wrap flex-gap-4 mt-auto">
+              {% if workItem.urls.code %}
+                <a href="{{ workItem.urls.code }}">
+                  View Code <span class="screenReader"> for {{ workItem.title }}</span>
+                </a>
+              {% endif %}
+
+              {% if workItem.urls.demo %}
+                <a href="{{ workItem.urls.demo }}">
+                  View Demo <span class="screenReader"> for {{ workItem.title }}</span>
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+    </section>
+  </div>
+</div>
