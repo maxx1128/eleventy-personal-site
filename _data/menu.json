@@ -6,6 +6,9 @@
       "name": "Now",
       "link": "/now/"
    }, {
+      "name": "Work",
+      "link": "/work/"
+   }, {
       "name": "Writing",
       "link": "/writing/"
    }
