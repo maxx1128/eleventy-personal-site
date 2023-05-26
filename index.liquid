@@ -29,11 +29,13 @@ white-footer: true
       </p>
 
       <p>
-        <strong>As a human being,</strong> I enjoy reading, boxing, and some casual gaming. I don't enjoy paying bills, getting too little sleep, and fighting my inner demons of perfectionism and self-pressure.
+        <strong>As a human being,</strong>
+        I enjoy reading, boxing, and some casual gaming. I don't enjoy paying bills, getting too little sleep, and fighting my inner demons of perfectionism and self-pressure.
       </p>
 
       <p class="mb-0">
-        <strong>As a chainsaw juggler,</strong> I don't do anything since I don't exist.
+        <strong>As a chainsaw juggler,</strong>
+        I don't do anything since I don't exist.
       </p>
     </div>
   </div>
@@ -49,14 +51,14 @@ white-footer: true
       </p>
 
       <p>
-        <a href="/writing/">You can read more of my blog here.</a> <a class="hidden" id="random-post-link">Or read a random blog post.</a>
+        <a href="/writing/">You can read more of my blog here.</a>
+        <a class="hidden" id="random-post-link">Or read a random blog post.</a>
       </p>
     </div>
   </div>
 
   {% include postListing.liquid
-    wrapper_class: "resp-max-width resp-max-width--large pt-4 mb-12 slant-bottom-padding",
-    posts: collections.posts,
-    limit: 12
-  %}
+   wrapper_class: "resp-max-width resp-max-width--large pt-4 mb-12 slant-bottom-padding",
+   posts: collections.posts,
+   limit: 4 %}
 </div>

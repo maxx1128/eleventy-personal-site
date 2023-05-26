@@ -4,7 +4,7 @@
 
 // Modular Scale variables
 $g-modular-scale--base: 1.1rem;
-$g-modular-scale--ratio: 1.25;
+$g-modular-scale--ratio: 1.22;
 
 @function clampedFontSize($type) {
   $scale: map-get(map-get($typography-map, 'font-size'), $type);
