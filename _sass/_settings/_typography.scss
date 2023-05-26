@@ -3,8 +3,8 @@
 // All typography variables
 
 // Modular Scale variables
-$g-modular-scale--base: 1.2rem;
-$g-modular-scale--ratio: 1.175;
+$g-modular-scale--base: 1.1rem;
+$g-modular-scale--ratio: 1.25;
 
 @function clampedFontSize($type) {
   $scale: map-get(map-get($typography-map, 'font-size'), $type);
@@ -27,9 +27,11 @@ $g-modular-scale--ratio: 1.175;
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&family=Montserrat:wght@700&display=swap');
+
 // Font families
-$g-font-family-base: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-$g-font-family-header: Gill Sans, Gill Sans MT, Lucida Sans, Verdana, sans-serif;
+$g-font-family-base: Lato, Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+$g-font-family-header: Montserrat, Gill Sans, Gill Sans MT, Lucida Sans, Verdana, sans-serif;
 $g-font-family-mono: "Courier New", "Consolas", "Courier", monospace;
 
 :root {
@@ -38,7 +40,7 @@ $g-font-family-mono: "Courier New", "Consolas", "Courier", monospace;
   --font-family-mono: #{$g-font-family-mono};
 
   --font-weight-header: 700;
-  --font-weight-bold: 700;
+  --font-weight-bold: 600;
   --font-weight-base: 300;
   --font-weight-light: 200;
 

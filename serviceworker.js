@@ -1,4 +1,4 @@
-const version = 'V2.04',
+const version = 'V2.05',
   staticCacheName = `${version}staticfiles`
 
 addEventListener('install', (installEvent) => {
@@ -7,10 +7,9 @@ addEventListener('install', (installEvent) => {
     caches.open(staticCacheName).then((staticCache) => {
       // Nice to Cache
       staticCache.addAll([
-        'about/index.html',
         '404.html',
         'index.html',
-        'notes/index.html',
+        'about/index.html',
         'now/index.html',
         'writing/index.html',
         '/assets/images/global/header-default.jpg',
