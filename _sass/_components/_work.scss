@@ -1,11 +1,11 @@
 .work-item {
-  flex-basis: rem(300px);
+  flex-basis: rem(250px);
   max-width: rem(700px);
 
   background-color: color(mono, muted);
 
   &:nth-of-type(3n) {
-    flex-basis: rem(315px);
+    flex-basis: rem(265px);
   }
 
   &.work-item--large:first-of-type,
@@ -14,18 +14,18 @@
   }
 
   &.work-item--medium {
-    flex-basis: rem(415px);
+    flex-basis: rem(315px);
 
     &:nth-of-type(3n) {
-      flex-basis: rem(430px);
+      flex-basis: rem(330px);
     }
   }
 
   &.work-item--large {
-    flex-basis: rem(530px);
+    flex-basis: rem(430px);
 
     &:nth-of-type(3n) {
-      flex-basis: rem(550px);
+      flex-basis: rem(450px);
     }
   }
 

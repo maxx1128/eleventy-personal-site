@@ -1,22 +1,8 @@
 {% assign banner_image = metadata.post.imagePath | append: image %}
 
-<div class="header header--post doodle__header poke-color--text flex flex-column-reverse xl--flex-row flex-justify-end poke-background--bg {% if image %}poke-background--screen{% endif %} {% if no-min-image-height %}header--with-no-min-height{% endif %}">
-  {% unless image %}
-    <div class="doodle__wrapper" aria-hidden="true">
-      {% include doodle.liquid,
-        alwaysShow: true,
-        align: 'right'
-      %}
-    </div>
-  {% endunless %}
-
-  <div class="header__text header__text--post flex flex-column xl--flex-justify-center xl--my-6
-              {% if image %}
-                header__text--post-with-image poke-background--bg py-4
-              {% else %}
-                resp-max-width my-6 slant-top-padding slant-bottom-padding
-              {% endif %}">
-    <div class="{% if image %}resp-max-width my-6{% else %}{% endif %}">
+<div class="header header--post poke-color--text flex flex-column-reverse xl--flex-row flex-justify-end poke-background--bg {% if image %}poke-background--screen{% endif %} {% if no-min-image-height %}header--with-no-min-height{% endif %}">
+  <div class="header__text header__text--post flex flex-column xl--flex-justify-center xl--my-6 py-4 resp-max-width my-6 slant-top-padding slant-bottom-padding">
+    <div class="my-6">
       <div class="flex flex-justify-between mb-auto xl--mb-0">
         <small class="block mb-2 font-weight-bold">
           {{ date | toUTCString }}
@@ -24,14 +10,13 @@
 
         <span class="hidden-md-down">
           {% include tagList
-            tags: tags
-            rightAlign: true
-          %}
+           tags: tags
+           rightAlign: true %}
         </span>
       </div>
 
       <h1 class="mt-2 mb-0">
-        {{ title | replace: " - Maxwell Antonucci", ""}}
+        {{ title | replace: " - Maxwell Antonucci", "" }}
       </h1>
 
       {% if excerpt %}
@@ -43,8 +28,13 @@
   </div>
 
   {% if image %}
-    <div>
-      <img alt="" src="{{ banner_image }}" class="header__large-image flex-item" />
+    <div class="header__image-wrapper absolute">
+      <div class="header__image-gradient"></div>
+
+      <img
+        alt=""
+        src="{{ banner_image }}"
+        class="header__large-image flex-item" />
     </div>
   {% endif %}
 </div>
