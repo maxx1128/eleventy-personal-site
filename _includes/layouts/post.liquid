@@ -5,7 +5,19 @@ layout: layouts/base.liquid
 <article id="content" class="post-content width-100">
   {{ content | replace: "<p><img", "<figure><img" | replace: "></p>", "></figure>" | safe }}
 
+  {% if link %}
+    <a
+      class="font-weight-bold text-h6"
+      href="{{ link }}"
+      rel="external">
+      View Link
+    </a>
+  {% endif %}
+
   {% footnotes %}
 </article>
 
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script
+  async
+  src="https://platform.twitter.com/widgets.js"
+  charset="utf-8"></script>
