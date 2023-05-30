@@ -6,12 +6,14 @@ layout: layouts/base.liquid
   {{ content | replace: "<p><img", "<figure><img" | replace: "></p>", "></figure>" | safe }}
 
   {% if link %}
-    <a
-      class="font-weight-bold text-h6"
-      href="{{ link }}"
-      rel="external">
-      View Link
-    </a>
+    <p class="mt-6">
+      <a
+        class="inline-block py-2 px-4 no-underline font-weight-bold text-h6 bg-action-base text-mono-white border-radius-base box-shadow-2"
+        href="{{ link }}"
+        rel="external">
+        View Link
+      </a>
+    </p>
   {% endif %}
 
   {% footnotes %}
