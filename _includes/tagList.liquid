@@ -2,7 +2,7 @@
   {% for tag in tags %}
     {% assign tagUrl = "/tags/" | append: tag %}
     <li class="tag mb-0 ml-2 bg-action-base text-tiny text-center border-radius-small">
-      <a href="{{ tagUrl | url }}" class="capitalize no-underline text-mono-white">
+      <a href="{{ tagUrl | url }}" class="upper no-underline text-mono-white">
         <span class="screenReader">
           Posts tagged
         </span>
