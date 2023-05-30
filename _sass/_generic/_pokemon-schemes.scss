@@ -186,10 +186,12 @@ $light: map-get($styles, light);
 
 .poke-color--text {
   color: var(--poke-text-color);
+  fill: var(--poke-text-color);
 }
 
 .poke-color--bg {
   color: var(--poke-background-color);
+  fill: var(--poke-background-color);
 }
 
 .poke-background--text {

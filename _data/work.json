@@ -11,7 +11,7 @@
     }
   }, {
     "title": "SeeClickFix Request Portal",
-    "description": "The Request Portal is how citizens can use SeeClickFix to send requests to their local governments, track their progress, explore others on a map, and comment or follow others. I made the style guide and design system the front-end was built on as well as building it to be compliant with the Web Content and Accessibility Guidenlines (WCAG) AA standards.",
+    "description": "The Request Portal is how citizens can use SeeClickFix to send requests to their local governments, track their progress, explore others on a map, and comment or follow others. I made the style guide and design system the front-end was built on as well as building it to be compliant with the Web Content and Accessibility Guidelines (WCAG) AA standards.",
     "image": "scf-portal.png",
     "tags": [
       "CSS", "Ember", "Style Guides"
