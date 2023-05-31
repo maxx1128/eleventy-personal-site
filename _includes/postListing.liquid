@@ -37,7 +37,7 @@
           </a>
         </h3>
 
-        <small class="block mb-4">
+        <small class="block mb-0">
           <strong>
             <span class="screenReader">Posted on</span>
             {{ post.date | readableDate | date: "%B %e, %Y" }}
@@ -45,7 +45,7 @@
         </small>
 
         {% if post.data.excerpt %}
-          <p class="mb-0">
+          <p class="mt-4 mb-0">
             {{ post.data.excerpt }}
           </p>
         {% endif %}
