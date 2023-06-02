@@ -47,12 +47,6 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('dd LLL yyyy')
   })
 
-  eleventyConfig.addFilter('noteDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
-      'LLLL d, yyyy',
-    )
-  })
-
   eleventyConfig.addFilter('postReadTime', (content) => {
     const isRejectedCharacter = (str) =>
       str.length === 1 && !str.toLowerCase().match(/[a-z]/i)

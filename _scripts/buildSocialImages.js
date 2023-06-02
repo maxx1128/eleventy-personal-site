@@ -113,7 +113,7 @@ const dataPath = fs.realpathSync(dataFile);
   const dir = path.resolve(__dirname, previewPath);
   if (!fs.existsSync(dir)) fs.mkdirSync(dir);
 
-  const staticPageTitles = ["Homepage", "Notes", "Now", "Writing", "Today I&nbsp;Learned", "Max Antonucci", "About&nbsp;Me"];
+  const staticPageTitles = ["Homepage", "Now", "Writing", "Today I&nbsp;Learned", "Max Antonucci", "About&nbsp;Me"];
 
   // Go over all the posts
   for (const post of pages) {
@@ -124,8 +124,6 @@ const dataPath = fs.realpathSync(dataFile);
 
     if (post.image) {
       forPage.postImage = getPostImage(post.image);
-    } else if (post.title.includes('Note on')) {
-      forPage.postImage = getPostImage('assets/images/global/social-note.png');
     } else if (staticPageTitles.includes(post.title)) {
       forPage.isStatic = true;
       forPage.postImage = getPostImage('assets/images/global/profile.jpg');
@@ -164,7 +162,6 @@ const dataPath = fs.realpathSync(dataFile);
 
     const imagePath = `${dir}/${post.imgName}.png`;
     // Remove this if I want to bring back Note and TIL custom social images
-    const skipImage = post.title.includes('Note on');
 
     if (!fs.existsSync(imagePath) && !skipImage) {
       // Save a screenshot to [outputDir]/[previewDir]/[imgName].png

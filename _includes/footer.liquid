@@ -1,7 +1,12 @@
 {% unless title contains 'About Me' %}
-  <footer class="footer {% if white-footer %}footer--white{% endif %} border-primary-base {% if contentType == 'Note' %}slant-top-right{% else %}slant-top-left{% endif %}">
+  <footer class="footer {% if white-footer %}footer--white{% endif %} border-primary-base slant-top-left">
     <div class="resp-max-width pt-8 pb-4">
-      <img width="150" height="150" class="logo ml-4 mb-4 border-radius-full hidden-md-down" src="/assets/images/global/profile.jpg" alt="" />
+      <img
+        width="150"
+        height="150"
+        class="logo ml-4 mb-4 border-radius-full hidden-md-down"
+        src="/assets/images/global/profile.jpg"
+        alt="" />
 
       <h2 class="mt-0 text-h5">
         About Myself
@@ -12,7 +17,11 @@
       </p>
 
       <p>
-        If you want to follow me in a non-creepy way, you can check out my other online profiles. <a href="https://github.com/maxx1128">See my projects on Github,</a> <a href="http://codepen.io/max1128/">play with my code on Codepen,</a> <a href="http://www.twitter.com/Maxwell_Dev">follow me on Twitter,</a> <a href="/rss.xml">or follow my writing with my RSS feed.</a>
+        If you want to follow me in a non-creepy way, you can check out my other online profiles.
+        <a href="https://github.com/maxx1128">See my projects on Github,</a>
+        <a href="http://codepen.io/max1128/">play with my code on Codepen,</a>
+        <a href="http://www.twitter.com/Maxwell_Dev">follow me on Twitter,</a>
+        <a href="/rss.xml">or follow my writing with my RSS feed.</a>
       </p>
     </div>
   </footer>

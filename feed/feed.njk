@@ -19,11 +19,7 @@ eleventyExcludeFromCollections: true
 	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
 	<entry>
 		<title>
-			{% if post.data.contentType == "Note" %}
-				{{ post.data.date | noteDate }}
-			{% else %}
-				{{ post.data.title }}
-			{% endif %}
+			{{ post.data.title }}
 		</title>
 		<link href="{{ absolutePostUrl }}"/>
 		<updated>{{ post.date | rssDate }}</updated>
