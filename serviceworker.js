@@ -1,4 +1,4 @@
-const version = 'V2.08',
+const version = 'V2.09',
   staticCacheName = `${version}staticfiles`
 
 addEventListener('install', (installEvent) => {
@@ -18,7 +18,6 @@ addEventListener('install', (installEvent) => {
         '/assets/images/global/profile.jpg',
         '/assets/images/icons/icon-192.png',
         '/assets/images/icons/icon-512.png',
-        '/assets/images/doodles/all.svg',
       ])
 
       // Need to Cache
