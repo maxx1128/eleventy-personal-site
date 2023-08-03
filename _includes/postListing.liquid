@@ -11,44 +11,45 @@
     {% assign post_image = metadata.post.imagePath | append: post.data.image %}
 
     <article class="post-listing__article poke-coloring poke-background--bg poke-border--text relative flex">
+      <div class="post-listing__image-wrapper absolute">
+        <img
+          class="post-listing__image"
+          src="{% if post.data.image %}{{ post_image }}{% else %}/assets/images/global/header-default.jpg{% endif %}"
+          alt="">
+        <div class="post-listing__image-gradient"></div>
+      </div>
 
-      {% if post.data.image %}
-        <div class="post-listing__image-wrapper absolute">
-          <img
-            class="post-listing__image"
-            src="{{ post_image }}"
-            alt="">
-          <div class="post-listing__image-gradient"></div>
-        </div>
-      {% endif %}
-
-      <div class="post-listing__content {% unless post.data.image %}post-listing__content--full {% endunless %} flex-item poke-color--text p-4 transparent-white-bg">
-        <h3 class="mt-0 mb-1 text-h4">
-          <a class="flex flex-align-center flex-gap-4" href="{{ post.url }}">
-            {% if post.data.link %}
-              {% include externalIcon.liquid
-               width: "45px",
-               height: "45px" %}
-            {% else %}
-              <span class="screenReader">Blog post:</span>
-            {% endif %}
-
-            {{ post.data.title }}
-          </a>
-        </h3>
-
-        <small class="block mb-0">
-          <strong>
-            <span class="screenReader">Posted on</span>
-            {{ post.date | readableDate | date: "%B %e, %Y" }}
-          </strong>
-        </small>
-
-        {% if post.data.excerpt %}
-          <p class="mt-4 mb-0">
-            {{ post.data.excerpt }}
-          </p>
+      <div class="post-listing__content {% unless post.data.image %}post-listing__content--full {% endunless %} flex flex-gap-4 flex-align-center flex-item poke-color--text p-4 transparent-white-bg">
+        {% if post.data.link %}
+          {% include externalIcon.liquid
+           width: "45px",
+           height: "45px" %}
         {% endif %}
+
+        <div>
+          <h3 class="mt-0 mb-1 text-h4">
+            <a class="flex flex-align-center flex-gap-4" href="{{ post.url }}">
+              {% unless post.data.link %}
+                <span class="screenReader">Blog post:</span>
+              {% endunless %}
+
+              {{ post.data.title }}
+            </a>
+          </h3>
+
+          <small class="block mb-0">
+            <strong>
+              <span class="screenReader">Posted on</span>
+              {{ post.date | readableDate | date: "%B %e, %Y" }}
+            </strong>
+          </small>
+
+          {% if post.data.excerpt %}
+            <p class="mt-4 mb-0">
+              {{ post.data.excerpt }}
+            </p>
+          {% endif %}
+        </div>
       </div>
     </article>
   {% endfor %}
