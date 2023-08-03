@@ -1,3 +1,4 @@
+const { env } = require('process')
 const { DateTime } = require('luxon')
 const footnotes = require('eleventy-plugin-footnotes')
 const fs = require('fs')
@@ -32,6 +33,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation)
   eleventyConfig.addPlugin(footnotes)
 
+  eleventyConfig.addWatchTarget("./_sass/**/**/*");
+  eleventyConfig.addWatchTarget("./_javascript/**/**/*");
+
+  // eleventyConfig.setWatchThrottleWaitTime(500)
+
   eleventyConfig.setDataDeepMerge(true)
 
   eleventyConfig.addFilter('addNbsp', (str) => {
@@ -42,6 +48,33 @@ module.exports = function (eleventyConfig) {
     title = title.replace(/"(.*)"/g, '\\"$1\\"')
     return title
   })
+
+  eleventyConfig.addPairedLiquidShortcode("isDevelopment", () => {
+    return env.MY_ENVIRONMENT === 'dev'
+  });
+
+  eleventyConfig.addPairedLiquidShortcode("isProduction", () => {
+    return env.MY_ENVIRONMENT !== 'dev'
+  });
+
+  eleventyConfig.addFilter("bust", (url) => {
+    if (env.MY_ENVIRONMENT !== 'dev') {
+      return url;
+    }
+
+    const [urlPart, paramPart] = url.split("?");
+    const params = new URLSearchParams(paramPart || "");
+    const relativeUrl = (urlPart.charAt(0) == "/") ? urlPart.substring(1): urlPart;
+
+    try {
+      const fileStats = fs.statSync(relativeUrl);
+      const dateTimeModified = new DateTime(fileStats.mtime).toFormat("X");
+
+      params.set("v", dateTimeModified);
+    } catch (error) { }
+
+    return `${urlPart}?${params}`;
+  });
 
   eleventyConfig.addFilter('readableDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('dd LLL yyyy')

@@ -24,13 +24,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="{{ metadata.url | append: '/assets/images/global/favicon.ico' }}" />
-  <link rel="apple-touch-icon" sizes="192x192" href="{{ metadata.url | append: '/assets/images/icons/icon-192.png' }}" />
+  <link
+    rel="apple-touch-icon"
+    sizes="192x192"
+    href="{{ metadata.url | append: '/assets/images/icons/icon-192.png' }}" />
 
   <title>{{ title }}</title>
   <meta name="thumbnail" content="{{ featured_image }}" />
-  <meta property="og:image" content="{{ featured_image }}"/>
+  <meta property="og:image" content="{{ featured_image }}" />
   <meta name="description" content="{{ description }}">
-  <meta name="p:domain_verify" content="0b12e07a4feaad3b7aa48fee8ecae8db"/>
+  <meta name="p:domain_verify" content="0b12e07a4feaad3b7aa48fee8ecae8db" />
   <meta name="description" content="{{ description }}">
   <link rel="manifest" href="/manifest.webmanifest">
 
@@ -39,12 +42,22 @@
   {% endif %}
 
   <style>
-    * { background-size: 0% 0%; }
-    img { max-width: 100%; }
+    * {
+      background-size: 0 0;
+    }
+    img {
+      max-width: 100%;
+    }
   </style>
-  <link rel="stylesheet" type="text/css" href='/assets/css/main.css'>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href={{ '/assets/css/main.css' | url | bust }}>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: metadata.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ metadata.title }}" href="{{ metadata.url | append: '/rss.xml' }}">
+  <link rel="alternate"
+    type="application/rss+xml"
+    title="{{ metadata.title }}"
+    href="{{ metadata.url | append: '/rss.xml' }}">
 
   <!-- Open Graph data -->
   <meta property="og:title" content="{{ title }}" />
@@ -52,7 +65,7 @@
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: metadata.url }}" />
   <meta property="og:description" content="{{ description }}" />
   <meta property="og:site_name" content="maxwellantonucci.com" />
-  <meta property="og:image" content="{{ featured_image }}"/>
+  <meta property="og:image" content="{{ featured_image }}" />
   <meta property="og:image:width" content="1000" />
   <meta property="og:image:height" content="1000" />
 
@@ -62,8 +75,12 @@
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ description }}">
   <meta name="twitter:summary" content="{{ description }}">
-  <meta property="twitter:image" content="{{ featured_image }}"/>
+  <meta property="twitter:image" content="{{ featured_image }}" />
   <meta name="twitter:creator" content="@Maxwell_Dev">
 
-  <link type="application/atom+xml" rel="alternate" href="{{ metadata.url | append: 'rss.xml' }}" title="{{ metadata.title }}">
+  <link
+    type="application/atom+xml"
+    rel="alternate"
+    href="{{ metadata.url | append: 'rss.xml' }}"
+    title="{{ metadata.title }}">
 </head>

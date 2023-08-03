@@ -1,6 +1,7 @@
-<script>
-  if (navigator.serviceWorker) {
-    navigator.serviceWorker.register("/serviceworker.js")
-      .catch((error) => console.error("Failed to register service worker", error));
-  }
-</script>
+{% isProduction %}
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register("/serviceworker.js").catch((error) => console.error("Failed to register service worker", error));
+    }
+  </script>
+{% endisProduction %}
