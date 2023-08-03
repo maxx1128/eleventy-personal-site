@@ -3,18 +3,20 @@ layout: layouts/base.liquid
 ---
 
 <article id="content" class="post-content width-100">
-  {% if link.url and link.text %}
-    <p>
-      <a
-        class="font-weight-bold"
-        href="{{ link.url }}"
-        rel="external">
-        {{ link.text }}
+  {{ content | replace: "<p><img", "<figure><img" | replace: "></p>", "></figure>" | safe }}
+
+  {% if link.url and link.title %}
+    <p class="font-weight-bold">
+      Read
+      <a href="{{ link.url }}" rel="external">
+        {% if link.author %}
+          {{ link.title }} by {{ link.author }}.
+        {% else %}
+          {{ link.title }}.
+        {% endif %}
       </a>
     </p>
   {% endif %}
-
-  {{ content | replace: "<p><img", "<figure><img" | replace: "></p>", "></figure>" | safe }}
 
   {% footnotes %}
 </article>
