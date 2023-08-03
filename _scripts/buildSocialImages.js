@@ -163,7 +163,7 @@ const dataPath = fs.realpathSync(dataFile);
     const imagePath = `${dir}/${post.imgName}.png`;
     // Remove this if I want to bring back Note and TIL custom social images
 
-    if (!fs.existsSync(imagePath) && !skipImage) {
+    if (!fs.existsSync(imagePath)) {
       // Save a screenshot to [outputDir]/[previewDir]/[imgName].png
       await page.screenshot({
         path: imagePath,
