@@ -1,5 +1,5 @@
 @mixin darkMode() {
-  .theme-dark {
+  html:has(.theme-switcher__input[value="dark"]:checked) {
     @content;
   }
 
