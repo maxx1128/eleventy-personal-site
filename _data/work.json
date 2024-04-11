@@ -1,5 +1,17 @@
 [
   {
+    "title": "My Wedding Website",
+    "description": "When my wedding was being planned, we needed a website, and I was proud to make it myself. We needed it fast, so I used my custom Jekyll template and my Atomic Sass stylesheet. It also made use of responsive embedded maps, image galleries with lazy loading, a vertical timeline of events, and an animated countdown timer built with React, while keeping it accessible for all the guests. The amazing design was courtesy of my new wife ♡.",
+    "fullImageHeight": true,
+    "image": "wedding.png",
+    "tags": [
+      "jekyll", "CSS", "fun", "react"
+    ],
+    "urls": {
+      "code": "https://github.com/maxx1128/eleventy-wedding-site",
+      "demo": "https://www.mrandmrs.maxwellantonucci.com/"
+    }
+  }, {
     "title": "The Searchable Museum",
     "description": "My first project AgileSix was helping build and refine the digital museum for the National Museum of African American History and Culture. My main contributions included an in-depth, interactive exhibit component, refactoring the main navigation, and documenting and fixing a large number of accessibility bugs.",
     "image": "searchable-museum.png",
@@ -8,6 +20,16 @@
     ],
     "urls": {
       "demo": "https://www.searchablemuseum.com/"
+    }
+  }, {
+    "title": "CSS Variable Customizer",
+    "description": "This is a template I made for any small code projects where I want to quickly play around with basic styles. It's useful for fine-tuning the front-end's look and feel, and stress-testing its styling and markup.",
+    "image": "css-variable-customizer.png",
+    "tags": [
+      "CSS"
+    ],
+    "urls": {
+      "demo": "https://codepen.io/max1128/pen/ExEbWwv"
     }
   }, {
     "title": "SeeClickFix Request Portal",
