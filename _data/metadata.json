@@ -1,9 +1,9 @@
 {
   "title": "Maxwell Antonucci",
   "url": "https://www.maxwellantonucci.com",
-  "description": "Journalist turned full-time coder, part-time ponderer.",
+  "description": "Full-time coder, part-time ponderer.",
   "feed": {
-    "subtitle": "Journalist turned full-time coder, part-time ponderer.",
+    "subtitle": "Full-time coder, part-time ponderer.",
     "filename": "rss.xml",
     "path": "/rss.xml",
     "id": "https://www.maxwellantonucci.com"
