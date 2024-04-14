@@ -56,7 +56,7 @@
       max-width: $g-content-max-width * 1.2;
     }
 
-    img:not(.post-content--full-bleed) {
+    img:not(.post-content--full-bleed):not(.post-content--img-exception) {
       display: block;
       width: auto;
       margin-right: auto;
