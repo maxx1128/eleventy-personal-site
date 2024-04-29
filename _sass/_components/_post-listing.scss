@@ -1,17 +1,19 @@
-$base-article-size: 11rem;
+$base-article-size: 28rem;
 
 .post-listing__wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(#{$base-article-size}, 1fr) );
-  grid-template-rows: auto;
-  grid-gap: spacing(4);
-  grid-auto-flow: dense;
+  display: flex;
+  flex-wrap: wrap;
+  gap: spacing(3);
 }
 
 .post-listing__article {
+  flex: 1 1 $base-article-size;
   container-type: inline-size;
   overflow: hidden;
-  grid-column-end: span 2;
+
+  &:nth-of-type(4n+2) {
+    flex-basis: $base-article-size * .8;
+  }
 
   &:has(img) {
     flex-direction: column;
