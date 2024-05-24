@@ -40,8 +40,8 @@
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve --quiet --incremental",
-    "serve": "yarn start",
-    "write": "yarn start",
+    "serve": "npm run start",
+    "write": "npm run start",
     "debug": "DEBUG=* eleventy",
     "dev": "MY_ENVIRONMENT=dev run-p write sass:dev js:dev",
     "dev-sass": "MY_ENVIRONMENT=dev run-p write sass:dev",
