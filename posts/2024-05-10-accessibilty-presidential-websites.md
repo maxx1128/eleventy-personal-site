@@ -1,5 +1,5 @@
 ---
-title: "Do Presidential Websites Care About Web Accessibility?"
+title: "Presidents and Web Accessibility?"
 date: "2024-05-10"
 tags: ["web accessibility"]
 link:

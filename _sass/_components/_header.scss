@@ -36,6 +36,11 @@
   }
 }
 
+.header__text--no-image {
+  border-width: spacing(border) 0;
+  border-style: solid;
+}
+
 .header {
   background-position: center;
   background-size: cover;

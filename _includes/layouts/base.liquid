@@ -10,7 +10,15 @@
     {% include nav.liquid %}
 
     <header class="poke-border--text">
-      {% include topHeader.liquid %}
+      {% unless layout contains "post.liquid" %}
+        {% assign isPage = true %}
+      {% else %}
+        {% assign isPage = false %}
+      {% endunless %}
+
+      {% include topHeader.liquid
+        isPage: isPage
+      %}
 
       {% if layout contains "page.liquid" %}
         {% include pageHeader.liquid %}
@@ -21,9 +29,9 @@
 
     <main
       class='
-      {% unless main-hide-slant == true %}
+      {% if layout contains "page.liquid" or image %}
         slant-top-left bg-mono-white poke-border--text slant-bottom-padding
-      {% endunless %}'>
+      {% endif %}'>
       {{ content | safe }}
     </main>
 
