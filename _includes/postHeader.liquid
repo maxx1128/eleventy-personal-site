@@ -17,11 +17,12 @@
           </span>
         </div>
 
-        <h1 class="flex flex-column sm--flex-row flex-align-start sm--flex-align-center flex-gap-4 sm--flex-gap-6 mt-2 mb-0">
+        <h1 class="flex flex-row flex-align-start flex-align-center flex-gap-4 sm--flex-gap-6 mt-2 mb-0">
           {% if link.url and link.title %}
             {% include externalIcon.liquid
-            width: "75px",
-            height: "75px" %}
+              width: "60px",
+              height: "60px"
+            %}
           {% endif %}
 
           {{ title | replace: " - Maxwell Antonucci", "" }}
@@ -60,11 +61,12 @@
         </span>
       </div>
 
-      <h1 class="flex flex-column sm--flex-row flex-align-start sm--flex-align-center flex-gap-4 sm--flex-gap-6 my-0 text-h2 mt-4 mb-4">
+      <h1 class="flex flex-row flex-align-start flex-align-center flex-gap-4 sm--flex-gap-6 my-0 text-h2 mt-4 mb-4">
         {% if link.url and link.title %}
           {% include externalIcon.liquid
-          width: "75px",
-          height: "75px" %}
+            width: "60px",
+            height: "60px"
+          %}
         {% endif %}
 
         {{ title | replace: " - Maxwell Antonucci", "" }}
