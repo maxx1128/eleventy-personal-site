@@ -36,14 +36,16 @@
       </div>
     </div>
 
-    <div class="header__image-wrapper absolute">
-      <div class="header__image-gradient"></div>
+    {% if banner_image %}
+      <div class="header__image-wrapper absolute">
+        <div class="header__image-gradient"></div>
 
-      <img
-        alt=""
-        src="{{ banner_image }}"
-        class="header__large-image flex-item" />
-    </div>
+        <img
+          alt=""
+          src="{{ banner_image }}"
+          class="header__large-image flex-item" />
+      </div>
+    {% endif %}
   </div>
 {% else %}
   {% assign postHasImage = true %}
@@ -77,15 +79,6 @@
           {{ excerpt }}
         </p>
       {% endif %}
-    </div>
-
-    <div class="header__image-wrapper absolute">
-      <div class="header__image-gradient"></div>
-
-      <img
-        alt=""
-        src="{{ banner_image }}"
-        class="header__large-image flex-item" />
     </div>
   </div>
 {% endif %}
