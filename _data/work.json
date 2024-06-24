@@ -1,312 +1,325 @@
 [
   {
-    "title": "My Wedding Website",
-    "description": "When my wedding was being planned, we needed a website, and I was proud to make it myself. We needed it fast, so I used my custom Jekyll template and my Atomic Sass stylesheet. It also made use of responsive embedded maps, image galleries with lazy loading, a vertical timeline of events, and an animated countdown timer built with React, while keeping it accessible for all the guests. The amazing design was courtesy of my new wife ♡.",
-    "fullImageHeight": true,
-    "image": "wedding.png",
-    "tags": [
-      "jekyll", "CSS", "fun", "react"
-    ],
-    "urls": {
-      "code": "https://github.com/maxx1128/eleventy-wedding-site",
-      "demo": "https://www.mrandmrs.maxwellantonucci.com/"
-    }
+    "type": "Major",
+    "work": [
+      {
+        "title": "My Wedding Website",
+        "description": "When my wedding was being planned, we needed a website, and I was proud to make it myself. We needed it fast, so I used my custom Jekyll template and my Atomic Sass stylesheet. It also made use of responsive embedded maps, image galleries with lazy loading, a vertical timeline of events, and an animated countdown timer built with React, while keeping it accessible for all the guests. The amazing design was courtesy of my new wife ♡.",
+        "fullImageHeight": true,
+        "image": "wedding.png",
+        "major": true,
+        "tags": [
+          "jekyll", "CSS", "fun", "react"
+        ],
+        "urls": {
+          "code": "https://github.com/maxx1128/eleventy-wedding-site",
+          "demo": "https://www.mrandmrs.maxwellantonucci.com/"
+        }
+      }, {
+        "title": "The Searchable Museum",
+        "description": "My first project AgileSix was helping build and refine the digital museum for the National Museum of African American History and Culture. I built an in-depth, interactive exhibit component, refactored the main navigation, and brought the site closer to Web Content and Accessibility Guidelines (WCAG) 2.1 compliance by documenting and fixing accessibility bugs.",
+        "image": "searchable-museum.png",
+        "major": true,
+        "tags": [
+          "react", "Next.JS", "accessibility"
+        ],
+        "urls": {
+          "demo": "https://www.searchablemuseum.com/"
+        }
+      }, {
+        "title": "SeeClickFix Request Portal",
+        "description": "The Request Portal is how citizens can use SeeClickFix to send requests to their local governments, track their progress, explore others on a map, and comment or follow others. I made the style guide and design system that the front-end was built on from scratch and integrated it into front-end and back-end platforms. I also ensured it was compliant with WCAG 2.1 standards.",
+        "image": "scf-portal.png",
+        "major": true,
+        "tags": [
+          "CSS", "Ember", "Style Guides", "accessibility"
+        ],
+        "urls": {
+          "demo": "https://seeclickfix.com/web_portal/WAE8vSooYm9Yc9YRgEETwygF/issues/map?lat=41.31037258994134&lng=-72.92415951148286&max_lat=41.32492535255861&max_lng=-72.89154384986179&min_lat=41.29581657812626&min_lng=-72.9567751731039&zoom=14"
+        }
+      }
+    ]
   }, {
-    "title": "The Searchable Museum",
-    "description": "My first project AgileSix was helping build and refine the digital museum for the National Museum of African American History and Culture. My main contributions included an in-depth, interactive exhibit component, refactoring the main navigation, and documenting and fixing a large number of accessibility bugs.",
-    "image": "searchable-museum.png",
-    "tags": [
-      "react", "Next.JS", "accessibility"
-    ],
-    "urls": {
-      "demo": "https://www.searchablemuseum.com/"
-    }
-  }, {
-    "title": "CSS Variable Customizer",
-    "description": "This is a template I made for any small code projects where I want to quickly play around with basic styles. It's useful for fine-tuning the front-end's look and feel, and stress-testing its styling and markup.",
-    "image": "css-variable-customizer.png",
-    "tags": [
-      "CSS"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/ExEbWwv"
-    }
-  }, {
-    "title": "SeeClickFix Request Portal",
-    "description": "The Request Portal is how citizens can use SeeClickFix to send requests to their local governments, track their progress, explore others on a map, and comment or follow others. I made the style guide and design system the front-end was built on as well as building it to be compliant with the Web Content and Accessibility Guidelines (WCAG) AA standards.",
-    "image": "scf-portal.png",
-    "tags": [
-      "CSS", "Ember", "Style Guides"
-    ],
-    "urls": {
-      "demo": "https://seeclickfix.com/web_portal/WAE8vSooYm9Yc9YRgEETwygF/issues/map?lat=41.31037258994134&lng=-72.92415951148286&max_lat=41.32492535255861&max_lng=-72.89154384986179&min_lat=41.29581657812626&min_lng=-72.9567751731039&zoom=14"
-    }
-  }, {
-    "title": "Anime Quote Maker",
-    "description": "My favorite side project is an easy way to pair inspiring quotes with stylish anime art. Each quote image can be heavily customized with different positioning, colors, shapes, font styles, and filters. It also uses a custom API endpoint I wrote in Ruby to pull images randomly or based on tags.",
-    "image": "anime-quote-maker.png",
-    "fullImageHeight": true,
-    "tags": [
-      "react", "art", "fun", "css", "ruby"
-    ],
-    "urls": {
-      "code": "https://github.com/maxx1128/anime-quote-maker",
-      "demo": "https://www.quotemaker.maxwellantonucci.com"
-    }
-  }, {
-    "title": "Coordinate-based Generative Art",
-    "description": "Random shapes are created along an SVG grid, and I used GSAP to sprinkle random animation effects as they get drown. The end result is a small, unique piece of generated artwork.",
-    "image": "coordinate-generative.png",
-    "tags": [
-      "art", "svg", "animation"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/KKNpVGP"
-    }
-  }, {
-    "title": "Vigenere Encryption",
-    "description": "This encryption tools lets you encode messages using a secret pass phrase, and it can old be decoded with the same pass phrase. Writing the coding and decoding logic was almost as difficult as understanding all the principles behind Vigenere encryption itself.",
-    "image": "vigenere-encryption.png",
-    "tags": [
-      "vue", "tool"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/VdyJmd"
-    }
-  }, {
-    "title": "Anime Twitter Bot",
-    "image": "anime-quote-bot.png",
-    "fullImageHeight": true,
-    "description": "This (now retired) Twitter bot created and tweeted random pieces from me Anime Quote Maker. It tweeted tens of thousands of generated art images in its lifetime.",
-    "tags": [
-      "ruby", "art", "fun"
-    ],
-    "urls": {
-      "code": "https://github.com/maxx1128/anime-twitter-bot"
-    }
-  }, {
-    "title": "Boxing Bot",
-    "description": "I created several structured workouts with randomly selected exercises to help me work out at home during the pandemic, and wound up still using it after quarantine.",
-    "image": "boxing-bot.png",
-    "tags": [
-      "react", "fun"
-    ],
-    "urls": {
-      "code": "https://github.com/maxx1128/boxing-bot",
-      "demo": "https://xenodochial-easley-15f2ec.netlify.app/"
-    }
-  }, {
-    "title": "Baby Shower Wordle",
-    "description": "This is a custom Wordle built for a baby shower. All the guests complete two Wordles, and whoever finishes them the quickest and in the fewest moves win. It also uses Tailwind to speed up the custom styling.",
-    "image": "baby-shower-wordle.png",
-    "tags": [
-      "react", "fun"
-    ],
-    "urls": {
-      "code": "https://github.com/maxx1128/baby-shower-wordle",
-      "demo": "https://resplendent-croissant-eccc4c.netlify.app/"
-    }
-  }, {
-    "title": "CSS Customizer Template",
-    "description": "A template I'm using for future pens that let me adjust different styles on the fly for future CodePen projects. It's useful to narrow down the precise styling a page needs, and fast.",
-    "image": "css-customizer-template.png",
-    "fullImageHeight": true,
-    "tags": [
-      "css", "tool"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/ExEbWwv"
-    }
-  }, {
-    "title": "Snake Oil Salesman",
-    "description": "During quarantine, my gaming friends and I couldn't find a good online version of the game 'Snake Oil Salesman' to play. So I made one myself!",
-    "image": "snake-oil-salesman.png",
-    "tags": [
-      "react", "game", "fun"
-    ],
-    "urls": {
-      "code": "https://github.com/maxx1128/snake-oil-salesman-react",
-      "demo": "https://loving-goldwasser-415918.netlify.app/"
-    }
-  }, {
-    "title": "Atomic Sass",
-    "description": "I enjoy Atomic CSS as a starting point for many of my project's styles. While I enjoy Tailwind, I often find it too bulky for small projects, so I made my own Atomic stylesheet. It includes style variables, base element styles, and responsive classes.",
-    "tags": [
-      "css", "tool"
-    ],
-    "urls": {
-      "code": "https://github.com/maxx1128/atomic-sass"
-    }
-  }, {
-    "title": "Monty Hall Dilemma Game",
-    "description": "The Monty Hall Dilemma is one of my favorite puzzles, and recreating it is one of my favorite ways to try a new JavaScript tool or framework. This was one of my first Vue projects.",
-    "image": "monty-hall.png",
-    "tags": [
-      "vue", "game"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/OxQYzW"
-    }
-  }, {
-    "title": "Hypnotic Spiral",
-    "description": "This project is a combination of CSS animation, careful timing, and making code up on the fly. Just don't stare at it for too long.",
-    "image": "hypnotic-spiral.png",
-    "fullImageHeight": true,
-    "tags": [
-      "animation", "art"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/xEOLmg"
-    }
-  }, {
-    "title": "Responsive RWBY Show Poster",
-    "description": "SVG lets coders crop and arrange images in interesting ways. I experimented with this by making a fake poster for one of my favorite animes that's also responsive, making it well-suited for online promotion materials.",
-    "image": "rwby-poster.png",
-    "fullImageHeight": true,
-    "tags": [
-      "svg", "art"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/ZEppvKE"
-    }
-  }, {
-    "title": "Freeman's Mind Lorem Ipsum Generator",
-    "description": "After using a custom Ruby script to scrape lots of quotes from a popular web series, I wrote some React to randomly mix them together. Use it when you need inane filler text.",
-    "image": "freeman-ipsum.png",
-    "tags": [
-      "react", "tool", "ruby"
-    ],
-    "urls": {
-      "code": "https://github.com/maxx1128/freemans-mind-ipsum-react",
-      "demo": "https://gracious-pare-a5cce3.netlify.app/"
-    }
-  }, {
-    "title": "Number Guessing Game",
-    "description": "This is one of the first JavaScript games I made. You have five tries to guess a number, with the game giving you different hints throughout.",
-    "image": "number-guessing-game.png",
-    "tags": [
-      "angular", "game"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/VvaLgr"
-    }
-  }, {
-    "title": "Commute Calculator",
-    "description": "A simple, silly way to see how much time you're spending each year on your work commute.",
-    "image": "commute-calculator.png",
-    "tags": [
-      "vue", "tool", "fun"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/mBrKqR"
-    }
-  }, {
-    "title": "Interactive Lamp",
-    "description": "This was how I experimented with SVG's ability to both make drawings and be interactive. I plan do more like this in the future.",
-    "image": "interactive-lamp.png",
-    "tags": [
-      "svg", "fun"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/eYdorPo"
-    }
-  }, {
-    "title": "Animated Pokeball",
-    "description": "An experiment with mixing SVG images and custom CSS shading for results that look like pictures, but are actually made of pure code.",
-    "image": "animated-pokeball.png",
-    "tags": [
-      "art", "svg"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/gOwEWrd"
-    }
-  }, {
-    "title": "Ruby Skeleton",
-    "description": "My focus is the front-end, but I make the ocassional Ruby project for automating tasks, building small APIs, and scraping info off the web. This is a blank Ruby template for quickly starting on all of them.",
-    "tags": [
-      "ruby", "tool"
-    ],
-    "urls": {
-      "code": "https://github.com/maxx1128/ruby-skeleton"
-    }
-  }, {
-    "title": "Partially-Colored Gradient Effect",
-    "description": "While reading about SVG, I saw its ability to partially color images in different ways and had to give it a shot.",
-    "image": "partial-gradient.png",
-    "tags": [
-      "art", "svg"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/JjGMbJp"
-    }
-  }, {
-    "title": "Concentration Game",
-    "description": "A game I made to practice more with Vue.JS, one of the most popular JavaScript frameworks. It randomizes the numbers' placement and tracks the user's remaining turns.",
-    "image": "concentration.png",
-    "tags": [
-      "vue", "game"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/JVmzYZ"
-    }
-  }, {
-    "title": "Tic Tac Toe Game",
-    "description": "If you haven't seen it yet, I enjoy practicing different JavaScript approaches and frameworks by making classic games with them. This was to flex my plain, functional JavaScript skills.",
-    "image": "tic-tac-toe.png",
-    "tags": [
-      "plain js", "game"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/JNbyaL"
-    }
-  }, {
-    "title": "Synapse Grid",
-    "description": "Synapse is a Sass grid system with the fun and simplicity of Expressive CSS without the bloat of so many HTML classes. I used it a fair amount before Flexbox and Grid became more mainstream for web layouts, so it's no longer maintained.",
-    "tags": [
-      "css", "tool"
-    ],
-    "urls": {
-      "code": "https://github.com/maxx1128/Synapse-Grid"
-    }
-  }, {
-    "title": "CSS Grid Image Opener",
-    "description": "CSS Grid is great for page layouts, but also has many artistic uses. I played around with overlapping squares of anime art for a more dramatic effect that's also mobile responsive.",
-    "image": "grid-opener.png",
-    "tags": [
-      "art", "css"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/OmJxLe"
-    }
-  }, {
-    "title": "Scroll Snap Gallery",
-    "description": "Like so many cool styling tools, I only fully understood Scroll Snapping when I made something with it and gratuitous anime artwork. In this case, it's an image gallery that uses Scroll Snap to prevent images being partly outside of the visible window.",
-    "image": "scroll-snap.png",
-    "tags": [
-      "css", "art"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/JjYGrrM"
-    }
-  }, {
-    "title": "Cicada Animation",
-    "description": "The Cicada Principle is the design rule that using prime numbers can create the illusion of randomness in front-end designs. This loading screen looks unpredictable and spastic, but it actually uses no randomly generated numbers.",
-    "image": "cicada.png",
-    "tags": [
-      "animation"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/aBWxyg"
-    }
-  }, {
-    "title": "Parallax Text Effect",
-    "description": "I planned to use this slow, gentle parallax background for some long-form writing ideas, but never had the time to finish it. But it's still a neat effect I hope to find another use for someday.",
-    "image": "parallax-text.png",
-    "tags": [
-      "jquery", "art"
-    ],
-    "urls": {
-      "demo": "https://codepen.io/max1128/pen/pbaxpK"
-    }
+    "type": "Side",
+    "work": [
+      {
+        "title": "CSS Variable Customizer",
+        "description": "This is a template I made for any small code projects where I want to quickly play around with basic styles. It's useful for fine-tuning the front-end's look and feel, and stress-testing its styling and markup.",
+        "image": "css-variable-customizer.png",
+        "tags": [
+          "CSS"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/ExEbWwv"
+        }
+      }, {
+        "title": "Anime Quote Maker",
+        "description": "My favorite side project is an easy way to pair inspiring quotes with stylish anime art. Each quote image can be heavily customized with different positioning, colors, shapes, font styles, and filters. It also uses a custom API endpoint I wrote in Ruby to pull images randomly or based on tags.",
+        "image": "anime-quote-maker.png",
+        "fullImageHeight": true,
+        "tags": [
+          "react", "art", "fun", "css", "ruby"
+        ],
+        "urls": {
+          "code": "https://github.com/maxx1128/anime-quote-maker",
+          "demo": "https://www.quotemaker.maxwellantonucci.com"
+        }
+      }, {
+        "title": "Coordinate-based Generative Art",
+        "description": "Random shapes are created along an SVG grid, and I used GSAP to sprinkle random animation effects as they get drown. The end result is a small, unique piece of generated artwork.",
+        "image": "coordinate-generative.png",
+        "tags": [
+          "art", "svg", "animation"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/KKNpVGP"
+        }
+      }, {
+        "title": "Vigenere Encryption",
+        "description": "This encryption tools lets you encode messages using a secret pass phrase, and it can old be decoded with the same pass phrase. Writing the coding and decoding logic was almost as difficult as understanding all the principles behind Vigenere encryption itself.",
+        "image": "vigenere-encryption.png",
+        "tags": [
+          "vue", "tool"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/VdyJmd"
+        }
+      }, {
+        "title": "Anime Twitter Bot",
+        "image": "anime-quote-bot.png",
+        "fullImageHeight": true,
+        "description": "This (now retired) Twitter bot created and tweeted random pieces from me Anime Quote Maker. It tweeted tens of thousands of generated art images in its lifetime.",
+        "tags": [
+          "ruby", "art", "fun"
+        ],
+        "urls": {
+          "code": "https://github.com/maxx1128/anime-twitter-bot"
+        }
+      }, {
+        "title": "Boxing Bot",
+        "description": "I created several structured workouts with randomly selected exercises to help me work out at home during the pandemic, and wound up still using it after quarantine.",
+        "image": "boxing-bot.png",
+        "tags": [
+          "react", "fun"
+        ],
+        "urls": {
+          "code": "https://github.com/maxx1128/boxing-bot",
+          "demo": "https://xenodochial-easley-15f2ec.netlify.app/"
+        }
+      }, {
+        "title": "Baby Shower Wordle",
+        "description": "This is a custom Wordle built for a baby shower. All the guests complete two Wordles, and whoever finishes them the quickest and in the fewest moves win. It also uses Tailwind to speed up the custom styling.",
+        "image": "baby-shower-wordle.png",
+        "tags": [
+          "react", "fun"
+        ],
+        "urls": {
+          "code": "https://github.com/maxx1128/baby-shower-wordle",
+          "demo": "https://resplendent-croissant-eccc4c.netlify.app/"
+        }
+      }, {
+        "title": "CSS Customizer Template",
+        "description": "A template I'm using for future pens that let me adjust different styles on the fly for future CodePen projects. It's useful to narrow down the precise styling a page needs, and fast.",
+        "image": "css-customizer-template.png",
+        "fullImageHeight": true,
+        "tags": [
+          "css", "tool"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/ExEbWwv"
+        }
+      }, {
+        "title": "Snake Oil Salesman",
+        "description": "During quarantine, my gaming friends and I couldn't find a good online version of the game 'Snake Oil Salesman' to play. So I made one myself!",
+        "image": "snake-oil-salesman.png",
+        "tags": [
+          "react", "game", "fun"
+        ],
+        "urls": {
+          "code": "https://github.com/maxx1128/snake-oil-salesman-react",
+          "demo": "https://loving-goldwasser-415918.netlify.app/"
+        }
+      }, {
+        "title": "Atomic Sass",
+        "description": "I enjoy Atomic CSS as a starting point for many of my project's styles. While I enjoy Tailwind, I often find it too bulky for small projects, so I made my own Atomic stylesheet. It includes style variables, base element styles, and responsive classes.",
+        "tags": [
+          "css", "tool"
+        ],
+        "urls": {
+          "code": "https://github.com/maxx1128/atomic-sass"
+        }
+      }, {
+        "title": "Monty Hall Dilemma Game",
+        "description": "The Monty Hall Dilemma is one of my favorite puzzles, and recreating it is one of my favorite ways to try a new JavaScript tool or framework. This was one of my first Vue projects.",
+        "image": "monty-hall.png",
+        "tags": [
+          "vue", "game"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/OxQYzW"
+        }
+      }, {
+        "title": "Hypnotic Spiral",
+        "description": "This project is a combination of CSS animation, careful timing, and making code up on the fly. Just don't stare at it for too long.",
+        "image": "hypnotic-spiral.png",
+        "fullImageHeight": true,
+        "tags": [
+          "animation", "art"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/xEOLmg"
+        }
+      }, {
+        "title": "Responsive RWBY Show Poster",
+        "description": "SVG lets coders crop and arrange images in interesting ways. I experimented with this by making a fake poster for one of my favorite animes that's also responsive, making it well-suited for online promotion materials.",
+        "image": "rwby-poster.png",
+        "fullImageHeight": true,
+        "tags": [
+          "svg", "art"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/ZEppvKE"
+        }
+      }, {
+        "title": "Freeman's Mind Lorem Ipsum Generator",
+        "description": "After using a custom Ruby script to scrape lots of quotes from a popular web series, I wrote some React to randomly mix them together. Use it when you need inane filler text.",
+        "image": "freeman-ipsum.png",
+        "tags": [
+          "react", "tool", "ruby"
+        ],
+        "urls": {
+          "code": "https://github.com/maxx1128/freemans-mind-ipsum-react",
+          "demo": "https://gracious-pare-a5cce3.netlify.app/"
+        }
+      }, {
+        "title": "Number Guessing Game",
+        "description": "This is one of the first JavaScript games I made. You have five tries to guess a number, with the game giving you different hints throughout.",
+        "image": "number-guessing-game.png",
+        "tags": [
+          "angular", "game"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/VvaLgr"
+        }
+      }, {
+        "title": "Commute Calculator",
+        "description": "A simple, silly way to see how much time you're spending each year on your work commute.",
+        "image": "commute-calculator.png",
+        "tags": [
+          "vue", "tool", "fun"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/mBrKqR"
+        }
+      }, {
+        "title": "Interactive Lamp",
+        "description": "This was how I experimented with SVG's ability to both make drawings and be interactive. I plan do more like this in the future.",
+        "image": "interactive-lamp.png",
+        "tags": [
+          "svg", "fun"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/eYdorPo"
+        }
+      }, {
+        "title": "Animated Pokeball",
+        "description": "An experiment with mixing SVG images and custom CSS shading for results that look like pictures, but are actually made of pure code.",
+        "image": "animated-pokeball.png",
+        "tags": [
+          "art", "svg"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/gOwEWrd"
+        }
+      }, {
+        "title": "Ruby Skeleton",
+        "description": "This is my base Ruby template for automating tasks, building small APIs, and scraping info off the web.",
+        "tags": [
+          "ruby", "tool"
+        ],
+        "urls": {
+          "code": "https://github.com/maxx1128/ruby-skeleton"
+        }
+      }, {
+        "title": "Partially-Colored Gradient Effect",
+        "description": "While reading about SVG, I saw its ability to partially color images in different ways and had to give it a shot.",
+        "image": "partial-gradient.png",
+        "tags": [
+          "art", "svg"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/JjGMbJp"
+        }
+      }, {
+        "title": "Concentration Game",
+        "description": "A game I made to practice more with Vue.JS, one of the most popular JavaScript frameworks. It randomizes the numbers' placement and tracks the user's remaining turns.",
+        "image": "concentration.png",
+        "tags": [
+          "vue", "game"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/JVmzYZ"
+        }
+      }, {
+        "title": "Tic Tac Toe Game",
+        "description": "If you haven't seen it yet, I enjoy practicing different JavaScript approaches and frameworks by making classic games with them. This was to flex my plain, functional JavaScript skills.",
+        "image": "tic-tac-toe.png",
+        "tags": [
+          "plain js", "game"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/JNbyaL"
+        }
+      }, {
+        "title": "Synapse Grid",
+        "description": "Synapse is a Sass grid system with the fun and simplicity of Expressive CSS without the bloat of so many HTML classes. I used it a fair amount before Flexbox and Grid became more mainstream for web layouts, so it's no longer maintained.",
+        "tags": [
+          "css", "tool"
+        ],
+        "urls": {
+          "code": "https://github.com/maxx1128/Synapse-Grid"
+        }
+      }, {
+        "title": "CSS Grid Image Opener",
+        "description": "CSS Grid is great for page layouts, but also has many artistic uses. I played around with overlapping squares of anime art for a more dramatic effect that's also mobile responsive.",
+        "image": "grid-opener.png",
+        "tags": [
+          "art", "css"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/OmJxLe"
+        }
+      }, {
+        "title": "Scroll Snap Gallery",
+        "description": "Like so many cool styling tools, I only fully understood Scroll Snapping when I made something with it and gratuitous anime artwork. In this case, it's an image gallery that uses Scroll Snap to prevent images being partly outside of the visible window.",
+        "image": "scroll-snap.png",
+        "tags": [
+          "css", "art"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/JjYGrrM"
+        }
+      }, {
+        "title": "Cicada Animation",
+        "description": "The Cicada Principle is the design rule that using prime numbers can create the illusion of randomness in front-end designs. This loading screen looks unpredictable and spastic, but it actually uses no randomly generated numbers.",
+        "image": "cicada.png",
+        "tags": [
+          "animation"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/aBWxyg"
+        }
+      }, {
+        "title": "Parallax Text Effect",
+        "description": "I planned to use this slow, gentle parallax background for some long-form writing ideas, but never had the time to finish it. But it's still a neat effect I hope to find another use for someday.",
+        "image": "parallax-text.png",
+        "tags": [
+          "jquery", "art"
+        ],
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/pbaxpK"
+        }
+      }
+    ]
   }
 ]

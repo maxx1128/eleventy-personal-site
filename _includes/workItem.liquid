@@ -1,0 +1,45 @@
+{% assign descrWords = workItem.description | split: " " %}
+{% assign workSizeClass = "" %}
+
+{% comment %} {% if descrWords.length > 40 %}
+  {% assign workSizeClass = "work-item--large" %} {% endcomment %}
+{% if descrWords.length > 30 %}
+  {% assign workSizeClass = "work-item--medium" %}
+{% endif %}
+
+<article class="work-item {{ workSizeClass }} flex flex-column flex-item box-shadow-2">
+  <ul aria-hidden="true" class="list-reset flex flex-wrap flex-gap-2 px-4 md--px-6 py-2">
+    {% for tag in workItem.tags %}
+      <li class="text-puny mb-0 bg-primary-dark text-mono-muted border-radius-small px-2 pt-border upper">
+        {{ tag }}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <img class="work-item__image {% if workItem.fullImageHeight %}work-item__image--full-height{% endif %}" src='/assets/images/work/{% if workItem.image %}{{ workItem.image }}{% else %}placeholder.jpg{% endif %}' alt="" />
+
+  <div class="work-item__content flex flex-column px-4 py-4 md--px-6 height-100">
+    <h3 class="text-h5">
+      {{ workItem.title }}
+    </h3>
+
+    <p class="text-small">
+
+      {{ workItem.description }}
+    </p>
+
+    <div class="flex flex-wrap flex-gap-4 mt-auto">
+      {% if workItem.urls.code %}
+        <a href="{{ workItem.urls.code }}">
+          View Code <span class="screenReader"> for {{ workItem.title }}</span>
+        </a>
+      {% endif %}
+
+      {% if workItem.urls.demo %}
+        <a href="{{ workItem.urls.demo }}">
+          View Demo <span class="screenReader"> for {{ workItem.title }}</span>
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</article>
