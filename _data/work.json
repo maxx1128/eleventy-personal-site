@@ -85,17 +85,6 @@
           "demo": "https://codepen.io/max1128/pen/VdyJmd"
         }
       }, {
-        "title": "Anime Twitter Bot",
-        "image": "anime-quote-bot.png",
-        "fullImageHeight": true,
-        "description": "This (now retired) Twitter bot created and tweeted random pieces from me Anime Quote Maker. It tweeted tens of thousands of generated art images in its lifetime.",
-        "tags": [
-          "ruby", "art", "fun"
-        ],
-        "urls": {
-          "code": "https://github.com/maxx1128/anime-twitter-bot"
-        }
-      }, {
         "title": "Boxing Bot",
         "description": "I created several structured workouts with randomly selected exercises to help me work out at home during the pandemic, and wound up still using it after quarantine.",
         "image": "boxing-bot.png",
@@ -114,19 +103,7 @@
           "react", "fun"
         ],
         "urls": {
-          "code": "https://github.com/maxx1128/baby-shower-wordle",
           "demo": "https://resplendent-croissant-eccc4c.netlify.app/"
-        }
-      }, {
-        "title": "CSS Customizer Template",
-        "description": "A template I'm using for future pens that let me adjust different styles on the fly for future CodePen projects. It's useful to narrow down the precise styling a page needs, and fast.",
-        "image": "css-customizer-template.png",
-        "fullImageHeight": true,
-        "tags": [
-          "css", "tool"
-        ],
-        "urls": {
-          "demo": "https://codepen.io/max1128/pen/ExEbWwv"
         }
       }, {
         "title": "Snake Oil Salesman",
@@ -202,55 +179,6 @@
           "demo": "https://codepen.io/max1128/pen/VvaLgr"
         }
       }, {
-        "title": "Commute Calculator",
-        "description": "A simple, silly way to see how much time you're spending each year on your work commute.",
-        "image": "commute-calculator.png",
-        "tags": [
-          "vue", "tool", "fun"
-        ],
-        "urls": {
-          "demo": "https://codepen.io/max1128/pen/mBrKqR"
-        }
-      }, {
-        "title": "Interactive Lamp",
-        "description": "This was how I experimented with SVG's ability to both make drawings and be interactive. I plan do more like this in the future.",
-        "image": "interactive-lamp.png",
-        "tags": [
-          "svg", "fun"
-        ],
-        "urls": {
-          "demo": "https://codepen.io/max1128/pen/eYdorPo"
-        }
-      }, {
-        "title": "Animated Pokeball",
-        "description": "An experiment with mixing SVG images and custom CSS shading for results that look like pictures, but are actually made of pure code.",
-        "image": "animated-pokeball.png",
-        "tags": [
-          "art", "svg"
-        ],
-        "urls": {
-          "demo": "https://codepen.io/max1128/pen/gOwEWrd"
-        }
-      }, {
-        "title": "Ruby Skeleton",
-        "description": "This is my base Ruby template for automating tasks, building small APIs, and scraping info off the web.",
-        "tags": [
-          "ruby", "tool"
-        ],
-        "urls": {
-          "code": "https://github.com/maxx1128/ruby-skeleton"
-        }
-      }, {
-        "title": "Partially-Colored Gradient Effect",
-        "description": "While reading about SVG, I saw its ability to partially color images in different ways and had to give it a shot.",
-        "image": "partial-gradient.png",
-        "tags": [
-          "art", "svg"
-        ],
-        "urls": {
-          "demo": "https://codepen.io/max1128/pen/JjGMbJp"
-        }
-      }, {
         "title": "Concentration Game",
         "description": "A game I made to practice more with Vue.JS, one of the most popular JavaScript frameworks. It randomizes the numbers' placement and tracks the user's remaining turns.",
         "image": "concentration.png",
@@ -269,55 +197,6 @@
         ],
         "urls": {
           "demo": "https://codepen.io/max1128/pen/JNbyaL"
-        }
-      }, {
-        "title": "Synapse Grid",
-        "description": "Synapse is a Sass grid system with the fun and simplicity of Expressive CSS without the bloat of so many HTML classes. I used it a fair amount before Flexbox and Grid became more mainstream for web layouts, so it's no longer maintained.",
-        "tags": [
-          "css", "tool"
-        ],
-        "urls": {
-          "code": "https://github.com/maxx1128/Synapse-Grid"
-        }
-      }, {
-        "title": "CSS Grid Image Opener",
-        "description": "CSS Grid is great for page layouts, but also has many artistic uses. I played around with overlapping squares of anime art for a more dramatic effect that's also mobile responsive.",
-        "image": "grid-opener.png",
-        "tags": [
-          "art", "css"
-        ],
-        "urls": {
-          "demo": "https://codepen.io/max1128/pen/OmJxLe"
-        }
-      }, {
-        "title": "Scroll Snap Gallery",
-        "description": "Like so many cool styling tools, I only fully understood Scroll Snapping when I made something with it and gratuitous anime artwork. In this case, it's an image gallery that uses Scroll Snap to prevent images being partly outside of the visible window.",
-        "image": "scroll-snap.png",
-        "tags": [
-          "css", "art"
-        ],
-        "urls": {
-          "demo": "https://codepen.io/max1128/pen/JjYGrrM"
-        }
-      }, {
-        "title": "Cicada Animation",
-        "description": "The Cicada Principle is the design rule that using prime numbers can create the illusion of randomness in front-end designs. This loading screen looks unpredictable and spastic, but it actually uses no randomly generated numbers.",
-        "image": "cicada.png",
-        "tags": [
-          "animation"
-        ],
-        "urls": {
-          "demo": "https://codepen.io/max1128/pen/aBWxyg"
-        }
-      }, {
-        "title": "Parallax Text Effect",
-        "description": "I planned to use this slow, gentle parallax background for some long-form writing ideas, but never had the time to finish it. But it's still a neat effect I hope to find another use for someday.",
-        "image": "parallax-text.png",
-        "tags": [
-          "jquery", "art"
-        ],
-        "urls": {
-          "demo": "https://codepen.io/max1128/pen/pbaxpK"
         }
       }
     ]
