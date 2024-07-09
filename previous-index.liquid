@@ -1,0 +1,58 @@
+---
+layout: layouts/base.liquid
+title: Homepage
+main-hide-slant: true
+white-footer: true
+---
+
+<div id="content">
+  <div class="slant-top-padding slant-bottom-padding bg-primary-light">
+    <div class="resp-max-width py-10">
+      <h1 class="mt-0">
+        Hello Readers.
+      </h1>
+
+      <p class="text-h6 mb-0">
+        I’m Max Antonucci. I write code, blog posts, notebooks, and musings.
+      </p>
+    </div>
+  </div>
+
+  <div class="slant-top-left slant-bottom-padding poke-background--bg poke-color--text">
+    <div class="resp-max-width py-10">
+      <p>
+        <strong>As a programmer</strong>, I'm full-stack. I've coded the front-end for ten years with HTML5, CSS3, JavaScript, Ember, React, and have a speciality with design systems and web accessibility. I've coded the back-end for seven years with Ruby, Ruby on Rails, Sinatra, and MySQL.
+      </p>
+
+      <p>
+        <strong>As a writer</strong>, I write to remember lessons I've learned in programming, psychology, philosophy, and absurd topics that tend to confuse my friends.
+      </p>
+
+      <p class="mb-0">
+        <strong>As a human being,</strong> I enjoy reading, running, drawing, crafting, and puzzle games. I don't enjoy paying bills, getting too little sleep, and fighting my inner demons of perfectionism.
+      </p>
+    </div>
+  </div>
+
+  <div class="slant-top-right slant-top-padding scf-mb-8 bg-mono-white poke-border--text">
+    <div class="resp-max-width">
+      <h2 class="mt-0 pt-10">
+        Recent Writing
+      </h2>
+
+      <p>
+        My blog is where I keep my big lessons. Sometimes they're important code knowledge or concepts. Sometimes it's career or life lessons. Other times it's broad changes in how I think. But they're all short stories taken from the novel of my life.
+      </p>
+
+      <p>
+        <a href="/writing/">You can read more of my blog here.</a>
+        <a class="hidden" id="random-post-link">Or read a random blog post.</a>
+      </p>
+    </div>
+  </div>
+
+  {% include postListing.liquid
+   wrapper_class: "resp-max-width resp-max-width--large pt-4 mb-12 slant-bottom-padding",
+   posts: collections.posts,
+   limit: 4 %}
+</div>

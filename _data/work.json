@@ -3,7 +3,40 @@
     "type": "Major",
     "work": [
       {
-        "title": "My Wedding Website",
+        "title": "The Searchable Museum",
+        "description": "My first project with AgileSix was helping build and refine the digital museum for the National Museum of African American History and Culture. I built an in-depth, interactive exhibit component, refactored the main navigation, and brought the site closer to Web Content and Accessibility Guidelines (WCAG) 2.1 compliance by documenting and fixing accessibility bugs.",
+        "image": "searchable-museum.png",
+        "major": true,
+        "tags": [
+          "react", "Next.JS", "accessibility"
+        ],
+        "urls": {
+          "demo": "https://www.searchablemuseum.com/"
+        }
+      }, {
+        "title": "VA Facility Pages",
+        "description": "I helped implement new VA Design System components, updated webpages with new content that was responsive and accessible, and built out the VA/Tricare system of pages to ensure veterans can find needed facilities and health care.",
+        "image": "va-design.png",
+        "major": true,
+        "tags": [
+          "design systems", "CMS"
+        ],
+        "urls": {
+          "demo": "https://www.va.gov/lovell-federal-health-care-tricare/"
+        }
+      }, {
+        "title": "SeeClickFix Portal",
+        "description": "The Request Portal is how citizens can use SeeClickFix to send requests to their local governments, track their progress, explore others on a map, and comment or follow others. I made the style guide and design system that the front-end was built on from scratch and integrated it into front-end and back-end platforms. I also ensured it was compliant with WCAG 2.1 standards.",
+        "image": "scf-portal.png",
+        "major": true,
+        "tags": [
+          "CSS", "Ember", "Style Guides", "accessibility"
+        ],
+        "urls": {
+          "demo": "https://seeclickfix.com/web_portal/WAE8vSooYm9Yc9YRgEETwygF/issues/map?lat=41.31037258994134&lng=-72.92415951148286&max_lat=41.32492535255861&max_lng=-72.89154384986179&min_lat=41.29581657812626&min_lng=-72.9567751731039&zoom=14"
+        }
+      }, {
+        "title": "Our Wedding",
         "description": "When my wedding was being planned, we needed a website, and I was proud to make it myself. We needed it fast, so I used my custom Jekyll template and my Atomic Sass stylesheet. It also made use of responsive embedded maps, image galleries with lazy loading, a vertical timeline of events, and an animated countdown timer built with React, while keeping it accessible for all the guests. The amazing design was courtesy of my new wife ♡.",
         "fullImageHeight": true,
         "image": "wedding.png",
@@ -14,28 +47,6 @@
         "urls": {
           "code": "https://github.com/maxx1128/eleventy-wedding-site",
           "demo": "https://www.mrandmrs.maxwellantonucci.com/"
-        }
-      }, {
-        "title": "The Searchable Museum",
-        "description": "My first project AgileSix was helping build and refine the digital museum for the National Museum of African American History and Culture. I built an in-depth, interactive exhibit component, refactored the main navigation, and brought the site closer to Web Content and Accessibility Guidelines (WCAG) 2.1 compliance by documenting and fixing accessibility bugs.",
-        "image": "searchable-museum.png",
-        "major": true,
-        "tags": [
-          "react", "Next.JS", "accessibility"
-        ],
-        "urls": {
-          "demo": "https://www.searchablemuseum.com/"
-        }
-      }, {
-        "title": "SeeClickFix Request Portal",
-        "description": "The Request Portal is how citizens can use SeeClickFix to send requests to their local governments, track their progress, explore others on a map, and comment or follow others. I made the style guide and design system that the front-end was built on from scratch and integrated it into front-end and back-end platforms. I also ensured it was compliant with WCAG 2.1 standards.",
-        "image": "scf-portal.png",
-        "major": true,
-        "tags": [
-          "CSS", "Ember", "Style Guides", "accessibility"
-        ],
-        "urls": {
-          "demo": "https://seeclickfix.com/web_portal/WAE8vSooYm9Yc9YRgEETwygF/issues/map?lat=41.31037258994134&lng=-72.92415951148286&max_lat=41.32492535255861&max_lng=-72.89154384986179&min_lat=41.29581657812626&min_lng=-72.9567751731039&zoom=14"
         }
       }
     ]
