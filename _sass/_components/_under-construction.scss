@@ -44,7 +44,7 @@
 
   .coordinates-wrapper {
     display: flex;
-    height: 50vh;
+    height: calc(50vh - 20px);
     align-items: center;
     justify-content: center;
 
@@ -109,7 +109,7 @@
   }
 
   .work-article {
-    flex: 1 1 23rem;
+    flex: 1 1 19rem;
   }
 
   .work-image {
