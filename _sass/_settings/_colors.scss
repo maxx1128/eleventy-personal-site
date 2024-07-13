@@ -22,16 +22,16 @@
   --color-mono-white: #FFFEFC;
 }
 
-@include darkMode() {
-  --color-primary-dark: #8bd5ff;
-  --color-primary-light: #31739c;
+// @include darkMode() {
+//   --color-primary-dark: #8bd5ff;
+//   --color-primary-light: #31739c;
 
-  --color-action-base: #ee5a62;
+//   --color-action-base: #ee5a62;
 
-  --color-mono-black: #FFFEFC;
-  --color-mono-muted: #04282e;
-  --color-mono-white: #020402;
-}
+//   --color-mono-black: #FFFEFC;
+//   --color-mono-muted: #04282e;
+//   --color-mono-white: #020402;
+// }
 
 // This function pulls specific color values from the below map
 @function color($color, $tone: base) {
