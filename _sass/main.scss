@@ -30,6 +30,10 @@
 @import '_layout/_grid';
 @import '_layout/_spacing';
 
+
+@import '_components/_coordinates';
+@import '_components/_opening-text';
+
 @import '_components/_blockquote';
 @import '_components/_books';
 @import '_components/_content-skip';
@@ -41,6 +45,5 @@
 @import '_components/_post-listing';
 @import '_components/_tags';
 @import '_components/_theme-switcher';
-@import '_components/_under-construction';
 @import '_components/_video-wrapper';
 @import '_components/_work';
