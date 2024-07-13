@@ -1,13 +1,13 @@
 ---
-layout: layouts/under-construction.liquid
+layout: layouts/base.liquid
 title: Homepage
 ---
 
 {% assign majorWork = work[0].work %}
 
 <div class="minHeight-100vh color-mono-black">
-  <div class="under-construction__header pt-2">
-    <h1 class="opening-text text-h1 text-center">
+  <div class="opening-text pt-2">
+    <h1 class="opening-text__header text-h1 text-center">
       I make the web <br>
       <span class="opening-text--functional">functional</span> <br>
       <span class="opening-text--pretty">and pretty</span>
@@ -22,7 +22,7 @@ title: Homepage
     <img width="200" height="200" class="logo block mx-auto sm--ml-none sm--mr-8 mb-6 border-radius-full" src="/assets/images/global/profile-2.jpg" alt="Maxwell's profile picture" />
 
     <p>
-      Hello there! I'm <span class="new-color">Max Antonucci</span>, a full-stack engineer that codes with HTML, CSS, JavaScript, Ember, React, Ruby, Ruby on Rails, and many more. My specialties include web accessibility and design systems, and I love when I have the opportunity to work in the civic tech sphere.
+      Hello there! I'm <span class="text-primary-dark">Max Antonucci</span>, a full-stack engineer that codes with HTML, CSS, JavaScript, Ember, React, Ruby, Ruby on Rails, and many more. My specialties include web accessibility and design systems, and I love when I have the opportunity to work in the civic tech sphere.
     </p>
 
     <p>
@@ -42,33 +42,8 @@ title: Homepage
 
   <section class="flex flex-wrap flex-gap-4">
     {% for workItem in majorWork %}
-      <article class="work-article flex flex-column flex-align-center border-mono-black box-shadow-2">
-        <div class="work-image" style="background-image: url('/assets/images/work/{{ workItem.image }}')"></div>
-
-        <div class="work-item__content flex flex-column px-4 py-4 md--px-6">
-          <h3 class="text-h5 mt-0">
-            {{ workItem.title }}
-          </h3>
-
-          <p class="work-text text-small">
-            {{ workItem.description }}
-          </p>
-
-          <div class="flex flex-wrap flex-gap-4 mt-auto">
-            {% if workItem.urls.code %}
-              <a href="{{ workItem.urls.code }}">
-                View Code <span class="screenReader"> for {{ workItem.title }}</span>
-              </a>
-            {% endif %}
-
-            {% if workItem.urls.demo %}
-              <a href="{{ workItem.urls.demo }}">
-                View Demo <span class="screenReader"> for {{ workItem.title }}</span>
-              </a>
-            {% endif %}
-          </div>
-        </div>
-      </article>
+      {% include workItem.liquid
+          workItem: workItem %}
     {% endfor %}
   </section>
 

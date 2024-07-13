@@ -1,30 +1,12 @@
-{% assign descrWords = workItem.description | split: " " %}
-{% assign workSizeClass = "" %}
+<article class="work-item flex flex-column flex-align-center border-mono-black box-shadow-2">
+  <div class="work-item__image" style="background-image: url('/assets/images/work/{{ workItem.image }}')"></div>
 
-{% comment %} {% if descrWords.length > 40 %}
-  {% assign workSizeClass = "work-item--large" %} {% endcomment %}
-{% if descrWords.length > 30 %}
-  {% assign workSizeClass = "work-item--medium" %}
-{% endif %}
-
-<article class="work-item {{ workSizeClass }} flex flex-column flex-item box-shadow-2">
-  <ul aria-hidden="true" class="list-reset flex flex-wrap flex-gap-2 px-4 md--px-6 py-2">
-    {% for tag in workItem.tags %}
-      <li class="text-puny mb-0 bg-primary-dark text-mono-muted border-radius-small px-2 pt-border upper">
-        {{ tag }}
-      </li>
-    {% endfor %}
-  </ul>
-
-  <img class="work-item__image {% if workItem.fullImageHeight %}work-item__image--full-height{% endif %}" src='/assets/images/work/{% if workItem.image %}{{ workItem.image }}{% else %}placeholder.jpg{% endif %}' alt="" />
-
-  <div class="work-item__content flex flex-column px-4 py-4 md--px-6 height-100">
-    <h3 class="text-h5">
+  <div class="work-item__content flex flex-column px-4 py-4 md--px-6">
+    <h3 class="text-h5 mt-0">
       {{ workItem.title }}
     </h3>
 
-    <p class="text-small">
-
+    <p class="work-item__text text-small">
       {{ workItem.description }}
     </p>
 
