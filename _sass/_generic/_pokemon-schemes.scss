@@ -168,12 +168,12 @@ $light: map-get($styles, light);
     --poke-background-color: #{$light};
   }
 
-  @include darkMode() {
-    .poke-coloring--#{$index} {
-      --poke-text-color: #{$light};
-      --poke-background-color: #{$dark};
-    }
-  }
+  // @include darkMode() {
+  //   .poke-coloring--#{$index} {
+  //     --poke-text-color: #{$light};
+  //     --poke-background-color: #{$dark};
+  //   }
+  // }
 }
 
 .poke-border--text {

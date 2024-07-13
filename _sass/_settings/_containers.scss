@@ -15,13 +15,13 @@
   --g-box-shadow-shade-5: rgba(22, 22, 33, 0.26);
 }
 
-@include darkMode() {
-  --g-box-shadow-shade-1: rgba(233, 233, 244, 0.1);
-  --g-box-shadow-shade-2: rgba(233, 233, 244, 0.14);
-  --g-box-shadow-shade-3: rgba(233, 233, 244, 0.18);
-  --g-box-shadow-shade-4: rgba(233, 233, 244, 0.22);
-  --g-box-shadow-shade-5: rgba(233, 233, 244, 0.26);
-}
+// @include darkMode() {
+//   --g-box-shadow-shade-1: rgba(233, 233, 244, 0.1);
+//   --g-box-shadow-shade-2: rgba(233, 233, 244, 0.14);
+//   --g-box-shadow-shade-3: rgba(233, 233, 244, 0.18);
+//   --g-box-shadow-shade-4: rgba(233, 233, 244, 0.22);
+//   --g-box-shadow-shade-5: rgba(233, 233, 244, 0.26);
+// }
 
 $containers-map: (
   border-radius: (
