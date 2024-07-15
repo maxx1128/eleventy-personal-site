@@ -3,7 +3,13 @@ layout: layouts/base.liquid
 ---
 
 <article id="content" class="post-content width-100">
-  {{ content | replace: "<p><img", "<figure><img" | replace: "></p>", "></figure>" | safe }}
+  {% if layout contains "page.liquid" %}
+    {% include pageHeader.liquid %}
+  {% elsif layout contains "post.liquid" %}
+    {% include postHeader.liquid %}
+  {% endif %}
+
+  {{ content }}
 
   {% if link.url and link.title %}
     <p class="font-weight-bold">
