@@ -4,13 +4,13 @@
       {% if menu_item.link == page.url %}
         {% assign active_page = true %}
         {% assign current_page = true %}
-      {% elsif page.url contains '/posts/' and menu_item.link == '/writing/' %}
+      {% elsif page.url contains '/posts/' and menu_item.link == '/blog/' %}
         {% assign active_page = true %}
         {% assign current_page = false %}
-      {% elsif page.url contains '/writing/' and menu_item.link contains '/writing/' %}
+      {% elsif page.url contains '/blog/' and menu_item.link contains '/blog/' %}
         {% assign active_page = true %}
         {% assign current_page = false %}
-      {% elsif page.url contains '/tags/' and menu_item.link == '/writing/' %}
+      {% elsif page.url contains '/tags/' and menu_item.link == '/blog/' %}
         {% assign active_page = true %}
         {% assign current_page = false %}
       {% else %}
