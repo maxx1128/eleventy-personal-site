@@ -1,5 +1,5 @@
-<nav class="resp-max-width mx-auto pt-2 mb-12">
-  <ul id="navigation-menu" class="flex flex-wrap flex-gap-6 mb-0 py-0 flex-align-center flex-justify-between list-reset">
+<nav class="nav">
+  <ul class="p-4 flex flex-row md--flex-column flex-gap-1 flex-justify-around list-reset">
     {% for menu_item in menu %}
       {% if menu_item.link == page.url %}
         {% assign active_page = true %}
@@ -18,6 +18,20 @@
         {% assign current_page = false %}
       {% endif %}
 
+      <li class="m-0 text-tiny {% if active_page %}font-weight-bold{% endif %}">
+        <a {% if active_page %}aria-current="page"{% endif %} href="{{ menu_item.link }}">
+          {{ menu_item.name }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+
+{% comment %} <nav class="resp-max-width mx-auto pt-2 mb-12">
+  <ul id="navigation-menu" class="flex flex-wrap flex-gap-6 mb-0 py-0 flex-align-center flex-justify-between list-reset">
+    {% for menu_item in menu %}
+      }
+
       <li class="inline-block text-center mb-0">
         <a {% if active_page %}aria-current="page"{% endif %} class="block my-px {% if active_page %}font-weight-bold{% else %}text-small{% endif %}" href="{% if current_page %}#content{% else %}{{menu_item.link}}{% endif %}">
           {{ menu_item.name }}
@@ -25,4 +39,4 @@
       </li>
     {% endfor %}
   </ul>
-</nav>
+</nav> {% endcomment %}
