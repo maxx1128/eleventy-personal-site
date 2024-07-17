@@ -8,19 +8,8 @@
   {% endif %}
 
   {% for post in posts limit: postLimit %}
-    {% assign post_image = metadata.post.imagePath | append: post.data.image %}
-
     <article class="post-listing__article poke-coloring poke-background--bg poke-border--text relative flex">
-      {% if post.data.image %}
-        <div>
-          <img
-            class="post-listing__image post-content--img-exception"
-            src="{{ post_image }}"
-            alt="">
-        </div>
-      {% endif %}
-
-      <div class="post-listing__content {% unless post.data.image %}post-listing__content--full {% endunless %} flex flex-gap-4 flex-align-center flex-item poke-color--text p-4 transparent-white-bg">
+      <div class="post-listing__content flex flex-gap-4 flex-align-center flex-item poke-color--text p-4 transparent-white-bg">
         {% if post.data.link %}
           {% include externalIcon.liquid
            width: "45px",
