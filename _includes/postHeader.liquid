@@ -1,24 +1,22 @@
-<div class="header__text--no-image flex flex-column-reverse xl--flex-row flex-justify-end my-2">
-  <div class="flex flex-column xl--flex-justify-center resp-max-width py-5">
-    <small class="block mb-2 font-weight-bold">
-      {{ date | toUTCString }}
-    </small>
+<div class="mb-8 md--mb-12">
+  <small class="block font-weight-bold my-0">
+    {{ date | toUTCString }}
+  </small>
 
-    <h1 class="flex flex-row flex-align-start flex-align-center flex-gap-4 sm--flex-gap-6 my-0 mt-4 mb-4">
-      {% if link.url and link.title %}
-        {% include externalIcon.liquid
-          width: "60px",
-          height: "60px"
-        %}
-      {% endif %}
-
-      {{ title | replace: " - Maxwell Antonucci", "" }}
-    </h1>
-
-    {% if excerpt %}
-      <p class="my-0 mt-2 text-small font-weight-light">
-        {{ excerpt }}
-      </p>
+  <h1 class="flex flex-row flex-align-start flex-align-center flex-gap-4 sm--flex-gap-6 my-0">
+    {% if link.url and link.title %}
+      {% include externalIcon.liquid
+        width: "60px",
+        height: "60px"
+      %}
     {% endif %}
-  </div>
+
+    {{ title | replace: " - Maxwell Antonucci", "" }}
+  </h1>
+
+  {% if excerpt %}
+    <p class="text-small font-weight-light my-0">
+      {{ excerpt }}
+    </p>
+  {% endif %}
 </div>
