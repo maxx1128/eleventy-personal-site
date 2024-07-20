@@ -8,10 +8,7 @@ h6 {
   margin: spacing(10) 0 spacing();
   font-family: type(font-family, header);
   font-weight: type(font-weight, header);
-
-  .post-content &:first-child {
-    margin-top: 0;
-  }
+  color: color(primary, dark);
 }
 
 p,

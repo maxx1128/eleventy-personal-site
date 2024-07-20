@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  {% include head.liquid %}
+
+  <body class="poke-coloring poke-coloring--14">
+    <a href="#content" class="skip-to-content inline-block p-2 bg-mono-white z-dropdown">
+      Skip To Content
+    </a>
+
+    {% include nav.liquid %}
+
+    <header class="poke-border--text">
+      {% unless layout contains "post.liquid" %}
+        {% assign isPage = true %}
+      {% else %}
+        {% assign isPage = false %}
+      {% endunless %}
+
+      {% include topHeader.liquid
+        isPage: isPage
+      %}
+
+      {% if layout contains "page.liquid" %}
+        {% include pageHeader.liquid %}
+      {% elsif layout contains "post.liquid" %}
+        {% include postHeader.liquid %}
+      {% endif %}
+    </header>
+
+    <main
+      class='slant-bottom-padding
+      {% if layout contains "page.liquid" or image %}
+        slant-top-left bg-mono-white poke-border--text
+      {% endif %}'>
+      {{ content | safe }}
+    </main>
+
+    {% if layout contains "post.liquid" %}
+      <aside class="slant-top-right slant-bottom-padding border-primary-light">
+        <div class="resp-max-width py-8">
+          {% if layout contains "post.liquid" %}
+            {% include postAside.liquid %}
+          {% endif %}
+        </div>
+      </aside>
+    {% endif %}
+
+    {% if pagination and hidePagination != true %}
+      <aside class="slant-top-right slant-bottom-padding border-primary-light">
+        {% include pagination.liquid %}
+      </aside>
+    {% endif %}
+
+    {% include footer.liquid %}
+    {% include footerscripts.liquid %}
+    {% include serviceworker.liquid %}
+  </body>
+</html>

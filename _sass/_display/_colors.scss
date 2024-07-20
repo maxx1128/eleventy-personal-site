@@ -1,13 +1,3 @@
-@function header-box-shadow-color($tone, $opacity: 0.93) {
-  @if ($tone == 'light') {
-    @return rgba(169, 226, 243, $opacity);
-  } @else if ($tone == 'blank') {
-    @return rgba(221, 247, 255, $opacity);
-  } @else {
-    @return rgba(0, 15, 35, $opacity);
-  }
-}
-
 @each $palette, $swatches in $color-map {
   @each $label, $color in $swatches {
     .bg-#{$palette}-#{$label} { background-color: $color; }
@@ -16,12 +6,8 @@
   }
 }
 
-.transparent-white-bg {
-  background-color: rgba(255, 255, 255, 0.85);
-}
-
-@include darkMode() {
-  .transparent-white-bg {
-    background-color: rgba(0, 0, 0, 0.85);
-  }
-}
+// @include darkMode() {
+//   .transparent-white-bg {
+//     background-color: rgba(0, 0, 0, 0.85);
+//   }
+// }
