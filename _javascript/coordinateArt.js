@@ -302,5 +302,7 @@ const getRandomItems = (array, min, max) => {
   return shuffledArray.slice(0, limit);
 };
 
-const grid = new Grid();
-grid.createShapes();
+if (document.querySelector(".coordinates-wrapper")) {
+   const grid = new Grid();
+   grid.createShapes();
+}
