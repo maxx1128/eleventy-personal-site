@@ -1,0 +1,5 @@
+.post-listing__wrapper {
+  article:nth-of-type(odd) {
+    background-color: color(mono, muted);
+  }
+}
