@@ -13,28 +13,24 @@ tagline: Code samples and side projects
 </p>
 
 {% assign majorWork = work[0].work %}
-{% assign sideProjects = work[1].work %}
+{% assign toolSideProjects = work[1].work %}
+{% assign gameSideProjects = work[2].work %}
+{% assign artSideProjects = work[3].work %}
 
-<h2>
-  Major Work
-</h2>
+{% for workCollection in work %}
+  {% assign workSection = work[forloop.index0] %}
 
-<section class="flex flex-wrap flex-align-start flex-justify-center flex-gap-4">
-  {% for workItem in majorWork %}
-    {% include workItem.liquid
-      workItem: workItem %}
-  {% endfor %}
-</section>
+  <h2>
+    {{ workSection.type }}
+  </h2>
 
-<hr />
+  <section class="flex flex-wrap flex-align-start flex-justify-center flex-gap-4">
+    {% for workItem in workSection.work %}
+      {% include workItem.liquid
+        workItem: workItem %}
+    {% endfor %}
+  </section>
 
-<h2>
-  Side Projects
-</h2>
-
-<section class="flex flex-wrap flex-align-start flex-justify-center flex-gap-4">
-  {% for workItem in sideProjects %}
-    {% include workItem.liquid
-      workItem: workItem %}
-  {% endfor %}
-</section>
+  <br />
+  <br />
+{% endfor %}
