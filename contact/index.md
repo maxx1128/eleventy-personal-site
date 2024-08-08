@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.liquid
-title: About Me
-tagline: The story of my life, give or take a few years
+title: Contact Me
+tagline: How to get in contact with me
 ---
 
-Contact info here!
+<a href="https://forms.gle/5t65UjwHEQdKxAj8A" target="_blank" rel="noopener">Contact info here!</a>

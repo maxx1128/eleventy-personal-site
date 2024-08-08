@@ -70,7 +70,7 @@ pre code {
   position: relative;
   display: block;
   margin: 0 auto;
-  padding: 3rem 0 1.2rem;
+  padding: 3rem 1rem 1.2rem;
   max-height: rem(500px);
 
   font-size: type(font-size, small);
@@ -89,8 +89,8 @@ pre code {
 
   &::before,
   &::after {
-    top: 0;
-    left: 0;
+    top: 0.25rem;
+    left: 1rem;
   }
 
   &::before {
