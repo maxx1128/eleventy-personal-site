@@ -3,9 +3,17 @@ layout: layouts/base.liquid
 ---
 
 <article id="content" class="width-100 {% if pagination or removeArticleTopPadding %}post-content--listing{% endif %}">
-  <h1 class="mt-0">
-    {{ title }}
-  </h1>
+  <header class="page-header post-header flex flex-column flex-justify-center flex-gap-2">
+    <h1 class="my-0">
+      {{ title }}
+    </h1>
+
+    {% if tagline %}
+      <p class="text-small my-0">
+        {{ tagline }}
+      </p>
+    {% endif %}
+  </header>
 
   {{ content | replace: "<p><img", "<figure><img" | replace: "></p>", "></figure>" }}
 </article>

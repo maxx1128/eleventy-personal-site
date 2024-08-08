@@ -5,9 +5,37 @@
   margin-right: auto;
   margin-left: auto;
 
-  max-width: clamp(
-    calc(#{$g-content-min-width} - #{spacing(8)}),
-    calc(#{$g-content-med-width} - #{spacing(8)}),
-    calc(#{$g-content-max-width} - #{spacing(8)})
-  );
+  @include larger-than(md) {
+    max-width: clamp(
+      calc(#{$g-content-min-width} - #{spacing(8)}),
+      calc(#{$g-content-med-width} - #{spacing(8)}),
+      calc(#{$g-content-max-width} - #{spacing(8)})
+    );
+  }
+}
+
+.post-header {
+  min-height: 45vh;
+}
+
+.page-header {
+  min-height: 25vh;
+}
+
+.blog-post {
+  @include smaller-than(md) {
+    pre,
+    img,
+    p:has(img) {
+      width: 100vw;
+      margin-right: spacing(neg4);
+      margin-left: spacing(neg4);
+    }
+
+    img,
+    p:has(img) {
+      width: 103vw;
+      max-width: 103vw;
+    }
+  }
 }
