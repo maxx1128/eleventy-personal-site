@@ -126,7 +126,7 @@ const dataPath = fs.realpathSync(dataFile);
       forPage.postImage = getPostImage(post.image);
     } else if (staticPageTitles.includes(post.title)) {
       forPage.isStatic = true;
-      forPage.postImage = getPostImage('assets/images/global/profile.jpg');
+      forPage.postImage = getPostImage('assets/images/global/profile-2.jpg');
     } else {
       forPage.postImage = false;
     }

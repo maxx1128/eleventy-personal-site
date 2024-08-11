@@ -9,7 +9,7 @@ Who am I exactly? It's a question with many answers.
 ## The Business Answer
 
 <div>
-  <img width="150" height="150" class="logo ml-4 mb-4 ml-4 border-radius-full hidden-sm-down post-content--img-exception" src="/assets/images/global/profile.jpg" alt="Maxwell's profile picture" />
+  <img width="150" height="150" class="logo ml-4 mb-4 ml-4 border-radius-full hidden-sm-down post-content--img-exception" src="/assets/images/global/profile-2.jpg" alt="Maxwell's profile picture" />
 
   I'm a Senior Front-end Developer working at [AgileSix](https://agile6.com/). On the whole, I'm a full-stack developer that's worked with JavaScript, Ember, React, Ruby, Ruby on Rails, and have a specialty in web accessibility and design systems. You can see [more of my code and other work here.](/work/)
 

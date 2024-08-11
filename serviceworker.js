@@ -15,7 +15,7 @@ addEventListener('install', (installEvent) => {
         '/assets/images/global/header-default.jpg',
         '/assets/images/global/header-dark.jpg',
         '/assets/images/global/favicon.ico',
-        '/assets/images/global/profile.jpg',
+        '/assets/images/global/profile-2.jpg',
         '/assets/images/icons/icon-192.png',
         '/assets/images/icons/icon-512.png',
       ])
