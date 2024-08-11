@@ -18,7 +18,7 @@
   {% endif %}
 
   {% assign featured_image_fileName = title | replace: titleSuffix, "" | slug | addNbsp | safe %}
-  {% assign featured_image = "/assets/images/social/" | append: featured_image_fileName | append: ".png" | prepend: metadata.url %}
+  {% assign featured_image = "/assets/images/global/cover-photo.jpg" | prepend: metadata.url %}
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
