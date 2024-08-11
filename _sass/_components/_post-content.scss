@@ -7,19 +7,40 @@
 
   @include larger-than(md) {
     max-width: clamp(
-      calc(#{$g-content-min-width} - #{spacing(8)}),
-      calc(#{$g-content-med-width} - #{spacing(8)}),
-      calc(#{$g-content-max-width} - #{spacing(8)})
+     #{$g-content-min-width},
+     #{$g-content-med-width},
+     #{$g-content-max-width}
     );
   }
 }
 
 .post-header {
-  min-height: 45vh;
+  min-height: 35vh;
 }
 
 .page-header {
-  min-height: 25vh;
+  min-height: 30vh;
+}
+
+.post-content--image-list {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: spacing(1);
+
+  list-style-type: none;
+
+  li {
+    display: inline-flex;
+    margin: 0;
+    flex: 1 1 16rem;
+
+    @include larger-than(xxl) {
+      flex-grow: 0;
+    }
+  }
 }
 
 .blog-post {

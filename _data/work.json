@@ -1,44 +1,5 @@
 [
   {
-    "type": "Major Projects",
-    "work": [
-      {
-        "title": "The Searchable Museum",
-        "description": "My first project with AgileSix was helping build and refine the digital museum for the National Museum of African American History and Culture. I built an in-depth, interactive exhibit component, refactored the main navigation, and brought the site closer to Web Content and Accessibility Guidelines (WCAG) 2.1 compliance by documenting and fixing accessibility bugs.",
-        "image": "searchable-museum.png",
-        "major": true,
-        "urls": {
-          "demo": "https://www.searchablemuseum.com/"
-        }
-      }, {
-        "title": "VA Facility Pages",
-        "description": "I helped implement new VA Design System components, updated webpages with new content that was responsive and accessible, and built out the VA/Tricare system of pages to ensure veterans can find needed facilities and health care.",
-        "image": "va-design.png",
-        "major": true,
-        "urls": {
-          "demo": "https://www.va.gov/lovell-federal-health-care-tricare/"
-        }
-      }, {
-        "title": "SeeClickFix Portal",
-        "description": "The Request Portal is how citizens can use SeeClickFix to send requests to their local governments, track their progress, explore others on a map, and comment or follow others. I made the style guide and design system that the front-end was built on from scratch and integrated it into front-end and back-end platforms. I also ensured it was compliant with WCAG 2.1 standards.",
-        "image": "scf-portal.png",
-        "major": true,
-        "urls": {
-          "demo": "https://seeclickfix.com/web_portal/WAE8vSooYm9Yc9YRgEETwygF/issues/map?lat=41.31037258994134&lng=-72.92415951148286&max_lat=41.32492535255861&max_lng=-72.89154384986179&min_lat=41.29581657812626&min_lng=-72.9567751731039&zoom=14"
-        }
-      }, {
-        "title": "Our Wedding",
-        "description": "When my wedding was being planned, we needed a website, and I was proud to make it myself. We needed it fast, so I used my custom Jekyll template and my Atomic Sass stylesheet. It also made use of responsive embedded maps, image galleries with lazy loading, a vertical timeline of events, and an animated countdown timer built with React, while keeping it accessible for all the guests. The amazing design was courtesy of my new wife ♡.",
-        "fullImageHeight": true,
-        "image": "wedding.png",
-        "major": true,
-        "urls": {
-          "code": "https://github.com/maxx1128/eleventy-wedding-site",
-          "demo": "https://www.mrandmrs.maxwellantonucci.com/"
-        }
-      }
-    ]
-  }, {
     "type": "Tools",
     "work": [
       {
@@ -81,11 +42,87 @@
       }
     ]
   }, {
+    "type": "Major Projects",
+    "work": [
+      {
+        "title": "The Searchable Museum",
+        "description": "My first project with AgileSix was helping build and refine the digital museum for the National Museum of African American History and Culture. I built an in-depth, interactive exhibit component, refactored the main navigation, and brought the site closer to Web Content and Accessibility Guidelines (WCAG) 2.1 compliance by documenting and fixing accessibility bugs.",
+        "image": "searchable-museum.png",
+        "major": true,
+        "urls": {
+          "demo": "https://www.searchablemuseum.com/"
+        }
+      }, {
+        "title": "VA Facility Pages",
+        "description": "I helped implement new VA Design System components, updated webpages with new content that was responsive and accessible, and built out the VA/Tricare system of pages to ensure veterans can find needed facilities and health care.",
+        "image": "va-design.png",
+        "major": true,
+        "urls": {
+          "demo": "https://www.va.gov/lovell-federal-health-care-tricare/"
+        }
+      }, {
+        "title": "SeeClickFix Portal",
+        "description": "The Request Portal is how citizens can use SeeClickFix to send requests to their local governments, track their progress, explore others on a map, and comment or follow others. I made the style guide and design system that the front-end was built on from scratch and integrated it into front-end and back-end platforms. I also ensured it was compliant with WCAG 2.1 standards.",
+        "image": "scf-portal.png",
+        "major": true,
+        "urls": {
+          "demo": "https://seeclickfix.com/web_portal/WAE8vSooYm9Yc9YRgEETwygF/issues/map?lat=41.31037258994134&lng=-72.92415951148286&max_lat=41.32492535255861&max_lng=-72.89154384986179&min_lat=41.29581657812626&min_lng=-72.9567751731039&zoom=14"
+        }
+      }, {
+        "title": "Our Wedding",
+        "description": "When my wedding was being planned, we needed a website, and I was proud to make it myself. We needed it fast, so I used my custom Jekyll template and my Atomic Sass stylesheet. It also made use of responsive embedded maps, image galleries with lazy loading, a vertical timeline of events, and an animated countdown timer built with React, while keeping it accessible for all the guests. The amazing design was courtesy of my new wife ♡.",
+        "fullImageHeight": true,
+        "image": "wedding.png",
+        "major": true,
+        "urls": {
+          "code": "https://github.com/maxx1128/eleventy-wedding-site",
+          "demo": "https://www.mrandmrs.maxwellantonucci.com/"
+        }
+      }
+    ]
+  }, {
+    "type": "Code Art",
+    "work": [
+      {
+        "title": "Coordinate-based Generative Art",
+        "description": "Random shapes are created along an SVG grid, and I used GSAP to sprinkle random animation effects as they get drown. The end result is a small, unique piece of generated artwork.",
+        "image": "coordinate-generative.png",
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/KKNpVGP"
+        }
+      }, {
+        "title": "Anime Quote Maker",
+        "description": "My favorite React side project is an easy way to pair inspiring quotes with stylish anime art. Each quote image can be heavily customized with different positioning, colors, shapes, font styles, and filters. It also uses a custom API endpoint I wrote in Ruby to pull images randomly or based on tags.",
+        "image": "anime-quote-maker.png",
+        "fullImageHeight": true,
+        "urls": {
+          "code": "https://github.com/maxx1128/anime-quote-maker",
+          "demo": "https://www.quotemaker.maxwellantonucci.com"
+        }
+      }, {
+        "title": "Hypnotic Spiral",
+        "description": "This project is a combination of CSS animation, careful timing, and making code up on the fly. Just don't stare at it for too long.",
+        "image": "hypnotic-spiral.png",
+        "fullImageHeight": true,
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/xEOLmg"
+        }
+      }, {
+        "title": "Responsive RWBY Show Poster",
+        "description": "SVG lets coders crop and arrange images in interesting ways. I experimented with this by making a fake poster for one of my favorite animes that's also responsive, making it well-suited for online promotion materials.",
+        "image": "rwby-poster.png",
+        "fullImageHeight": true,
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/ZEppvKE"
+        }
+      }
+    ]
+  }, {
     "type": "Fun & Games",
     "work": [
       {
-        "title": "Baby Shower Wordle",
-        "description": "This is a custom Wordle built for a baby shower. All the guests complete two Wordles, and whoever finishes them the quickest and in the fewest moves win. It also uses Tailwind to speed up the custom styling.",
+        "title": "'Berry Sweet' Baby Shower Wordle",
+        "description": "This is a custom Wordle built for a 'Berry Sweet' baby shower built with React and Tailwind. All the guests complete two Wordles, and whoever finishes them the quickest and in the fewest moves win.",
         "image": "baby-shower-wordle.png",
         "urls": {
           "demo": "https://resplendent-croissant-eccc4c.netlify.app/"
@@ -125,43 +162,6 @@
         "image": "tic-tac-toe.png",
         "urls": {
           "demo": "https://codepen.io/max1128/pen/JNbyaL"
-        }
-      }
-    ]
-  }, {
-    "type": "Code Art",
-    "work": [
-      {
-        "title": "Anime Quote Maker",
-        "description": "My favorite side project is an easy way to pair inspiring quotes with stylish anime art. Each quote image can be heavily customized with different positioning, colors, shapes, font styles, and filters. It also uses a custom API endpoint I wrote in Ruby to pull images randomly or based on tags.",
-        "image": "anime-quote-maker.png",
-        "fullImageHeight": true,
-        "urls": {
-          "code": "https://github.com/maxx1128/anime-quote-maker",
-          "demo": "https://www.quotemaker.maxwellantonucci.com"
-        }
-      }, {
-        "title": "Hypnotic Spiral",
-        "description": "This project is a combination of CSS animation, careful timing, and making code up on the fly. Just don't stare at it for too long.",
-        "image": "hypnotic-spiral.png",
-        "fullImageHeight": true,
-        "urls": {
-          "demo": "https://codepen.io/max1128/pen/xEOLmg"
-        }
-      }, {
-        "title": "Responsive RWBY Show Poster",
-        "description": "SVG lets coders crop and arrange images in interesting ways. I experimented with this by making a fake poster for one of my favorite animes that's also responsive, making it well-suited for online promotion materials.",
-        "image": "rwby-poster.png",
-        "fullImageHeight": true,
-        "urls": {
-          "demo": "https://codepen.io/max1128/pen/ZEppvKE"
-        }
-      }, {
-        "title": "Coordinate-based Generative Art",
-        "description": "Random shapes are created along an SVG grid, and I used GSAP to sprinkle random animation effects as they get drown. The end result is a small, unique piece of generated artwork.",
-        "image": "coordinate-generative.png",
-        "urls": {
-          "demo": "https://codepen.io/max1128/pen/KKNpVGP"
         }
       }
     ]
