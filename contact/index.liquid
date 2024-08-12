@@ -1,0 +1,60 @@
+---
+layout: layouts/page.liquid
+title: Contact Me
+tagline: How to get in contact with me
+---
+
+{% assign iconClasses = "contact-list__svg width-auto flex-item flex-nogrow" %}
+{% assign iconSize = 65 %}
+
+<p>
+  Want to get in touch? You can contact me with the below links.
+</p>
+
+<br />
+<br />
+<br />
+
+<ul class="contact-list list-reset flex flex-gap-12 flex-wrap flex-justify-center">
+  {% for contact in contact %}
+    <li class="contact-list__item flex flex-align-center flex-gap-6 p-4 m-0">
+      {% case contact.icon %}
+        {% when "linkedin" %}
+          {% include ./icons/linkedin.liquid
+            size: iconSize,
+            class: iconClasses
+          %}
+        {% when "github" %}
+          {% include ./icons/github.liquid
+            size: iconSize,
+            class: iconClasses
+          %}
+        {% when "codepen" %}
+          {% include ./icons/codepen.liquid
+            size: iconSize,
+            class: iconClasses
+          %}
+        {% when "rss" %}
+          {% include ./icons/rss.liquid
+            size: iconSize,
+            class: iconClasses
+          %}
+        {% when "email" %}
+          {% include ./icons/email.liquid
+            size: iconSize,
+            class: iconClasses
+          %}
+      {% endcase %}
+
+      <div>
+        <a target="_blank" rel="noopener" class="flex-item flex-item-full" href="{{ contact.url }}">
+          {{ contact.name }}
+        </a>
+
+        <p class="text-small my-0">
+          {{ contact.descr }}
+        </p>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

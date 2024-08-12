@@ -90,23 +90,11 @@ This is best shown with an example. Here's the simplified HTML from my personal 
     </div>
 
     <ul class="nav__main-menu list-reset flex flex-wrap md:flex-col mb-0 md:my-4 text-xs">
-      {% for menu_item in site.data.menu %}
-        <li class="inline-block mb-0 text-center">
-          <a class="block p-2 text-white" href="{{menu_item.link}}">
-            {{ menu_item.name }}
-          </a>
-        </li>
-      {% endfor %}
+      <!-- Loop for menu items -->
     </ul>
 
     <ul class="list-reset flex flex-wrap md:flex-col mt-auto mb-0 text-xs">
-      {% for social in site.data.social %}
-        <li class="inline-block mb-0 p-2 text-center">
-          <a class="text-white" href="{{ social.url }}" target="_blank" rel="noopener">
-            {{ social.name }}
-          </a>
-        </li>
-      {% endfor %}
+      <!-- Loop for social links -->
     </ul>
   </nav>
 </div>

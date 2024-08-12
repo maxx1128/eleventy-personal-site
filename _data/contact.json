@@ -1,0 +1,28 @@
+[
+   {
+      "icon": "email",
+      "name": "Message Me",
+      "descr": "Reach out to me directly if you want to work together or just say hello.",
+      "url": "https://forms.gle/5t65UjwHEQdKxAj8A"
+   }, {
+      "icon": "linkedin",
+      "name": "Linkedin",
+      "descr": "Connect with me career updates and collaboration opportunities.",
+      "url": "https://www.linkedin.com/in/maxwellantonucci"
+   }, {
+      "icon": "github",
+      "name": "Github",
+      "descr": "Check out the code for my projects, tools, and favorite repositories.",
+      "url": "https://github.com/maxx1128"
+   }, {
+      "icon": "codepen",
+      "name": "CodePen",
+      "descr": "See all of my code sketches, ideas, doodles, and small projects.",
+      "url": "http://codepen.io/max1128/"
+   }, {
+      "icon": "rss",
+      "name": "RSS Feed",
+      "descr": "Get automatic updates when I share new blog posts.",
+      "url": "/rss.xml"
+   }
+]
