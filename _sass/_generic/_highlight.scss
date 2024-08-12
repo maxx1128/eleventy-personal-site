@@ -10,6 +10,7 @@ $highlight-languages: (
   'json': #fcf4a3,
   'yaml': #be93d4,
   'ruby': #a91401,
+  'python': #2596be,
   'bash': #aaa
 );
 
@@ -76,7 +77,7 @@ pre code {
   font-size: type(font-size, small);
 
   overflow: scroll;
-  width: calc(100% - #{spacing(8)});
+  width: 100%;
   max-width: 100%;
 
   &::before,
