@@ -1,0 +1,22 @@
+.background-art {
+  position: fixed; /* Ensures the SVG stays in the viewport even on scroll */
+  top: 0;
+  left: 0;
+  width: 100vw; /* 100% of the viewport width */
+  height: 100vh;
+
+  width: 100vw;
+  height: 100vh;
+
+  opacity: 0.035;
+  z-index: -2;
+
+  body:has(.homepage) & {
+    display: none;
+  }
+}
+
+.background-art__bar {
+  transform: rotate(3deg);
+  transform-origin: 50%;
+}

@@ -17,7 +17,7 @@ tagline: How to get in contact with me
 
 <ul class="contact-list list-reset flex flex-gap-12 flex-wrap flex-justify-center">
   {% for contact in contact %}
-    <li class="contact-list__item flex flex-align-center flex-gap-6 p-4 m-0">
+    <li class="contact-list__item flex flex-align-center flex-gap-6 p-4 m-0 bg-mono-white">
       {% case contact.icon %}
         {% when "linkedin" %}
           {% include ./icons/linkedin.liquid
