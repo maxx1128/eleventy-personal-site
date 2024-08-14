@@ -1,7 +1,7 @@
 .direct-link { display: none; }
 
 .post-content {
-  padding: spacing(6) spacing(4);
+  padding: spacing(6) spacing(4) spacing(6);
   margin-right: auto;
   margin-left: auto;
 
@@ -15,11 +15,23 @@
 }
 
 .post-header {
-  min-height: 35vh;
+  padding-bottom: 10vh;
 }
 
 .page-header {
-  min-height: 30vh;
+  padding-bottom: 10vh;
+}
+
+@include larger-than(md) {
+  .post-header {
+    padding-bottom: 0;
+    min-height: 35vh;
+  }
+
+  .page-header {
+    padding-bottom: 0;
+    min-height: 30vh;
+  }
 }
 
 .post-content--image-list {
