@@ -57,7 +57,7 @@ kbd { font-family: type(font-family, mono); }
     list-style-type: none;
 
     &::before {
-      content: "\200B"; /* add zero-width space */
+      content: none; /* add zero-width space */
     }
   }
 }

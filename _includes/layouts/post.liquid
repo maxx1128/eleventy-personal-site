@@ -25,6 +25,34 @@ layout: layouts/base.liquid
   {% endif %}
 
   {% footnotes %}
+
+  {% assign nextPost = collections.posts | getPreviousCollectionItem: page %}
+  {% assign previousPost = collections.posts | getNextCollectionItem: page %}
+
+  <ul class="list-reset pt-12 pb-8 flex flex-column xl--flex-row flex-gap-6">
+    {% if nextPost %}
+      <li class="flex-item-full flex flex-column mb-0">
+        <strong>Next Post:</strong>
+        <a class="random-navigator__next-link text-small" href="{{ nextPost.url | url }}">
+          {{ nextPost.data.title }}
+        </a>
+      </li>
+    {% endif %}
+
+    <li id="random-navigator-wrapper" class="hidden flex-item-full flex flex-column mb-0">
+      <strong>Random Post:</strong>
+      <a class="text-small" href="javascript:void();"></a>
+    </li>
+
+    {% if previousPost %}
+      <li class="flex-item-full flex flex-column mb-0">
+        <strong>Previous Post:</strong>
+        <a class="random-navigator__previous-link text-small" href="{{ previousPost.url | url }}">
+          {{ previousPost.data.title }}
+        </a>
+      </li>
+    {% endif %}
+  </ul>
 </article>
 
 <script
