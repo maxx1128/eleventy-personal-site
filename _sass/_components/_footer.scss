@@ -1,0 +1,9 @@
+.footer__content {
+  @include larger-than(md) {
+    max-width: clamp(
+     #{$g-content-min-width},
+     #{$g-content-med-width},
+     #{$g-content-max-width}
+    );
+  }
+}
