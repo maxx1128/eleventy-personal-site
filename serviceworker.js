@@ -1,4 +1,4 @@
-const version = 'V2.15',
+const version = 'V3.00',
   staticCacheName = `${version}staticfiles`
 
 addEventListener('install', (installEvent) => {
@@ -10,9 +10,9 @@ addEventListener('install', (installEvent) => {
         '404.html',
         'index.html',
         'about/index.html',
+        'portfolio/index.html',
         'blog/index.html',
-        '/assets/images/global/header-default.jpg',
-        '/assets/images/global/header-dark.jpg',
+        'contact/index.html',
         '/assets/images/global/favicon.ico',
         '/assets/images/global/profile-2.jpg',
         '/assets/images/icons/icon-192.png',
