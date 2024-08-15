@@ -296,8 +296,17 @@ const shuffleArray = (array) => {
 };
 
 const getRandomItems = (array, min, max) => {
-  const shuffledArray = shuffle(array),
-     limit = Math.random() * (max - min) + min;
+   const shuffle = (array) => {
+      for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+
+      return array;
+   }
+
+   const shuffledArray = shuffle(array),
+         limit = Math.random() * (max - min) + min;
 
   return shuffledArray.slice(0, limit);
 };
