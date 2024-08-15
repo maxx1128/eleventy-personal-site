@@ -4,6 +4,7 @@
   padding: spacing(2) spacing(4) spacing(6);
   margin-right: auto;
   margin-left: auto;
+  flex: 1 1 auto;
 
   @include larger-than(md) {
     max-width: clamp(
@@ -16,13 +17,13 @@
 
 .page-header,
 .post-header {
-  padding: 2vh 0 5vh;
+  padding: rem(30px) 0 rem(50px);
 }
 
 @include larger-than(md) {
   .page-header,
   .post-header {
-    padding: 5vh 0;
+    padding: rem(60px) 0;
   }
 }
 
@@ -50,15 +51,15 @@
 .blog-post {
   @include smaller-than(md) {
     pre,
-    img,
-    p:has(img) {
+    p img,
+    p:has(img),
+    .post-content--image-list {
       width: 100vw;
       margin-right: spacing(neg4);
       margin-left: spacing(neg4);
     }
 
-    img,
-    p:has(img) {
+    p img {
       width: 103vw;
       max-width: 103vw;
     }

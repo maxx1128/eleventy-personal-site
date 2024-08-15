@@ -2,4 +2,10 @@
   article:nth-of-type(odd) {
     background-color: color(mono, muted);
   }
+
+  @include smaller-than(md) {
+    width: 100vw;
+    margin-right: spacing(neg4);
+    margin-left: spacing(neg4);
+  }
 }
