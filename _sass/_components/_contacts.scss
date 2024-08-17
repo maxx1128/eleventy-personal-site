@@ -1,0 +1,26 @@
+.contact-list__item {
+  flex: 1 1 rem(275px);
+  max-width: 450px;
+
+  border-left: 3px solid color(primary, dark);
+
+  &::before {
+    content: none !important;
+  }
+}
+
+.contact-list__svg-wrapper {
+  min-width: 75px;
+  max-width: 75px;
+}
+
+.contact-list__svg {
+  flex: 0 0 75px;
+  fill: color(primary, dark) !important;
+
+  svg,
+  path,
+  g {
+    fill: color(primary, dark) !important;
+  }
+}

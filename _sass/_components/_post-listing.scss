@@ -1,45 +1,11 @@
-$base-article-size: 28rem;
-
 .post-listing__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: spacing(3);
-}
-
-.post-listing__article {
-  flex: 1 1 $base-article-size;
-  container-type: inline-size;
-  overflow: hidden;
-
-  &:nth-of-type(4n+2) {
-    flex-basis: $base-article-size * .8;
+  article:nth-of-type(odd) {
+    background-color: color(mono, muted);
   }
 
-  &:has(img) {
-    flex-direction: column;
-
-    border-style: solid;
-    border-right-width: spacing(border);
-    border-left-width: spacing(border);
-    border-top-width: 0;
-    border-bottom-width: 0;
-    box-shadow: container(box-shadow, 2);
+  @include smaller-than(md) {
+    width: 100vw;
+    margin-right: spacing(neg4);
+    margin-left: spacing(neg4);
   }
-
-  &:not(:has(img)) {
-    background: none;
-  }
-
-  @include larger-than(xl) {
-    max-width: 50vw;
-  }
-}
-
-.post-listing__image {
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 120px;
 }

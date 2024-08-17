@@ -302,7 +302,7 @@ Bam! With that, I can click any of those buttons and get the presets! **All I ne
 
 This post went longer than I expected, and that's not even everything! I've since made more updates to how I add filters, transforms, and perspective. But this is already plenty to cover and has made making new quote images faster and more intuitive. All these extra controls have made it easier to set up quotes and show off their art.
 
-<ul class="post-content--image-list post-content--image-list--large" aria-label="A selection of quotes pairing styled artwork with quotes presented with various stylings and transformations">
+<ul class="post-content--image-list" aria-label="A selection of quotes pairing styled artwork with quotes presented with various stylings and transformations">
   <li>
     <img src="/assets/images/posts/anime-quote-maker-awesome/quote-end-1.png" alt="" />
   </li>

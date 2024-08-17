@@ -1,6 +1,6 @@
 {% assign postLimit = limit | default: 999 %}
 
-<section class="post-listing__wrapper {{ wrapper_class }} pt-4 px-2">
+<section class="post-listing__wrapper {{ wrapper_class }}">
   {% if showHeading %}
     <h2 class="screenReader">
       Blog Post Listing
@@ -8,50 +8,37 @@
   {% endif %}
 
   {% for post in posts limit: postLimit %}
-    {% assign post_image = metadata.post.imagePath | append: post.data.image %}
-
-    <article class="post-listing__article poke-coloring poke-background--bg poke-border--text relative flex">
-      {% if post.data.image %}
-        <div>
-          <img
-            class="post-listing__image post-content--img-exception"
-            src="{{ post_image }}"
-            alt="">
-        </div>
-      {% endif %}
-
-      <div class="post-listing__content {% unless post.data.image %}post-listing__content--full {% endunless %} flex flex-gap-4 flex-align-center flex-item poke-color--text p-4 transparent-white-bg">
+    <article class="px-4 py-8">
+      <div class="flex flex-gap-2 flex-align-center">
         {% if post.data.link %}
           {% include externalIcon.liquid
-           width: "45px",
-           height: "45px" %}
+            width: "45px",
+            height: "45px" %}
         {% endif %}
 
-        <div>
-          <h3 class="mt-0 mb-1 text-h5">
-            <a class="flex flex-align-center flex-gap-4" href="{{ post.url }}">
-              {% unless post.data.link %}
-                <span class="screenReader">Blog post:</span>
-              {% endunless %}
+        <h3 class="mt-0 mb-1 text-h5">
+          <a class="flex flex-align-center flex-gap-4" href="{{ post.url }}">
+            {% unless post.data.link %}
+              <span class="screenReader">Blog post:</span>
+            {% endunless %}
 
-              {{ post.data.title }}
-            </a>
-          </h3>
-
-          <small class="block mb-0">
-            <strong>
-              <span class="screenReader">Posted on</span>
-              {{ post.date | readableDate | date: "%B %e, %Y" }}
-            </strong>
-          </small>
-
-          {% if post.data.excerpt %}
-            <p class="mt-4 mb-0 text-small">
-              {{ post.data.excerpt }}
-            </p>
-          {% endif %}
-        </div>
+            {{ post.data.title }}
+          </a>
+        </h3>
       </div>
+
+      <small class="block mb-0">
+        <strong>
+          <span class="screenReader">Posted on</span>
+          {{ post.date | readableDate | date: "%B %e, %Y" }}
+        </strong>
+      </small>
+
+      {% if post.data.excerpt %}
+        <p class="mt-4 mb-0 text-small">
+          {{ post.data.excerpt }}
+        </p>
+      {% endif %}
     </article>
   {% endfor %}
 </section>

@@ -1,0 +1,42 @@
+.opening-text {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(1, auto);
+  grid-gap: 0.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.opening-text__header {
+  margin-top: 0;
+  margin-bottom: var(--spacing-6);
+
+  color: var(--color-mono-black);
+  font-weight: 400;
+  font-family: "Georgia", sans-serif;
+  line-height: var(--line-height-normal);
+
+  z-index: 2;
+  grid-column: 1 / span 12;
+  grid-row: 1 / 2;
+
+  @include larger-than(xl) {
+    grid-column: 1 / 6
+  }
+}
+
+.opening-text--functional {
+  font-family: "Beiruti", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-size: 108%;
+  font-style: normal;
+}
+
+.opening-text--pretty {
+  font-size: 95%;
+
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

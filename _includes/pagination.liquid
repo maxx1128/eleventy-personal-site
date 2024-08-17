@@ -1,4 +1,4 @@
-<nav class="resp-max-width py-8" aria-labelledby="my-pagination">
+<nav class="my-6" aria-labelledby="my-pagination">
   <h2 id="my-pagination" class="screenReader">
     Pagination
   </h2>
@@ -40,7 +40,7 @@
         {% endif %}
 
         {% if inPaginationRange %}
-          <li class="mb-0">
+          <li class="mb-0" style="display: contents;">
             {% if page.url == pagination.hrefs[forloop.index0] %}
               <span class="pagination-link pagination-link--current" aria-current="page">
                 <span class="screenReader">Pagination page</span> {{ forloop.index }}

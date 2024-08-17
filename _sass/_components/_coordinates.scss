@@ -1,0 +1,20 @@
+.coordinates {
+  width: 100%;
+  height: 100%;
+}
+
+.coordinates-wrapper {
+  display: flex;
+  height: calc(45vh - 20px);
+  align-items: center;
+  justify-content: center;
+
+  z-index: -1;
+  opacity: 0.4;
+  grid-column: 1 / span 12;
+  grid-row: 1 / 2;
+
+  @include larger-than(xl) {
+    grid-column: 4 / 9
+  }
+}

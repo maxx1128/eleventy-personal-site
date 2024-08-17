@@ -14,14 +14,11 @@
 @import '_display/_colors';
 @import '_display/_containers';
 @import '_display/_hidden';
-@import '_display/_slant';
 @import '_display/_typography';
 
 @import '_generic/_body';
 @import '_generic/_highlight';
 @import '_generic/_images';
-@import '_generic/_layout';
-@import '_generic/_pokemon-schemes';
 @import '_generic/_print';
 @import '_generic/_text';
 
@@ -30,17 +27,18 @@
 @import '_layout/_grid';
 @import '_layout/_spacing';
 
+@import '_components/_background-art';
 @import '_components/_blockquote';
-@import '_components/_books';
+@import '_components/_contacts';
 @import '_components/_content-skip';
+@import '_components/_coordinates';
+@import '_components/_footer';
 @import '_components/_footnotes';
-@import '_components/_header';
 @import '_components/_logo';
+@import '_components/_nav';
+@import '_components/_opening-text';
 @import '_components/_pagination';
 @import '_components/_post-content';
 @import '_components/_post-listing';
-@import '_components/_tags';
-@import '_components/_theme-switcher';
-@import '_components/_under-construction';
 @import '_components/_video-wrapper';
 @import '_components/_work';

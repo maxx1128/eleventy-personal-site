@@ -1,25 +1,3 @@
-<!-- Set up JS Data -->
-{% include gatherposts.liquid %}
-
-<!-- Save JS Data to window -->
-<script>
-  (function() {
-    document.getElementsByTagName("html")[0].classList.remove("no-js");
-
-    const ContentData = window.ContentData || {};
-    const postData = JSON.parse(document.getElementById("post-data").innerHTML);
-
-    const setPostData = data => ContentData.posts = data;
-
-    ContentData.init = (postData) => {
-      setPostData(postData);
-    };
-
-    window.ContentData = ContentData;
-    window.ContentData.init(postData);
-  })();
-</script>
-
 <script
   type="text/javascript"
   src={{ "/assets/javascript/main.js" | url | bust }}

@@ -1,0 +1,21 @@
+---
+layout: layouts/page.liquid
+title: Blog
+tagline: Musings written down for safekeeping
+pagination:
+  data: collections.posts
+  size: 12
+  alias: posts
+---
+
+<p>
+  You can either scroll down for a straight archive or all my archive, or click one of the below tags to see writing from a specific category.
+</p>
+
+{% include postListing
+  posts: posts
+%}
+
+{% if pagination and hidePagination != true %}
+  {% include pagination.liquid %}
+{% endif %}

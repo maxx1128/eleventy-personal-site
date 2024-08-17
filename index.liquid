@@ -1,13 +1,14 @@
 ---
-layout: layouts/under-construction.liquid
+layout: layouts/base.liquid
 title: Homepage
+customFeaturedImage: homepage-image.jpg
 ---
 
-{% assign majorWork = work[0].work %}
+{% assign majorWork = work[1].work %}
 
-<div class="minHeight-100vh color-mono-black">
-  <div class="under-construction__header pt-2">
-    <h1 class="opening-text text-h1 text-center">
+<div class="homepage minHeight-100vh color-mono-black">
+  <div class="opening-text pt-2 mb-8">
+    <h1 class="opening-text__header text-h1 text-center">
       I make the web <br>
       <span class="opening-text--functional">functional</span> <br>
       <span class="opening-text--pretty">and pretty</span>
@@ -19,56 +20,33 @@ title: Homepage
   <br class="hidden-xl-down">
 
   <div>
-    <img width="200" height="200" class="logo block mx-auto sm--ml-none sm--mr-8 mb-6 border-radius-full" src="/assets/images/global/profile-2.jpg" alt="Maxwell's profile picture" />
+    <img width="150" height="150" class="logo mx-auto sm--mr-12 mb-4 border-radius-full" src="/assets/images/global/profile-2.jpg" alt="Maxwell's profile picture" />
 
     <p>
-      Hello there! I'm <span class="new-color">Max Antonucci</span>, a full-stack engineer that codes with HTML, CSS, JavaScript, Ember, React, Ruby, Ruby on Rails, and many more. My specialties include web accessibility and design systems, and I love when I have the opportunity to work in the civic tech sphere.
+      Hello there! I'm Max Antonucci, a senior full-stack engineer that codes with HTML5, CSS3, JavaScript, React, Ember, Ruby, Ruby on Rails, Python, and more. My specialties include web accessibility and design systems. I love having the opportunity to contribute to the civic tech sphere, and I currently work with <a href="https://agile6.com/">AgileSix Applications.</a>
     </p>
 
     <p>
-      This site is a redesign in progress. Please bear with me as I move over ten years of content around.
+      I enjoy reading, crafting, mobile gaming, drawing, and traveling. I also like to write about programming. Read about challenging coding concepts, happenings in the programming world, and personal life lessons in <a href="/blog/">my blog.</a> A curious mind keeps me learning and understanding as I go along.
+    </p>
+
+    <p>
+      I currently live in Connecticut with my lovely wife and my everyday ponderings.
     </p>
   </div>
 
-  <br>
-
   <h3 class="text-center">
-    Projects
+    Portfolio
   </h3>
 
   <p>
-    If you want to learn more about what I can do, check out some of the projects I've worked on below!
+    If you want to learn more about what I can do, check out <a href="/portfolio/">my portfolio page.</a>
   </p>
 
   <section class="flex flex-wrap flex-gap-4">
     {% for workItem in majorWork %}
-      <article class="work-article flex flex-column flex-align-center border-mono-black box-shadow-2">
-        <div class="work-image" style="background-image: url('/assets/images/work/{{ workItem.image }}')"></div>
-
-        <div class="work-item__content flex flex-column px-4 py-4 md--px-6">
-          <h3 class="text-h5 mt-0">
-            {{ workItem.title }}
-          </h3>
-
-          <p class="work-text text-small">
-            {{ workItem.description }}
-          </p>
-
-          <div class="flex flex-wrap flex-gap-4 mt-auto">
-            {% if workItem.urls.code %}
-              <a href="{{ workItem.urls.code }}">
-                View Code <span class="screenReader"> for {{ workItem.title }}</span>
-              </a>
-            {% endif %}
-
-            {% if workItem.urls.demo %}
-              <a href="{{ workItem.urls.demo }}">
-                View Demo <span class="screenReader"> for {{ workItem.title }}</span>
-              </a>
-            {% endif %}
-          </div>
-        </div>
-      </article>
+      {% include workItem.liquid
+          workItem: workItem %}
     {% endfor %}
   </section>
 
@@ -80,7 +58,7 @@ title: Homepage
   </h3>
 
   <p class="text-center">
-    You can find me on <a href="https://www.linkedin.com/in/maxwellantonucci/">LinkedIn,</a> <a href="https://github.com/maxx1128">Github,</a> <a href="http://codepen.io/max1128/">CodePen,</a> or <a href="https://forms.gle/5t65UjwHEQdKxAj8A" target="_blank" rel="noopener">reach out to me directly.</a>
+    You can find me on <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/maxwellantonucci/">LinkedIn,</a> <a target="_blank" rel="noopener" href="https://github.com/maxx1128">Github,</a> <a target="_blank" rel="noopener" href="http://codepen.io/max1128/">CodePen,</a> or <a target="_blank" rel="noopener" href="https://forms.gle/5t65UjwHEQdKxAj8A" target="_blank" rel="noopener">reach out to me directly.</a>
   </p>
 
   <br>

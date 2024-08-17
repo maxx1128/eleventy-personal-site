@@ -11,27 +11,27 @@
 }
 
 :root {
-  --color-primary-dark: #31739c;
+  --color-primary-dark: #026063;
   --color-primary-base: #4a9cd5;
   --color-primary-light: #8bd5ff;
 
-  --color-action-base: #E71D27;
+  --color-action-base: #014a93;
 
-  --color-mono-black: #020402;
-  --color-mono-muted: #e8fbff;
-  --color-mono-white: #FFFEFC;
+  --color-mono-black: #000000;
+  --color-mono-muted: #d9f8f7;
+  --color-mono-white: #f4fefd;
 }
 
-@include darkMode() {
-  --color-primary-dark: #8bd5ff;
-  --color-primary-light: #31739c;
+// @include darkMode() {
+//   --color-primary-dark: #8bd5ff;
+//   --color-primary-light: #31739c;
 
-  --color-action-base: #ee5a62;
+//   --color-action-base: #ee5a62;
 
-  --color-mono-black: #FFFEFC;
-  --color-mono-muted: #04282e;
-  --color-mono-white: #020402;
-}
+//   --color-mono-black: #FFFEFC;
+//   --color-mono-muted: #04282e;
+//   --color-mono-white: #020402;
+// }
 
 // This function pulls specific color values from the below map
 @function color($color, $tone: base) {

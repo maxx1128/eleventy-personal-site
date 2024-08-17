@@ -1,15 +1,15 @@
 [
    {
-      "name": "About",
-      "link": "/about/"
+      "name": "Home",
+      "link": "/"
    }, {
-      "name": "Now",
-      "link": "/now/"
+      "name": "Portfolio",
+      "link": "/portfolio/"
    }, {
-      "name": "Work",
-      "link": "/work/"
+      "name": "Blog",
+      "link": "/blog/"
    }, {
-      "name": "Writing",
-      "link": "/writing/"
+      "name": "Contact",
+      "link": "/contact/"
    }
 ]

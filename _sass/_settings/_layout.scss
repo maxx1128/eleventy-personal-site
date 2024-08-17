@@ -21,6 +21,7 @@ $g-modular-scale--ratio: 1.2; // Minor third
   --spacing-border : #{decimal-round(modular-scale(-9), 2)};
   --spacing-1      : #{decimal-round(modular-scale(-6), 2)};
   --spacing-2      : #{decimal-round(modular-scale(-3), 2)};
+  --spacing-neg-2  : #{decimal-round(modular-scale(-3), 2) * -1};
   --spacing-3      : #{decimal-round(modular-scale(-1), 2)};
   --spacing-4      : #{decimal-round(modular-scale(0), 2)};
   --spacing-neg-4  : #{decimal-round(modular-scale(0), 2) * -1};
@@ -38,6 +39,7 @@ $spacing-map: (
   border : var(--spacing-border),
   1      : var(--spacing-1),
   2      : var(--spacing-2),
+  neg2   : var(--spacing-neg-2),
   3      : var(--spacing-3),
   4      : var(--spacing-4),
   neg4   : var(--spacing-neg-4),

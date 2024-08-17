@@ -1,9 +1,9 @@
 {
   "title": "Maxwell Antonucci",
   "url": "https://www.maxwellantonucci.com",
-  "description": "Full-time coder, part-time ponderer.",
+  "description": "I make the web functional and pretty",
   "feed": {
-    "subtitle": "Full-time coder, part-time ponderer.",
+    "subtitle": "I make the web functional and pretty",
     "filename": "rss.xml",
     "path": "/rss.xml",
     "id": "https://www.maxwellantonucci.com"

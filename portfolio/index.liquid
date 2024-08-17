@@ -1,0 +1,36 @@
+---
+layout: layouts/page.liquid
+title: Portfolio
+tagline: Code samples and projects
+---
+
+<p>
+  Like most programmers, my work is a mix of code I've written for jobs, to practice new skills, to solve small problems in my life, and to answer pointless questions I asked myself in the dead of night.
+</p>
+
+<p>
+  <strong>Disclaimer:</strong> I can't show code samples from all of my jobs here. Some are either proprietary or just not easily reached by any old web browser. If you're still curious about my career work, check out <a href="http://codepen.io/max1128/">my CodePen page</a> and <a href="https://www.linkedin.com/in/maxwellantonucci/">my LinkedIn page.</a>
+</p>
+
+{% assign majorWork = work[0].work %}
+{% assign toolSideProjects = work[1].work %}
+{% assign gameSideProjects = work[2].work %}
+{% assign artSideProjects = work[3].work %}
+
+{% for workCollection in work %}
+  {% assign workSection = work[forloop.index0] %}
+
+  <h2>
+    {{ workSection.type }}
+  </h2>
+
+  <section class="flex flex-wrap flex-justify-center flex-gap-4">
+    {% for workItem in workSection.work %}
+      {% include workItem.liquid
+        workItem: workItem %}
+    {% endfor %}
+  </section>
+
+  <br />
+  <br />
+{% endfor %}

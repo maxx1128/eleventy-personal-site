@@ -1,84 +1,22 @@
-{% assign banner_image = metadata.post.imagePath | append: image %}
-{% assign postHasImage = true %}
+<header class="post-header flex flex-column flex-justify-center flex-gap-2">
+  <small class="block font-weight-bold my-0">
+    {{ date | toUTCString }}
+  </small>
 
-{% if image %}
-  <div class="header header--post poke-color--text flex flex-column-reverse xl--flex-row flex-justify-end poke-background--bg poke-background--screen {% if no-min-image-height %}header--with-no-min-height{% endif %}">
-    <div class="header__text header__text--post flex flex-column xl--flex-justify-center xl--my-6 py-4 resp-max-width my-6 slant-top-padding slant-bottom-padding">
-      <div class="my-6">
-        <div class="flex flex-justify-between mb-auto xl--mb-0">
-          <small class="block mb-2 font-weight-bold">
-            {{ date | toUTCString }}
-          </small>
-
-          <span class="hidden-md-down">
-            {% include tagList
-            tags: tags
-            rightAlign: true %}
-          </span>
-        </div>
-
-        <h1 class="flex flex-row flex-align-start flex-align-center flex-gap-4 sm--flex-gap-6 mt-2 mb-0">
-          {% if link.url and link.title %}
-            {% include externalIcon.liquid
-              width: "60px",
-              height: "60px"
-            %}
-          {% endif %}
-
-          {{ title | replace: " - Maxwell Antonucci", "" }}
-        </h1>
-
-        {% if excerpt %}
-          <p class="my-0 mt-4 text-small font-weight-light">
-            {{ excerpt }}
-          </p>
-        {% endif %}
-      </div>
-    </div>
-
-    {% if banner_image %}
-      <div class="header__image-wrapper absolute">
-        <div class="header__image-gradient"></div>
-
-        <img
-          alt=""
-          src="{{ banner_image }}"
-          class="header__large-image flex-item" />
-      </div>
+  <h1 class="flex flex-row flex-align-start flex-align-center flex-gap-4 sm--flex-gap-6 my-0">
+    {% if link.url and link.title %}
+      {% include externalIcon.liquid
+        width: "60px",
+        height: "60px"
+      %}
     {% endif %}
-  </div>
-{% else %}
-  {% assign postHasImage = true %}
-  <div class="header__text--no-image flex flex-column-reverse xl--flex-row flex-justify-end poke-background--bg poke-color--text poke-border--text my-2">
-    <div class="flex flex-column xl--flex-justify-center resp-max-width py-5">
-      <div class="flex flex-justify-between mb-auto xl--mb-0">
-        <small class="block mb-2 font-weight-bold">
-          {{ date | toUTCString }}
-        </small>
 
-        <span class="hidden-md-down">
-          {% include tagList
-          tags: tags
-          rightAlign: true %}
-        </span>
-      </div>
+    {{ title | replace: " - Maxwell Antonucci", "" }}
+  </h1>
 
-      <h1 class="flex flex-row flex-align-start flex-align-center flex-gap-4 sm--flex-gap-6 my-0 text-h2 mt-4 mb-4">
-        {% if link.url and link.title %}
-          {% include externalIcon.liquid
-            width: "60px",
-            height: "60px"
-          %}
-        {% endif %}
-
-        {{ title | replace: " - Maxwell Antonucci", "" }}
-      </h1>
-
-      {% if excerpt %}
-        <p class="my-0 mt-2 text-small font-weight-light">
-          {{ excerpt }}
-        </p>
-      {% endif %}
-    </div>
-  </div>
-{% endif %}
+  {% if excerpt %}
+    <p class="text-small font-weight-bold my-0">
+      {{ excerpt }}
+    </p>
+  {% endif %}
+</header>
