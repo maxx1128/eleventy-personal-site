@@ -50,18 +50,19 @@
 
 .blog-post {
   @include smaller-than(md) {
-    pre,
-    p img,
-    p:has(img),
-    .post-content--image-list {
-      width: 100vw;
-      margin-right: spacing(neg2);
-      margin-left: spacing(neg2);
+    pre {
+      width: calc(100vw - var(--spacing-10));
     }
+  }
 
-    p img {
-      width: 100vw;
-      max-width: 100vw;
+  p:has(img) {
+    display: flex;
+
+    img {
+      display: block;
+      width: auto;
+      max-height: 60vh;
+      margin: 0 auto;
     }
   }
 }
