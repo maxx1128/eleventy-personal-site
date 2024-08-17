@@ -71,7 +71,6 @@
       }, {
         "title": "Our Wedding",
         "description": "When my wedding was being planned, we needed a website, and I was proud to make it myself. We needed it fast, so I used my custom Jekyll template and my Atomic Sass stylesheet. It also made use of responsive embedded maps, image galleries with lazy loading, a vertical timeline of events, and an animated countdown timer built with React, while keeping it accessible for all the guests. The amazing design was courtesy of my new wife ♡.",
-        "fullImageHeight": true,
         "image": "wedding.png",
         "major": true,
         "urls": {
@@ -94,7 +93,6 @@
         "title": "Anime Quote Maker",
         "description": "My favorite React side project is an easy way to pair inspiring quotes with stylish anime art. Each quote image can be heavily customized with different positioning, colors, shapes, font styles, and filters. It also uses a custom API endpoint I wrote in Ruby to pull images randomly or based on tags.",
         "image": "anime-quote-maker.png",
-        "fullImageHeight": true,
         "urls": {
           "code": "https://github.com/maxx1128/anime-quote-maker",
           "demo": "https://www.quotemaker.maxwellantonucci.com"
@@ -103,7 +101,6 @@
         "title": "Hypnotic Spiral",
         "description": "This project is a combination of CSS animation, careful timing, and making code up on the fly. Just don't stare at it for too long.",
         "image": "hypnotic-spiral.png",
-        "fullImageHeight": true,
         "urls": {
           "demo": "https://codepen.io/max1128/pen/xEOLmg"
         }
@@ -111,9 +108,15 @@
         "title": "Responsive RWBY Show Poster",
         "description": "SVG lets coders crop and arrange images in interesting ways. I experimented with this by making a fake poster for one of my favorite animes that's also responsive, making it well-suited for online promotion materials.",
         "image": "rwby-poster.png",
-        "fullImageHeight": true,
         "urls": {
           "demo": "https://codepen.io/max1128/pen/ZEppvKE"
+        }
+      }, {
+        "title": "Generative SVG Background",
+        "description": "This pen mixes translucent SVG lines with random sizes, positions, angles, and color choices. The end result is a subtle background texture that varies just enough between each pge load. It's on this very website!",
+        "image": "background-svg-art.png",
+        "urls": {
+          "demo": "https://codepen.io/max1128/pen/YzoYmBX"
         }
       }
     ]
