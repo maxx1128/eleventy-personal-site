@@ -2,7 +2,7 @@
   flex: 1 1 rem(275px);
   max-width: 450px;
 
-  border-left: 3px solid color(primary, dark);
+  border-left: 3px solid color(mono, black);
 
   &::before {
     content: none !important;
@@ -16,11 +16,11 @@
 
 .contact-list__svg {
   flex: 0 0 75px;
-  fill: color(primary, dark) !important;
+  fill: color(mono, black) !important;
 
   svg,
   path,
   g {
-    fill: color(primary, dark) !important;
+    fill: color(mono, black) !important;
   }
 }
