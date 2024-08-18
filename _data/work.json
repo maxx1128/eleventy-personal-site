@@ -4,21 +4,21 @@
     "work": [
       {
         "title": "CSS Variable Customizer",
-        "description": "This is a template I made for any small code projects where I want to quickly play around with basic styles. It's useful for fine-tuning the front-end's look and feel, and stress-testing its styling and markup.",
+        "description": "This is a React template I made for any small code projects where I want to quickly play around with basic styles. It's useful for fine-tuning the front-end's look and feel, and stress-testing its styling and markup.",
         "image": "css-variable-customizer.png",
         "urls": {
           "demo": "https://codepen.io/max1128/pen/ExEbWwv"
         }
       }, {
         "title": "Vigenere Encryption",
-        "description": "This encryption tools lets you encode messages using a secret pass phrase, and it can old be decoded with the same pass phrase. Writing the coding and decoding logic was almost as difficult as understanding all the principles behind Vigenere encryption itself.",
+        "description": "This Vue encryption tool lets you encode messages using a secret pass phrase, and it can old be decoded with the same pass phrase. Writing the coding and decoding logic was almost as difficult as understanding all the principles behind Vigenere encryption itself.",
         "image": "vigenere-encryption.png",
         "urls": {
           "demo": "https://codepen.io/max1128/pen/VdyJmd"
         }
       }, {
         "title": "Boxing Bot",
-        "description": "I created several structured workouts with randomly selected exercises to help me work out at home during the pandemic, and wound up still using it after quarantine.",
+        "description": "I created this React app with several structured workouts and randomly selected exercises to help me work out at home during the pandemic, and wound up still using it after quarantine.",
         "image": "boxing-bot.png",
         "urls": {
           "code": "https://github.com/maxx1128/boxing-bot",
@@ -46,7 +46,7 @@
     "work": [
       {
         "title": "The Searchable Museum",
-        "description": "My first project with AgileSix was helping build and refine the digital museum for the National Museum of African American History and Culture. I built an in-depth, interactive exhibit component, refactored the main navigation, and brought the site closer to Web Content and Accessibility Guidelines (WCAG) 2.1 compliance by documenting and fixing accessibility bugs.",
+        "description": "My first project with AgileSix was helping build and refine the digital museum for the National Museum of African American History and Culture built with Gatsby. I built an in-depth, interactive exhibit component, refactored the main navigation, and brought the site closer to Web Content and Accessibility Guidelines (WCAG) 2.1 compliance by documenting and fixing accessibility bugs.",
         "image": "searchable-museum.png",
         "major": true,
         "urls": {
@@ -54,7 +54,7 @@
         }
       }, {
         "title": "VA Facility Pages",
-        "description": "I helped implement new VA Design System components, updated webpages with new content that was responsive and accessible, and built out the VA/Tricare system of pages to ensure veterans can find needed facilities and health care.",
+        "description": "I helped implement new VA Design System components, updated webpages with new content that was responsive and accessible, and built out the VA/Tricare system of pages to ensure veterans can find needed facilities and health care. These pages are built with Drupal, web components, React, and MetalSmith.",
         "image": "va-design.png",
         "major": true,
         "urls": {
@@ -62,7 +62,7 @@
         }
       }, {
         "title": "SeeClickFix Portal",
-        "description": "The Request Portal is how citizens can use SeeClickFix to send requests to their local governments, track their progress, explore others on a map, and comment or follow others. I made the style guide and design system that the front-end was built on from scratch and integrated it into front-end and back-end platforms. I also ensured it was compliant with WCAG 2.1 standards.",
+        "description": "The Request Portal is how citizens can use SeeClickFix to send requests to their local governments, track their progress, explore others on a map, and comment or follow others. I made the style guide and design system that the front-end was built on from scratch. It was integrated it into front-end and back-end platforms of Ember, React, and Ruby on Rails. I also ensured it was compliant with WCAG 2.1 standards.",
         "image": "scf-portal.png",
         "major": true,
         "urls": {
@@ -132,7 +132,7 @@
         }
       }, {
         "title": "Snake Oil Salesman",
-        "description": "During quarantine, my gaming friends and I couldn't find a good online version of the game 'Snake Oil Salesman' to play. So I made one myself!",
+        "description": "During quarantine, my gaming friends and I couldn't find a good online version of the game 'Snake Oil Salesman' to play. So I made one myself with React!",
         "image": "snake-oil-salesman.png",
         "urls": {
           "code": "https://github.com/maxx1128/snake-oil-salesman-react",
@@ -140,7 +140,7 @@
         }
       }, {
         "title": "Monty Hall Dilemma Game",
-        "description": "The Monty Hall Dilemma is one of my favorite puzzles, and recreating it is one of my favorite ways to try a new JavaScript tool or framework. This was one of my first Vue projects.",
+        "description": "The Monty Hall Dilemma is one of my favorite puzzles, and recreating it with Vue was one of my favorite ways to try a new JavaScript tool or framework.",
         "image": "monty-hall.png",
         "urls": {
           "demo": "https://codepen.io/max1128/pen/OxQYzW"
@@ -154,7 +154,7 @@
         }
       }, {
         "title": "Concentration Game",
-        "description": "A game I made to practice more with Vue.JS, one of the most popular JavaScript frameworks. It randomizes the numbers' placement and tracks the user's remaining turns.",
+        "description": "A game I made to practice more with Vue.JS. It randomizes the numbers' placement and tracks the user's remaining turns.",
         "image": "concentration.png",
         "urls": {
           "demo": "https://codepen.io/max1128/pen/JVmzYZ"

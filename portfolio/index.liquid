@@ -5,17 +5,12 @@ tagline: Code samples and projects
 ---
 
 <p>
-  Like most programmers, my work is a mix of code I've written for jobs, to practice new skills, to solve small problems in my life, and to answer pointless questions I asked myself in the dead of night.
+  Like most programmers, my portfolio is a mixture of code for work, practicing new skills, and expressing myself. Feel free to browse below!
 </p>
 
 <p>
   <strong>Disclaimer:</strong> I can't show code samples from all of my jobs here. Some are either proprietary or just not easily reached by any old web browser. If you're still curious about my career work, check out <a href="http://codepen.io/max1128/">my CodePen page</a> and <a href="https://www.linkedin.com/in/maxwellantonucci/">my LinkedIn page.</a>
 </p>
-
-{% assign majorWork = work[0].work %}
-{% assign toolSideProjects = work[1].work %}
-{% assign gameSideProjects = work[2].work %}
-{% assign artSideProjects = work[3].work %}
 
 {% for workCollection in work %}
   {% assign workSection = work[forloop.index0] %}
