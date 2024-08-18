@@ -4,4 +4,12 @@
     top: 0;
     right: 0;
   }
+
+  li {
+    font-size: type(font-size, small);
+
+    @include larger-than(md) {
+      font-size: type(font-size, p);
+    }
+  }
 }

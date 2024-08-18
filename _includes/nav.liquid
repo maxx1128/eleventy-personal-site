@@ -18,7 +18,7 @@
         {% assign current_page = false %}
       {% endif %}
 
-      <li class="m-0 text-small {% if active_page %}font-weight-bold{% endif %}">
+      <li class="m-0 {% if active_page %}font-weight-bold{% endif %}">
         <a {% if active_page %}aria-current="page"{% endif %} href="{{ menu_item.link }}">
           {{ menu_item.name }}
         </a>
