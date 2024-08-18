@@ -6,9 +6,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Homemade+Apple&display=swap" rel="stylesheet">
 
   <body>
+    <a class="skip-to-content inline-block p-2 bg-mono-muted" href="#content">
+      Skip to Content
+    </a>
     {% include nav.liquid %}
 
-    <div class="post-content">
+    <div id="content" class="post-content">
       {{ content | safe }}
     </div>
 
