@@ -1,60 +1,74 @@
-const { env } = require('process')
-const { DateTime } = require('luxon')
-const footnotes = require('eleventy-plugin-footnotes')
-const fs = require('fs')
-const pluginRss = require('@11ty/eleventy-plugin-rss')
-const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
-const pluginNavigation = require('@11ty/eleventy-navigation')
-const markdownIt = require('markdown-it')
-const markdownItAnchor = require('markdown-it-anchor')
-const moment = require('moment')
+import { env } from 'process';
+import { DateTime } from 'luxon';
+import footnotes from 'eleventy-plugin-footnotes';
+import fs from 'fs';
+import pluginRss from '@11ty/eleventy-plugin-rss';
+import pluginSyntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
+import pluginNavigation from '@11ty/eleventy-navigation';
+import markdownIt from 'markdown-it';
+import markdownItAnchor from 'markdown-it-anchor';
+import moment from 'moment';
+import {renderToStaticMarkup} from 'react-dom/server'
+import {register} from 'node:module';
+
+register('@mdx-js/node-loader', import.meta.url);
 
 const hideFutureItems = (item) => {
   const now = new Date(),
     postDate = item.date,
-    wasPublishedLater = postDate < now
+    wasPublishedLater = postDate < now;
 
-  return wasPublishedLater
-}
+  return wasPublishedLater;
+};
 
 const sortByDate = (a, b) => {
   if (a.date < b.date) {
-    return -1
+    return -1;
   }
   if (a.date > b.date) {
-    return 1
+    return 1;
   }
-  return 0
-}
+  return 0;
+};
 
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(pluginRss)
-  eleventyConfig.addPlugin(pluginSyntaxHighlight)
-  eleventyConfig.addPlugin(pluginNavigation)
-  eleventyConfig.addPlugin(footnotes)
+export default function (eleventyConfig) {
+  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(pluginSyntaxHighlight);
+  eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(footnotes);
 
   eleventyConfig.addWatchTarget("./_sass/**/**/*");
   eleventyConfig.addWatchTarget("./_javascript/**/**/*");
 
+  eleventyConfig.addExtension("mdx", {
+		key: "11ty.js",
+		compile: () => {
+			return async function(data) {
+				let content = await this.defaultRenderer(data);
+				return renderToStaticMarkup(content);
+			};
+		}
+	});
+
   // eleventyConfig.setWatchThrottleWaitTime(500)
 
-  eleventyConfig.setDataDeepMerge(true)
+  eleventyConfig.setDataDeepMerge(true);
 
   eleventyConfig.addFilter('addNbsp', (str) => {
     if (!str) {
-      return
+      return;
     }
-    let title = str.replace(/((.*)\s(.*))$/g, '$2&nbsp;$3')
-    title = title.replace(/"(.*)"/g, '\\"$1\\"')
-    return title
-  })
+    let title = str.replace(/((.*)\s(.*))$/g, '$2&nbsp;$3');
+    title = title.replace(/"(.*)"/g, '\\"$1\\"');
+    return title;
+  });
 
   eleventyConfig.addPairedLiquidShortcode("isDevelopment", () => {
-    return env.MY_ENVIRONMENT === 'dev'
+    return env.MY_ENVIRONMENT === 'dev';
   });
 
   eleventyConfig.addPairedLiquidShortcode("isProduction", () => {
-    return env.MY_ENVIRONMENT !== 'dev'
+    return env.MY_ENVIRONMENT !== 'dev';
   });
 
   eleventyConfig.addFilter("bust", (url) => {
@@ -64,7 +78,7 @@ module.exports = function (eleventyConfig) {
 
     const [urlPart, paramPart] = url.split("?");
     const params = new URLSearchParams(paramPart || "");
-    const relativeUrl = (urlPart.charAt(0) == "/") ? urlPart.substring(1): urlPart;
+    const relativeUrl = (urlPart.charAt(0) == "/") ? urlPart.substring(1) : urlPart;
 
     try {
       const fileStats = fs.statSync(relativeUrl);
@@ -77,57 +91,56 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter('readableDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('dd LLL yyyy')
-  })
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('dd LLL yyyy');
+  });
 
   eleventyConfig.addFilter('postReadTime', (content) => {
     const isRejectedCharacter = (str) =>
-      str.length === 1 && !str.toLowerCase().match(/[a-z]/i)
+      str.length === 1 && !str.toLowerCase().match(/[a-z]/i);
 
     const acceptedContent = content
         .split(' ')
         .filter((content) => content !== '' && !isRejectedCharacter(content)),
-      readTime = Math.round(acceptedContent.length / 180)
+      readTime = Math.round(acceptedContent.length / 180);
 
     if (readTime < 2) {
-      return 2
+      return 2;
     }
-    return readTime
-  })
+    return readTime;
+  });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd')
-  })
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
+  });
 
-  eleventyConfig.addLiquidFilter('toUTCString', (date) => {
-    const utc = new Date(date).toUTCString()
-    return moment.utc(utc).format('MMMM D, YYYY')
-  })
+  eleventyConfig.addFilter('toUTCString', (date) => {
+    const utc = new Date(date).toUTCString();
+    return moment.utc(utc).format('MMMM D, YYYY');
+  });
 
-  eleventyConfig.addLiquidFilter('toUTCDatePath', (date) => {
-    const utc = new Date(date).toUTCString()
-    return moment.utc(utc).format('YYYY/MM/DD/')
-  })
+  eleventyConfig.addFilter('toUTCDatePath', (date) => {
+    return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toFormat('yyyy/MM/dd/');
+  });
 
-  eleventyConfig.addLiquidFilter('onlyPublished', (posts) => {
-    return posts.filter(hideFutureItems)
-  })
+  eleventyConfig.addFilter('onlyPublished', (posts) => {
+    return posts.filter(hideFutureItems);
+  });
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter('head', (array, n) => {
     if (n < 0) {
-      return array.slice(n)
+      return array.slice(n);
     }
 
-    return array.slice(0, n)
-  })
+    return array.slice(0, n);
+  });
 
   eleventyConfig.addCollection('tagList', function (collection) {
-    let tagSet = new Set()
+    let tagSet = new Set();
     collection.getAll().forEach(function (item) {
       if ('tags' in item.data) {
-        let tags = item.data.tags
+        let tags = item.data.tags;
 
         tags = tags.filter(function (item) {
           switch (item) {
@@ -136,44 +149,44 @@ module.exports = function (eleventyConfig) {
             case 'nav':
             case 'post':
             case 'posts':
-              return false
+              return false;
           }
 
-          return true
-        })
+          return true;
+        });
 
         for (const tag of tags) {
-          tagSet.add(tag)
+          tagSet.add(tag);
         }
       }
-    })
+    });
 
     // returning an array in addCollection works in Eleventy 0.5.3
-    return [...tagSet]
-  })
+    return [...tagSet];
+  });
 
   eleventyConfig.addCollection('posts', function (collection) {
     return collection
       .getFilteredByGlob('./posts/*.md')
       .filter(hideFutureItems)
-      .reverse()
-  })
+      .reverse();
+  });
 
   eleventyConfig.addCollection('feed', function (collection) {
     const allContent = [
       ...collection.getFilteredByGlob('./posts/*.md'),
-    ].sort(sortByDate)
+    ].sort(sortByDate);
 
     return allContent
       .filter(hideFutureItems)
       .slice(Math.max(allContent.length - 50, 1))
-      .reverse()
-  })
+      .reverse();
+  });
 
-  eleventyConfig.addPassthroughCopy('img')
-  eleventyConfig.addPassthroughCopy('assets/**/*')
-  eleventyConfig.addPassthroughCopy('serviceworker.js')
-  eleventyConfig.addPassthroughCopy('manifest.webmanifest')
+  eleventyConfig.addPassthroughCopy('img');
+  eleventyConfig.addPassthroughCopy('assets/**/*');
+  eleventyConfig.addPassthroughCopy('serviceworker.js');
+  eleventyConfig.addPassthroughCopy('manifest.webmanifest');
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
@@ -184,28 +197,28 @@ module.exports = function (eleventyConfig) {
     permalink: true,
     permalinkClass: 'direct-link',
     permalinkSymbol: '#',
-  })
-  eleventyConfig.setLibrary('md', markdownLibrary)
+  });
+  eleventyConfig.setLibrary('md', markdownLibrary);
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
       ready: function (err, browserSync) {
-        const content_404 = fs.readFileSync('_site/404.html')
+        const content_404 = fs.readFileSync('_site/404.html');
 
         browserSync.addMiddleware('*', (req, res) => {
           // Provides the 404 content without redirect.
-          res.write(content_404)
-          res.end()
-        })
+          res.write(content_404);
+          res.end();
+        });
       },
     },
     ui: false,
     ghostMode: false,
-  })
+  });
 
   return {
-    templateFormats: ['md', 'njk', 'html', 'liquid'],
+    templateFormats: ['md', 'njk', 'html', 'liquid', 'mdx'],
 
     // If your site lives in a different subdirectory, change this.
     // Leading or trailing slashes are all normalized away, so don’t worry about those.
@@ -228,5 +241,5 @@ module.exports = function (eleventyConfig) {
       data: '_data',
       output: '_site',
     },
-  }
+  };
 }
