@@ -17,7 +17,7 @@
     {% assign description = metadata.description %}
   {% endif %}
 
-  {% assign featured_image_fileName = title | replace: titleSuffix, "" | slug | addNbsp | safe %}
+  {% assign featured_image_fileName = title | replace: titleSuffix, "" | slug | addNbsp %}
 
   {% if customFeaturedImage %}
     {% assign featured_image = "/assets/images/featured/" | append: customFeaturedImage | prepend: metadata.url %}
@@ -91,4 +91,4 @@
     title="{{ metadata.title }}">
 </head>
 
-{% include googleAnalytics.liquid %}
+{% include "googleAnalytics.liquid" %}

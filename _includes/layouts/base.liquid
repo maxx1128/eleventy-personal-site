@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  {% include head.liquid %}
+  {% include "head.liquid" %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Homemade+Apple&display=swap" rel="stylesheet">
@@ -9,17 +9,17 @@
     <a class="skip-to-content inline-block p-2 bg-mono-muted" href="#content">
       Skip to Content
     </a>
-    {% include nav.liquid %}
+    {% include "nav.liquid" %}
 
     <div id="content" class="post-content">
-      {{ content | safe }}
+      {{ content }}
     </div>
 
-    {% include footer.liquid %}
+    {% include "footer.liquid" %}
 
-    {% include footerscripts.liquid %}
-    {% include serviceworker.liquid %}
+    {% include "footerscripts.liquid" %}
+    {% include "serviceworker.liquid" %}
   </body>
 </html>
 
-{% include backgroundArt.liquid %}
+{% include "backgroundArt.liquid" %}

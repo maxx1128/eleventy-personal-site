@@ -14,10 +14,10 @@ pagination:
   </a>
 </div>
 
-{% include postListing
+{% include "postListing.liquid"
   posts: posts
 %}
 
 {% if pagination and hidePagination != true %}
-  {% include pagination.liquid %}
+  {% include "pagination.liquid" %}
 {% endif %}

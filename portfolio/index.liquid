@@ -21,7 +21,7 @@ tagline: Code samples and projects
 
   <section class="flex flex-wrap flex-justify-center flex-gap-4">
     {% for workItem in workSection.work %}
-      {% include workItem.liquid
+      {% include "workItem.liquid"
         workItem: workItem %}
     {% endfor %}
   </section>
