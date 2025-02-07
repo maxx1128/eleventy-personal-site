@@ -10,6 +10,7 @@ import markdownItAnchor from 'markdown-it-anchor';
 import moment from 'moment';
 import {renderToStaticMarkup} from 'react-dom/server'
 import {register} from 'node:module';
+import mdxPlugin from "@jamshop/eleventy-plugin-mdx";
 
 register('@mdx-js/node-loader', import.meta.url);
 
@@ -39,37 +40,8 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("./_sass/**/**/*");
   eleventyConfig.addWatchTarget("./_javascript/**/**/*");
-
-  eleventyConfig.addExtension("mdx", {
-		key: "11ty.js",
-		compile: () => {
-			return async function(data) {
-				let content = await this.defaultRenderer(data);
-				return renderToStaticMarkup(content);
-			};
-		}
-	});
-
-  // eleventyConfig.setWatchThrottleWaitTime(500)
-
-  eleventyConfig.setDataDeepMerge(true);
-
-  eleventyConfig.addFilter('addNbsp', (str) => {
-    if (!str) {
-      return;
-    }
-    let title = str.replace(/((.*)\s(.*))$/g, '$2&nbsp;$3');
-    title = title.replace(/"(.*)"/g, '\\"$1\\"');
-    return title;
-  });
-
-  eleventyConfig.addPairedLiquidShortcode("isDevelopment", () => {
-    return env.MY_ENVIRONMENT === 'dev';
-  });
-
-  eleventyConfig.addPairedLiquidShortcode("isProduction", () => {
-    return env.MY_ENVIRONMENT !== 'dev';
-  });
+  eleventyConfig.addWatchTarget("./posts/**/*.mdx");
+  eleventyConfig.addWatchTarget("./components/**/*.js|jsx");
 
   eleventyConfig.addFilter("bust", (url) => {
     if (env.MY_ENVIRONMENT !== 'dev') {
@@ -136,6 +108,28 @@ export default function (eleventyConfig) {
     return array.slice(0, n);
   });
 
+  eleventyConfig.addPlugin(mdxPlugin);
+  eleventyConfig.addTemplateFormats("mdx")
+
+  eleventyConfig.setDataDeepMerge(true);
+
+  eleventyConfig.addFilter('addNbsp', (str) => {
+    if (!str) {
+      return;
+    }
+    let title = str.replace(/((.*)\s(.*))$/g, '$2&nbsp;$3');
+    title = title.replace(/"(.*)"/g, '\\"$1\\"');
+    return title;
+  });
+
+  eleventyConfig.addPairedLiquidShortcode("isDevelopment", () => {
+    return env.MY_ENVIRONMENT === 'dev';
+  });
+
+  eleventyConfig.addPairedLiquidShortcode("isProduction", () => {
+    return env.MY_ENVIRONMENT !== 'dev';
+  });
+
   eleventyConfig.addCollection('tagList', function (collection) {
     let tagSet = new Set();
     collection.getAll().forEach(function (item) {
@@ -167,14 +161,14 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addCollection('posts', function (collection) {
     return collection
-      .getFilteredByGlob('./posts/*.md')
+      .getFilteredByGlob('./posts/*.md|mdx')
       .filter(hideFutureItems)
       .reverse();
   });
 
   eleventyConfig.addCollection('feed', function (collection) {
     const allContent = [
-      ...collection.getFilteredByGlob('./posts/*.md'),
+      ...collection.getFilteredByGlob('./posts/*.md|mdx'),
     ].sort(sortByDate);
 
     return allContent
@@ -218,7 +212,7 @@ export default function (eleventyConfig) {
   });
 
   return {
-    templateFormats: ['md', 'njk', 'html', 'liquid', 'mdx'],
+    templateFormats: ['md', 'njk', 'html', 'liquid', 'json', 'mdx'],
 
     // If your site lives in a different subdirectory, change this.
     // Leading or trailing slashes are all normalized away, so don’t worry about those.
