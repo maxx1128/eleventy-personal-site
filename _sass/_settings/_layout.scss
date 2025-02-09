@@ -1,5 +1,5 @@
-@import '../_tools/modular-scale';
-@import "../_tools/calc";
+@use '../_tools/modular-scale';
+@use "../_tools/calc";
 
 // All layout variables, such as spacing, layering, and others. Not grid ones, which refer to screen sizes and dimensions.
 
