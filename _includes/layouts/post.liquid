@@ -4,9 +4,9 @@ layout: layouts/base.liquid
 
 <article id="content" class="blog-post">
   {% if layout contains "page.liquid" %}
-    {% include pageHeader.liquid %}
+    {% include "pageHeader.liquid" %}
   {% elsif layout contains "post.liquid" %}
-    {% include postHeader.liquid %}
+    {% include "postHeader.liquid" %}
   {% endif %}
 
   {{ content }}

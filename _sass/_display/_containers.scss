@@ -1,8 +1,12 @@
+@use "sass:map";
+@use "./../_settings/_containers-settings" as *;
+@use "./../_tools/_selectors" as *;
+
 .block { display: block; }
 .inline-block { display: inline-block; }
 .inline { display: inline; }
 
-@each $layer, $shadow in map-get($containers-map, box-shadow) {
+@each $layer, $shadow in map.get($containers-map, box-shadow) {
 
   $hover-layer: $layer - 1;
 
@@ -23,6 +27,6 @@
   }
 }
 
-@each $label, $radius in map-get($containers-map, border-radius) {
+@each $label, $radius in map.get($containers-map, border-radius) {
   .border-radius-#{$label} { border-radius: $radius; }
 }

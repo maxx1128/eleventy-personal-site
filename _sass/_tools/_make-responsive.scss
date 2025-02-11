@@ -1,3 +1,5 @@
+@use "./../_tools/_layout" as *;
+
 @mixin rsp-class($bp, $bp-label, $class-name) {
   $bp-label-final: '';
   @if ($bp-label != 'xs') { $bp-label-final: $bp-label + '--' ; }

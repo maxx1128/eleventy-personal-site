@@ -1,10 +1,18 @@
+@use "sass:map";
+@use "./../_settings/_colors-settings" as *;
+@use "./../_settings/_typography-settings" as *;
+@use "./../_settings/_grid-settings" as *;
+@use "./../_tools/_selectors" as *;
+@use "./../_tools/_make-responsive" as *;
+@use "./../_tools/_calc" as *;
+
 $header-els: 'h1', 'h2', 'h3', 'h4', 'h5', 'h6';
 
 body {
   font-size: 100%;
   font-weight: type(font-weight, base);
   font-family: type(font-family);
-  color: color(mono, black);
+  color: myColor(mono, black);
   letter-spacing: 0px;
   word-spacing: 0px;
 }
@@ -27,22 +35,22 @@ kbd { font-family: type(font-family, mono); }
 .capitalize-sentence::first-letter { text-transform: capitalize; }
 .text-transform-none { text-transform: none; }
 
-@each $label, $font-family in map-get($typography-map, font-family) {
+@each $label, $font-family in map.get($typography-map, font-family) {
   .font-family-#{$label} { font-family: $font-family; }
 }
 
-@each $label, $weight in map-get($typography-map, font-weight) {
+@each $label, $weight in map.get($typography-map, font-weight) {
   .font-weight-#{$label} { font-weight: $weight; }
 }
 
-@each $label, $scale in map-get($typography-map, font-size) {
+@each $label, $scale in map.get($typography-map, font-size) {
   .text-#{$label},
   #{$label} {
     font-size: type(font-size, #{$label});
   }
 }
 
-@each $label, $line-height in map-get($typography-map, line-height) {
+@each $label, $line-height in map.get($typography-map, line-height) {
   #{$label},
   .line-height-#{$label} { line-height: strip-unit($line-height); }
 }

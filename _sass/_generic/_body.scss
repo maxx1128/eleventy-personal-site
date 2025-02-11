@@ -1,3 +1,5 @@
+@use "./../_settings/_colors-settings" as *;
+
 * { box-sizing: border-box; }
 
 html,
@@ -16,12 +18,12 @@ body {
   position: relative;
   flex-direction: column;
 
-  background-color: color(mono, white);
+  background-color: myColor(mono, white);
 
   transition-duration: 0s;
 }
 
 a:focus {
-  outline: 2px solid color(action, base);
+  outline: 2px solid myColor(action, base);
   outline-offset: 2px;
 }

@@ -1,18 +1,18 @@
-const fetch = require('node-fetch');
-const fs = require('fs');
+import fetch from 'node-fetch';
+import { writeFileSync } from 'fs';
 
-async function getBookData () {
+async function getBookData() {
   try {
-    return await fetch('https://eleventy-site-api.herokuapp.com/books/')
-            .then(response => response.json())
-            .then(data => (saveFile('_data/books.json', JSON.stringify(data))));
-  } catch(err) {
+    const response = await fetch('https://eleventy-site-api.herokuapp.com/books/');
+    const data = await response.json();
+    saveFile('_data/books.json', JSON.stringify(data));
+  } catch (err) {
     console.error(err);
   }
 }
 
 const saveFile = (fileName, content) => {
-  fs.writeFileSync(fileName, content, function (err) {
+  writeFileSync(fileName, content, function (err) {
     if (err) return console.log(err);
   });
 }

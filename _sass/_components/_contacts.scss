@@ -1,8 +1,11 @@
+@use "./../_settings/_colors-settings" as *;
+@use "./../_tools/_calc" as *;
+
 .contact-list__item {
-  flex: 1 1 rem(275px);
+  flex: 1 1 myRem(275px);
   max-width: 450px;
 
-  border-left: 3px solid color(mono, black);
+  border-left: 3px solid myColor(mono, black);
 
   &::before {
     content: none !important;
@@ -16,11 +19,11 @@
 
 .contact-list__svg {
   flex: 0 0 75px;
-  fill: color(mono, black) !important;
+  fill: myColor(mono, black) !important;
 
   svg,
   path,
   g {
-    fill: color(mono, black) !important;
+    fill: myColor(mono, black) !important;
   }
 }

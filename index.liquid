@@ -14,7 +14,7 @@ customFeaturedImage: homepage-image.jpg
       <span class="opening-text--pretty">and pretty</span>
     </h1>
 
-    {% include coordinateArt.liquid %}
+    {% include "coordinateArt.liquid" %}
   </div>
 
   <br class="hidden-xl-down">
@@ -45,7 +45,7 @@ customFeaturedImage: homepage-image.jpg
 
   <section class="flex flex-wrap flex-gap-4">
     {% for workItem in majorWork %}
-      {% include workItem.liquid
+      {% include "workItem.liquid"
           workItem: workItem %}
     {% endfor %}
   </section>

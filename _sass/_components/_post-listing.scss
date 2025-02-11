@@ -1,6 +1,10 @@
+@use "./../_settings/_colors-settings" as *;
+@use "./../_settings/_layout-settings" as *;
+@use "./../_tools/_layout" as *;
+
 .post-listing__wrapper {
   article:nth-of-type(odd) {
-    background-color: color(mono, muted);
+    background-color: myColor(mono, muted);
   }
 
   @include smaller-than(md) {

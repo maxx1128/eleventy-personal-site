@@ -1,12 +1,17 @@
+@use "./../_settings/_colors-settings" as *;
+@use "./../_settings/_layout-settings" as *;
+@use "./../_settings/_typography-settings" as *;
+@use "./../_tools/_layout" as *;
+
 blockquote {
   padding: spacing();
   margin: spacing(2) 0 spacing(6);
 
   font-style: italic;
 
-  background-color: color(mono, muted);
+  background-color: myColor(mono, muted);
   box-shadow: container(box-shadow, 2);
-  border-left: spacing(2) solid color(primary, base);
+  border-left: spacing(2) solid myColor(primary, base);
 
   p {
     margin: 0;

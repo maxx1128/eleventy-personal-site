@@ -1,7 +1,9 @@
+@use "./../_settings/_colors-settings" as *;
+
 .work-item {
   flex: 1 1 19rem;
 
-  background-color: color(mono, muted);
+  background-color: myColor(mono, muted);
 }
 
 .work-item__image {

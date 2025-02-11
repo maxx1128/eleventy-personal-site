@@ -1,3 +1,6 @@
+@use "./../_settings/_grid-settings" as *;
+@use "./../_tools/_make-responsive" as *;
+
 .inline-flex { display: inline-flex; }
 
 .flex-item { flex: 1 1 auto; }

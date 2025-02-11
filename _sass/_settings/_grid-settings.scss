@@ -1,11 +1,12 @@
-@import "../_tools/calc";
+@use "sass:map";
+@use "./../_tools/_calc" as *;
 // All variables related to the grid, including breakpoints
 
 // For pulling specific breakpoint width values out.
 // Not for adding breakpoint styles.
 @function breakpoint($width) {
-  @if map-has-key($breakpoint-map, $width) {
-    @return map-get($breakpoint-map, $width);
+  @if map.has-key($breakpoint-map, $width) {
+    @return map.get($breakpoint-map, $width);
   }
 }
 
@@ -16,10 +17,10 @@ $g-content-max-width: 925px;
 // Map for the breakpoints and max width
 $breakpoint-map: (
   xs: 0,
-  contentMin: rem($g-content-min-width),
-  sm: rem(480px),
-  md: rem(625px),
-  lg: rem(750px),
-  xl: rem(900px),
-  xxl: rem(1100px)
+  contentMin: myRem($g-content-min-width),
+  sm: myRem(480px),
+  md: myRem(625px),
+  lg: myRem(750px),
+  xl: myRem(900px),
+  xxl: myRem(1100px)
 );

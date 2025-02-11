@@ -1,3 +1,8 @@
+@use "./../_tools/_layout" as *;
+@use "./../_tools/_calc" as *;
+@use "./../_settings/_layout-settings" as *;
+@use "./../_settings/_grid-settings" as *;
+
 .direct-link { display: none; }
 
 .post-content {
@@ -17,13 +22,13 @@
 
 .page-header,
 .post-header {
-  padding: rem(30px) 0 rem(50px);
+  padding: myRem(30px) 0 myRem(50px);
 }
 
 @include larger-than(md) {
   .page-header,
   .post-header {
-    padding: rem(60px) 0;
+    padding: myRem(60px) 0;
   }
 }
 

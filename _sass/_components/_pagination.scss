@@ -1,3 +1,5 @@
+@use "./../_settings/_colors-settings" as *;
+
 .pagination-link {
   display: flex;
   width: 33px;
@@ -5,14 +7,14 @@
   align-items: center;
   justify-content: center;
 
-  border: 1px solid color(action);
+  border: 1px solid myColor(action);
   box-shadow: container(box-shadow, 1);
-  background-color: color(mono, white);
+  background-color: myColor(mono, white);
   border-radius: container(border-radius, circle);
 }
 
 .pagination-link--current {
-  color: color(mono, white);
+  color: myColor(mono, white);
 
-  background-color: color(action);
+  background-color: myColor(action);
 }

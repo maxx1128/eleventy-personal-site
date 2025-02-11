@@ -1,9 +1,11 @@
+@use "./../_settings/_colors-settings" as *;
+
 @each $palette, $swatches in $color-map {
   @each $label, $color in $swatches {
-    .bg-#{$palette}-#{$label} { background-color: $color; }
-    .text-#{$palette}-#{$label} { color: $color; }
-    .border-#{$palette}-#{$label} { border-color: $color; }
-    .fill-#{$palette}-#{$label} { fill: $color; }
+    .bg-#{$palette}-#{"" + $label} { background-color: $color; }
+    .text-#{$palette}-#{"" + $label} { color: $color; }
+    .border-#{$palette}-#{"" + $label} { border-color: $color; }
+    .fill-#{$palette}-#{"" + $label} { fill: $color; }
   }
 }
 

@@ -1,3 +1,6 @@
+@use "./../_settings/_typography-settings" as *;
+@use "./../_tools/_layout" as *;
+
 .nav {
   @include larger-than(md) {
     position: absolute;
