@@ -10,9 +10,6 @@ import markdownItAnchor from 'markdown-it-anchor';
 import moment from 'moment';
 import {renderToStaticMarkup} from 'react-dom/server'
 import {register} from 'node:module';
-import mdxPlugin from "@jamshop/eleventy-plugin-mdx";
-
-register('@mdx-js/node-loader', import.meta.url);
 
 const hideFutureItems = (item) => {
   const now = new Date(),
@@ -40,7 +37,6 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("./_sass/**/**/*");
   eleventyConfig.addWatchTarget("./_javascript/**/**/*");
-  eleventyConfig.addWatchTarget("./posts/**/*.mdx");
   eleventyConfig.addWatchTarget("./components/**/*.js|jsx");
 
   eleventyConfig.addFilter("bust", (url) => {
@@ -108,9 +104,6 @@ export default function (eleventyConfig) {
     return array.slice(0, n);
   });
 
-  eleventyConfig.addPlugin(mdxPlugin);
-  eleventyConfig.addTemplateFormats("mdx")
-
   eleventyConfig.setDataDeepMerge(true);
 
   eleventyConfig.addFilter('addNbsp', (str) => {
@@ -161,14 +154,14 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addCollection('posts', function (collection) {
     return collection
-      .getFilteredByGlob('./posts/*.md|mdx')
+      .getFilteredByGlob('./posts/*.md')
       .filter(hideFutureItems)
       .reverse();
   });
 
   eleventyConfig.addCollection('feed', function (collection) {
     const allContent = [
-      ...collection.getFilteredByGlob('./posts/*.md|mdx'),
+      ...collection.getFilteredByGlob('./posts/*.md'),
     ].sort(sortByDate);
 
     return allContent
@@ -212,7 +205,7 @@ export default function (eleventyConfig) {
   });
 
   return {
-    templateFormats: ['md', 'njk', 'html', 'liquid', 'json', 'mdx'],
+    templateFormats: ['md', 'njk', 'html', 'liquid', 'json'],
 
     // If your site lives in a different subdirectory, change this.
     // Leading or trailing slashes are all normalized away, so don’t worry about those.
