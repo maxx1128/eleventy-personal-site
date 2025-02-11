@@ -119,7 +119,7 @@ pre:nth-of-type(even) {
 @each $language, $color in $highlight-languages {
   $text-color: '';
 
-  @if (color.lightness($color) > 50) {
+  @if (color.channel($color, "lightness", $space: hsl) > 50) {
     $text-color: #000;
   } @else {
     $text-color: #FFF;

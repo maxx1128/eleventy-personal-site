@@ -1,4 +1,6 @@
 @use "sass:math";
+@use "sass:meta";
+@use "sass:list";
 
 @use "./../_tools/_calc" as *;
 
@@ -9,8 +11,8 @@ $g-modular-scale--base: 1rem !default;
 $g-modular-scale--ratio: 1.333 !default; // Perfect fourth
 
 @function modular-scale($increment, $value: $g-modular-scale--base, $ratio: $g-modular-scale--ratio) {
-  $v1: nth($value, 1);
-  $v2: nth($value, length($value));
+  $v1: list.nth($value, 1);
+  $v2: list.nth($value, list.length($value));
   $value: $v1;
 
   // scale $v2 to just above $v1

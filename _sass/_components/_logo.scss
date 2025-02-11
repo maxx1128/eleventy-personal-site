@@ -1,6 +1,13 @@
 @use "./../_tools/_layout" as *;
 
 .logo {
+  width: 200px;
+  height: 200px;
+  max-width: 200px;
+  float: left;
+
+  box-shadow: container(box-shadow, 2);
+
   @include smaller-than(sm) {
     float: none;
     display: block;
@@ -9,11 +16,4 @@
   @include larger-than(sm) {
     display: inline-block;
   }
-
-  width: 200px;
-  height: 200px;
-  max-width: 200px;
-  float: left;
-
-  box-shadow: container(box-shadow, 2);
 }
