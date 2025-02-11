@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @mixin darkMode() {
   html:has(.theme-switcher__input[value="dark"]:checked) {
     @content;
@@ -34,9 +36,9 @@
 // }
 
 // This function pulls specific color values from the below map
-@function color($color, $tone: base) {
-  @if map-has-key($color-map, $color) {
-    @return map-get(map-get($color-map, $color), $tone);
+@function myColor($color, $tone: base) {
+  @if map.has-key($color-map, $color) {
+    @return map.get(map.get($color-map, $color), $tone);
   }
 }
 

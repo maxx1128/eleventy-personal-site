@@ -1,0 +1,50 @@
+@use "sass:map";
+@use '../_tools/modular-scale' as *;
+@use "./../_tools/_calc" as *;
+
+// All layout variables, such as spacing, layering, and others. Not grid ones, which refer to screen sizes and dimensions.
+
+// For pulling specific spacing values
+// Can be used for margins or padding
+@function spacing($space: 4) {
+  @if map.has-key($spacing-map, $space) {
+    @return map.get($spacing-map, $space);
+  }
+}
+
+// Modular Scale variables
+$g-modular-scale--base: myRem(16px);
+$g-modular-scale--ratio: 1.2; // Minor third
+
+:root {
+  --spacing-none   : 0;
+  --spacing-px     : 1px;
+  --spacing-border : #{modular-scale(-9)};
+  --spacing-1      : #{modular-scale(-6)};
+  --spacing-2      : #{modular-scale(-3)};
+  --spacing-3      : #{modular-scale(-1)};
+  --spacing-4      : #{modular-scale(0)};
+  --spacing-5      : #{modular-scale(1)};
+  --spacing-6      : #{modular-scale(2)};
+  --spacing-8      : #{modular-scale(3)};
+  --spacing-10     : #{modular-scale(4)};
+  --spacing-12     : #{modular-scale(5)};
+}
+
+$spacing-map: (
+  none   : var(--spacing-none),
+  0      : var(--spacing-none),
+  px     : var(--spacing-px),
+  border : var(--spacing-border),
+  1      : var(--spacing-1),
+  2      : var(--spacing-2),
+  neg2   : var(--spacing-neg-2),
+  3      : var(--spacing-3),
+  4      : var(--spacing-4),
+  neg4   : var(--spacing-neg-4),
+  5      : var(--spacing-5),
+  6      : var(--spacing-6),
+  8      : var(--spacing-8),
+  10     : var(--spacing-10),
+  12     : var(--spacing-12)
+);

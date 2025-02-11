@@ -1,3 +1,9 @@
+@use "./../_tools/_layout" as *;
+@use "./../_tools/_calc" as *;
+@use "./../_settings/_colors-settings" as *;
+@use "./../_settings/_layout-settings" as *;
+@use "./../_settings/_typography-settings" as *;
+
 h1,
 h2,
 h3,
@@ -8,7 +14,7 @@ h6 {
   margin: spacing(10) 0 spacing();
   font-family: type(font-family, header);
   font-weight: type(font-weight, header);
-  color: color(primary, dark);
+  color: myColor(primary, dark);
 }
 
 p,
@@ -51,10 +57,10 @@ p {
 }
 
 a {
-  color: color(action);
+  color: myColor(action);
 
   &:focus {
-    outline: 2px solid color(action, base);
+    outline: 2px solid myColor(action, base);
     outline-offset: 2px;
   }
 }
@@ -63,5 +69,5 @@ hr {
   height: 3px;
   margin: spacing(6) 0;
 
-  background-color: color(primary, dark);
+  background-color: myColor(primary, dark);
 }

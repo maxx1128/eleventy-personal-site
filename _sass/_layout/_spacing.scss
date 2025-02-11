@@ -1,3 +1,7 @@
+@use "./../_settings/_grid-settings" as *;
+@use "./../_settings/_layout-settings" as *;
+@use "./../_tools/_make-responsive" as *;
+
 @each $bp-label, $bp in $breakpoint-map {
   @each $label, $length in $spacing-map {
     // Margin

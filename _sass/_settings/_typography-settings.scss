@@ -1,4 +1,6 @@
-@use '../_tools/modular-scale';
+@use "sass:map";
+@use "./../_tools/_calc" as *;
+@use '../_tools/modular-scale' as *;
 
 // All typography variables
 
@@ -7,22 +9,22 @@ $g-modular-scale--base: 1.1rem;
 $g-modular-scale--ratio: 1.22;
 
 @function clampedFontSize($type) {
-  $scale: map-get(map-get($typography-map, 'font-size'), $type);
-  $max: decimal-round(modular-scale($scale + 1), 2);
-  $min: decimal-round(modular-scale($scale), 2);
+  $scale: map.get(map.get($typography-map, 'font-size'), $type);
+  $max: modular-scale($scale + 1);
+  $min: modular-scale($scale);
   $middle: calc((#{$max} / 3) + 2.5vw);
 
-  @return clamp($min, $middle, $max);
+  @return clamp(#{$min}, #{$middle}, #{$max});
 }
 
 // For pulling any typography values
 // For most no base is set so it always needs two values
 @function type($type-var, $val: 'base') {
-  @if map-has-key($typography-map, $type-var) {
+  @if map.has-key($typography-map, $type-var) {
     @if ($type-var == 'font-size') {
       @return clampedFontSize($val);
     } @else {
-      @return map-get(map-get($typography-map, $type-var), $val);
+      @return map.get(map.get($typography-map, $type-var), $val);
     }
   }
 }
@@ -46,15 +48,15 @@ $g-font-family-mono: "Courier New", "Consolas", "Courier", monospace;
   --line-height-tight: 1.325;
   --line-height-normal: 1.5;
 
-  --font-margin-h1: #{0 0 decimal-round(modular-scale(-3), 2)};
-  --font-margin-h2: #{0 0 decimal-round(modular-scale(-3), 2)};
-  --font-margin-h3: #{0 0 decimal-round(modular-scale(-3), 2)};
-  --font-margin-h4: #{0 0 decimal-round(modular-scale(-1), 2)};
-  --font-margin-h5: #{0 0 decimal-round(modular-scale(-1), 2)};
-  --font-margin-h6: #{0 0 decimal-round(modular-scale(-1), 2)};
-  --font-margin-p: #{0 0 decimal-round(modular-scale(0), 2) 0};
-  --font-margin-small: #{0 0 decimal-round(modular-scale(-3), 2)};
-  --font-margin-tiny: #{0 0 decimal-round(modular-scale(-3), 2)};
+  --font-margin-h1: 0 0 #{modular-scale(-3)};
+  --font-margin-h2: 0 0 #{modular-scale(-3)};
+  --font-margin-h3: 0 0 #{modular-scale(-3)};
+  --font-margin-h4: 0 0 #{modular-scale(-1)};
+  --font-margin-h5: 0 0 #{modular-scale(-1)};
+  --font-margin-h6: 0 0 #{modular-scale(-1)};
+  --font-margin-p: 0 0 #{modular-scale(0) 0};
+  --font-margin-small: 0 0 #{modular-scale(-3)};
+  --font-margin-tiny: 0 0 #{modular-scale(-3)};
 }
 
 $typography-map: (

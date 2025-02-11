@@ -1,3 +1,5 @@
+@use "./../_settings/_typography-settings" as *;
+
 body {
   counter-reset: footnotes;
 }

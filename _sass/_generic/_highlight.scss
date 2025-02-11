@@ -1,3 +1,9 @@
+@use "sass:color";
+@use "./../_settings/_colors-settings" as *;
+@use "./../_settings/_layout-settings" as *;
+@use "./../_settings/_typography-settings" as *;
+@use "./../_tools/_calc" as *;
+
 $highlight-languages: (
   'html': #ff977d,
   'handlebars': #fda,
@@ -47,7 +53,7 @@ pre > code.highlight {
   font-size: type(font-size, small);
 
   border-radius: .3em;
-  background-color: color(mono, muted);
+  background-color: myColor(mono, muted);
 }
 
 // block code wrapper
@@ -62,8 +68,8 @@ pre {
   align-items: center;
 
   box-shadow: container(box-shadow, 1);
-  border-top: 2px solid color(primary, base);
-  border-bottom: 2px solid color(primary, base);
+  border-top: 2px solid myColor(primary, base);
+  border-bottom: 2px solid myColor(primary, base);
 }
 
 // block code
@@ -72,7 +78,7 @@ pre code {
   display: block;
   margin: 0 auto;
   padding: 3rem 1rem 1.2rem;
-  max-height: rem(500px);
+  max-height: myRem(500px);
 
   font-size: type(font-size, small);
 
@@ -87,13 +93,13 @@ pre code {
   }
 
   &::before {
-    --code-name-border-color: #{color(primary, dark)};
+    --code-name-border-color: #{myColor(primary, dark)};
 
     content: 'Code';
     position: absolute;
     padding: 0 spacing(6) spacing(border) 0;
 
-    color: color(mono, black);
+    color: myColor(mono, black);
     text-transform: uppercase;
     font-size: type(font-size, small);
     font-weight: type(font-weight, bold);
@@ -113,7 +119,7 @@ pre:nth-of-type(even) {
 @each $language, $color in $highlight-languages {
   $text-color: '';
 
-  @if (lightness($color) > 50) {
+  @if (color.lightness($color) > 50) {
     $text-color: #000;
   } @else {
     $text-color: #FFF;
@@ -133,8 +139,8 @@ pre:nth-of-type(even) {
 
 // Code base text and background colors
 pre {
-  color: color(mono, black);
-  background-color: color(mono, muted);
+  color: myColor(mono, black);
+  background-color: myColor(mono, muted);
 }
 
 // Prism Token Styles

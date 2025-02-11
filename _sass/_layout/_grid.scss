@@ -1,3 +1,6 @@
+@use "./../_settings/_grid-settings" as *;
+@use "./../_tools/_make-responsive" as *;
+
 @each $label, $width in $breakpoint-map {
 
   @if ($label != 'none') {

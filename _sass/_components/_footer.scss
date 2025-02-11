@@ -1,3 +1,6 @@
+@use "./../_settings/_grid-settings" as *;
+@use "./../_tools/_layout" as *;
+
 .footer__content {
   @include larger-than(md) {
     max-width: clamp(

@@ -1,6 +1,7 @@
 _site/
 node_modules/
 assets/css/*.css
+assets/css/main.css.map
 assets/javascript/*.js
 data/books.json
 pages.json

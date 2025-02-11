@@ -3,9 +3,11 @@
 /// Remove the unit of a length
 /// @param {Number} $number - Number to remove unit from
 /// @return {Number} - Unitless number
+@use "sass:math";
+
 @function strip-unit($number) {
   @if type-of($number) == 'number' and not unitless($number) {
-    @return $number / ($number * 0 + 1);
+    @return math.div($number, $number * 0 + 1);
   }
 
   @return $number;
@@ -15,16 +17,16 @@
 // Converts pixel values to em values
 @function em($pixels, $context: 16) {
 
-  $em: (strip-unit($pixels) / $context) * 1em;
+  $em: math.div(strip-unit($pixels), $context) * 1em;
 
   @return $em;
 }
 
 
 // Converts pixel values to rem values
-@function rem($pixels, $context: 16) {
+@function myRem($pixels, $context: 16) {
 
-  $rem: (strip-unit($pixels) / $context) * 1rem;
+  $rem: math.div(strip-unit($pixels), $context) * 1rem;
 
   @return $rem;
 }
@@ -52,7 +54,7 @@
 
 
 // Rounds the inputted number to the set number of decimals
-@function decimal-round ($number, $digits: 0, $mode: round) {
+@function decimal-round($number, $digits: 0, $mode: round) {
   $n: 1;
   // $number must be a number
   @if type-of($number) != number {
@@ -71,11 +73,11 @@
     $n: $n * 10;
   }
   @if $mode == round {
-    @return round($number * $n) / $n;
+    @return math.div(round($number * $n), $n);
   } @else if $mode == ceil {
-    @return ceil($number * $n) / $n;
+    @return math.div(ceil($number * $n), $n);
   } @else if $mode == floor {
-    @return floor($number * $n) / $n;
+    @return math.div(floor($number * $n), $n);
   } @else {
     @warn '#{ $mode } is undefined keyword.';
     @return $number;
