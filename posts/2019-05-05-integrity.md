@@ -2,7 +2,6 @@
 title: "Does Integrity Allow Failure?"
 date: "2019-05-05"
 excerpt: "Integrity is acting consistently with one's moral values. But when are we just trying, and failing, to have integrity?"
-tags: ['philosophy']
 ---
 
 Integrity is **acting consistently with your moral values.** But how consistent does a person's actions need to be before they lose their integrity?

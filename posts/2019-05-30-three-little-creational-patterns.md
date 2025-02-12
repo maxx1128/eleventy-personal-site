@@ -3,7 +3,6 @@ title: "The Three Little Creational Patterns - A Design Patterns Intro"
 date: "2019-05-30"
 excerpt: "A beginning coder's guide to understanding creational design patterns with an alternate telling of The Three Little Pigs."
 image: 'three-little-creational-patterns.jpg'
-tags: ['javascript', 'Design Pattern Fairy Tales']
 ---
 Design patterns are essential for programmers to keep in mind, at least to me. These are established solutions to common problems which help keep code maintainable and loosely coupled. The more one knows them, the easier it gets to solve all the problems we face.
 

@@ -1,7 +1,6 @@
 ---
 title: "Accessibility Overlays are not Accessible"
 date: "2024-06-11"
-tags: ["web accessibility"]
 link:
   title: Accessibility overlays are not for disabled people
   url: "https://www.tempertemper.net/blog/accessibility-overlays-are-not-for-disabled-people"

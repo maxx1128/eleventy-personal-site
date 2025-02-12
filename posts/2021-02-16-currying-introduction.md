@@ -3,7 +3,6 @@ title: "The Currying Introduction I Wish I Had"
 date: "2021-02-16"
 excerpt: "Currying is a tricky yet major of JavaScript and functional programming. Sadly, it doesn't involve eating actual curry."
 image: "currying-introduction.jpg"
-tags: ["javascript", "Intros I Wish I Had"]
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=3159174
 ---
 

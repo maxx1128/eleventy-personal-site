@@ -2,7 +2,6 @@
 title      : "Rest is not Laziness"
 date       : 2017-01-20
 excerpt    : Don't feel lazy and undeserving for taking the time to rest. One can't be productive without rest.
-tags       : ['mental health']
 image      : rest-not-laziness.jpeg
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=3021030'
 ---

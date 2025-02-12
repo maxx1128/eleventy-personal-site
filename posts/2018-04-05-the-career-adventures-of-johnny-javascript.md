@@ -2,7 +2,6 @@
 title: "The Career Adventures of Johnny JavaScript"
 date: "2018-04-05"
 excerpt: "What if instead of 'The Adventures of Johnny Bunko,' he had been a programmer by the name of Johnny JavaScript? How would these six career essentials have changed?"
-tags: ['career']
 ---
 In my ongoing quest to find good books that are both manga and non-fiction, one coder in my network recommended ["The Adventures of Johnny Bunko" by Daniel H. Pink.](https://www.amazon.com/Adventures-Johnny-Bunko-Career-Guide/dp/1594482918) It shares six essential career lessons through a man with a dead-end job summoning a fairy-esque career advisor with magic chopsticks.
 

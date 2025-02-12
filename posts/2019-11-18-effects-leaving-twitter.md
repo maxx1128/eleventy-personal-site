@@ -3,7 +3,6 @@ title: "31 Benefits of Getting Away From Twitter"
 date: "2019-11-18"
 excerpt: "I've (mostly) left Twitter for over two weeks. The effects have ranged from good, amazing, and later on, horrible."
 image: 'effects-twitter-leaving.jpg'
-tags: ['tough stuff', 'writing']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2664375'
 ---
 

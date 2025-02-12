@@ -4,7 +4,6 @@ date: "2020-03-31"
 excerpt: "Making good web designs is not easier. That's why the best starting point for them is usually stealing another design."
 image: 'steal-design-ideas.jpg'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=722962'
-tags: ['front-end']
 ---
 
 One of the many struggles I and my colleagues in [NewHaven.IO](http://newhaven.IO) face is making a website look nice. There are also the usual issues with debugging, Minecraft, and basic human interaction. But as a front-end developer, I notice the design challenges more. Just because I build the front-end doesn't mean I always know how it should look, after all.

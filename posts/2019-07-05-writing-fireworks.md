@@ -2,7 +2,6 @@
 title: "Good Writing is like a Firework"
 date: "2019-07-05"
 excerpt: "The Fourth of July reminded me that powerful writing and fireworks have some big things in common."
-tags: ['writing']
 image: 'writing-firework.jpg'
 ---
 

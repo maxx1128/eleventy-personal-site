@@ -4,7 +4,6 @@ date: "2020-03-17"
 excerpt: "Fear isn't in short supply with Coronavirus hitting the United States. For me, hygiene and social distancing are easier than managing the fear."
 image: 'feeling-fear.jpg'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=312338'
-tags: ['mental health', 'coronavirus']
 ---
 
 Last night I dreamt my apartment had an intruder. I never saw their face, only small glimpses of them. Their feet as they moved around a door, a shadow when they snuck in a closet, and the small sound of their footsteps. I had my hands up like a boxer, ready to beat them down if I found them.

@@ -3,7 +3,6 @@ title: "Comebacks for Five (Wrong) Arguments Against Accessibility "
 date: "2019-05-01"
 excerpt: "There's plenty of common arguments against web accessibility that are dead wrong. Here are five of them with some ready-to-go counterarguments."
 image: 'a11y-comebacks.png'
-tags: ['web accessibility']
 ---
 As I and several other a11y advocates know, getting others to care about accessibility isn't easy. It should be, considering the many moral and business arguments for it, but it isn't. I've repeated these arguments many times online. Sometimes as direct responses, other times as painful screams into the void. There's still much work to do.
 

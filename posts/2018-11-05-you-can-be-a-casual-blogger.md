@@ -3,7 +3,6 @@ title: "You Can Be a Casual Blogger"
 date: "2018-11-05"
 excerpt: "Seeing so many professional writers emerge on Dev.To has helped me see, and accept, my casual blogger habits."
 image: 'casualblogger.png'
-tags: ['career', 'writing', 'mental health']
 ---
 I've been feeling many things watching the Dev.To community and its writing pick up steam - enjoyment, curiosity, better informed, and mild synesthesia. But between reading new articles and tasting pie whenever I see the color blue, another feeling has popped up: a twinge of jealousy.
 

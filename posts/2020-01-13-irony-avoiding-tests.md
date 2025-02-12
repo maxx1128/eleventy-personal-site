@@ -4,7 +4,6 @@ date: "2020-01-13"
 excerpt: "In an early job I skipped writing tests, thinking it would make my code more flexible and maintainable. I slowly found it did the exact opposite."
 image: 'irony-tests.png'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=1377551'
-tags: ['career']
 ---
 
 One of my new year resolutions is finishing notes on two foundation programming books: Clean Code and The Pragmatic Programmer. Both are dense but worthwhile reads. They explain concepts you'll likely carry throughout your career. I recently finished Clean Code's informative yet painful chapter on Unit Testing. As in, I started having anxiety-inducing flashbacks to a previous job. As I write this, I'm running on three hours of sleep, have bags under my eyes, and have consumed nothing but ginger ale and bread scraps to keep the shadows at bay.

@@ -2,7 +2,6 @@
 title: "Scheduling Blog Posts with Eleventy, Netlify, and IFTTT"
 date: "2020-10-27"
 excerpt: "Eleventy makes it easy to automatically publish future blog posts with a little JavaScript and some outside app help."
-tags: ["javascript"]
 ---
 
 There have been many benefits to moving my personal site from Jekyll to Eleventy: better build speed, not mixing Ruby and JavaScript in the pipeline, and getting a big tax writeoff. I still love Jekyll since it's what got me into static site generators, but Eleventy may have become my new default.

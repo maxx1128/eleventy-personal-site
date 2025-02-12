@@ -3,7 +3,6 @@ title: "What is Programmatic Determinability?"
 date: "2021-01-15"
 excerpt: "Programmatic Determinability is a big part of accessible websites. It's about clarifying what seems obvious, then getting cheesecake."
 image: "programmatic-determinability.jpg"
-tags: ["web accessibility"]
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=3225522
 ---
 

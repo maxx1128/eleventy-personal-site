@@ -3,7 +3,6 @@ title: "My First Taste of Ruby Task Automation in 22 Lines"
 date: "2018-12-21"
 excerpt: "Automation has always been a sensitive spot in my coding career, but I finally took a solid first step."
 image: 'rubyautomation.png'
-tags: ['ruby']
 ---
 The few people who know my code know I'm focused mainly on the front-end: HTML, CSS, JavaScript (sadly), accessibility, and whatever else that bothers my coworkers. Virtually every time I went to a back-end language like Ruby, it was directly or indirectly due to my job and not by choice.
 

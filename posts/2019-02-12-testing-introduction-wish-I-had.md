@@ -3,7 +3,6 @@ title: "The Testing Introduction I Wish I Had"
 date: "2019-02-12"
 excerpt: "Testing is a topic I overlooked too much early in my career, which may have hurt my progress the most. This is everything I'd have told my past self about testing."
 image: 'testing.png'
-tags: ['Intros I Wish I Had']
 ---
 Seeing as there's no shortage of topics I should've learned about earlier, I'm surprised it took so long to write another "Introduction I Wish I Had." This time I'm covering a topic that's important, oft-overlooked, and realistically speaking, has come back to bite me more than anything other than that dark NYC night where I entered a dark alley without my slingshot or leather sandals.
 

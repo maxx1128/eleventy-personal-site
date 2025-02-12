@@ -4,7 +4,6 @@ date: "2019-12-27"
 excerpt: "Webpack is great, but too big a tool for my personal site. This is how I viciously murdered my Webpack processes for NPM scripts."
 image: 'killing-webpack.jpg'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2676624'
-tags: ['javascript']
 ---
 
 For quite some time, my site ran on Webpack. It handled the styling with TailwindCSS, PostCSS, PurgeCSS, and Turbolinks. It was tricky to set up but got the job done.

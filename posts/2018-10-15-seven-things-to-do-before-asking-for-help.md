@@ -3,7 +3,6 @@ title: "Seven Things to Do Before Asking For Help"
 date: "2018-10-15"
 excerpt: "Asking for help is important, but so is learning how to give problems your best shot beforehand."
 image: 'askforhelp.jpg'
-tags: ['career']
 ---
 In my roughly three years as a developer, one pattern of events kept popping up:
 

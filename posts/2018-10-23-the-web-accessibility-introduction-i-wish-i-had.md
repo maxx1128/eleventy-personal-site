@@ -3,7 +3,6 @@ title: "The Web Accessibility Introduction I Wish I Had"
 date: "2018-10-23"
 excerpt: "Another message to my past self, this time on the importance of accessibility, how to achieve it, and how to test it."
 image: 'accessibility.jpg'
-tags: ['web accessibility', 'Intros I Wish I Had']
 ---
 Hello again, past self. I'm sending you another message from a future where it's finally getting colder, you got the guts to go to therapy, and that thing under the floorboards somehow escaped.
 

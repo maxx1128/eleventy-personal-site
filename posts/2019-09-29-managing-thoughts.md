@@ -3,7 +3,6 @@ title: "Three Ways to Keep Runaway Thoughts Under Control"
 date: "2019-09-29"
 excerpt: "We live with our thoughts every day, so it's important to not let them drive us down a wrong path."
 image: 'managing-thoughts.jpeg'
-tags: ['mental health']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2554146'
 ---
 

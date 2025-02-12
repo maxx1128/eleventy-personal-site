@@ -2,7 +2,6 @@
 title: "Min, Max, and Clamp"
 date: "2020-09-14"
 excerpt: "A few useful CSS functions for value ranges have been well-supported for a while, and I finally found them."
-tags: ["css"]
 ---
 
 I recently learned about three CSS functions I can't believe I'd never heard of before: `min`, `max`, and `clamp`. They let you define a fluid range of values for about any property in a single line. They sound simple but open up a lot of possibilities.

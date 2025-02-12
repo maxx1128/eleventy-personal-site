@@ -2,7 +2,6 @@
 title: "The Git Rebase Introduction I Wish I'd Had"
 date: "2017-09-24"
 excerpt: "If you don't know what rebasing in Git is, read this before it's too late. Especially if you love cupcakes!"
-tags: ['Intros I Wish I Had']
 ---
 One of the most important (and confusing) git features in my new job was rebasing. Looking back now, the worst part was not finding a clear beginner's guide. So for the past me, and any future devs like the past me, this intro is for you!
 

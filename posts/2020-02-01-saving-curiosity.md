@@ -4,7 +4,6 @@ date: "2020-02-01"
 excerpt: "I missed a key realization looking back at 2019 - being driven by numbers had put a lid on my curiosity."
 image: 'saving-my-curiosity.jpg'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2978035'
-tags: ['personal', 'career']
 ---
 
 At the end of last year, [I wrote about how focusing too much on numbers dragged me down for most of 2019](URL). My main focus was on how it made me less happy and productive.

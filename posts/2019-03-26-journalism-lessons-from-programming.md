@@ -3,7 +3,6 @@ title: "Five Programming Lessons from a Journalism Major"
 date: "2019-03-26"
 excerpt: "My journalism background taught me many things that still help me as a programmer. They cover workplace conversations, managing knowledge, making well-informed decisions, and the benefits of sprinting across campus in a blind panic."
 image: 'journalism.jpg'
-tags: ['writing', 'career']
 ---
 Like many programmers, I had different career goals before I found programming. In my case I found programming more than halfway into getting a Bachelor's Degree in Newspaper and Online Journalism. I was writing so much code during those last two years in my last editing class, the professors had me on programming full-time for the course while everyone else edited articles.
 

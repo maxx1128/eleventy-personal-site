@@ -3,7 +3,6 @@ title: "How To Take Notes on Everything"
 date: "2019-08-19"
 excerpt: "Find the approach to taking consistent notes on books and articles to accelerate your learning."
 image: 'how-take-notes-everything.png'
-tags: ['writing', 'career']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2815426'
 ---
 

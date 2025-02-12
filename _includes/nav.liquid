@@ -10,9 +10,6 @@
       {% elsif page.url contains '/blog/' and menu_item.link contains '/blog/' %}
         {% assign active_page = true %}
         {% assign current_page = false %}
-      {% elsif page.url contains '/tags/' and menu_item.link == '/blog/' %}
-        {% assign active_page = true %}
-        {% assign current_page = false %}
       {% else %}
         {% assign active_page = false %}
         {% assign current_page = false %}

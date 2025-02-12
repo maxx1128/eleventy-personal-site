@@ -2,7 +2,6 @@
 title: "Dissecting my Ruby Project Skeleton"
 date: "2019-01-15"
 excerpt: "My project skeleton is a base starting point for simple, vanilla Ruby creations. I examine how the basic parts work together for fellow Ruby newbies."
-tags: ['ruby']
 image: ruby-skeleton.jpeg
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=2915924
 ---

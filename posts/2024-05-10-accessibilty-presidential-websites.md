@@ -1,7 +1,6 @@
 ---
 title: "Presidents and Web Accessibility?"
 date: "2024-05-10"
-tags: ["web accessibility"]
 link:
   title: Web Accessibility in the 2024 Presidential Campaigns
   url: "https://webaim.org/blog/2024-campaign-site-accessibility/"

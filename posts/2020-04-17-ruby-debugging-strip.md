@@ -4,7 +4,6 @@ date: "2020-04-17"
 excerpt: "A Ruby program I wrote hit a tough snag when trying to download info online. But thanks to the program's dubious nature, I can't reveal the full context so easily."
 image: "ruby-debug.png"
 featured_image_link: "https://safebooru.org/index.php?page=post&s=view&id=2856814"
-tags: ["ruby", "anime"]
 ---
 
 After banging my head against the computer screen for hours, I finally solved a persistent bug by stripping.

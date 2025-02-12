@@ -2,7 +2,6 @@
 title: "Take Notes on Everything"
 date: "2017-10-31"
 excerpt: "With so much to keep learning as a junior dev, I've remembered not to trust my brain to hold onto all the new info."
-tags: ['career']
 image: take-notes-everything.jpeg
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=2271799
 ---

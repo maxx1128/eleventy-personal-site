@@ -2,7 +2,6 @@
 title: "The Widening Anxieties of Young Front-end Developers"
 date: "2020-10-14"
 excerpt: "A recent essay reminded me how the anxieties that pushed me to become a better developer are often drowning me instead."
-tags: ["career", "tough stuff"]
 image: widening-anxieties-young-developers.jpg
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=3058516
 ---

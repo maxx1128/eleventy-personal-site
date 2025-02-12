@@ -4,7 +4,6 @@ date: "2020-03-24"
 excerpt: "With the number of confirmed coronovirus cases accelerating, I try to remember what I can and can't control ."
 image: 'control-amid-chaos.jpg'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=3022128'
-tags: ['mental health', 'coronavirus']
 ---
 
 ## What I Can't Control

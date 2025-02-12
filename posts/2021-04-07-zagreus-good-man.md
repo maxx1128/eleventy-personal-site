@@ -3,7 +3,6 @@ title: "What Makes Zagreus a Good Man?"
 date: "2021-04-07"
 excerpt: "Zagreus' character from Hades has been well-received by gamers. But what makes him a powerful warrior but also a good man?"
 image: "zagreus-good-man.jpg"
-tags: ["anime", "tough stuff"]
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=3351253
 ---
 

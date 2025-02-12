@@ -2,7 +2,6 @@
 title: "How to Refactor an Anime Newsletter"
 date: "2018-01-28"
 excerpt: "I revisit my first real Node program to refactor it with more ES6 syntax, asynchronous functions, and anime wallpaper feeds."
-tags: ['javascript', 'anime']
 image: refactor-anime-newsletter.jpg
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=1255005
 ---

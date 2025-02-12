@@ -2,7 +2,6 @@
 title: "What's the deal with align-items: baseline?"
 date: "2021-10-13"
 excerpt: "I understood all the basic ways flexbox can align content. But I got thrown for a loop with aligning along the baseline."
-tags: ["css"]
 image: deal-align-items-baseline.jpg
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=3651800
 ---

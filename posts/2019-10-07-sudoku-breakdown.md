@@ -3,7 +3,6 @@ title: "Checking Sudoku with Functional JavaScript"
 date: "2019-10-07"
 excerpt: "A CodeWars challenge had me checking if Sudoku puzzles were solved correctly or not. I break down my solution using functional JavaScript"
 image: 'sudoku-javascript.png'
-tags: ['javascript']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=1355200'
 ---
 

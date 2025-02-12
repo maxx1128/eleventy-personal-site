@@ -3,7 +3,6 @@ title: "The Pros and Cons of my First Virtual Conference"
 date: "2021-04-21"
 excerpt: "#RailsConf2021 was both my first Ruby on Rails conference and my first virtual conference. Here I'll look at the good and bad of an all virtual code conference."
 image: "pros-cons-virtual-conference.jpg"
-tags: ["career", "ruby"]
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=863043
 ---
 

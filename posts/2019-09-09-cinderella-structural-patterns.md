@@ -3,7 +3,6 @@ title: "Cinderella and the Glass Structural Pattern - A Design Patterns Intro"
 date: "2019-09-09"
 excerpt: "A beginning coder's guide to structural design patterns with an alternate telling of Cinderella."
 image: 'cinderella-structural.jpeg'
-tags: ['javascript', 'Design Pattern Fairy Tales']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2510905'
 ---
 

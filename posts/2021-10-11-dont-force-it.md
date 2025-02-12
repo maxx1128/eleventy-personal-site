@@ -2,7 +2,6 @@
 title: "Don't Force It"
 date: "2021-10-11"
 excerpt: "There's a difference between being productive and feeling productive."
-tags: ["mental health"]
 ---
 
 It's a Monday evening at the end of a three-day weekend. I wanted to do more work on a new blog post.

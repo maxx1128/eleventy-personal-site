@@ -3,7 +3,6 @@ title: "Remixing Hotel California with Sonic Pi"
 date: "2019-10-30"
 excerpt: "Sonic Pi is an amazing music synth tool for turning code into melodies. I break it back in by breaking down a remix of Hotel California's chords."
 image: 'sonic-pi-hotel-california.jpg'
-tags: ['ruby']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=1904822'
 ---
 

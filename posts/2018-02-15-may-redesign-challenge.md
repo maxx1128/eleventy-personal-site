@@ -2,7 +2,6 @@
 title: "The May 1st Reboot"
 date:  2018-02-15
 excerpt: "Two months after redesigning my site, a big event makes me do it all over again."
-tags: ['front-end', 'career']
 image: may-1st-reboot.jpeg
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=3057364
 ---

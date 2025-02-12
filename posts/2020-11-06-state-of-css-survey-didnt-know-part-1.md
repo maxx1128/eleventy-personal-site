@@ -3,7 +3,6 @@ title: "What I Didn't Know in the 2020 State of CSS Survey, Part 1"
 date: "2020-11-06"
 excerpt: "The State of CSS Survey recommends those who take it learn more about what they aren't familiar with. Challenge accepted."
 image: "css-survey-1.jpg"
-tags: ["css"]
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=2298263
 ---
 

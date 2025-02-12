@@ -3,7 +3,6 @@ title: "How to Make an Anime Quote Maker More Awesome"
 date: "2021-08-20"
 excerpt: "My quote maker remains my favorite code side project. So I can't help but keep adding more controls and features."
 image: "quote-maker-awesome.png"
-tags: ["anime", "javascript", "front-end"]
 ---
 
 One of my favorite side projects has been my anime quote maker. One reason is, months after making it, I'm still using it to make random art for wallpapers and pull requests. It only takes about two minutes to make something like this:

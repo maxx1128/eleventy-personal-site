@@ -2,7 +2,6 @@
 title: "Tips for Making Maintainable Pattern Libraries"
 date: "2017-02-17"
 excerpt: "It's easy to see why pattern libraries are useful, but tough to successfully maintain them over time."
-tags: ['css']
 ---
 **It's tough to do any front-end work without hearing "pattern library" at least once a day.**
 

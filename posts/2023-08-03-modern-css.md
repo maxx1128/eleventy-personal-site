@@ -1,7 +1,6 @@
 ---
 title: "Catching up on Modern CSS"
 date: "2023-08-03"
-tags: ["css"]
 link:
   title: Modern CSS For Dynamic Component-Based Architecture
   url: "https://moderncss.dev/modern-css-for-dynamic-component-based-architecture/"

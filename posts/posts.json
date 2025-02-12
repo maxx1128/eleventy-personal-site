@@ -1,6 +1,5 @@
 {
   "contentType": "Blog Post",
-  "tags": [],
   "layout": "layouts/post.liquid",
   "permalink": "posts/{{ page.date | toUTCDatePath }}{{ page.fileSlug }}/index.html"
 }

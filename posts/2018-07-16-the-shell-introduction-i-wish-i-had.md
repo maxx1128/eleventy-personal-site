@@ -3,7 +3,6 @@ title: "The Shell Introduction I Wish I Had"
 date: "2018-07-16"
 excerpt: "I write a letter to my past self about the Shell's importance I wish I'd focused on earlier in my career."
 image: 'shellintro.png'
-tags: ['Intros I Wish I Had']
 ---
 Hey there past me. Hope you're doing well and keeping the horrible regrets to a minimum. I'm here to help in that regard. At least with career-related regrets. Nothing I can do about that OkCupid date where the bulldozer hit the...actually, that's for another time.
 

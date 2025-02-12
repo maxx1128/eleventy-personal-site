@@ -3,7 +3,6 @@ title: "How to Laser-Cut an Anime Drawing"
 date: "2019-11-25"
 excerpt: "One of my (oddly specific) hobbies is laser-cutting anime images. A few MakeHaven members have been curious how, so I wrote a tutorial on making your own."
 image: 'laser-cut-anime-demo.jpg'
-tags: ['anime', 'other']
 ---
 
 One of my long-term goals at MakeHaven, a local maker space, has been finding new ways to turn anime art into laser cut art. I'm happy to say I recently made a breakthrough and can make nice-looking anime laser prints with relative ease.

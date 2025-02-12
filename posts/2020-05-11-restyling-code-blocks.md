@@ -4,7 +4,6 @@ date: "2020-05-11"
 excerpt: "Working on my personal site has helped keep me sane in quarantine. This includes a long-overdue style update for my site's code snippets to make them sleeker and clearer."
 image: "restyled-code-blocks.png"
 featured_image_link: "https://safebooru.org/index.php?page=post&s=view&id=2706841"
-tags: ["css", "front-end"]
 ---
 
 *Update: I've redesigned my site's code snippets at least once more since posting this, which is why the code and visuals described here won't line up with my site. But I'm keeping this blog post here, unchanged, on the advice of my lawyer.*

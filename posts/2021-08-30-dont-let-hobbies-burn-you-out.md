@@ -3,7 +3,6 @@ title: "Don't Let Your Hobbies Burn You Out"
 date: "2021-08-30"
 excerpt: "Hobbies that were once a source of personal joy have wound up making me miserable. How did I get to this point?"
 image: "hobbies-burn-out.jpeg"
-tags: ["personal", "mental health"]
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=2780719
 ---
 

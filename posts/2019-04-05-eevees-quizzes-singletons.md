@@ -3,7 +3,6 @@ title: "Eevees, Quizzes, and Singletons, Oh My!"
 date: "2019-04-05"
 excerpt: "I celebrate a long-overdue side project by examining its most important pieces - services, singletons, and which Eeveelution matches my personality."
 image: 'eevees.jpg'
-tags: ['anime', 'javascript']
 ---
 After over a year in purgatory, one of my side projects is finally finished. It's a small piece of Pokemon fandom I'd wanted to make for a while now: a Pokemon personality quiz! To be more specific, a "What Eevee Evolution Are You" quiz. [You can view (and take) the quiz at this site](https://eeveequiz.com/).
 

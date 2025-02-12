@@ -2,7 +2,6 @@
 title: "Six Surprises I Found in the WCAG 2.1 Accessibility Rules"
 date: "2020-10-12"
 excerpt: "I'm broadly familiar with the current accessibility standards. But when I took some time to read them in detail, I learned some unexpected lessons."
-tags: ["web accessibility"]
 image: wcag-surprises.jpg
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=966024
 ---

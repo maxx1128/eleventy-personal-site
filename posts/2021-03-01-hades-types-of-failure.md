@@ -3,7 +3,6 @@ title: "Hades and my Two Types of Failure"
 date: "2021-03-01"
 excerpt: "Hades is a great game, and as a bonus, put my fears of failure in a new light."
 image: "hades-failure.jpg"
-tags: ["personal", "anime"]
 featured_image_link: https://safebooru.org/index.php?page=post&s=view&id=3244512
 ---
 

@@ -4,7 +4,6 @@ date: "2019-12-31"
 excerpt: "In 2019 I focused on numbers for doing better in work and play. That focus caused most of my past year's regrets, and I plan to take a much different approach for 2020."
 image: '2019-in-review.jpg'
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=2440928'
-tags: ['personal', 'tough stuff', 'career']
 ---
 
 With 2019 coming to a close, there are a few major events I could recount.

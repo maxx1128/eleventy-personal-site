@@ -3,7 +3,6 @@ title: "Explaining (and Celebrating) my First Twitter Bot"
 date: "2019-07-08"
 excerpt: "After weeks of looking for a workable approach, I finally build a Node Twitter bot to automatically share anime quote artwork."
 image: 'twitter-bot.jpg'
-tags: ['javascript', 'anime']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=947559'
 ---
 

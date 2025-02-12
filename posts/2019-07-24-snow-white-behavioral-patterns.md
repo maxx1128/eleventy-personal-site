@@ -3,7 +3,6 @@ title: "Snow White and the Seven Behavioral Patterns - A Design Patterns Intro"
 date: "2019-07-24"
 excerpt: "A beginning coder's guide to the other half of behavioral design patterns with an alternate telling of Snow White and the Seven Dwarves."
 image: 'snow-white-behavioral.jpeg'
-tags: ['javascript', 'Design Pattern Fairy Tales']
 featured_image_link: 'https://safebooru.org/index.php?page=post&s=view&id=745684'
 ---
 
