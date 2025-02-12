@@ -8,8 +8,6 @@ import pluginNavigation from '@11ty/eleventy-navigation';
 import markdownIt from 'markdown-it';
 import markdownItAnchor from 'markdown-it-anchor';
 import moment from 'moment';
-import {renderToStaticMarkup} from 'react-dom/server'
-import {register} from 'node:module';
 
 const hideFutureItems = (item) => {
   const now = new Date(),
