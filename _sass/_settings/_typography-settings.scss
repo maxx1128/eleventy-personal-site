@@ -5,7 +5,7 @@
 // All typography variables
 
 // Modular Scale variables
-$g-modular-scale--base: 1.1rem;
+$g-modular-scale--base: 1rem;
 $g-modular-scale--ratio: 1.22;
 
 @function clampedFontSize($type) {
@@ -72,8 +72,8 @@ $typography-map: (
     h3: 3,
     h4: 2,
     h5: 1,
-    h6: 1,
-    large: 1,
+    h6: 0,
+    large: 0,
     p: 0,
     small: -1,
     tiny: -2,
