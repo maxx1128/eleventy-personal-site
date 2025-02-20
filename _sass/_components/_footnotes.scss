@@ -1,22 +1,32 @@
+@use "sass:color";
+@use "./../_settings/_colors-settings" as *;
+@use "./../_settings/_layout-settings" as *;
 @use "./../_settings/_typography-settings" as *;
+@use "./../_tools/_layout" as *;
 
 body {
   counter-reset: footnotes;
 }
 
 .Footnotes {
-  padding: spacing(2) 0 0;
+  padding: spacing(4);
+
+  background-color: rgba(255, 255, 255, 0.3);
+  border-left: spacing(1) solid myColor(primary, base);
 }
 
 .Footnotes__title {
-  font-size: type(font-size, h3);
+  margin-top: 0;
+
+  color: myColor(primary, base);
+  font-size: type(font-size, h5);
 }
 
 .Footnotes__ref[role='doc-noteref']::after {
   content: '[' counter(footnotes) ']';
   margin-left: 2px;
 
-  font-size: type(font-size, tiny);
+  font-size: type(font-size, small);
   text-decoration: underline;
 
   counter-increment: footnotes;
@@ -24,6 +34,15 @@ body {
   cursor: pointer;
 }
 
+.Footnotes__list {
+  margin-bottom: spacing(0);
+}
+
 .Footnotes__list-item {
-  font-size: type(font-size, small);
+  font-size: type(font-size, tiny);
+  font-style: italic;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
