@@ -15,30 +15,33 @@
             width: "45px",
             height: "45px" %}
         {% endif %}
+      
 
-        <h3 class="mt-0 mb-1 text-h5">
-          <a class="flex flex-align-center flex-gap-4" href="{{ post.url }}">
-            {% unless post.data.link %}
-              <span class="screenReader">Blog post:</span>
-            {% endunless %}
+        <div>
+          <h3 class="mt-0 mb-1 {% if post.data.link %}text-h5 italic{% else %}text-h4{% endif %}">
+            <a class="flex flex-align-center flex-gap-4" href="{{ post.url }}">
+              {% unless post.data.link %}
+                <span class="screenReader">Blog post:</span>
+              {% endunless %}
 
-            {{ post.data.title }}
-          </a>
-        </h3>
+              {{ post.data.title }}
+            </a>
+          </h3>
+
+          <small class="block mb-0">
+            <strong>
+              <span class="screenReader">Posted on</span>
+              {{ post.date | readableDate | date: "%B %e, %Y" }}
+            </strong>
+          </small>
+
+          {% if post.data.excerpt %}
+            <p class="mt-4 mb-0 text-small">
+              {{ post.data.excerpt }}
+            </p>
+          {% endif %}
+        </div>
       </div>
-
-      <small class="block mb-0">
-        <strong>
-          <span class="screenReader">Posted on</span>
-          {{ post.date | readableDate | date: "%B %e, %Y" }}
-        </strong>
-      </small>
-
-      {% if post.data.excerpt %}
-        <p class="mt-4 mb-0 text-small">
-          {{ post.data.excerpt }}
-        </p>
-      {% endif %}
     </article>
   {% endfor %}
 </section>

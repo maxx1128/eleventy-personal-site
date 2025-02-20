@@ -12,16 +12,18 @@ layout: layouts/base.liquid
   {{ content }}
 
   {% if link.url and link.title %}
-    <p class="font-weight-bold">
-      Read
-      <a href="{{ link.url }}" rel="external">
-        {% if link.author %}
-          "{{ link.title }}" by {{ link.author }}.
-        {% else %}
-          {{ link.title }}.
-        {% endif %}
-      </a>
-    </p>
+    <div class="flex-center">
+      <p class="py-2 px-4 md--mx-2 maxWidth-md box-shadow-1 box-shadow-2-hover inline font-weight-bold bg-primary-dark text-primary-light">
+        Read
+        <a href="{{ link.url }}" class="text-primary-light" target="_blank" rel="external">
+          {% if link.author %}
+            "{{ link.title }}" by {{ link.author }}.
+          {% else %}
+            {{ link.title }}.
+          {% endif %}
+        </a>
+      </p>
+    </div>
   {% endif %}
 
   {% footnotes %}
