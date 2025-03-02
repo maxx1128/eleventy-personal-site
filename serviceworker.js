@@ -14,7 +14,7 @@ addEventListener("install", (installEvent) => {
         "blog/index.html",
         "contact/index.html",
         "/assets/images/global/favicon.ico",
-        "/assets/images/global/profile-2.jpg",
+        "/assets/images/global/headshot-2.jpg",
         "/assets/images/icons/icon-192.png",
         "/assets/images/icons/icon-512.png",
       ]);
