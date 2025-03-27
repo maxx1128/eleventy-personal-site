@@ -50,6 +50,10 @@ li {
   margin-bottom: spacing(2);
 
   font-size: type(font-size, p);
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 p {
