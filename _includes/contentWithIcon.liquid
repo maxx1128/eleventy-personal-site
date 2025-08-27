@@ -1,0 +1,10 @@
+<div class="contentWithIcon contentWithIcon--{{modifierClass}} flex flex-column sm--flex-row my-4 md--my-6 lg--my-10 border-radius-large box-shadow-2">
+    <div aria-hidden="true" class="contentWithIcon__icon-wrapper flex flex-center p-4 md--p-6">
+        {% include './icons/{{icon}}'
+            size: '100px',
+            class: 'contentWithIcon__icon'
+        %}
+    </div>
+
+    <div class="contentWithIcon__content-wrapper"><div class="contentWithIcon__content-wrapper-color p-4 md--p-6 lg--p-8 bg-mono-muted border-radius-base"><{{header}} class="mt-0">{{title}}</{{header}}><div class="contentWithIcon__content">{{content}}</div></div></div>
+</div>
