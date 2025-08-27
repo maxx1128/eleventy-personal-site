@@ -43,6 +43,7 @@ Let's start with `min` and `max`, since `clamp` is a combination of the two. I f
 Yes, `min` sets the largest possible value, and `max` sets the smallest possible value. No, this does not make any sense to me either. So I drew up some doodles for how the values work together as a reminder.
 
 ![](/assets/images/posts/min-max-clamp/min-doodle.png)
+
 ![](/assets/images/posts/min-max-clamp/max-doodle.png)
 
 Thankfully `clamp` is easier to understand. It has three arguments: the smallest value, the base value, and the largest value. The base value is what kicks in as long as it's within that range.
