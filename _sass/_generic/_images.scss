@@ -1,7 +1,10 @@
+@use "./../_settings/_layout-settings" as *;
+
 img {
   height: auto;
   width: 100%;
   max-width: 100%;
+  margin-bottom: spacing();
 }
 
 figure,
